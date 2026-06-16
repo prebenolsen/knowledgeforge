@@ -99,10 +99,12 @@ Then open the printed `localhost` URL. Local dev reads `.env.local`.
 
 ## Adding more content later (no code changes)
 
-The seed lives in `src/content/seed/index.ts`. To add a big batch — say 100
-Economics questions — you have two options:
+The seed lives in `src/content/seed/`, organized as one folder per category and
+one file per subcategory (assembled into `SEED` by `src/content/seed/index.ts`).
+To add a big batch — say 100 Economics questions — you have two options:
 
-- **Edit the seed file** and re-run `npm run import`, or
+- **Edit the seed files** (e.g. `src/content/seed/economics/`) and re-run
+  `npm run import`, or
 - **Make a standalone JSON file** in the same shape (an array of categories) and run
   `npm run import -- path/to/your-batch.json`.
 

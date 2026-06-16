@@ -1,0 +1,65 @@
+import type { SeedSubcategory } from '../types';
+
+export const ancientRome: SeedSubcategory = {
+  slug: 'ancient-rome',
+  name: { en: 'Ancient Rome', no: 'Antikkens Roma' },
+  questions: [
+    {
+      difficulty: 1,
+      question: {
+        en: 'Who was the first Roman emperor?',
+        no: 'Hvem var den første romerske keiseren?'
+      },
+      answers: [
+        { en: 'Augustus', no: 'Augustus' },
+        { en: 'Julius Caesar', no: 'Julius Cæsar' },
+        { en: 'Nero', no: 'Nero' },
+        { en: 'Caligula', no: 'Caligula' }
+      ],
+      correct: 0,
+      explanation: {
+        en: 'Augustus became the first Roman emperor in 27 BC after the fall of the Republic.',
+        no: 'Augustus ble den første romerske keiseren i 27 f.Kr. etter republikkens fall.'
+      },
+      tags: ['emperors', 'rome']
+    },
+    {
+      difficulty: 3,
+      question: {
+        en: 'What event traditionally marks the founding of the Roman Republic?',
+        no: 'Hvilken hendelse markerer tradisjonelt grunnleggelsen av den romerske republikken?'
+      },
+      answers: [
+        { en: 'The overthrow of the last king', no: 'Avsettelsen av den siste kongen' },
+        { en: "Caesar's assassination", no: 'Drapet på Cæsar' },
+        { en: 'The Punic Wars', no: 'De puniske kriger' },
+        { en: 'The sack of Rome', no: 'Plyndringen av Roma' }
+      ],
+      correct: 0,
+      explanation: {
+        en: 'The Republic is traditionally dated to 509 BC, when the last king, Tarquin, was overthrown.',
+        no: 'Republikken dateres tradisjonelt til 509 f.Kr., da den siste kongen, Tarquinius, ble avsatt.'
+      },
+      tags: ['republic', 'rome']
+    },
+    {
+      difficulty: 5,
+      question: {
+        en: 'Which reform of Diocletian most directly addressed the 3rd-century crisis of imperial succession?',
+        no: 'Hvilken av Diokletians reformer adresserte mest direkte 200-tallskrisen rundt keiserarvefølge?'
+      },
+      answers: [
+        { en: 'The Tetrarchy', no: 'Tetrarkiet' },
+        { en: 'The Edict on Prices', no: 'Prisediktet' },
+        { en: 'Provincial subdivision', no: 'Oppdeling av provinser' },
+        { en: 'Currency debasement', no: 'Myntforringelse' }
+      ],
+      correct: 0,
+      explanation: {
+        en: 'The Tetrarchy split rule among four emperors to stabilize succession, though it later fueled civil war.',
+        no: 'Tetrarkiet delte makten mellom fire keisere for å stabilisere arvefølgen, men førte senere til borgerkrig.'
+      },
+      tags: ['diocletian', 'reform']
+    }
+  ]
+};

@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-06-16
+
+### Changed
+- Reorganized the seed content (`src/content/seed/`) into one folder per category
+  and one file per subcategory, with shared types in `types.ts` and a root
+  `index.ts` that assembles the categories into `SEED`. No content or schema
+  changes; the import pipeline and public exports (`SEED`, `SeedCategory`, etc.)
+  are unchanged.
+
 ## [1.1.0] - 2026-06-16
 
 ### Added
