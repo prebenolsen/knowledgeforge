@@ -1,3 +1,8 @@
+Create more questions, do not repeat previous ones. Assume the CONST already exists, just start with difficulty
+
+===================
+
+
 Generate 50 quiz questions for my learning app.
 
 
@@ -6,13 +11,7 @@ Topic:
 Category: History
 Subcategory: Ancient Rome
 Module: Republic to Empire
-Output format:
 
-Return ONLY a valid JavaScript array matching this exact TypeScript structure.
-
-No markdown.
-No comments.
-No extra text.
 
 Structure logic (example only, ensure you use correct Category/subcategory/module):
 
