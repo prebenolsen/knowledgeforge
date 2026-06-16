@@ -14,7 +14,7 @@ No markdown.
 No comments.
 No extra text.
 
-Structure logic:
+Structure logic (example only, ensure you use correct Category/subcategory/module):
 
 export const ancientRome: SeedSubcategory = {
   slug: 'ancient-rome',
@@ -28,18 +28,18 @@ export const ancientRome: SeedSubcategory = {
       difficulty: 'easy',
       question: {
         en: 'Who was the first Roman emperor?',
-        no: 'Hvem var den f�rste romerske keiseren?'
+        no: 'Hvem var den første romerske keiseren?'
       },
       answers: [
         { en: 'Augustus', no: 'Augustus' },
-        { en: 'Julius Caesar', no: 'Julius C�sar' },
+        { en: 'Julius Caesar', no: 'Julius Cæsar' },
         { en: 'Nero', no: 'Nero' },
         { en: 'Caligula', no: 'Caligula' }
       ],
       correct: 0,
       explanation: {
         en: 'Augustus became the first Roman emperor in 27 BC after the fall of the Republic.',
-        no: 'Augustus ble den f�rste romerske keiseren i 27 f.Kr. etter republikkens fall.'
+        no: 'Augustus ble den første romerske keiseren i 27 f.Kr. etter republikkens fall.'
       },
       tags: ['emperors', 'rome']
     },
@@ -51,7 +51,7 @@ export const ancientRome: SeedSubcategory = {
       },
       answers: [
         { en: 'The overthrow of the last king', no: 'Avsettelsen av den siste kongen' },
-        { en: "Caesar's assassination", no: 'Drapet p� C�sar' },
+        { en: "Caesar's assassination", no: 'Drapet på Cæsar' },
         { en: 'The Punic Wars', no: 'De puniske kriger' },
         { en: 'The sack of Rome', no: 'Plyndringen av Roma' }
       ],
@@ -66,7 +66,7 @@ export const ancientRome: SeedSubcategory = {
       difficulty: 'hard',
       question: {
         en: 'Which reform of Diocletian most directly addressed the 3rd-century crisis of imperial succession?',
-        no: 'Hvilken av Diokletians reformer adresserte mest direkte 200-tallskrisen rundt keiserarvef�lge?'
+        no: 'Hvilken av Diokletians reformer adresserte mest direkte 200-tallskrisen rundt keiserarvefølge?'
       },
       answers: [
         { en: 'The Tetrarchy', no: 'Tetrarkiet' },
@@ -77,7 +77,7 @@ export const ancientRome: SeedSubcategory = {
       correct: 0,
       explanation: {
         en: 'The Tetrarchy split rule among four emperors to stabilize succession, though it later fueled civil war.',
-        no: 'Tetrarkiet delte makten mellom fire keisere for � stabilisere arvef�lgen, men f�rte senere til borgerkrig.'
+        no: 'Tetrarkiet delte makten mellom fire keisere for å stabilisere arvefølgen, men førte senere til borgerkrig.'
       },
       tags: ['diocletian', 'reform']
     }
@@ -145,10 +145,19 @@ Distribute questions across different aspects of the topic:
 - Comparisons between concepts
 - Deeper context and significance
 
-Randomize which index the correct answer is. 
+Randomize which index the correct answer is.
 
 Language:
 
-- English and Norwegian Bokm�l.
+- English and Norwegian Bokmål.
 - Keep both versions accurate.
 - Use proper historical terms in Norwegian.
+
+Encoding:
+
+- Output must be valid UTF-8.
+- Write all Norwegian letters as their real Unicode characters: æ/Æ, ø/Ø, å/Å.
+- Never substitute, escape, transliterate, or "ASCII-fy" them (no ae/oe/aa,
+  no \u escapes, no HTML entities, no replacement characters like ).
+- Double-check every Norwegian string contains the correct æ, ø, å where the
+  word requires it (e.g. "første", "keiserdømme", "Bokmål", "Cæsar").

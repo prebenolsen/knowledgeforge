@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.1] - 2026-06-16
+
+### Fixed
+- Re-saved `ai_question_generator_prompt.txt` as UTF-8, repairing the mojibake in
+  the Norwegian example strings (e.g. `f�rste` → `første`, `C�sar` → `Cæsar`,
+  `arvef�lge` → `arvefølge`). Added an explicit **Encoding** section instructing
+  the generator to output valid UTF-8 and write Norwegian letters as their real
+  Unicode characters (æ/Æ, ø/Ø, å/Å), never transliterated or escaped.
+
 ## [3.0.0] - 2026-06-16
 
 ### Added
