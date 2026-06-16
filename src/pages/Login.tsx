@@ -6,13 +6,31 @@ import { LanguageToggle } from '@/components/layout/LanguageToggle';
 
 export function Login() {
   const { t } = useTranslation();
-  const { signInWithGitHub, signInWithEmail } = useAuth();
+  const { signInWithGitHub, signInWithEmail, signInWithPassword } = useAuth();
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [showEmail, setShowEmail] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState('');
   const [sent, setSent] = useState(false);
 
-  async function handleEmail() {
+  async function handlePassword() {
+    if (!email || !password) return;
+    setError('');
+    setBusy(true);
+    try {
+      await signInWithPassword(email, password);
+      // On success the auth listener swaps the view; nothing else to do here.
+    } catch {
+      setError(t('auth.signInError'));
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function handleMagicLink() {
     if (!email) return;
+    setError('');
     await signInWithEmail(email);
     setSent(true);
   }
@@ -55,9 +73,31 @@ export function Login() {
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full rounded-card border border-ink-500 bg-ink-800 px-5 py-4 text-base text-mist-100 placeholder:text-mist-400 focus:border-ember-500 focus:outline-none"
               />
-              <Button variant="ghost" onClick={() => void handleEmail()}>
-                {t('auth.sendLink')}
+              <input
+                type="password"
+                autoComplete="current-password"
+                placeholder={t('auth.passwordPlaceholder')}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') void handlePassword();
+                }}
+                className="w-full rounded-card border border-ink-500 bg-ink-800 px-5 py-4 text-base text-mist-100 placeholder:text-mist-400 focus:border-ember-500 focus:outline-none"
+              />
+
+              {error && <p className="text-sm text-bad">{error}</p>}
+
+              <Button onClick={() => void handlePassword()} disabled={busy}>
+                {t('auth.signInPassword')}
               </Button>
+
+              <button
+                type="button"
+                onClick={() => void handleMagicLink()}
+                className="w-full text-center text-sm text-mist-400 underline-offset-2 hover:underline"
+              >
+                {t('auth.sendLink')}
+              </button>
             </div>
           )}
         </div>

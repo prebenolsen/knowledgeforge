@@ -6,9 +6,12 @@ Guidance for Claude Code when working in this repository.
 
 Whenever you make changes to the codebase, you **must** keep the following in sync as part of the same change — never leave them stale:
 
-1. **`CHANGELOG.md`** — Add an entry describing the change under the `## [Unreleased]` section
-   (use `Added` / `Changed` / `Fixed` / `Removed` subsections). When cutting a release, move the
-   `Unreleased` entries under a new version heading with the date.
+1. **`CHANGELOG.md`** — Add an entry describing the change (use `Added` / `Changed` / `Fixed` /
+   `Removed` subsections). Whenever you bump `version.json`, the entry must live under a heading
+   matching that exact new version, with today's date — e.g. a bump to `1.1.0` means a
+   `## [1.1.0] - YYYY-MM-DD` heading. Keep `## [Unreleased]` present but empty above it for the
+   next change. The newest version in `CHANGELOG.md` and the `version` in `version.json` must
+   always match.
 
 2. **`version.json`** — Bump the `version` field using MAJOR.MINOR.PATCH (semantic) versioning:
    - **MAJOR** — incompatible / breaking changes.
