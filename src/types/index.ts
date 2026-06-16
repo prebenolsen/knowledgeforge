@@ -48,9 +48,20 @@ export interface Subcategory {
   name: Localized;
 }
 
+// A finer learning unit within a subcategory. Quizzes and progress still run
+// at the subcategory level; modules group questions into named topics.
+export interface Module {
+  id: string;
+  subcategory_id: string;
+  slug: string;
+  name: Localized;
+  sort_order: number;
+}
+
 export interface Question {
   id: string;
   subcategory_id: string;
+  module_id: string;
   question: Localized;
   answers: Localized[]; // exactly 4
   correct_index: number; // 0–3

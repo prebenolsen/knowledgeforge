@@ -30,9 +30,23 @@ create table if not exists subcategories (
   unique (category_id, slug)
 );
 
-create table if not exists questions (
+create table if not exists modules (
   id              uuid primary key default gen_random_uuid(),
   subcategory_id  uuid not null references subcategories(id) on delete cascade,
+  slug            text not null,
+  name            jsonb not null,
+  sort_order      int  not null default 0,
+  created_at      timestamptz not null default now(),
+  unique (subcategory_id, slug)
+);
+
+create table if not exists questions (
+  id              uuid primary key default gen_random_uuid(),
+  -- subcategory_id is kept denormalized alongside module_id: quizzes and
+  -- progress run at the subcategory level, while module_id groups questions
+  -- into a finer learning unit within that subcategory.
+  subcategory_id  uuid not null references subcategories(id) on delete cascade,
+  module_id       uuid not null references modules(id) on delete cascade,
   question        jsonb not null,    -- { "en": "...", "no": "..." }
   answers         jsonb not null,    -- [ {en,no}, {en,no}, {en,no}, {en,no} ]
   correct_index   int  not null check (correct_index between 0 and 3),
@@ -44,7 +58,9 @@ create table if not exists questions (
 );
 
 create index if not exists idx_subcategories_category on subcategories(category_id);
+create index if not exists idx_modules_subcategory on modules(subcategory_id);
 create index if not exists idx_questions_subcategory on questions(subcategory_id);
+create index if not exists idx_questions_module on questions(module_id);
 create index if not exists idx_questions_difficulty on questions(difficulty);
 create index if not exists idx_questions_active on questions(active);
 
@@ -131,6 +147,7 @@ create trigger on_auth_user_created
 -- (Imports use the service-role key, which bypasses RLS.)
 alter table categories    enable row level security;
 alter table subcategories enable row level security;
+alter table modules       enable row level security;
 alter table questions     enable row level security;
 
 drop policy if exists "content readable" on categories;
@@ -139,6 +156,10 @@ create policy "content readable" on categories
 
 drop policy if exists "content readable" on subcategories;
 create policy "content readable" on subcategories
+  for select to authenticated using (true);
+
+drop policy if exists "content readable" on modules;
+create policy "content readable" on modules
   for select to authenticated using (true);
 
 drop policy if exists "content readable" on questions;

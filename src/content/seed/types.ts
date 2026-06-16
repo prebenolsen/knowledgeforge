@@ -13,10 +13,16 @@ export interface SeedQuestion {
   tags: string[];
 }
 
-export interface SeedSubcategory {
+export interface SeedModule {
   slug: string;
   name: { en: string; no: string };
   questions: SeedQuestion[];
+}
+
+export interface SeedSubcategory {
+  slug: string;
+  name: { en: string; no: string };
+  modules: SeedModule[];
 }
 
 export interface SeedCategory {

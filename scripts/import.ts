@@ -49,22 +49,36 @@ async function importCategory(cat: SeedCategory, order: number): Promise<void> {
       .single();
     if (subErr) throw subErr;
 
-    for (const q of sub.questions) {
-      const { error: qErr } = await db.from('questions').insert({
-        subcategory_id: subcat.id,
-        question: q.question,
-        answers: q.answers,
-        correct_index: q.correct,
-        explanation: q.explanation,
-        difficulty: q.difficulty,
-        tags: q.tags,
-        active: true
-      });
-      // Ignore duplicate question inserts on re-run by matching text isn't
-      // trivial, so we simply log and continue.
-      if (qErr) console.warn(`  ! skipped a question in ${sub.slug}: ${qErr.message}`);
+    let modOrder = 0;
+    for (const mod of sub.modules) {
+      const { data: module, error: modErr } = await db
+        .from('modules')
+        .upsert(
+          { subcategory_id: subcat.id, slug: mod.slug, name: mod.name, sort_order: modOrder++ },
+          { onConflict: 'subcategory_id,slug' }
+        )
+        .select()
+        .single();
+      if (modErr) throw modErr;
+
+      for (const q of mod.questions) {
+        const { error: qErr } = await db.from('questions').insert({
+          subcategory_id: subcat.id,
+          module_id: module.id,
+          question: q.question,
+          answers: q.answers,
+          correct_index: q.correct,
+          explanation: q.explanation,
+          difficulty: q.difficulty,
+          tags: q.tags,
+          active: true
+        });
+        // Ignore duplicate question inserts on re-run by matching text isn't
+        // trivial, so we simply log and continue.
+        if (qErr) console.warn(`  ! skipped a question in ${sub.slug}/${mod.slug}: ${qErr.message}`);
+      }
+      console.log(`  + ${cat.slug}/${sub.slug}/${mod.slug}: ${mod.questions.length} questions`);
     }
-    console.log(`  + ${cat.slug}/${sub.slug}: ${sub.questions.length} questions`);
   }
 }
 

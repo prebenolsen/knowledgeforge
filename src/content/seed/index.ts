@@ -21,7 +21,7 @@ import { society } from './society';
 import { geography } from './geography';
 import { technology } from './technology';
 
-export type { SeedQuestion, SeedSubcategory, SeedCategory } from './types';
+export type { SeedQuestion, SeedModule, SeedSubcategory, SeedCategory } from './types';
 
 export const SEED: SeedCategory[] = [
   history,

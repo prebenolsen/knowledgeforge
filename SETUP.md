@@ -101,6 +101,8 @@ Then open the printed `localhost` URL. Local dev reads `.env.local`.
 
 The seed lives in `src/content/seed/`, organized as one folder per category and
 one file per subcategory (assembled into `SEED` by `src/content/seed/index.ts`).
+Each subcategory holds one or more **modules**, and the questions live inside a
+module — the hierarchy is Category → Subcategory → Module → Questions.
 To add a big batch — say 100 Economics questions — you have two options:
 
 - **Edit the seed files** (e.g. `src/content/seed/economics/`) and re-run
@@ -108,7 +110,7 @@ To add a big batch — say 100 Economics questions — you have two options:
 - **Make a standalone JSON file** in the same shape (an array of categories) and run
   `npm run import -- path/to/your-batch.json`.
 
-Re-running is safe: categories and subcategories upsert by slug, so they're never
-duplicated. New questions are simply added.
+Re-running is safe: categories, subcategories, and modules upsert by slug, so
+they're never duplicated. New questions are simply added.
 
 See `CONTENT_FORMAT.md` for the exact JSON shape.

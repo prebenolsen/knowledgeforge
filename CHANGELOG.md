@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.0] - 2026-06-16
+
+### Added
+- **Module** — a new content level between subcategory and questions
+  (Category → Subcategory → **Module** → Questions). A module groups questions
+  into a named topic, e.g. History → World War 2 → *The Rise of Adolf Hitler*.
+  - New `modules` table (`subcategory_id`, `slug`, `name`, `sort_order`), with a
+    `unique (subcategory_id, slug)` constraint and read-only RLS like the other
+    content tables.
+  - `Module` type and a `module_id` field on `Question`.
+  - `SeedSubcategory` now holds a `modules` array; each module carries its own
+    `questions`. The seed content and import script were updated accordingly.
+
+### Changed
+- **Breaking:** the content/import format changed — questions now live under a
+  subcategory's `modules[].questions` instead of `subcategory.questions`.
+  Existing batch JSON files must be wrapped in at least one module to import.
+  Quizzes and mastery/progress continue to run at the **subcategory** level;
+  `questions.subcategory_id` is kept (denormalized) alongside the new
+  `module_id`, so no progress data or schema for `user_progress` changed.
+
 ## [2.0.1] - 2026-06-16
 
 ### Changed

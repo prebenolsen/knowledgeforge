@@ -5,6 +5,7 @@ Topic:
 
 Category: History
 Subcategory: Ancient Rome
+Module: Republic to Empire
 Output format:
 
 Return ONLY a valid JavaScript array matching this exact TypeScript structure.
@@ -18,23 +19,27 @@ Structure logic:
 export const ancientRome: SeedSubcategory = {
   slug: 'ancient-rome',
   name: { en: 'Ancient Rome', no: 'Antikkens Roma' },
-  questions: [
+  modules: [
+    {
+      slug: 'republic-to-empire',
+      name: { en: 'Republic to Empire', no: 'Fra republikk til keiserdÃ¸mme' },
+      questions: [
     {
       difficulty: 'easy',
       question: {
         en: 'Who was the first Roman emperor?',
-        no: 'Hvem var den første romerske keiseren?'
+        no: 'Hvem var den fï¿½rste romerske keiseren?'
       },
       answers: [
         { en: 'Augustus', no: 'Augustus' },
-        { en: 'Julius Caesar', no: 'Julius Cæsar' },
+        { en: 'Julius Caesar', no: 'Julius Cï¿½sar' },
         { en: 'Nero', no: 'Nero' },
         { en: 'Caligula', no: 'Caligula' }
       ],
       correct: 0,
       explanation: {
         en: 'Augustus became the first Roman emperor in 27 BC after the fall of the Republic.',
-        no: 'Augustus ble den første romerske keiseren i 27 f.Kr. etter republikkens fall.'
+        no: 'Augustus ble den fï¿½rste romerske keiseren i 27 f.Kr. etter republikkens fall.'
       },
       tags: ['emperors', 'rome']
     },
@@ -46,7 +51,7 @@ export const ancientRome: SeedSubcategory = {
       },
       answers: [
         { en: 'The overthrow of the last king', no: 'Avsettelsen av den siste kongen' },
-        { en: "Caesar's assassination", no: 'Drapet på Cæsar' },
+        { en: "Caesar's assassination", no: 'Drapet pï¿½ Cï¿½sar' },
         { en: 'The Punic Wars', no: 'De puniske kriger' },
         { en: 'The sack of Rome', no: 'Plyndringen av Roma' }
       ],
@@ -61,7 +66,7 @@ export const ancientRome: SeedSubcategory = {
       difficulty: 'hard',
       question: {
         en: 'Which reform of Diocletian most directly addressed the 3rd-century crisis of imperial succession?',
-        no: 'Hvilken av Diokletians reformer adresserte mest direkte 200-tallskrisen rundt keiserarvefølge?'
+        no: 'Hvilken av Diokletians reformer adresserte mest direkte 200-tallskrisen rundt keiserarvefï¿½lge?'
       },
       answers: [
         { en: 'The Tetrarchy', no: 'Tetrarkiet' },
@@ -72,9 +77,11 @@ export const ancientRome: SeedSubcategory = {
       correct: 0,
       explanation: {
         en: 'The Tetrarchy split rule among four emperors to stabilize succession, though it later fueled civil war.',
-        no: 'Tetrarkiet delte makten mellom fire keisere for å stabilisere arvefølgen, men førte senere til borgerkrig.'
+        no: 'Tetrarkiet delte makten mellom fire keisere for ï¿½ stabilisere arvefï¿½lgen, men fï¿½rte senere til borgerkrig.'
       },
       tags: ['diocletian', 'reform']
+    }
+      ]
     }
   ]
 };
@@ -142,6 +149,6 @@ Randomize which index the correct answer is.
 
 Language:
 
-- English and Norwegian Bokmål.
+- English and Norwegian Bokmï¿½l.
 - Keep both versions accurate.
 - Use proper historical terms in Norwegian.
