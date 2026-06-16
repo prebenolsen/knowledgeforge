@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-ink-900 text-mist-100 font-body antialiased;
+  margin: 0;
+  /* Respect iOS safe areas for the bottom nav. */
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-display;
+}
+
+/* Smooth tap feedback on mobile, no blue highlight. */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
