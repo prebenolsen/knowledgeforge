@@ -16,7 +16,7 @@ reviews with spaced repetition so it sticks. Fully bilingual (English / Norwegia
 - **Difficulty-aware mastery** — a high score on easy questions does *not* count as
   mastery. Untested hard questions cap your mastery ceiling, so the app can tell
   "surface knowledge" apart from real depth.
-- **Placement test** — 20 questions across all five difficulty levels estimate where
+- **Placement test** — 20 questions across easy, medium, and hard estimate where
   you should start.
 - **Knowledge map** — mastery per category and per subcategory, with an easy/medium/hard
   breakdown.

@@ -1,6 +1,6 @@
 // ============================================================
 // Seed content — bilingual (en/no) starter questions.
-// ~6 questions per category, spanning difficulty 1–5.
+// ~6 questions per category, spanning easy/medium/hard.
 // Used by scripts/import.ts to populate a fresh database.
 //
 // This is intentionally small. Add real content later as JSON

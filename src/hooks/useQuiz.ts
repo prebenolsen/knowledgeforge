@@ -5,13 +5,14 @@ import {
   recordAnswer
 } from '@/lib/questionLoader';
 import type { Difficulty, PracticeMode, Question, QuizSessionResult } from '@/types';
+import { DIFFICULTIES, DIFFICULTY_RANK } from '@/types';
 import { emptyDifficultyStats } from '@/lib/mastery';
 
 const MODE_DIFFICULTIES: Record<PracticeMode, Difficulty[] | undefined> = {
-  beginner: [1, 2],
-  intermediate: [3],
-  advanced: [4, 5],
-  mixed: [1, 2, 3, 4, 5],
+  beginner: ['easy'],
+  intermediate: ['medium'],
+  advanced: ['hard'],
+  mixed: ['easy', 'medium', 'hard'],
   adaptive: undefined // handled dynamically
 };
 
@@ -37,7 +38,7 @@ export function useQuiz({ userId, subcategoryId, mode = 'mixed', reviewMode = fa
   const startRef = useRef<number>(Date.now());
 
   // Adaptive difficulty: track a running target level.
-  const adaptiveLevel = useRef<Difficulty>(2);
+  const adaptiveLevel = useRef<Difficulty>('medium');
 
   useEffect(() => {
     let cancelled = false;
@@ -83,12 +84,11 @@ export function useQuiz({ userId, subcategoryId, mode = 'mixed', reviewMode = fa
         return { total: r.total + 1, correct: r.correct + (isCorrect ? 1 : 0), byDifficulty };
       });
 
-      // Adaptive: nudge difficulty based on correctness.
+      // Adaptive: nudge difficulty up/down one band based on correctness.
       if (mode === 'adaptive') {
-        adaptiveLevel.current = Math.max(
-          1,
-          Math.min(5, adaptiveLevel.current + (isCorrect ? 1 : -1))
-        ) as Difficulty;
+        const idx = DIFFICULTY_RANK[adaptiveLevel.current] - 1;
+        const nextIdx = Math.max(0, Math.min(DIFFICULTIES.length - 1, idx + (isCorrect ? 1 : -1)));
+        adaptiveLevel.current = DIFFICULTIES[nextIdx];
       }
 
       // Persist to Supabase (fire and forget; UI already advanced state).

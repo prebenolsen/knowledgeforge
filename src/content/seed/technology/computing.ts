@@ -5,7 +5,7 @@ export const computing: SeedSubcategory = {
   name: { en: 'Computing', no: 'Databehandling' },
   questions: [
     {
-      difficulty: 1,
+      difficulty: 'easy',
       question: { en: 'What does "CPU" stand for?', no: 'Hva står "CPU" for?' },
       answers: [
         { en: 'Central Processing Unit', no: 'Central Processing Unit' },
@@ -21,7 +21,7 @@ export const computing: SeedSubcategory = {
       tags: ['hardware', 'basics']
     },
     {
-      difficulty: 2,
+      difficulty: 'easy',
       question: {
         en: 'What does "HTTP" primarily transfer?',
         no: 'Hva overfører "HTTP" primært?'
@@ -40,7 +40,7 @@ export const computing: SeedSubcategory = {
       tags: ['web', 'protocols']
     },
     {
-      difficulty: 5,
+      difficulty: 'hard',
       question: {
         en: 'What is the average time complexity of a balanced binary search tree lookup?',
         no: 'Hva er gjennomsnittlig tidskompleksitet for oppslag i et balansert binært søketre?'

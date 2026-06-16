@@ -5,7 +5,7 @@ export const civics: SeedSubcategory = {
   name: { en: 'Civics', no: 'Samfunnslære' },
   questions: [
     {
-      difficulty: 1,
+      difficulty: 'easy',
       question: {
         en: 'What is the capital of Norway?',
         no: 'Hva er hovedstaden i Norge?'
@@ -24,7 +24,7 @@ export const civics: SeedSubcategory = {
       tags: ['government', 'norway']
     },
     {
-      difficulty: 3,
+      difficulty: 'medium',
       question: {
         en: 'What system of government does Norway have?',
         no: 'Hvilken styreform har Norge?'

@@ -5,7 +5,7 @@ export const worldCapitals: SeedSubcategory = {
   name: { en: 'World Capitals', no: 'Verdens hovedsteder' },
   questions: [
     {
-      difficulty: 1,
+      difficulty: 'easy',
       question: { en: 'What is the capital of Japan?', no: 'Hva er hovedstaden i Japan?' },
       answers: [
         { en: 'Tokyo', no: 'Tokyo' },
@@ -21,7 +21,7 @@ export const worldCapitals: SeedSubcategory = {
       tags: ['capitals', 'asia']
     },
     {
-      difficulty: 3,
+      difficulty: 'medium',
       question: {
         en: 'Which river is the longest in the world?',
         no: 'Hvilken elv er den lengste i verden?'

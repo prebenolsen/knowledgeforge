@@ -3,7 +3,8 @@
 // Reference: SuperMemo 2 (Piotr Wozniak, 1990)
 // ============================================================
 
-import type { Quality, SM2State, SM2Result } from '@/types';
+import type { Difficulty, Quality, SM2State, SM2Result } from '@/types';
+import { DIFFICULTY_RANK } from '@/types';
 
 const DEFAULT_EASINESS = 2.5;
 const MIN_EASINESS = 1.3;
@@ -68,7 +69,7 @@ export function sm2(state: SM2State, quality: Quality, now: Date = new Date()): 
  */
 export function gradeAnswer(params: {
   isCorrect: boolean;
-  difficulty: number;
+  difficulty: Difficulty;
   timeMs: number;
 }): Quality {
   const { isCorrect, difficulty, timeMs } = params;
@@ -76,10 +77,10 @@ export function gradeAnswer(params: {
   if (!isCorrect) return 1;
 
   // Rough "thinking time" budget scales with difficulty.
-  // diff 1 -> 6s expected, diff 5 -> 18s expected.
-  const expectedMs = (4 + difficulty * 2) * 1000;
+  // easy -> 8s expected, medium -> 12s, hard -> 16s.
+  const expectedMs = (4 + DIFFICULTY_RANK[difficulty] * 4) * 1000;
   const wasQuick = timeMs <= expectedMs;
-  const wasHard = difficulty >= 4;
+  const wasHard = difficulty === 'hard';
 
   if (wasQuick && !wasHard) return 5; // confident & easy
   if (wasQuick && wasHard) return 4; // confident on a hard one

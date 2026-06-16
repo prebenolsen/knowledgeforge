@@ -37,7 +37,7 @@ create table if not exists questions (
   answers         jsonb not null,    -- [ {en,no}, {en,no}, {en,no}, {en,no} ]
   correct_index   int  not null check (correct_index between 0 and 3),
   explanation     jsonb not null,
-  difficulty      int  not null check (difficulty between 1 and 5),
+  difficulty      text not null check (difficulty in ('easy','medium','hard')),
   tags            text[] not null default '{}',
   active          boolean not null default true,
   created_at      timestamptz not null default now()
@@ -67,7 +67,7 @@ create table if not exists question_attempts (
   is_correct     boolean not null,
   selected_index int not null,
   time_ms        int not null default 0,
-  difficulty     int not null check (difficulty between 1 and 5),
+  difficulty     text not null check (difficulty in ('easy','medium','hard')),
   answered_at    timestamptz not null default now()
 );
 

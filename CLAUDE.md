@@ -22,6 +22,14 @@ Whenever you make changes to the codebase, you **must** keep the following in sy
 
 3. **`supabase/migrations/0001_init.sql`** — If a change affects the database schema (tables,
    columns, indexes, policies, functions, etc.), update this migration so it always reflects the
-   current schema.
+   current schema. This file is a single, idempotent init script run against a **fresh** database —
+   assume the tables do **not** already exist. Edit the `create table` (and `create index` /
+   `create policy` / function) statements themselves so they describe the new schema directly;
+   do **not** append `ALTER TABLE` / migration steps to patch an existing schema.
+
+4. **`SETUP.md`** — Keep the setup and usage instructions accurate. Whenever a change affects
+   how the project is configured, installed, run, imported, or deployed (env vars, scripts,
+   commands, file locations, the content/import flow, schema setup steps, etc.), update `SETUP.md`
+   so it always matches the current process.
 
 These updates are not optional — treat them as required steps for any change before considering the work complete.

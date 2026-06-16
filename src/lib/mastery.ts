@@ -10,15 +10,14 @@
 // ============================================================
 
 import type { Difficulty } from '@/types';
+import { DIFFICULTIES } from '@/types';
 
 // Weight each difficulty band contributes to the mastery ceiling.
-// Sums to 1.0. Easy bands are deliberately capped low.
+// Sums to 1.0. The easy band is deliberately capped low.
 export const DIFFICULTY_WEIGHTS: Record<Difficulty, number> = {
-  1: 0.1,
-  2: 0.15,
-  3: 0.25,
-  4: 0.25,
-  5: 0.25
+  easy: 0.2,
+  medium: 0.3,
+  hard: 0.5
 };
 
 export interface DifficultyStat {
@@ -30,11 +29,9 @@ export type DifficultyStats = Record<Difficulty, DifficultyStat>;
 
 export function emptyDifficultyStats(): DifficultyStats {
   return {
-    1: { seen: 0, correct: 0 },
-    2: { seen: 0, correct: 0 },
-    3: { seen: 0, correct: 0 },
-    4: { seen: 0, correct: 0 },
-    5: { seen: 0, correct: 0 }
+    easy: { seen: 0, correct: 0 },
+    medium: { seen: 0, correct: 0 },
+    hard: { seen: 0, correct: 0 }
   };
 }
 
@@ -54,14 +51,13 @@ export function accuracyAt(stats: DifficultyStats, d: Difficulty): number {
  * sum. Because an unseen band scores 0 accuracy, never-attempted hard
  * questions drag the ceiling down — exactly the "surface knowledge" guard.
  *
- * Example: perfect on difficulty 1 only, nothing else attempted:
- *   0.1*1 + 0.15*0 + 0.25*0 + 0.25*0 + 0.25*0 = 0.10  -> 10% mastery.
+ * Example: perfect on easy only, nothing else attempted:
+ *   0.2*1 + 0.3*0 + 0.5*0 = 0.20  -> 20% mastery.
  */
 export function masteryScore(stats: DifficultyStats): number {
   let score = 0;
-  (Object.keys(DIFFICULTY_WEIGHTS) as unknown as Difficulty[]).forEach((d) => {
-    const diff = Number(d) as Difficulty;
-    score += DIFFICULTY_WEIGHTS[diff] * accuracyAt(stats, diff);
+  DIFFICULTIES.forEach((d) => {
+    score += DIFFICULTY_WEIGHTS[d] * accuracyAt(stats, d);
   });
   return Number(score.toFixed(4));
 }
@@ -76,9 +72,9 @@ export function knowledgeShape(stats: DifficultyStats): KnowledgeShape {
   const totalSeen = (Object.values(stats) as DifficultyStat[]).reduce((s, b) => s + b.seen, 0);
   if (totalSeen === 0) return 'untested';
 
-  const easyAcc = (accuracyAt(stats, 1) + accuracyAt(stats, 2)) / 2;
-  const hardSeen = stats[4].seen + stats[5].seen;
-  const hardAcc = hardSeen === 0 ? 0 : (stats[4].correct + stats[5].correct) / hardSeen;
+  const easyAcc = accuracyAt(stats, 'easy');
+  const hardSeen = stats.hard.seen;
+  const hardAcc = hardSeen === 0 ? 0 : stats.hard.correct / hardSeen;
   const score = masteryScore(stats);
 
   // Strong on easy but hard bands untested or weak -> surface knowledge.

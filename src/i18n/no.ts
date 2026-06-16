@@ -48,9 +48,13 @@ export default {
     adaptive: 'Adaptiv',
     adaptiveHint: 'Justerer vanskelighetsgrad underveis.'
   },
+  difficulty: {
+    easy: 'Lett',
+    medium: 'Middels',
+    hard: 'Vanskelig'
+  },
   quiz: {
     question: 'Spørsmål {{current}} av {{total}}',
-    difficulty: 'Vanskelighetsgrad {{level}}',
     correct: 'Riktig',
     incorrect: 'Feil',
     correctAnswer: 'Riktig svar',
@@ -68,7 +72,7 @@ export default {
   },
   placement: {
     title: 'Nivåtest',
-    intro: '20 spørsmål på tvers av alle vanskelighetsnivåer. Slapp av — dette anslår bare hvor du bør starte.',
+    intro: '20 spørsmål fordelt på lett, middels og vanskelig. Slapp av — dette anslår bare hvor du bør starte.',
     start: 'Start test',
     resultTitle: 'Ditt nivå',
     recommended: 'Anbefalt startnivå',

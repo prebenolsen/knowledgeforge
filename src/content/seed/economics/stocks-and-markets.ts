@@ -5,7 +5,7 @@ export const stocksAndMarkets: SeedSubcategory = {
   name: { en: 'Stocks and Markets', no: 'Aksjer og markeder' },
   questions: [
     {
-      difficulty: 1,
+      difficulty: 'easy',
       question: {
         en: 'In what country is NASDAQ based?',
         no: 'I hvilket land ligger NASDAQ?'
@@ -24,7 +24,7 @@ export const stocksAndMarkets: SeedSubcategory = {
       tags: ['stock exchanges', 'financial markets']
     },
     {
-      difficulty: 2,
+      difficulty: 'easy',
       question: {
         en: 'Who wrote The Wealth of Nations?',
         no: 'Hvem skrev The Wealth of Nations?'
@@ -43,7 +43,7 @@ export const stocksAndMarkets: SeedSubcategory = {
       tags: ['economics', 'classic works']
     },
     {
-      difficulty: 4,
+      difficulty: 'hard',
       question: {
         en: 'What does a yield curve inversion historically tend to signal?',
         no: 'Hva har en invertert rentekurve historisk pleid å signalisere?'

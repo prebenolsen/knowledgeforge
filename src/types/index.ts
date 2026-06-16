@@ -4,7 +4,18 @@
 
 export type Locale = 'en' | 'no';
 
-export type Difficulty = 1 | 2 | 3 | 4 | 5;
+export type Difficulty = 'easy' | 'medium' | 'hard';
+
+// Canonical ordering, easiest first. Use for iteration and display order.
+export const DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard'];
+
+// Numeric rank for the few places that need an ordered/scalar difficulty
+// (adaptive stepping, SM-2 time budgets).
+export const DIFFICULTY_RANK: Record<Difficulty, number> = {
+  easy: 1,
+  medium: 2,
+  hard: 3
+};
 
 export type PracticeMode =
   | 'beginner'

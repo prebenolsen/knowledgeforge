@@ -102,14 +102,10 @@ function CategoryBlock({ cat }: { cat: CatMastery }) {
 
 function DifficultyRow({ byDifficulty }: { byDifficulty: Record<Difficulty, number> }) {
   const { t } = useTranslation();
-  // Group into easy (1-2), medium (3), hard (4-5).
-  const easy = (byDifficulty[1] + byDifficulty[2]) / 2;
-  const medium = byDifficulty[3];
-  const hard = (byDifficulty[4] + byDifficulty[5]) / 2;
   const cells = [
-    { label: t('progress.easy'), v: easy },
-    { label: t('progress.medium'), v: medium },
-    { label: t('progress.hard'), v: hard }
+    { label: t('progress.easy'), v: byDifficulty.easy },
+    { label: t('progress.medium'), v: byDifficulty.medium },
+    { label: t('progress.hard'), v: byDifficulty.hard }
   ];
   return (
     <div className="mt-2 grid grid-cols-3 gap-2">

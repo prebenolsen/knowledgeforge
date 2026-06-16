@@ -9,6 +9,7 @@ import {
   type KnowledgeShape
 } from '@/lib/mastery';
 import type { Category, Difficulty, Subcategory } from '@/types';
+import { DIFFICULTIES } from '@/types';
 
 export interface SubMastery {
   subcategory: Subcategory;
@@ -71,11 +72,9 @@ export function useProgress(userId: string | undefined) {
             ? mergeStats(row.difficulty_stats)
             : emptyDifficultyStats();
           const byDifficulty = {
-            1: accuracyAt(stats, 1),
-            2: accuracyAt(stats, 2),
-            3: accuracyAt(stats, 3),
-            4: accuracyAt(stats, 4),
-            5: accuracyAt(stats, 5)
+            easy: accuracyAt(stats, 'easy'),
+            medium: accuracyAt(stats, 'medium'),
+            hard: accuracyAt(stats, 'hard')
           } as Record<Difficulty, number>;
           return {
             subcategory,
@@ -115,7 +114,7 @@ export function useProgress(userId: string | undefined) {
 
 function mergeStats(partial: Partial<DifficultyStats>): DifficultyStats {
   const base = emptyDifficultyStats();
-  ([1, 2, 3, 4, 5] as Difficulty[]).forEach((d) => {
+  DIFFICULTIES.forEach((d) => {
     if (partial[d]) base[d] = { seen: partial[d]!.seen ?? 0, correct: partial[d]!.correct ?? 0 };
   });
   return base;

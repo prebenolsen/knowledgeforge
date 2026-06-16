@@ -5,7 +5,7 @@ export const arithmetic: SeedSubcategory = {
   name: { en: 'Arithmetic', no: 'Aritmetikk' },
   questions: [
     {
-      difficulty: 1,
+      difficulty: 'easy',
       question: { en: 'What is 7 × 8?', no: 'Hva er 7 × 8?' },
       answers: [
         { en: '56', no: '56' },
@@ -18,7 +18,7 @@ export const arithmetic: SeedSubcategory = {
       tags: ['multiplication']
     },
     {
-      difficulty: 3,
+      difficulty: 'medium',
       question: {
         en: 'What is the value of 3² + 4²?',
         no: 'Hva er verdien av 3² + 4²?'
@@ -37,7 +37,7 @@ export const arithmetic: SeedSubcategory = {
       tags: ['exponents', 'pythagoras']
     },
     {
-      difficulty: 5,
+      difficulty: 'hard',
       question: {
         en: 'What is the derivative of sin(x) with respect to x?',
         no: 'Hva er den deriverte av sin(x) med hensyn på x?'

@@ -47,7 +47,7 @@ export function QuestionHeader({ question, current, total }: { question: Questio
   return (
     <div className="mb-4 flex items-center justify-between">
       <span className="text-sm text-mist-400">{t('quiz.question', { current, total })}</span>
-      <Badge tone="ember">{t('quiz.difficulty', { level: question.difficulty })}</Badge>
+      <Badge tone="ember">{t(`difficulty.${question.difficulty}`)}</Badge>
     </div>
   );
 }

@@ -5,7 +5,7 @@ export const physics: SeedSubcategory = {
   name: { en: 'Physics', no: 'Fysikk' },
   questions: [
     {
-      difficulty: 1,
+      difficulty: 'easy',
       question: {
         en: 'What force pulls objects toward the Earth?',
         no: 'Hvilken kraft trekker gjenstander mot jorda?'
@@ -24,7 +24,7 @@ export const physics: SeedSubcategory = {
       tags: ['gravity', 'forces']
     },
     {
-      difficulty: 2,
+      difficulty: 'easy',
       question: {
         en: 'What is the SI unit of electric current?',
         no: 'Hva er SI-enheten for elektrisk strøm?'
@@ -43,7 +43,7 @@ export const physics: SeedSubcategory = {
       tags: ['units', 'electricity']
     },
     {
-      difficulty: 4,
+      difficulty: 'hard',
       question: {
         en: "Why does time pass more slowly near a massive object, per general relativity?",
         no: 'Hvorfor går tiden saktere nær et massivt objekt, ifølge generell relativitet?'

@@ -5,7 +5,7 @@ export const biology: SeedSubcategory = {
   name: { en: 'Biology', no: 'Biologi' },
   questions: [
     {
-      difficulty: 1,
+      difficulty: 'easy',
       question: {
         en: 'What gas do plants absorb for photosynthesis?',
         no: 'Hvilken gass tar planter opp til fotosyntese?'
@@ -24,7 +24,7 @@ export const biology: SeedSubcategory = {
       tags: ['photosynthesis', 'plants']
     },
     {
-      difficulty: 2,
+      difficulty: 'easy',
       question: {
         en: 'Which organelle is the "powerhouse" of the cell?',
         no: 'Hvilken organell er cellens "kraftverk"?'
@@ -43,7 +43,7 @@ export const biology: SeedSubcategory = {
       tags: ['cells', 'organelles']
     },
     {
-      difficulty: 4,
+      difficulty: 'hard',
       question: {
         en: 'In DNA replication, which enzyme unwinds the double helix?',
         no: 'I DNA-replikasjon, hvilket enzym vikler ut dobbelheliksen?'

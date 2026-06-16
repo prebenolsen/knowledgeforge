@@ -48,9 +48,13 @@ export default {
     adaptive: 'Adaptive',
     adaptiveHint: 'Adjusts difficulty as you go.'
   },
+  difficulty: {
+    easy: 'Easy',
+    medium: 'Medium',
+    hard: 'Hard'
+  },
   quiz: {
     question: 'Question {{current}} of {{total}}',
-    difficulty: 'Difficulty {{level}}',
     correct: 'Correct',
     incorrect: 'Incorrect',
     correctAnswer: 'Correct answer',
@@ -68,7 +72,7 @@ export default {
   },
   placement: {
     title: 'Placement test',
-    intro: '20 questions across all difficulty levels. No pressure — this just estimates where to start.',
+    intro: '20 questions spanning easy, medium, and hard. No pressure — this just estimates where to start.',
     start: 'Start test',
     resultTitle: 'Your placement',
     recommended: 'Recommended starting level',

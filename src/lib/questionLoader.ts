@@ -18,6 +18,7 @@ import type {
   Difficulty,
   ReviewSchedule
 } from '@/types';
+import { DIFFICULTIES } from '@/types';
 
 // ---- Content reads ----------------------------------------
 
@@ -68,14 +69,12 @@ export async function fetchQuestions(q: QuestionQuery): Promise<Question[]> {
 
 // ---- Placement test ----------------------------------------
 
-// 5×d1, 5×d2, 5×d3, 3×d4, 2×d5 across all categories.
+// 7 easy, 7 medium, 6 hard across all categories.
 export async function fetchPlacementQuestions(): Promise<Question[]> {
   const plan: Array<[Difficulty, number]> = [
-    [1, 5],
-    [2, 5],
-    [3, 5],
-    [4, 3],
-    [5, 2]
+    ['easy', 7],
+    ['medium', 7],
+    ['hard', 6]
   ];
   const batches = await Promise.all(
     plan.map(async ([difficulty, n]) => {
@@ -236,7 +235,7 @@ async function updateProgress(params: {
 
 function mergeStats(partial: Partial<DifficultyStats>): DifficultyStats {
   const base = emptyDifficultyStats();
-  ([1, 2, 3, 4, 5] as Difficulty[]).forEach((d) => {
+  DIFFICULTIES.forEach((d) => {
     if (partial[d]) base[d] = { seen: partial[d]!.seen ?? 0, correct: partial[d]!.correct ?? 0 };
   });
   return base;

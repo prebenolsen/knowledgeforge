@@ -17,7 +17,7 @@ keys. The import script accepts a JSON file that is an **array of categories**.
         "name": { "en": "Stocks and Markets", "no": "Aksjer og markeder" },
         "questions": [
           {
-            "difficulty": 1,                       // 1–5 (see scale below)
+            "difficulty": "easy",                  // "easy" | "medium" | "hard"
             "question": {
               "en": "In what country is NASDAQ based?",
               "no": "I hvilket land ligger NASDAQ?"
@@ -45,12 +45,10 @@ keys. The import script accepts a JSON file that is an **array of categories**.
 ## Difficulty scale
 
 | Level | Meaning |
-|-------|---------|
-| 1 | Beginner / basic recall |
-| 2 | Basic understanding |
-| 3 | Application |
-| 4 | Connecting concepts |
-| 5 | Advanced reasoning |
+|----------|---------|
+| `easy`   | Basic recall and understanding |
+| `medium` | Application |
+| `hard`   | Connecting concepts / advanced reasoning |
 
 ## Importing
 

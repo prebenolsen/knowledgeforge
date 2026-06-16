@@ -6,6 +6,7 @@ import { supabase } from '@/lib/supabase';
 import { fetchPlacementQuestions, recordAnswer } from '@/lib/questionLoader';
 import { localized } from '@/i18n';
 import type { Difficulty, Question, PlacementResult } from '@/types';
+import { DIFFICULTIES } from '@/types';
 import { Button, Card, Spinner, MasteryBar } from '@/components/ui';
 import { AnswerGrid, ExplanationPanel, QuestionHeader } from '@/components/quiz/QuizParts';
 
@@ -23,11 +24,9 @@ export function PlacementTest() {
   const [answered, setAnswered] = useState(false);
   const [start, setStart] = useState(Date.now());
   const [tally, setTally] = useState<Record<Difficulty, { seen: number; correct: number }>>({
-    1: { seen: 0, correct: 0 },
-    2: { seen: 0, correct: 0 },
-    3: { seen: 0, correct: 0 },
-    4: { seen: 0, correct: 0 },
-    5: { seen: 0, correct: 0 }
+    easy: { seen: 0, correct: 0 },
+    medium: { seen: 0, correct: 0 },
+    hard: { seen: 0, correct: 0 }
   });
 
   async function begin() {
@@ -125,12 +124,12 @@ export function PlacementTest() {
 }
 
 function computePlacement(tally: Record<Difficulty, { seen: number; correct: number }>): PlacementResult {
-  const breakdown = ([1, 2, 3, 4, 5] as Difficulty[]).map((d) => {
+  const breakdown = DIFFICULTIES.map((d) => {
     const { seen, correct } = tally[d];
     return { difficulty: d, seen, correct, pct: seen ? correct / seen : 0 };
   });
   // Recommend the highest difficulty band still answered well (>=70%).
-  let recommended: Difficulty = 1;
+  let recommended: Difficulty = 'easy';
   for (const b of breakdown) {
     if (b.seen > 0 && b.pct >= 0.7) recommended = b.difficulty;
   }
@@ -147,14 +146,11 @@ function PlacementResults({
   const { t } = useTranslation();
   const { breakdown, recommendedDifficulty } = computePlacement(tally);
 
-  const basics = (breakdown[0].pct + breakdown[1].pct) / 2;
-  const intermediate = breakdown[2].pct;
-  const advanced = (breakdown[3].pct + breakdown[4].pct) / 2;
-
+  // breakdown is ordered easy, medium, hard.
   const rows = [
-    { label: t('placement.basics'), value: basics },
-    { label: t('placement.intermediate'), value: intermediate },
-    { label: t('placement.advanced'), value: advanced }
+    { label: t('placement.basics'), value: breakdown[0].pct },
+    { label: t('placement.intermediate'), value: breakdown[1].pct },
+    { label: t('placement.advanced'), value: breakdown[2].pct }
   ];
 
   return (
@@ -176,7 +172,7 @@ function PlacementResults({
       <Card className="mt-4 text-center">
         <p className="text-sm text-mist-400">{t('placement.recommended')}</p>
         <p className="my-1 font-display text-4xl font-bold text-ember-400">
-          {t('quiz.difficulty', { level: recommendedDifficulty })}
+          {t(`difficulty.${recommendedDifficulty}`)}
         </p>
       </Card>
 

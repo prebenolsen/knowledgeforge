@@ -5,7 +5,7 @@ export const ancientRome: SeedSubcategory = {
   name: { en: 'Ancient Rome', no: 'Antikkens Roma' },
   questions: [
     {
-      difficulty: 1,
+      difficulty: 'easy',
       question: {
         en: 'Who was the first Roman emperor?',
         no: 'Hvem var den første romerske keiseren?'
@@ -24,7 +24,7 @@ export const ancientRome: SeedSubcategory = {
       tags: ['emperors', 'rome']
     },
     {
-      difficulty: 3,
+      difficulty: 'medium',
       question: {
         en: 'What event traditionally marks the founding of the Roman Republic?',
         no: 'Hvilken hendelse markerer tradisjonelt grunnleggelsen av den romerske republikken?'
@@ -43,7 +43,7 @@ export const ancientRome: SeedSubcategory = {
       tags: ['republic', 'rome']
     },
     {
-      difficulty: 5,
+      difficulty: 'hard',
       question: {
         en: 'Which reform of Diocletian most directly addressed the 3rd-century crisis of imperial succession?',
         no: 'Hvilken av Diokletians reformer adresserte mest direkte 200-tallskrisen rundt keiserarvefølge?'
