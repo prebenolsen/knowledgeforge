@@ -86,7 +86,7 @@ Modules are only stored in code and do not have their own folders or files.
 | History | Civil Rights Movement | Equal rights movement | Done |
 | History | Civil Rights Movement | Key figures | |
 | History | Civil Rights Movement | Modern impact | |
-| History | Decolonization | End of European empires | |
+| History | Decolonization | End of European empires | Done |
 | History | Decolonization | Independence movements | |
 | History | Decolonization | New nations | |
 | History | The rise of China | Imperial China | |
@@ -102,5 +102,5 @@ Modules are only stored in code and do not have their own folders or files.
 | History | The Digital Revolution | Computers | |
 | History | The Digital Revolution | Internet | |
 | History | The Digital Revolution | Smartphones | |
-| History | The Digital Revolution | Artificial intelligence | |
+| History | The Digital Revolution | Artificial intelligence | Done |
 | History | The Digital Revolution | Impact on society | |

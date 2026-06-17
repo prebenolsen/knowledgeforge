@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.4.0] - 2026-06-17
+
+### Added
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Artificial intelligence** module under the Digital Revolution subcategory (`src/content/seed/history/the-digital-revolution.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **End of European empires** module under the Decolonization subcategory (`src/content/seed/history/decolonization.ts`).
+
 ## [3.3.0] - 2026-06-17
 
 ### Added
