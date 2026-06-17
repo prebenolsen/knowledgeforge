@@ -82,8 +82,8 @@ Modules are only stored in code and do not have their own folders or files.
 | History | The Cold War | Nuclear weapons | |
 | History | The Cold War | Proxy wars | |
 | History | The Cold War | Space race | |
-| History | Civil Rights Movement | Segregation | |
-| History | Civil Rights Movement | Equal rights movement | |
+| History | Civil Rights Movement | Segregation | Done |
+| History | Civil Rights Movement | Equal rights movement | Done |
 | History | Civil Rights Movement | Key figures | |
 | History | Civil Rights Movement | Modern impact | |
 | History | Decolonization | End of European empires | |

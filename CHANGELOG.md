@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.2.0] - 2026-06-17
+
+### Added
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Segregation** module under the Civil Rights Movement subcategory (`src/content/seed/history/civil-rights-movement.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Equal rights movement** module under the Civil Rights Movement subcategory (`src/content/seed/history/civil-rights-movement.ts`).
+
 ## [3.1.0] - 2026-06-17
 
 ### Added
