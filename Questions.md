@@ -6,6 +6,8 @@ Modules are only stored in code and do not have their own folders or files.
 - When creating content for MEDIUM questions, refer to C:\GitHub\knowledgeforge\AIQuestions-MEDIUM.txt
 - When creating content for HARD questions, refer to C:\GitHub\knowledgeforge\AIQuestions-HARD.txt
 
+
+
 | Category | Subcategory | Module | Status |
 |----------|------------|--------|--------|
 | History | The rise of human civilization | The Agricultural Revolution | |
@@ -69,8 +71,8 @@ Modules are only stored in code and do not have their own folders or files.
 | History | The Russian Revolution | Rise of communism | |
 | History | The Russian Revolution | Creation of the Soviet Union | |
 | History | World War II | Rise of Nazi Germany | Done |
-| History | World War II | The Holocaust | |
-| History | World War II | Global conflict | |
+| History | World War II | The Holocaust | Done |
+| History | World War II | Global conflict | Done |
 | History | World War II | Post-war world order | |
 | History | The Holocaust | Nazi persecution | |
 | History | The Holocaust | Propaganda and authoritarianism | |

@@ -35,3 +35,15 @@ Whenever you make changes to the codebase, you **must** keep the following in sy
 5. When adding content/questions/answers, ensure to update Questions.md, setting status to Done when you have completed a topic.
 
 These updates are not optional — treat them as required steps for any change before considering the work complete.
+
+## INSTRUCTIONS for how to generate content:
+- The user tells you the name of a few modules
+- The user typically refers you to questions.md (this is where you find the module) and claude.md (you should always consult these no matter what)
+- You follow these instructions:
+   1. Start with one module the user mentioned
+   2. Follow the instructions in that file:
+      A: Generate 15 EASY questions (refer to AIQuestions-EASY.txt) for a given module, and store them in the proper file (src\content\seed\<category>\<subcategory>)
+      B: Next, generate 15 MEDIUM questions (refer to AIQuestions-MEDIUM.txt) and store them in the same file for that same module
+      C: Next, generate 15 HARD questions (refer to AIQuestions-HARD.txt) and store them in the same file for that same module
+   3. Continue step 1 with the NEXT module if the user mentioned more.
+
