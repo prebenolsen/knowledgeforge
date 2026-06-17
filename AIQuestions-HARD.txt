@@ -3,26 +3,47 @@ Create more questions, do not repeat previous ones. Assume the CONST already exi
 ===================
 
 
-Generate 50 quiz questions for my learning app.
+Generate 15 HARD quiz questions for my learning app.
+
+Category: <MANUALLY SET>
+Subcategory: <MANUALLY SET>
+Module: <MANUALLY SET>
+
+Difficulty:
+hard:
+- Historical debates
+- Multiple causes
+- Economic/social factors
+- Long-term effects
+- Different interpretations
 
 
-Topic:
+Quality rules:
 
-Category: History
-Subcategory: Ancient Rome
-Module: Republic to Empire
+- Exactly one correct answer.
+- correct must be the zero-based index of the correct answer.
+- Wrong answers must be plausible.
+- Do not make the correct answer obviously longer or more detailed.
+- Avoid repeating the same fact.
+
+Randomize which index the correct answer is.
+
+Language:
+
+- English and Norwegian Bokmål.
+- Keep both versions accurate.
+- Use proper historical terms in Norwegian.
+
+Encoding:
+
+- Output must be valid UTF-8.
+- Write all Norwegian letters as their real Unicode characters: æ/Æ, ø/Ø, å/Å.
+- Never substitute, escape, transliterate, or "ASCII-fy" them (no ae/oe/aa,
 
 
-Structure logic (example only, ensure you use correct Category/subcategory/module):
+Structure logic, return only as JavaScript array:
 
-export const ancientRome: SeedSubcategory = {
-  slug: 'ancient-rome',
-  name: { en: 'Ancient Rome', no: 'Antikkens Roma' },
-  modules: [
-    {
-      slug: 'republic-to-empire',
-      name: { en: 'Republic to Empire', no: 'Fra republikk til keiserdømme' },
-      questions: [
+[
     {
       difficulty: 'easy',
       question: {
@@ -80,83 +101,5 @@ export const ancientRome: SeedSubcategory = {
       },
       tags: ['diocletian', 'reform']
     }
-      ]
-    }
-  ]
-};
-
-
-Rules:
-
-Difficulty:
-
-easy:
-- Basic facts
-- Important dates
-- Important people
-- Definitions
-- Major events
-
-medium:
-- Causes
-- Consequences
-- Historical context
-- Comparisons
-- Connections between events
-
-hard:
-- Historical debates
-- Multiple causes
-- Economic/social factors
-- Long-term effects
-- Different interpretations
-
-- 25 questions difficulty 'easy'
-- 15 questions difficulty 'medium'
-- 10 questions difficulty 'hard'
-
-
-
-Quality rules:
-
-- Exactly one correct answer.
-- correct must be the zero-based index of the correct answer.
-- Wrong answers must be plausible.
-- Do not make the correct answer obviously longer or more detailed.
-- Avoid trick questions.
-- Avoid repeating the same fact.
-- Include important historical context.
-- Questions should teach, not just test memorization.
-- Explanations should teach why the answer is correct.
-
-Topic coverage:
-
-Distribute questions across different aspects of the topic:
-
-- Basic concepts and definitions
-- Important people, discoveries, or ideas
-- Key events or milestones
-- Causes and consequences
-- How different parts connect
-- Real-world applications or examples
-- Common misconceptions
-- Changes over time or development
-- Comparisons between concepts
-- Deeper context and significance
-
-Randomize which index the correct answer is.
-
-Language:
-
-- English and Norwegian Bokmål.
-- Keep both versions accurate.
-- Use proper historical terms in Norwegian.
-
-Encoding:
-
-- Output must be valid UTF-8.
-- Write all Norwegian letters as their real Unicode characters: æ/Æ, ø/Ø, å/Å.
-- Never substitute, escape, transliterate, or "ASCII-fy" them (no ae/oe/aa,
-  no \u escapes, no HTML entities, no replacement characters like ).
-- Double-check every Norwegian string contains the correct æ, ø, å where the
-  word requires it (e.g. "første", "keiserdømme", "Bokmål", "Cæsar").
+]
+      

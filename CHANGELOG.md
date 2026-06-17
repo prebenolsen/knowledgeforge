@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.0.2] - 2026-06-17
+
+### Added
+- Scaffolded History seed structure into one file per requested subcategory under
+  `src/content/seed/history/`, each with module slugs and empty `questions: []`
+  arrays so content can be filled in later.
+
+### Changed
+- Updated the History category assembly in `src/content/seed/history/index.ts`
+  to include all newly scaffolded History subcategories.
+
 ## [3.0.1] - 2026-06-16
 
 ### Fixed

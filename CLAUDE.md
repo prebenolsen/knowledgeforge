@@ -32,4 +32,6 @@ Whenever you make changes to the codebase, you **must** keep the following in sy
    commands, file locations, the content/import flow, schema setup steps, etc.), update `SETUP.md`
    so it always matches the current process.
 
+5. When adding content/questions/answers, ensure to update Questions.md, setting status to Done when you have completed a topic.
+
 These updates are not optional — treat them as required steps for any change before considering the work complete.
