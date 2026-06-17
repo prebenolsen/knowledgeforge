@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.3.0] - 2026-06-17
+
+### Added
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Collapse of Ottoman Empire** module under the Modern Middle East subcategory (`src/content/seed/history/modern-middle-east.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Israel/Palestine conflict** module under the Modern Middle East subcategory (`src/content/seed/history/modern-middle-east.ts`).
+
 ## [3.2.0] - 2026-06-17
 
 ### Added

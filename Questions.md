@@ -92,9 +92,9 @@ Modules are only stored in code and do not have their own folders or files.
 | History | The rise of China | Imperial China | |
 | History | The rise of China | Communist Revolution | |
 | History | The rise of China | Global superpower | |
-| History | Modern Middle East | Collapse of Ottoman Empire | |
+| History | Modern Middle East | Collapse of Ottoman Empire | Done |
 | History | Modern Middle East | Creation of modern states | |
-| History | Modern Middle East | Israel/Palestine conflict | |
+| History | Modern Middle East | Israel/Palestine conflict | Done |
 | History | Modern Middle East | Oil and geopolitics | |
 | History | The European Union | European integration | |
 | History | The European Union | Economic cooperation | |
