@@ -94,10 +94,25 @@ export function countByScope(): Record<string, number> {
   return out;
 }
 
+// The "nice" tick step (1/2/5 × 10ⁿ) used to label a timeline of the given
+// span — aiming for ~4–7 gridlines. Shared with the Timeline component so the
+// axis and the computed bounds agree on where ticks fall. Never below 1 year.
+export function timelineTickStep(span: number): number {
+  const target = Math.max(span, 1) / 6;
+  const pow = Math.pow(10, Math.floor(Math.log10(target)));
+  for (const m of [1, 2, 5, 10]) {
+    if (m * pow >= target) return Math.max(1, m * pow);
+  }
+  return Math.max(1, 10 * pow);
+}
+
 // The visible [min, max] year window to render for a scope's timeline. Always
 // derived from the actual event spread so the axis never stretches into empty
 // space (e.g. a period range ending in 2100 when its latest event is 2020).
-// Clamped within the scope's declared period window when it has one.
+// The bounds are rounded *outward* to the axis's tick step, leaving a full tick
+// of headroom whenever an extreme event sits exactly on a gridline — so the
+// outer gridlines (e.g. 1990 and 2030 around 1991–2020 events) stay visible and
+// markers never sit flush against the edge.
 export function scopeBounds(scope: TimelineScope): [number, number] {
   const events = eventsInScope(scope);
   if (events.length === 0) return scope.range ?? [-3000, 2025];
@@ -107,15 +122,21 @@ export function scopeBounds(scope: TimelineScope): [number, number] {
     lo = Math.min(lo, e.startYear ?? e.year);
     hi = Math.max(hi, e.endYear ?? e.year);
   }
-  // Pad a little so end markers aren't flush against the edge.
-  const pad = Math.max(5, Math.round((hi - lo) * 0.05));
-  let min = lo - pad;
-  let max = hi + pad;
-  // Never extend past the scope's own period window (keeps a range like
-  // [1991, 2100] from rendering decades of empty future).
-  if (scope.range) {
-    min = Math.max(scope.range[0], min);
-    max = Math.min(scope.range[1], max);
+  if (lo === hi) return [lo - 10, hi + 10];
+
+  // Round to ticks. Because the tick step itself depends on the (padded) span,
+  // iterate to a fixed point — it settles within a couple of passes.
+  let step = timelineTickStep(hi - lo);
+  let min = lo;
+  let max = hi;
+  for (let i = 0; i < 5; i++) {
+    min = Math.floor(lo / step) * step;
+    if (min === lo) min -= step; // event on the gridline → add headroom
+    max = Math.ceil(hi / step) * step;
+    if (max === hi) max += step; // event on the gridline → add headroom
+    const next = timelineTickStep(max - min);
+    if (next === step) break;
+    step = next;
   }
   return [min, max];
 }

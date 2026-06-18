@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { formatYear } from '@/lib/timeline';
+import { formatYear, timelineTickStep } from '@/lib/timeline';
 
 // ============================================================
 // Reusable horizontal timeline.
@@ -38,16 +38,6 @@ const TONE_COLOR: Record<MarkerTone, string> = {
   neutral: '#6b7280' // mist
 };
 
-// Choose a "nice" tick step so ~4–7 labels span the visible window.
-function niceStep(span: number): number {
-  const target = span / 6;
-  const pow = Math.pow(10, Math.floor(Math.log10(target)));
-  for (const m of [1, 2, 5, 10]) {
-    if (m * pow >= target) return m * pow;
-  }
-  return 10 * pow;
-}
-
 export function Timeline({ bounds, markers = [], draggable = false, value, onChange, disabled = false }: TimelineProps) {
   const [lo, hi] = bounds;
   // Zoom window inside the data domain. Starts showing the whole domain.
@@ -67,7 +57,7 @@ export function Timeline({ bounds, markers = [], draggable = false, value, onCha
   const pctOf = useCallback((year: number) => ((year - vMin) / span) * 100, [vMin, span]);
 
   const ticks = useMemo(() => {
-    const step = niceStep(span);
+    const step = timelineTickStep(span);
     const start = Math.ceil(vMin / step) * step;
     const out: number[] = [];
     for (let y = start; y <= vMax; y += step) out.push(y);

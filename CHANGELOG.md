@@ -11,9 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - **Timeline axis no longer stretches into the future** — `scopeBounds` now
-  derives the visible window from the actual event spread (clamped within the
-  scope's period range), so e.g. the *Modern World* timeline ends near its
-  latest event (~2020) instead of running out to its declared `2100` bound.
+  derives the visible window from the actual event spread instead of the scope's
+  declared period range, then rounds outward to the axis's gridline step (shared
+  via the new `timelineTickStep`). So the *Modern World* timeline now spans
+  `1990–2030` (a full gridline of headroom around its `1991–2020` events)
+  instead of running out to its declared `2100` bound or hugging the events.
 - **Hint suggestions stay within the timeline range** — `hintCandidates` now
   accepts the rendered `bounds` and only offers distractor years that fall
   inside the visible window, so hints no longer point to years before the
