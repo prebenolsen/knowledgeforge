@@ -48,6 +48,13 @@ export function Home() {
           </div>
         </Card>
 
+        <Card onClick={() => navigate('/atlas')}>
+          <div className="flex items-center justify-between">
+            <span className="text-lg">🗺️ {t('geo.title')}</span>
+            <span className="text-mist-400">›</span>
+          </div>
+        </Card>
+
         {!profile?.placement_complete && (
           <Card onClick={() => navigate('/placement')} className="border border-ember-600/40">
             <div className="flex items-center justify-between">

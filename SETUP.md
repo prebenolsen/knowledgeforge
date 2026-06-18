@@ -131,3 +131,36 @@ Re-running is safe: categories, subcategories, and modules upsert by slug, so
 they're never duplicated. New questions are simply added.
 
 See `CONTENT_FORMAT.md` for the exact JSON shape.
+
+---
+
+## Country Atlas (interactive map game)
+
+The Geography **Country Atlas** (`/atlas`) is a separate activity from the quiz
+engine — it does not use Supabase or the `questions` table. It plays entirely
+from bundled, generated data and needs no setup to run.
+
+### Regenerating the map data
+
+The two generated modules — `src/content/geo/countries.ts` (the quizable
+countries) and `src/content/geo/worldPaths.ts` (SVG country paths +
+per-continent viewBoxes) — are committed, so a normal `npm install && npm run
+dev` just works. Regenerate them only if you change the source data or
+projection:
+
+```bash
+npm run build:geo
+```
+
+The generator (`scripts/build-geo.ts`) reads three vendored source files in
+`scripts/data/` and joins them by ISO code:
+
+| File | Source | License |
+|------|--------|---------|
+| `countries.json` | [mledoze/countries](https://github.com/mledoze/countries) | ODbL |
+| `ne_110m.geojson` | [Natural Earth](https://www.naturalearthdata.com/) 110m admin-0 | Public domain |
+| `nb-countries.json` | [i18n-iso-countries](https://github.com/michaelwittig/node-i18n-iso-countries) (`langs/nb.json`) | MIT |
+
+> **Note:** Natural Earth 110m has no geometry for very small states, so some
+> Caribbean, Central-American, and Pacific island nations are not quizable.
+> Switch the generator to the 50m dataset for fuller coverage (larger files).

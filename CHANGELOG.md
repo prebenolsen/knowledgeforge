@@ -7,6 +7,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.11.0] - 2026-06-18
+
+### Added
+- **Interactive Country Atlas** (Phase 1, client-only) — a new map-based learning
+  activity under Geography, separate from the multiple-choice quiz engine. Reachable
+  from a card on the Home screen at the `/atlas` route (fullscreen, lazy-loaded).
+  - Learn countries one continent at a time (Europe, Africa, Asia, North America,
+    South America, Oceania).
+  - **Explore mode**: tap any country on the map and type its name to self-test.
+  - **Quiz mode**: the app highlights a random country and you type its name; one
+    shuffled pass through the continent with an end-of-session score summary.
+  - Free-text answers graded with **Levenshtein distance** (case- and
+    diacritic-insensitive); accepts the **English or Norwegian** name plus aliases.
+  - Progressive **hints**: reveal the first letter (then the next, and so on) or
+    show **4 cards** (the answer plus its 3 nearest neighbouring countries). Hints
+    reduce the awarded score.
+- `src/lib/geo.ts` — pure game logic: continent grouping, neighbour lookup
+  (haversine), answer normalization, Levenshtein, grading, and hint/score helpers.
+- `src/components/geo/CountryMap.tsx` — renders ISO-keyed SVG country paths,
+  highlights a target, and handles taps, framed per continent.
+- `scripts/build-geo.ts` (npm script `build:geo`) — generates the bundled data
+  `src/content/geo/countries.ts` and `src/content/geo/worldPaths.ts` from vendored
+  Natural Earth geometry, mledoze/countries, and i18n-iso-countries Norwegian names.
+- `geo.*` translation strings in `src/i18n/en.ts` and `src/i18n/no.ts`.
+
 ## [3.10.0] - 2026-06-18
 
 ### Changed

@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AuthProvider, useAuth } from '@/hooks/useAuth';
 import { Spinner } from '@/components/ui';
@@ -9,8 +10,11 @@ import { Quiz, Review } from '@/pages/Quiz';
 import { PlacementTest } from '@/pages/PlacementTest';
 import { Progress } from '@/pages/Progress';
 
+// The Atlas bundles a large map dataset — load it on demand only.
+const Atlas = lazy(() => import('@/pages/Atlas'));
+
 // Routes where the bottom nav should be hidden (focused/full-screen flows).
-const FULLSCREEN = ['/quiz', '/review', '/placement'];
+const FULLSCREEN = ['/quiz', '/review', '/placement', '/atlas'];
 
 function Shell() {
   const { session, loading } = useAuth();
@@ -31,16 +35,19 @@ function Shell() {
   return (
     <div className="mx-auto flex min-h-screen max-w-md flex-col">
       <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/categories" element={<CategoryList />} />
-          <Route path="/categories/:categoryId" element={<ModuleList />} />
-          <Route path="/quiz" element={<Quiz />} />
-          <Route path="/review" element={<Review />} />
-          <Route path="/placement" element={<PlacementTest />} />
-          <Route path="/progress" element={<Progress />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+        <Suspense fallback={<Spinner />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/categories" element={<CategoryList />} />
+            <Route path="/categories/:categoryId" element={<ModuleList />} />
+            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/review" element={<Review />} />
+            <Route path="/placement" element={<PlacementTest />} />
+            <Route path="/progress" element={<Progress />} />
+            <Route path="/atlas" element={<Atlas />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </Suspense>
       </main>
       {!hideNav && <BottomNav />}
     </div>
