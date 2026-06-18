@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.9.0] - 2026-06-18
+
+### Added
+- New **Financial economics** subcategory under the Economics category (`src/content/seed/economics/financial-economics.ts`), wired into `src/content/seed/economics/index.ts`.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Financial Markets** module under the Financial economics subcategory.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Stocks** module under the Financial economics subcategory.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Bonds** module under the Financial economics subcategory.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Derivatives** module under the Financial economics subcategory.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Portfolio Theory** module under the Financial economics subcategory.
+
 ## [3.8.0] - 2026-06-18
 
 ### Added

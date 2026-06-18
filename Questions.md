@@ -269,3 +269,197 @@ Modules are only stored in code and do not have their own folders or files.
 | Politics | Contemporary political challenges        | Surveillance and privacy               |        |
 | Politics | Contemporary political challenges        | Global pandemics and governance        |        |
 | Politics | Contemporary political challenges        | Future of democracy                    |        |
+
+
+| Economics | Foundations of economics | Scarcity | |
+| Economics | Foundations of economics | Opportunity cost | |
+| Economics | Foundations of economics | Trade-offs | |
+| Economics | Foundations of economics | Incentives | |
+| Economics | Foundations of economics | Economic systems | |
+| Economics | Foundations of economics | Markets and exchange | |
+| Economics | Foundations of economics | Specialization | |
+| Economics | Foundations of economics | Division of labor | |
+| Economics | Foundations of economics | Comparative advantage | |
+| Economics | Foundations of economics | Absolute advantage | |
+| Economics | Foundations of economics | Production possibilities frontier | |
+| Economics | Foundations of economics | Economic efficiency | |
+| Economics | Foundations of economics | Economic growth | |
+| Economics | Foundations of economics | Economic welfare | |
+| Economics | Microeconomics | Supply | |
+| Economics | Microeconomics | Demand | |
+| Economics | Microeconomics | Market equilibrium | |
+| Economics | Microeconomics | Price mechanisms | |
+| Economics | Microeconomics | Elasticity of demand | |
+| Economics | Microeconomics | Elasticity of supply | |
+| Economics | Microeconomics | Consumer behavior | |
+| Economics | Microeconomics | Utility theory | |
+| Economics | Microeconomics | Marginal utility | |
+| Economics | Microeconomics | Indifference curves | |
+| Economics | Microeconomics | Budget constraints | |
+| Economics | Microeconomics | Producer behavior | |
+| Economics | Microeconomics | Cost structures | |
+| Economics | Microeconomics | Revenue and profit | |
+| Economics | Microeconomics | Marginal analysis | |
+| Economics | Microeconomics | Economies of scale | |
+| Economics | Microeconomics | Diseconomies of scale | |
+| Economics | Market structures | Perfect competition | |
+| Economics | Market structures | Monopoly | |
+| Economics | Market structures | Monopolistic competition | |
+| Economics | Market structures | Oligopoly | |
+| Economics | Market structures | Price discrimination | |
+| Economics | Market structures | Barriers to entry | |
+| Economics | Market structures | Market concentration | |
+| Economics | Market structures | Cartels | |
+| Economics | Market structures | Antitrust policy | |
+| Economics | Macroeconomics | Gross Domestic Product (GDP) | |
+| Economics | Macroeconomics | Economic growth | |
+| Economics | Macroeconomics | Business cycles | |
+| Economics | Macroeconomics | Inflation | |
+| Economics | Macroeconomics | Deflation | |
+| Economics | Macroeconomics | Unemployment | |
+| Economics | Macroeconomics | Aggregate demand | |
+| Economics | Macroeconomics | Aggregate supply | |
+| Economics | Macroeconomics | National income accounting | |
+| Economics | Macroeconomics | Productivity | |
+| Economics | Macroeconomics | Economic fluctuations | |
+| Economics | Macroeconomics | Recessions | |
+| Economics | Macroeconomics | Depressions | |
+| Economics | Macroeconomics | Economic recovery | |
+| Economics | Monetary economics | Money and its functions | |
+| Economics | Monetary economics | Banking systems | |
+| Economics | Monetary economics | Central banks | |
+| Economics | Monetary economics | Interest rates | |
+| Economics | Monetary economics | Money supply | |
+| Economics | Monetary economics | Monetary policy | |
+| Economics | Monetary economics | Quantitative easing | |
+| Economics | Monetary economics | Inflation targeting | |
+| Economics | Monetary economics | Credit creation | |
+| Economics | Monetary economics | Financial stability | |
+| Economics | Fiscal economics | Government spending | |
+| Economics | Fiscal economics | Taxation | |
+| Economics | Fiscal economics | Public debt | |
+| Economics | Fiscal economics | Budget deficits | |
+| Economics | Fiscal economics | Budget surpluses | |
+| Economics | Fiscal economics | Fiscal policy | |
+| Economics | Fiscal economics | Automatic stabilizers | |
+| Economics | Fiscal economics | Government borrowing | |
+| Economics | Fiscal economics | Public finance | |
+| Economics | International economics | International trade | |
+| Economics | International economics | Free trade | |
+| Economics | International economics | Protectionism | |
+| Economics | International economics | Tariffs | |
+| Economics | International economics | Quotas | |
+| Economics | International economics | Exchange rates | |
+| Economics | International economics | Balance of payments | |
+| Economics | International economics | Current account | |
+| Economics | International economics | Capital account | |
+| Economics | International economics | Trade agreements | |
+| Economics | International economics | Globalization | |
+| Economics | International economics | Currency unions | |
+| Economics | Development economics | Economic development | |
+| Economics | Development economics | Poverty | |
+| Economics | Development economics | Inequality | |
+| Economics | Development economics | Human capital | |
+| Economics | Development economics | Education and growth | |
+| Economics | Development economics | Health economics in development | |
+| Economics | Development economics | Foreign aid | |
+| Economics | Development economics | Microfinance | |
+| Economics | Development economics | Industrialization | |
+| Economics | Development economics | Sustainable development | |
+| Economics | Labor economics | Labor markets | |
+| Economics | Labor economics | Wages | |
+| Economics | Labor economics | Human capital theory | |
+| Economics | Labor economics | Productivity and labor | |
+| Economics | Labor economics | Labor supply | |
+| Economics | Labor economics | Labor demand | |
+| Economics | Labor economics | Unions | |
+| Economics | Labor economics | Minimum wage | |
+| Economics | Labor economics | Employment policy | |
+| Economics | Labor economics | Workforce participation | |
+| Economics | Public economics | Public goods | |
+| Economics | Public economics | Common resources | |
+| Economics | Public economics | Externalities | |
+| Economics | Public economics | Market failures | |
+| Economics | Public economics | Government intervention | |
+| Economics | Public economics | Cost-benefit analysis | |
+| Economics | Public economics | Welfare economics | |
+| Economics | Public economics | Redistribution | |
+| Economics | Public economics | Social insurance | |
+| Economics | Public economics | Healthcare economics | |
+| Economics | Financial economics | Financial markets | Done |
+| Economics | Financial economics | Stocks | Done |
+| Economics | Financial economics | Bonds | Done |
+| Economics | Financial economics | Derivatives | Done |
+| Economics | Financial economics | Risk and return | |
+| Economics | Financial economics | Portfolio theory | Done |
+| Economics | Financial economics | Asset pricing | |
+| Economics | Financial economics | Efficient market hypothesis | |
+| Economics | Financial economics | Behavioral finance | |
+| Economics | Financial economics | Financial crises | |
+| Economics | Business economics | Firm theory | |
+| Economics | Business economics | Profit maximization | |
+| Economics | Business economics | Pricing strategies | |
+| Economics | Business economics | Cost accounting | |
+| Economics | Business economics | Investment decisions | |
+| Economics | Business economics | Capital budgeting | |
+| Economics | Business economics | Corporate governance | |
+| Economics | Business economics | Strategic competition | |
+| Economics | Behavioral economics | Bounded rationality | |
+| Economics | Behavioral economics | Heuristics | |
+| Economics | Behavioral economics | Cognitive biases | |
+| Economics | Behavioral economics | Prospect theory | |
+| Economics | Behavioral economics | Loss aversion | |
+| Economics | Behavioral economics | Nudge theory | |
+| Economics | Behavioral economics | Decision-making under uncertainty | |
+| Economics | Economic schools of thought | Classical economics | |
+| Economics | Economic schools of thought | Neoclassical economics | |
+| Economics | Economic schools of thought | Keynesian economics | |
+| Economics | Economic schools of thought | Monetarism | |
+| Economics | Economic schools of thought | Austrian economics | |
+| Economics | Economic schools of thought | Marxian economics | |
+| Economics | Economic schools of thought | Institutional economics | |
+| Economics | Economic schools of thought | Supply-side economics | |
+| Economics | Economic schools of thought | New Keynesian economics | |
+| Economics | Economic schools of thought | Modern Monetary Theory (MMT) | |
+| Economics | Economic measurement and statistics | Consumer Price Index (CPI) | |
+| Economics | Economic measurement and statistics | Producer Price Index (PPI) | |
+| Economics | Economic measurement and statistics | Purchasing Power Parity (PPP) | |
+| Economics | Economic measurement and statistics | Real vs nominal values | |
+| Economics | Economic measurement and statistics | Economic indicators | |
+| Economics | Economic measurement and statistics | Productivity metrics | |
+| Economics | Economic measurement and statistics | Income distribution metrics | |
+| Economics | Economic measurement and statistics | Gini coefficient | |
+| Economics | Econometrics and quantitative methods | Correlation | |
+| Economics | Econometrics and quantitative methods | Causation | |
+| Economics | Econometrics and quantitative methods | Regression analysis | |
+| Economics | Econometrics and quantitative methods | Time series analysis | |
+| Economics | Econometrics and quantitative methods | Forecasting | |
+| Economics | Econometrics and quantitative methods | Experimental economics | |
+| Economics | Econometrics and quantitative methods | Statistical inference | |
+| Economics | Econometrics and quantitative methods | Econometric modeling | |
+| Economics | Environmental economics | Climate economics | |
+| Economics | Environmental economics | Carbon pricing | |
+| Economics | Environmental economics | Carbon taxes | |
+| Economics | Environmental economics | Emissions trading systems | |
+| Economics | Environmental economics | Natural resource economics | |
+| Economics | Environmental economics | Sustainable growth | |
+| Economics | Environmental economics | Green economics | |
+| Economics | Environmental economics | Environmental externalities | |
+| Economics | Economic history | Agricultural Revolution and economics | |
+| Economics | Economic history | Mercantilism | |
+| Economics | Economic history | Industrial Revolution | |
+| Economics | Economic history | Great Depression | |
+| Economics | Economic history | Bretton Woods system | |
+| Economics | Economic history | Post-war economic boom | |
+| Economics | Economic history | Globalization era | |
+| Economics | Economic history | Major financial crises | |
+| Economics | Contemporary economic issues | Automation and labor markets | |
+| Economics | Contemporary economic issues | Artificial intelligence and productivity | |
+| Economics | Contemporary economic issues | Aging populations | |
+| Economics | Contemporary economic issues | Housing economics | |
+| Economics | Contemporary economic issues | Wealth inequality | |
+| Economics | Contemporary economic issues | Universal basic income | |
+| Economics | Contemporary economic issues | Digital economies | |
+| Economics | Contemporary economic issues | Cryptocurrencies | |
+| Economics | Contemporary economic issues | Platform economies | |
+| Economics | Contemporary economic issues | Economic resilience | |
