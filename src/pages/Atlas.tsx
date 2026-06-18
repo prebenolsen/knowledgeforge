@@ -126,6 +126,8 @@ function GameRunner({ continent, mode, onBack, onQuit }: RunnerProps) {
   const [correctCount, setCorrectCount] = useState(0);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
+  // Countries answered correctly this session — kept green on the map (Explore).
+  const [solved, setSolved] = useState<Set<string>>(new Set());
 
   function resetTurn() {
     setGuess('');
@@ -153,6 +155,7 @@ function GameRunner({ continent, mode, onBack, onQuit }: RunnerProps) {
     if (correct) {
       setCorrectCount((n) => n + 1);
       setScore((s) => s + awarded);
+      setSolved((prev) => new Set(prev).add(target.iso3));
     }
   }
 
@@ -175,6 +178,10 @@ function GameRunner({ continent, mode, onBack, onQuit }: RunnerProps) {
 
   // ---- Map status overrides ----
   const status: Record<string, CountryStatus> = {};
+  // In Explore, every country solved this session stays green.
+  if (mode === 'explore') {
+    for (const iso of solved) status[iso] = 'correct';
+  }
   if (target) {
     status[target.iso3] = revealed ? (revealed.correct ? 'correct' : 'wrong') : mode === 'quiz' ? 'highlight' : 'selected';
   }
@@ -191,6 +198,7 @@ function GameRunner({ continent, mode, onBack, onQuit }: RunnerProps) {
           setSeen(0);
           setCorrectCount(0);
           setScore(0);
+          setSolved(new Set());
           setFinished(false);
           resetTurn();
         }}

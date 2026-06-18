@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Learn countries one continent at a time (Europe, Africa, Asia, North America,
     South America, Oceania).
   - **Explore mode**: tap any country on the map and type its name to self-test.
+    Countries answered correctly stay highlighted green for the rest of the session.
   - **Quiz mode**: the app highlights a random country and you type its name; one
     shuffled pass through the continent with an end-of-session score summary.
   - Free-text answers graded with **Levenshtein distance** (case- and
