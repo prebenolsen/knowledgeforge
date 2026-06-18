@@ -138,7 +138,9 @@ function GameRunner({ continent, mode, onBack, onQuit }: RunnerProps) {
   }
 
   function pickTarget(iso3: string) {
-    if (revealed) return; // ignore taps mid-feedback
+    // Map stays live: a country already answered correctly is locked in (green),
+    // but any other country can be tapped to start a new turn — even mid-feedback.
+    if (solved.has(iso3)) return;
     const c = all.find((x) => x.iso3 === iso3);
     if (c) {
       resetTurn();
@@ -228,7 +230,7 @@ function GameRunner({ continent, mode, onBack, onQuit }: RunnerProps) {
           continent={continent}
           quizable={quizable}
           status={status}
-          onPick={mode === 'explore' && !revealed ? pickTarget : undefined}
+          onPick={mode === 'explore' ? pickTarget : undefined}
         />
       </div>
 

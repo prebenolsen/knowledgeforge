@@ -17,6 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     South America, Oceania).
   - **Explore mode**: tap any country on the map and type its name to self-test.
     Countries answered correctly stay highlighted green for the rest of the session.
+    The map stays live after each guess — tap any not-yet-correct country to keep
+    playing without pressing Next; correct (green) countries are locked in.
   - **Quiz mode**: the app highlights a random country and you type its name; one
     shuffled pass through the continent with an end-of-session score summary.
   - Free-text answers graded with **Levenshtein distance** (case- and

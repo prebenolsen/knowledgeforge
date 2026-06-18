@@ -41,7 +41,8 @@ export function CountryMap({ continent, quizable, status = {}, onPick }: Country
         const isQuizable = quizable.has(iso3);
         const st = status[iso3] ?? (isQuizable ? 'idle' : undefined);
         const fill = st ? FILL[st] : BACKGROUND_FILL;
-        const clickable = interactive && isQuizable;
+        // Countries already answered correctly are locked in — not clickable.
+        const clickable = interactive && isQuizable && st !== 'correct';
         return (
           <path
             key={iso3}
