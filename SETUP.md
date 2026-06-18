@@ -26,18 +26,35 @@ Everything in this project is built. There are **4 manual steps** only you can d
 3. You should see "Success. No rows returned." That created every table, the
    row-level-security policies, and the auto-profile trigger.
 
-### Enable GitHub login (optional but recommended)
+### Set the auth URLs (required)
+
+The login screen uses **email + password**, which is enabled by default in Supabase and
+needs no extra setup. But you **must** configure the auth URLs, or anything that relies on
+an emailed link (account-confirmation emails, GitHub OAuth, password reset) will redirect
+to the default `http://localhost:3000` instead of your site.
+
+In Supabase: **Authentication → URL Configuration**:
+
+- **Site URL**: your Pages URL, e.g. `https://YOURNAME.github.io/knowledgeforge/`
+- **Redirect URLs** — add both:
+  - `https://YOURNAME.github.io/knowledgeforge/**`
+  - `http://localhost:3000/**` (keeps local dev working)
+
+> Tip: if you don't want users to confirm their email before signing in, turn off
+> **Authentication → Sign In / Providers → Email → Confirm email**. Then sign-up logs the
+> user in immediately with no emailed link at all.
+
+### Enable GitHub login (optional)
 
 1. In Supabase: **Authentication → Providers → GitHub** → toggle on.
 2. It shows a **Callback URL**. Copy it.
 3. On GitHub: **Settings → Developer settings → OAuth Apps → New OAuth App**.
-   - Homepage URL: your future Pages URL (e.g. `https://YOURNAME.github.io/knowledgeforge/`)
+   - Homepage URL: your Pages URL (e.g. `https://YOURNAME.github.io/knowledgeforge/`)
    - Authorization callback URL: paste the one from Supabase.
 4. GitHub gives you a **Client ID** and **Client Secret** — paste both back into
    Supabase's GitHub provider settings and save.
 
-Email magic-link login works out of the box with no extra setup, so you can skip
-the GitHub part if you prefer.
+Email + password login works without the GitHub step, so you can skip it if you prefer.
 
 ---
 

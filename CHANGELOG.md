@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.10.0] - 2026-06-18
+
+### Changed
+- Login screen now leads with a simple **email + password** sheet (sign in / create
+  account toggle), with GitHub OAuth offered as a secondary option. Password sign-in is a
+  direct, in-page API call, so it avoids the auth redirect entirely.
+
+### Added
+- `signUpWithPassword` in `src/hooks/useAuth.tsx` for email/password account creation, returning
+  whether email confirmation is still pending.
+
+### Removed
+- The magic-link (OTP) button from the login screen. The `signInWithEmail` helper remains
+  available in `useAuth` but is no longer surfaced in the UI.
+
 ## [3.9.0] - 2026-06-18
 
 ### Added

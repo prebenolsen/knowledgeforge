@@ -16,6 +16,7 @@ interface AuthContextValue {
   signInWithGitHub: () => Promise<void>;
   signInWithEmail: (email: string) => Promise<void>;
   signInWithPassword: (email: string, password: string) => Promise<void>;
+  signUpWithPassword: (email: string, password: string) => Promise<{ needsConfirmation: boolean }>;
   signOut: () => Promise<void>;
   refreshProfile: () => Promise<void>;
 }
@@ -70,6 +71,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     signInWithPassword: async (email: string, password: string) => {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
       if (error) throw error;
+    },
+    signUpWithPassword: async (email: string, password: string) => {
+      const { data, error } = await supabase.auth.signUp({
+        email,
+        password,
+        options: { emailRedirectTo: REDIRECT }
+      });
+      if (error) throw error;
+      // When email confirmation is enabled, no session is returned until the
+      // user confirms via the emailed link.
+      return { needsConfirmation: !data.session };
     },
     signOut: async () => {
       await supabase.auth.signOut();
