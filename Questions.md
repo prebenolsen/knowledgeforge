@@ -104,3 +104,8 @@ Modules are only stored in code and do not have their own folders or files.
 | History | The Digital Revolution | Smartphones | |
 | History | The Digital Revolution | Artificial intelligence | Done |
 | History | The Digital Revolution | Impact on society | |
+| Society | Politics | Liberalism | Done |
+| Society | Politics | Conservatism | Done |
+| Society | Politics | Socialism | Done |
+| Society | Politics | Communism | Done |
+| Society | Politics | Fascism | Done |

@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.8.0] - 2026-06-18
+
+### Added
+- New **Politics** subcategory under the Society category (`src/content/seed/society/politics.ts`), wired into `src/content/seed/society/index.ts`.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Liberalism** module under the Politics subcategory.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Conservatism** module under the Politics subcategory.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Socialism** module under the Politics subcategory.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Communism** module under the Politics subcategory.
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Fascism** module under the Politics subcategory.
+
 ## [3.7.0] - 2026-06-17
 
 ### Added
