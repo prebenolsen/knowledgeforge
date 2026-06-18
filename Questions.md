@@ -13,8 +13,8 @@ Modules are only stored in code and do not have their own folders or files.
 | History | The rise of human civilization | The Agricultural Revolution | |
 | History | The rise of human civilization | Hunter-gatherers to farming societies | |
 | History | The rise of human civilization | Impact of farming | |
-| History | The first civilizations | Ancient Egypt | |
-| History | The first civilizations | Mesopotamian civilization | |
+| History | The first civilizations | Ancient Egypt | Done |
+| History | The first civilizations | Mesopotamian civilization | Done |
 | History | The first civilizations | Foundations of civilization | |
 | History | Ancient Greece and democracy | Origins of democracy | |
 | History | Ancient Greece and democracy | Philosophy | |
@@ -23,10 +23,10 @@ Modules are only stored in code and do not have their own folders or files.
 | History | The Roman Empire | Fall of the Roman Empire | |
 | History | The Roman Empire | Roman contributions | |
 | History | The Roman Empire | Legacy of Rome | |
-| History | Spread of major religions | Christianity | |
-| History | Spread of major religions | Islam | |
-| History | Spread of major religions | Buddhism | |
-| History | Spread of major religions | Judaism | |
+| History | Spread of major religions | Christianity | Done |
+| History | Spread of major religions | Islam | Done |
+| History | Spread of major religions | Buddhism | Done |
+| History | Spread of major religions | Judaism | Done |
 | History | Spread of major religions | Religion and society | |
 | History | The Middle Ages | Feudalism | |
 | History | The Middle Ages | Medieval society | |
@@ -43,11 +43,11 @@ Modules are only stored in code and do not have their own folders or files.
 | History | Colonialism and imperialism | Resource extraction | |
 | History | Colonialism and imperialism | Resistance movements | |
 | History | Colonialism and imperialism | Modern consequences | |
-| History | The Atlantic slave trade | Transatlantic slave trade | |
-| History | The Atlantic slave trade | Slavery in the Americas | |
-| History | The Atlantic slave trade | Lives of enslaved people | |
-| History | The Atlantic slave trade | Abolition movements | |
-| History | The Atlantic slave trade | Long-term effects | |
+| History | The Atlantic slave trade | Transatlantic slave trade | Done |
+| History | The Atlantic slave trade | Slavery in the Americas | Done |
+| History | The Atlantic slave trade | Lives of enslaved people | Done |
+| History | The Atlantic slave trade | Abolition movements | Done |
+| History | The Atlantic slave trade | Long-term effects | Done |
 | History | The American Revolution | Independence from Britain | |
 | History | The American Revolution | Ideas of liberty | |
 | History | The American Revolution | Contradictions of freedom | |

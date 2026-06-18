@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.7.0] - 2026-06-17
+
+### Added
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Ancient Egypt** module under the First civilizations subcategory (`src/content/seed/history/the-first-civilizations.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Mesopotamian civilization** module under the First civilizations subcategory (`src/content/seed/history/the-first-civilizations.ts`).
+
+## [3.6.0] - 2026-06-17
+
+### Added
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Transatlantic slave trade** module under the Atlantic slave trade subcategory (`src/content/seed/history/the-atlantic-slave-trade.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Slavery in the Americas** module under the Atlantic slave trade subcategory (`src/content/seed/history/the-atlantic-slave-trade.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Lives of enslaved people** module under the Atlantic slave trade subcategory (`src/content/seed/history/the-atlantic-slave-trade.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Abolition movements** module under the Atlantic slave trade subcategory (`src/content/seed/history/the-atlantic-slave-trade.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Long-term effects** module under the Atlantic slave trade subcategory (`src/content/seed/history/the-atlantic-slave-trade.ts`).
+
+## [3.5.0] - 2026-06-17
+
+### Added
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Christianity** module under the Spread of major religions subcategory (`src/content/seed/history/spread-of-major-religions.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Islam** module under the Spread of major religions subcategory (`src/content/seed/history/spread-of-major-religions.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Buddhism** module under the Spread of major religions subcategory (`src/content/seed/history/spread-of-major-religions.ts`).
+- 45 questions (15 easy, 15 medium, 15 hard) for the **Judaism** module under the Spread of major religions subcategory (`src/content/seed/history/spread-of-major-religions.ts`).
+
 ## [3.4.0] - 2026-06-17
 
 ### Added
