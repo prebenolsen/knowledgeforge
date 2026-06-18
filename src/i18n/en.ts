@@ -41,7 +41,7 @@ export default {
     questions: '{{count}} questions'
   },
   modules: {
-    title: 'Modules',
+    title: 'Subcategories',
     chooseMode: 'Choose a practice mode'
   },
   mode: {

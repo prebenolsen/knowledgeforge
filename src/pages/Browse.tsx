@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useParams } from 'react-router-dom';
-import { fetchCategories, fetchSubcategories } from '@/lib/questionLoader';
+import { fetchVisibleCategories, fetchVisibleSubcategories } from '@/lib/questionLoader';
 import { localized } from '@/i18n';
 import type { Category, Subcategory, PracticeMode } from '@/types';
 import { Card, Spinner } from '@/components/ui';
@@ -13,7 +13,7 @@ export function CategoryList() {
   const [categories, setCategories] = useState<Category[] | null>(null);
 
   useEffect(() => {
-    fetchCategories()
+    fetchVisibleCategories()
       .then(setCategories)
       .catch(() => setCategories([]));
   }, []);
@@ -50,7 +50,7 @@ export function ModuleList() {
 
   useEffect(() => {
     if (!categoryId) return;
-    fetchSubcategories(categoryId)
+    fetchVisibleSubcategories(categoryId)
       .then(setSubs)
       .catch(() => setSubs([]));
   }, [categoryId]);

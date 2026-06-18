@@ -41,7 +41,7 @@ export default {
     questions: '{{count}} spørsmål'
   },
   modules: {
-    title: 'Moduler',
+    title: 'Underkategorier',
     chooseMode: 'Velg en øvingsmodus'
   },
   mode: {

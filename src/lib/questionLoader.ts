@@ -40,6 +40,10 @@ export async function fetchSubcategories(categoryId: string): Promise<Subcategor
   return (data ?? []) as Subcategory[];
 }
 
+// Subcategories/categories with fewer than this many active questions are
+// hidden from the browse lists (too thin to be worth practising).
+export const MIN_VISIBLE_QUESTIONS = 20;
+
 export async function countQuestions(subcategoryId: string): Promise<number> {
   const { count, error } = await supabase
     .from('questions')
@@ -48,6 +52,50 @@ export async function countQuestions(subcategoryId: string): Promise<number> {
     .eq('active', true);
   if (error) throw error;
   return count ?? 0;
+}
+
+// Active-question count for each of the given subcategories, fetched in parallel.
+async function countQuestionsBySubcategory(
+  subcategoryIds: string[]
+): Promise<Map<string, number>> {
+  const entries = await Promise.all(
+    subcategoryIds.map(async (id) => [id, await countQuestions(id)] as const)
+  );
+  return new Map(entries);
+}
+
+// Subcategories of a category that have at least MIN_VISIBLE_QUESTIONS questions.
+export async function fetchVisibleSubcategories(
+  categoryId: string
+): Promise<Subcategory[]> {
+  const subs = await fetchSubcategories(categoryId);
+  const counts = await countQuestionsBySubcategory(subs.map((s) => s.id));
+  return subs.filter((s) => (counts.get(s.id) ?? 0) >= MIN_VISIBLE_QUESTIONS);
+}
+
+// Categories whose subcategories together hold at least MIN_VISIBLE_QUESTIONS
+// active questions.
+export async function fetchVisibleCategories(): Promise<Category[]> {
+  const categories = await fetchCategories();
+
+  const { data, error } = await supabase
+    .from('subcategories')
+    .select('id, category_id');
+  if (error) throw error;
+  const subs = (data ?? []) as Pick<Subcategory, 'id' | 'category_id'>[];
+
+  const counts = await countQuestionsBySubcategory(subs.map((s) => s.id));
+  const totalByCategory = new Map<string, number>();
+  subs.forEach((s) => {
+    totalByCategory.set(
+      s.category_id,
+      (totalByCategory.get(s.category_id) ?? 0) + (counts.get(s.id) ?? 0)
+    );
+  });
+
+  return categories.filter(
+    (c) => (totalByCategory.get(c.id) ?? 0) >= MIN_VISIBLE_QUESTIONS
+  );
 }
 
 interface QuestionQuery {

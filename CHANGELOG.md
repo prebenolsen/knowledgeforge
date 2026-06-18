@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.13.0] - 2026-06-18
+
+### Changed
+- The category drill-down page is now titled **Subcategories** (Norwegian:
+  **Underkategorier**) instead of "Modules" / "Moduler" (`modules.title` in
+  `src/i18n/en.ts` and `src/i18n/no.ts`).
+- Browse lists now hide thin content: subcategories with fewer than 20 active
+  questions are hidden, and a category is hidden when its subcategories together
+  hold fewer than 20 active questions. New `MIN_VISIBLE_QUESTIONS`,
+  `fetchVisibleCategories`, and `fetchVisibleSubcategories` in
+  `src/lib/questionLoader.ts`; `src/pages/Browse.tsx` uses them. The progress
+  knowledge map still reflects all content.
+
 ## [3.12.0] - 2026-06-18
 
 ### Added
