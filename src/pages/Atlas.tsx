@@ -1,7 +1,9 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '@/hooks/useAuth';
 import { localized } from '@/i18n';
+import { recordGeoAttempt, recordGeoSessionScore } from '@/lib/geoProgress';
 import { Button, Card } from '@/components/ui';
 import { CountryMap, type CountryStatus } from '@/components/geo/CountryMap';
 import {
@@ -105,6 +107,8 @@ interface RunnerProps {
 
 function GameRunner({ continent, mode, onBack, onQuit }: RunnerProps) {
   const { t } = useTranslation();
+  const { session } = useAuth();
+  const userId = session!.user.id;
 
   const all = useMemo(() => countriesIn(continent), [continent]);
   const quizable = useMemo(() => new Set(all.map((c) => c.iso3)), [all]);
@@ -159,6 +163,15 @@ function GameRunner({ continent, mode, onBack, onQuit }: RunnerProps) {
       setScore((s) => s + awarded);
       setSolved((prev) => new Set(prev).add(target.iso3));
     }
+    // Persist the attempt (fire-and-forget — never block the UI on the network).
+    void recordGeoAttempt({
+      userId,
+      continent,
+      iso3: target.iso3,
+      mode,
+      isCorrect: correct,
+      hintsUsed: letters + (usedCards ? 1 : 0)
+    });
   }
 
   function next() {
@@ -177,6 +190,15 @@ function GameRunner({ continent, mode, onBack, onQuit }: RunnerProps) {
       resetTurn();
     }
   }
+
+  // When a session ends (quiz finishes its queue, or Explore is finished),
+  // persist its score — geo_progress keeps the best per continent.
+  useEffect(() => {
+    if (finished && seen > 0) {
+      void recordGeoSessionScore({ userId, continent, score });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [finished]);
 
   // ---- Map status overrides ----
   const status: Record<string, CountryStatus> = {};

@@ -116,6 +116,35 @@ create index if not exists idx_attempts_user on question_attempts(user_id);
 create index if not exists idx_progress_user on user_progress(user_id);
 create index if not exists idx_review_user_due on review_schedule(user_id, next_review);
 
+-- ---- Geography map game ------------------------------------
+-- The interactive Country Atlas is a separate activity from the MCQ quiz, so it
+-- has its own tables (not tied to questions / subcategories).
+
+create table if not exists geo_attempts (
+  id           uuid primary key default gen_random_uuid(),
+  user_id      uuid not null references auth.users(id) on delete cascade,
+  continent    text not null,
+  iso3         text not null,           -- the country answered
+  mode         text not null check (mode in ('explore','quiz')),
+  is_correct   boolean not null,
+  hints_used   int  not null default 0, -- letters revealed + card hint
+  answered_at  timestamptz not null default now()
+);
+
+create table if not exists geo_progress (
+  id                 uuid primary key default gen_random_uuid(),
+  user_id            uuid not null references auth.users(id) on delete cascade,
+  continent          text not null,
+  best_score         int  not null default 0,
+  -- per-country tallies kept as jsonb: { "<iso3>": { "seen": n, "correct": n } }
+  per_country_stats  jsonb not null default '{}',
+  updated_at         timestamptz not null default now(),
+  unique (user_id, continent)
+);
+
+create index if not exists idx_geo_attempts_user on geo_attempts(user_id);
+create index if not exists idx_geo_progress_user on geo_progress(user_id);
+
 -- ============================================================
 -- PROFILE AUTO-CREATION
 -- When a new auth user signs up, create their profile row.
@@ -192,6 +221,22 @@ create policy "own progress" on user_progress
 
 drop policy if exists "own reviews" on review_schedule;
 create policy "own reviews" on review_schedule
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+-- Geography map game: a user may only touch their OWN rows.
+alter table geo_attempts enable row level security;
+alter table geo_progress enable row level security;
+
+drop policy if exists "own geo attempts" on geo_attempts;
+create policy "own geo attempts" on geo_attempts
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "own geo progress" on geo_progress;
+create policy "own geo progress" on geo_progress
   for all to authenticated
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);

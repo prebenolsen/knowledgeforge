@@ -137,8 +137,18 @@ See `CONTENT_FORMAT.md` for the exact JSON shape.
 ## Country Atlas (interactive map game)
 
 The Geography **Country Atlas** (`/atlas`) is a separate activity from the quiz
-engine — it does not use Supabase or the `questions` table. It plays entirely
-from bundled, generated data and needs no setup to run.
+engine — it does not use the `questions` table or the import pipeline. The map
+itself plays entirely from bundled, generated data (no setup needed), but
+progress is saved to Supabase.
+
+### Progress tables
+
+Saving scores and per-country progress uses two tables, `geo_attempts` and
+`geo_progress`, defined in `supabase/migrations/0001_init.sql` alongside the rest
+of the schema. If your database predates this feature, re-run that file in the
+Supabase SQL editor — it's idempotent, so it just adds the two missing tables and
+their row-level-security policies. Until they exist, the Atlas still plays, but
+progress writes fail silently and the dashboard panel stays hidden.
 
 ### Regenerating the map data
 

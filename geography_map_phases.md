@@ -87,15 +87,41 @@ player learns countries one continent at a time:
       NOTE: `/atlas` is behind the Supabase auth gate, so in-app manual play
       wasn't exercised here (no test credentials) — worth a quick human check.
 
-## Phase 2 — Persistence + dashboard
+## Phase 2 — Persistence + dashboard  ✅
 
-- [ ] `0001_init.sql` — `geo_attempts` + `geo_progress` tables + indexes + RLS.
-- [ ] `src/lib/geoProgress.ts` — record attempts, upsert best score / per-country
-      stats, fetch progress.
-- [ ] Wire runner to record attempts + best score.
-- [ ] Best-scores panel on `Progress.tsx`.
-- [ ] Housekeeping: version bump, CHANGELOG, SETUP.md schema notes.
-- [ ] Manual verification: scores persist across reloads / devices.
+- [x] `0001_init.sql` — `geo_attempts` + `geo_progress` tables + indexes + RLS
+      (own-rows, mirroring the existing user-table policies).
+- [x] `src/lib/geoProgress.ts` — `recordGeoAttempt` (insert + merge per-country
+      stats), `recordGeoSessionScore` (best per continent), `fetchGeoProgress`.
+- [x] Wired the runner: `submit()` logs each attempt (fire-and-forget); a
+      `useEffect` on `finished` saves the session score. Uses `useAuth` for the
+      user id.
+- [x] **Country Atlas** panel on `Progress.tsx` — per continent: countries named
+      correctly ≥1× / total, mastery bar, and best score. Renders only when geo
+      data exists; visible even if the user has no MCQ data.
+- [x] Housekeeping: bumped to **3.12.0** (version.json + package.json),
+      CHANGELOG `[3.12.0]` entry, SETUP.md schema note. `npm run build` OK.
+- [ ] Manual verification: scores persist across reloads / devices. NEEDS the
+      migration applied to Supabase + a human login (can't run here). See below.
+
+### Phase 2 deploy note
+
+The new tables only exist once `supabase/migrations/0001_init.sql` is re-run
+against the database (Supabase SQL editor). It's idempotent (`create table if
+not exists` + `drop policy if exists`), so re-running the whole file is safe and
+only adds the two `geo_*` tables. Until then, the Atlas still plays but the
+attempt/score writes will fail silently (fire-and-forget) and the dashboard
+panel stays hidden.
+
+### Deviation
+
+- Geo types (`GeoProgress`, `GeoCountryStat`, `GeoCountry`) live next to their
+  usage (`geoProgress.ts`, generated `countries.ts`) rather than in
+  `src/types/index.ts`, keeping the feature self-contained. The earlier
+  "types/index.ts" task is intentionally not done.
+- `Progress.tsx` is eager, so importing `@/lib/geo` pulls the ~29 KB country
+  dataset (≈9 KB gzip) into the main bundle. `worldPaths.ts` (123 KB) stays in
+  the lazy Atlas chunk. Acceptable; revisit if main-bundle size matters.
 
 ## Notes / deviations
 

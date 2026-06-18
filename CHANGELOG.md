@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.12.0] - 2026-06-18
+
+### Added
+- **Country Atlas persistence** (Phase 2). The map game now records progress to
+  Supabase and surfaces it on the dashboard.
+  - New tables `geo_attempts` (per-answer log) and `geo_progress` (per user +
+    continent summary: best score + per-country tallies), with own-rows RLS, in
+    `supabase/migrations/0001_init.sql`.
+  - `src/lib/geoProgress.ts` — `recordGeoAttempt`, `recordGeoSessionScore`, and
+    `fetchGeoProgress`.
+  - The Atlas runner logs each answer and saves the session's score (best kept
+    per continent).
+  - New **Country Atlas** panel on the Progress page showing, per continent, how
+    many countries you've named correctly at least once and your best score.
+  - `progress.geoTitle` / `progress.geoBest` translation strings.
+
 ## [3.11.0] - 2026-06-18
 
 ### Added

@@ -96,7 +96,9 @@ export default {
     easy: 'Easy',
     medium: 'Medium',
     hard: 'Hard',
-    noData: 'Answer some questions to build your knowledge map.'
+    noData: 'Answer some questions to build your knowledge map.',
+    geoTitle: 'Country Atlas',
+    geoBest: 'Best score: {{score}}'
   },
   shape: {
     untested: 'Untested',

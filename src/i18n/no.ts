@@ -96,7 +96,9 @@ export default {
     easy: 'Lett',
     medium: 'Middels',
     hard: 'Vanskelig',
-    noData: 'Svar på noen spørsmål for å bygge kunnskapskartet ditt.'
+    noData: 'Svar på noen spørsmål for å bygge kunnskapskartet ditt.',
+    geoTitle: 'Landatlas',
+    geoBest: 'Beste poengsum: {{score}}'
   },
   shape: {
     untested: 'Ikke testet',
