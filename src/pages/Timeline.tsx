@@ -198,7 +198,10 @@ function GameRunner({ scope, difficulty, length, onBack, onQuit }: RunnerProps) 
     () => (difficulty === 'easy' ? easyChoices(event, variant) : []),
     [event, variant, difficulty]
   );
-  const hints = useMemo(() => (difficulty === 'easy' ? [] : hintCandidates(event)), [event, difficulty]);
+  const hints = useMemo(
+    () => (difficulty === 'easy' ? [] : hintCandidates(event, bounds)),
+    [event, difficulty, bounds]
+  );
 
   function resetTurn() {
     setVariant(pickVariant());

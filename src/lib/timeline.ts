@@ -94,12 +94,13 @@ export function countByScope(): Record<string, number> {
   return out;
 }
 
-// The visible [min, max] year window to render for a scope's timeline. Derived
-// from the scope range, or the actual event spread for region / all scopes.
+// The visible [min, max] year window to render for a scope's timeline. Always
+// derived from the actual event spread so the axis never stretches into empty
+// space (e.g. a period range ending in 2100 when its latest event is 2020).
+// Clamped within the scope's declared period window when it has one.
 export function scopeBounds(scope: TimelineScope): [number, number] {
-  if (scope.range) return scope.range;
   const events = eventsInScope(scope);
-  if (events.length === 0) return [-3000, 2025];
+  if (events.length === 0) return scope.range ?? [-3000, 2025];
   let lo = Infinity;
   let hi = -Infinity;
   for (const e of events) {
@@ -107,8 +108,16 @@ export function scopeBounds(scope: TimelineScope): [number, number] {
     hi = Math.max(hi, e.endYear ?? e.year);
   }
   // Pad a little so end markers aren't flush against the edge.
-  const pad = Math.max(20, Math.round((hi - lo) * 0.05));
-  return [lo - pad, hi + pad];
+  const pad = Math.max(5, Math.round((hi - lo) * 0.05));
+  let min = lo - pad;
+  let max = hi + pad;
+  // Never extend past the scope's own period window (keeps a range like
+  // [1991, 2100] from rendering decades of empty future).
+  if (scope.range) {
+    min = Math.max(scope.range[0], min);
+    max = Math.min(scope.range[1], max);
+  }
+  return [min, max];
 }
 
 // ---- Display ----------------------------------------------
@@ -197,11 +206,31 @@ export function easyChoices(event: TimelineEvent, variant: TimelineEasyVariant):
 // ---- Hint candidates (Medium / Hard) ----------------------
 
 // Four candidate years (one correct) drawn from nearby + century-shifted years,
-// matching the requested A)…D) hint format.
-export function hintCandidates(event: TimelineEvent): number[] {
+// matching the requested A)…D) hint format. When `bounds` is given, distractors
+// are constrained to the visible timeline window so hints never point off the
+// rendered axis (e.g. a 1900s distractor on a 1991+ "Modern World" timeline).
+export function hintCandidates(event: TimelineEvent, bounds?: [number, number]): number[] {
   const correct = event.year;
-  const candidates = [correct - 100, correct + 100, correct - 50, correct + 50, correct - 10, correct + 10];
-  const others = pickDistinct(candidates, 3, [correct]);
+  const inRange = (y: number) => !bounds || (y >= bounds[0] && y <= bounds[1]);
+  const offsets = [10, 25, 50, 75, 100, 15, 40, 60];
+  const seen = new Set<number>([correct]);
+  const others: number[] = [];
+
+  const tryAdd = (y: number) => {
+    if (others.length >= 3 || seen.has(y) || !inRange(y)) return;
+    seen.add(y);
+    others.push(y);
+  };
+
+  for (const o of offsets) {
+    tryAdd(correct - o);
+    tryAdd(correct + o);
+  }
+  // Fallback for a tight window: fill from the nearest in-range years outward.
+  for (let step = 1; others.length < 3 && step <= 500; step++) {
+    tryAdd(correct - step);
+    tryAdd(correct + step);
+  }
   return shuffle([correct, ...others]);
 }
 
