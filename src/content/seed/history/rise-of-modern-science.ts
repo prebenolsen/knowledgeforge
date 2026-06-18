@@ -2,11 +2,11 @@ import type { SeedSubcategory } from '../types';
 
 export const riseOfModernScience: SeedSubcategory = {
   slug: 'rise-of-modern-science',
-  name: { en: 'Rise of modern science', no: 'Rise of modern science' },
+  name: { en: 'Rise of modern science', no: 'Den moderne vitenskapens fremvekst' },
   modules: [
     {
       slug: 'scientific-revolution',
-      name: { en: 'Scientific Revolution', no: 'Scientific Revolution' },
+      name: { en: 'Scientific Revolution', no: 'Den vitenskapelige revolusjonen' },
       questions: []
     },
     {
@@ -16,12 +16,12 @@ export const riseOfModernScience: SeedSubcategory = {
     },
     {
       slug: 'evolution',
-      name: { en: 'Evolution', no: 'Evolution' },
+      name: { en: 'Evolution', no: 'Evolusjon' },
       questions: []
     },
     {
       slug: 'science-and-society',
-      name: { en: 'Science and society', no: 'Science and society' },
+      name: { en: 'Science and society', no: 'Vitenskap og samfunn' },
       questions: []
     }
   ]

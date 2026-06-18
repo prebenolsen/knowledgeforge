@@ -98,7 +98,9 @@ export default {
     hard: 'Hard',
     noData: 'Answer some questions to build your knowledge map.',
     geoTitle: 'Country Atlas',
-    geoBest: 'Best score: {{score}}'
+    geoBest: 'Best score: {{score}}',
+    timelineTitle: 'History Timeline',
+    timelineBest: 'Best score: {{score}}'
   },
   shape: {
     untested: 'Untested',
@@ -135,6 +137,44 @@ export default {
     accuracy: 'Accuracy',
     playAgain: 'Play again',
     backContinents: 'Back to continents'
+  },
+  timeline: {
+    title: 'History Timeline',
+    events: '{{count}} events',
+    choosePeriod: 'Choose a period',
+    chooseRegion: 'Or a theme',
+    chooseDifficulty: 'Choose a difficulty',
+    diffHint: {
+      easy: 'Multiple choice — pick the century or year.',
+      medium: 'Place the event on the timeline.',
+      hard: 'Recall the exact year.'
+    },
+    chooseLength: 'How many events?',
+    questions: 'events',
+    all: 'All',
+    progress: 'Event {{current}} of {{total}}',
+    promptCentury: 'Which century was {{event}}?',
+    promptYear: 'When was {{event}}?',
+    promptPlace: 'Place this event on the timeline',
+    promptHard: 'In what year was {{event}}?',
+    dragHint: 'Drag the marker or type a year below',
+    yearPlaceholder: 'Enter a year',
+    bce: 'BCE',
+    ce: 'CE',
+    hint: 'Hint',
+    submit: 'Submit',
+    exact: 'Exact!',
+    close: 'Close!',
+    miss: 'Not quite',
+    youSaid: 'You said {{year}}',
+    next: 'Next',
+    finish: 'Finish',
+    summaryTitle: 'Round complete',
+    summaryScore: 'Score',
+    summaryExact: 'Exact hits',
+    accuracy: 'Accuracy',
+    playAgain: 'Play again',
+    backToStart: 'Back to start'
   },
   common: {
     loading: 'Loading…',

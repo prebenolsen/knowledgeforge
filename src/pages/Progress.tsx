@@ -5,6 +5,8 @@ import { useProgress, type CatMastery } from '@/hooks/useProgress';
 import { localized } from '@/i18n';
 import { CONTINENTS, countByContinent } from '@/lib/geo';
 import { fetchGeoProgress, type GeoProgress } from '@/lib/geoProgress';
+import { ALL_SCOPES, countByScope } from '@/lib/timeline';
+import { fetchTimelineProgress, type TimelineProgress } from '@/lib/timelineProgress';
 import type { Difficulty } from '@/types';
 import { Card, Spinner, MasteryBar, Badge } from '@/components/ui';
 import { Header } from '@/components/layout/Nav';
@@ -54,7 +56,55 @@ export function Progress() {
         )}
 
         <GeoProgressPanel userId={session?.user.id} />
+        <TimelineProgressPanel userId={session?.user.id} />
       </div>
+    </>
+  );
+}
+
+// History Timeline progress: per scope, how many distinct events you've nailed
+// exactly at least once, plus your best round score.
+function TimelineProgressPanel({ userId }: { userId?: string }) {
+  const { t } = useTranslation();
+  const [rows, setRows] = useState<TimelineProgress[] | null>(null);
+
+  useEffect(() => {
+    if (!userId) return;
+    fetchTimelineProgress(userId)
+      .then(setRows)
+      .catch(() => setRows([]));
+  }, [userId]);
+
+  if (!rows || rows.length === 0) return null;
+
+  const totals = countByScope();
+  const byScope = new Map(rows.map((r) => [r.scope, r]));
+  const items = ALL_SCOPES.filter((s) => byScope.has(s.id));
+
+  return (
+    <>
+      <h2 className="pt-2 font-display text-xl">{t('progress.timelineTitle')}</h2>
+      {items.map((s) => {
+        const row = byScope.get(s.id)!;
+        const total = totals[s.id] ?? 0;
+        const learned = Object.values(row.per_event_stats).filter((e) => e.correct > 0).length;
+        const mastery = total ? learned / total : 0;
+        return (
+          <Card key={s.id}>
+            <div className="mb-2 flex items-center justify-between">
+              <span className="flex items-center gap-2 text-lg font-medium">
+                <span>{s.emoji}</span>
+                {localized(s.name)}
+              </span>
+              <span className="text-mist-300">
+                {learned}/{total}
+              </span>
+            </div>
+            <MasteryBar value={mastery} />
+            <p className="mt-2 text-xs text-mist-400">{t('progress.timelineBest', { score: row.best_score })}</p>
+          </Card>
+        );
+      })}
     </>
   );
 }

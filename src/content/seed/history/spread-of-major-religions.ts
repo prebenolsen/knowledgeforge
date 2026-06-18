@@ -2,11 +2,11 @@ import type { SeedSubcategory } from '../types';
 
 export const spreadOfMajorReligions: SeedSubcategory = {
   slug: 'spread-of-major-religions',
-  name: { en: 'Spread of major religions', no: 'Spread of major religions' },
+  name: { en: 'Spread of major religions', no: 'Utbredelsen av de store religionene' },
   modules: [
     {
       slug: 'christianity',
-      name: { en: 'Christianity', no: 'Christianity' },
+      name: { en: 'Christianity', no: 'Kristendommen' },
       questions: [
         {
           difficulty: 'easy',
@@ -1481,7 +1481,7 @@ export const spreadOfMajorReligions: SeedSubcategory = {
     },
     {
       slug: 'buddhism',
-      name: { en: 'Buddhism', no: 'Buddhism' },
+      name: { en: 'Buddhism', no: 'Buddhismen' },
       questions: [
         {
           difficulty: 'easy',
@@ -2190,7 +2190,7 @@ export const spreadOfMajorReligions: SeedSubcategory = {
     },
     {
       slug: 'judaism',
-      name: { en: 'Judaism', no: 'Judaism' },
+      name: { en: 'Judaism', no: 'Jødedommen' },
       questions: [
         {
           difficulty: 'easy',
@@ -2899,7 +2899,7 @@ export const spreadOfMajorReligions: SeedSubcategory = {
     },
     {
       slug: 'religion-and-society',
-      name: { en: 'Religion and society', no: 'Religion and society' },
+      name: { en: 'Religion and society', no: 'Religion og samfunn' },
       questions: []
     }
   ]

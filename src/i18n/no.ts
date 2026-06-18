@@ -98,7 +98,9 @@ export default {
     hard: 'Vanskelig',
     noData: 'Svar på noen spørsmål for å bygge kunnskapskartet ditt.',
     geoTitle: 'Landatlas',
-    geoBest: 'Beste poengsum: {{score}}'
+    geoBest: 'Beste poengsum: {{score}}',
+    timelineTitle: 'Historisk tidslinje',
+    timelineBest: 'Beste poengsum: {{score}}'
   },
   shape: {
     untested: 'Ikke testet',
@@ -135,6 +137,44 @@ export default {
     accuracy: 'Treffsikkerhet',
     playAgain: 'Spill igjen',
     backContinents: 'Tilbake til kontinenter'
+  },
+  timeline: {
+    title: 'Historisk tidslinje',
+    events: '{{count}} hendelser',
+    choosePeriod: 'Velg en periode',
+    chooseRegion: 'Eller et tema',
+    chooseDifficulty: 'Velg vanskelighetsgrad',
+    diffHint: {
+      easy: 'Flervalg — velg århundre eller år.',
+      medium: 'Plasser hendelsen på tidslinjen.',
+      hard: 'Husk det nøyaktige året.'
+    },
+    chooseLength: 'Hvor mange hendelser?',
+    questions: 'hendelser',
+    all: 'Alle',
+    progress: 'Hendelse {{current}} av {{total}}',
+    promptCentury: 'Hvilket århundre var {{event}}?',
+    promptYear: 'Når var {{event}}?',
+    promptPlace: 'Plasser denne hendelsen på tidslinjen',
+    promptHard: 'I hvilket år var {{event}}?',
+    dragHint: 'Dra markøren eller skriv inn et år nedenfor',
+    yearPlaceholder: 'Skriv inn et år',
+    bce: 'f.Kr.',
+    ce: 'e.Kr.',
+    hint: 'Hint',
+    submit: 'Send inn',
+    exact: 'Nøyaktig!',
+    close: 'Nære!',
+    miss: 'Ikke helt',
+    youSaid: 'Du svarte {{year}}',
+    next: 'Neste',
+    finish: 'Fullfør',
+    summaryTitle: 'Runde fullført',
+    summaryScore: 'Poeng',
+    summaryExact: 'Nøyaktige treff',
+    accuracy: 'Treffsikkerhet',
+    playAgain: 'Spill igjen',
+    backToStart: 'Tilbake til start'
   },
   common: {
     loading: 'Laster…',

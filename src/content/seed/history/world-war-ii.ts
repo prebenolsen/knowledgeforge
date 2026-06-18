@@ -2,11 +2,11 @@ import type { SeedSubcategory } from '../types';
 
 export const worldWarII: SeedSubcategory = {
   slug: 'world-war-ii',
-  name: { en: 'World War II', no: 'World War II' },
+  name: { en: 'World War II', no: 'Andre verdenskrig' },
   modules: [
     {
       slug: 'rise-of-nazi-germany',
-      name: { en: 'Rise of Nazi Germany', no: 'Rise of Nazi Germany' },
+      name: { en: 'Rise of Nazi Germany', no: 'Nazi-Tysklands fremvekst' },
       questions: [
   {
     difficulty: 'easy',
@@ -867,7 +867,7 @@ tags: ['legacy', 'postwar', 'democracy']
     },
     {
       slug: 'the-holocaust',
-      name: { en: 'The Holocaust', no: 'The Holocaust' },
+      name: { en: 'The Holocaust', no: 'Holocaust' },
       questions: [
   {
     difficulty: 'easy',
@@ -1728,7 +1728,7 @@ tags: ['legacy', 'postwar', 'democracy']
     },
     {
       slug: 'global-conflict',
-      name: { en: 'Global conflict', no: 'Global conflict' },
+      name: { en: 'Global conflict', no: 'Global konflikt' },
       questions: [
   {
     difficulty: 'easy',
@@ -2589,7 +2589,7 @@ tags: ['legacy', 'postwar', 'democracy']
     },
     {
       slug: 'post-war-world-order',
-      name: { en: 'Post-war world order', no: 'Post-war world order' },
+      name: { en: 'Post-war world order', no: 'Verdensordenen etter krigen' },
       questions: []
     },
     

@@ -2,11 +2,11 @@ import type { SeedSubcategory } from '../types';
 
 export const decolonization: SeedSubcategory = {
   slug: 'decolonization',
-  name: { en: 'Decolonization', no: 'Decolonization' },
+  name: { en: 'Decolonization', no: 'Avkolonisering' },
   modules: [
     {
       slug: 'end-of-european-empires',
-      name: { en: 'End of European empires', no: 'End of European empires' },
+      name: { en: 'End of European empires', no: 'Slutten på de europeiske imperiene' },
       questions: [
         {
           difficulty: 'easy',
@@ -753,12 +753,12 @@ export const decolonization: SeedSubcategory = {
     },
     {
       slug: 'independence-movements',
-      name: { en: 'Independence movements', no: 'Independence movements' },
+      name: { en: 'Independence movements', no: 'Uavhengighetsbevegelser' },
       questions: []
     },
     {
       slug: 'new-nations',
-      name: { en: 'New nations', no: 'New nations' },
+      name: { en: 'New nations', no: 'Nye nasjoner' },
       questions: []
     }
   ]

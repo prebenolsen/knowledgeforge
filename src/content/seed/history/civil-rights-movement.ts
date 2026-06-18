@@ -2,11 +2,11 @@ import type { SeedSubcategory } from '../types';
 
 export const civilRightsMovement: SeedSubcategory = {
   slug: 'civil-rights-movement',
-  name: { en: 'Civil Rights Movement', no: 'Civil Rights Movement' },
+  name: { en: 'Civil Rights Movement', no: 'Borgerrettighetsbevegelsen' },
   modules: [
     {
       slug: 'segregation',
-      name: { en: 'Segregation', no: 'Segregation' },
+      name: { en: 'Segregation', no: 'Raseskille' },
       questions: [
         {
           difficulty: 'easy',
@@ -867,7 +867,7 @@ export const civilRightsMovement: SeedSubcategory = {
     },
     {
       slug: 'equal-rights-movement',
-      name: { en: 'Equal rights movement', no: 'Equal rights movement' },
+      name: { en: 'Equal rights movement', no: 'Bevegelsen for like rettigheter' },
       questions: [
         {
           difficulty: 'easy',
@@ -1728,12 +1728,12 @@ export const civilRightsMovement: SeedSubcategory = {
     },
     {
       slug: 'key-figures',
-      name: { en: 'Key figures', no: 'Key figures' },
+      name: { en: 'Key figures', no: 'Nøkkelpersoner' },
       questions: []
     },
     {
       slug: 'modern-impact',
-      name: { en: 'Modern impact', no: 'Modern impact' },
+      name: { en: 'Modern impact', no: 'Moderne betydning' },
       questions: []
     }
   ]

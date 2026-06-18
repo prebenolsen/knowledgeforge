@@ -12,9 +12,11 @@ import { Progress } from '@/pages/Progress';
 
 // The Atlas bundles a large map dataset — load it on demand only.
 const Atlas = lazy(() => import('@/pages/Atlas'));
+// The Timeline bundles its own event dataset — load it on demand too.
+const TimelinePage = lazy(() => import('@/pages/Timeline'));
 
 // Routes where the bottom nav should be hidden (focused/full-screen flows).
-const FULLSCREEN = ['/quiz', '/review', '/placement', '/atlas'];
+const FULLSCREEN = ['/quiz', '/review', '/placement', '/atlas', '/timeline'];
 
 function Shell() {
   const { session, loading } = useAuth();
@@ -45,6 +47,7 @@ function Shell() {
             <Route path="/placement" element={<PlacementTest />} />
             <Route path="/progress" element={<Progress />} />
             <Route path="/atlas" element={<Atlas />} />
+            <Route path="/timeline" element={<TimelinePage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>

@@ -145,6 +145,37 @@ create table if not exists geo_progress (
 create index if not exists idx_geo_attempts_user on geo_attempts(user_id);
 create index if not exists idx_geo_progress_user on geo_progress(user_id);
 
+-- ---- History Timeline game ---------------------------------
+-- The Timeline (learning *when* events happened) is a standalone activity like
+-- the Atlas, so it has its own tables keyed by user + scope (a selectable
+-- period or regional timeline, e.g. 'cold-war' or 'european-history').
+
+create table if not exists timeline_attempts (
+  id           uuid primary key default gen_random_uuid(),
+  user_id      uuid not null references auth.users(id) on delete cascade,
+  scope        text not null,           -- the timeline played
+  event_id     text not null,           -- the event answered
+  difficulty   text not null check (difficulty in ('easy','medium','hard')),
+  score        int  not null default 0, -- 0–100 awarded for this answer
+  is_correct   boolean not null,        -- true = exact (full-mark) hit
+  hints_used   int  not null default 0,
+  answered_at  timestamptz not null default now()
+);
+
+create table if not exists timeline_progress (
+  id               uuid primary key default gen_random_uuid(),
+  user_id          uuid not null references auth.users(id) on delete cascade,
+  scope            text not null,
+  best_score       int  not null default 0,
+  -- per-event tallies kept as jsonb: { "<event_id>": { "seen": n, "correct": n } }
+  per_event_stats  jsonb not null default '{}',
+  updated_at       timestamptz not null default now(),
+  unique (user_id, scope)
+);
+
+create index if not exists idx_timeline_attempts_user on timeline_attempts(user_id);
+create index if not exists idx_timeline_progress_user on timeline_progress(user_id);
+
 -- ============================================================
 -- PROFILE AUTO-CREATION
 -- When a new auth user signs up, create their profile row.
@@ -237,6 +268,22 @@ create policy "own geo attempts" on geo_attempts
 
 drop policy if exists "own geo progress" on geo_progress;
 create policy "own geo progress" on geo_progress
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+-- History Timeline game: a user may only touch their OWN rows.
+alter table timeline_attempts enable row level security;
+alter table timeline_progress enable row level security;
+
+drop policy if exists "own timeline attempts" on timeline_attempts;
+create policy "own timeline attempts" on timeline_attempts
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "own timeline progress" on timeline_progress;
+create policy "own timeline progress" on timeline_progress
   for all to authenticated
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);

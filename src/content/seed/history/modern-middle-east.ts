@@ -2,11 +2,11 @@ import type { SeedSubcategory } from '../types';
 
 export const modernMiddleEast: SeedSubcategory = {
   slug: 'modern-middle-east',
-  name: { en: 'Modern Middle East', no: 'Modern Middle East' },
+  name: { en: 'Modern Middle East', no: 'Det moderne Midtøsten' },
   modules: [
     {
       slug: 'collapse-of-ottoman-empire',
-      name: { en: 'Collapse of Ottoman Empire', no: 'Collapse of Ottoman Empire' },
+      name: { en: 'Collapse of Ottoman Empire', no: 'Det osmanske rikets fall' },
       questions: [
         {
           difficulty: 'easy',
@@ -829,12 +829,12 @@ export const modernMiddleEast: SeedSubcategory = {
     },
     {
       slug: 'creation-of-modern-states',
-      name: { en: 'Creation of modern states', no: 'Creation of modern states' },
+      name: { en: 'Creation of modern states', no: 'Opprettelsen av moderne stater' },
       questions: []
     },
     {
       slug: 'israel-palestine-conflict',
-      name: { en: 'Israel/Palestine conflict', no: 'Israel/Palestine conflict' },
+      name: { en: 'Israel/Palestine conflict', no: 'Israel/Palestina-konflikten' },
       questions: [
         {
           difficulty: 'easy',
@@ -1619,7 +1619,7 @@ export const modernMiddleEast: SeedSubcategory = {
     },
     {
       slug: 'oil-and-geopolitics',
-      name: { en: 'Oil and geopolitics', no: 'Oil and geopolitics' },
+      name: { en: 'Oil and geopolitics', no: 'Olje og geopolitikk' },
       questions: []
     }
   ]

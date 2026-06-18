@@ -7,6 +7,50 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.14.0] - 2026-06-18
+
+### Added
+- **History Timeline** — a new interactive learning mode for learning *when*
+  events happened, surfaced from the front page (`📜 History Timeline`) and the
+  `/timeline` route. Like the Country Atlas, it is a standalone activity with
+  its own content and persistence.
+  - **Selectable timelines**: ten chronological periods (Ancient World →
+    Modern World, plus All History) and eight regional/thematic timelines
+    (World, European, American, Asian, African, Middle Eastern, Scientific
+    Discoveries, Military History). Defined in `src/lib/timeline.ts` as
+    `TimelineScope`s so new timelines are easy to add.
+  - **Three difficulties**: Easy (multiple choice — century *or* exact-year
+    variants with intelligently generated distractors), Medium (place the event
+    by dragging a timeline marker or typing a year, graded on proximity), and
+    Hard (exact-year recall). Round length is selectable (5/10/15/20 or All)
+    before starting.
+  - **Hint system** (Medium/Hard): reveals four candidate years (one correct)
+    and halves the score reward.
+  - **Event review** after each answer: title, correct date (point-in-time or
+    range), description, historical significance, and a timeline visualization
+    highlighting the correct year vs the player's guess.
+  - **Reusable `Timeline` component** (`src/components/timeline/Timeline.tsx`):
+    responsive, touch-friendly, BCE/CE-aware, with event markers, a draggable
+    placement marker, and zoom — built generically for reuse by future modes.
+  - **Data model** `TimelineEvent` (`src/types/index.ts`) supports both
+    point-in-time and multi-year events; a bilingual starter dataset of ~65
+    events lives in `src/content/timeline/events.ts` (content is expanded in a
+    later pass).
+  - **Persistence + progress**: new `timeline_attempts` / `timeline_progress`
+    tables (with RLS) in `supabase/migrations/0001_init.sql`, helpers in
+    `src/lib/timelineProgress.ts`, and a Timeline panel on the Progress page.
+  - Full `en` / `no` translations under the `timeline` namespace.
+
+## [3.13.1] - 2026-06-18
+
+### Fixed
+- Added proper Norwegian (`no`) translations for every History subcategory and
+  its modules in `src/content/seed/history/`. Previously the `no` name fields
+  duplicated the English text (e.g. `"The Roman Empire"` → now `"Romerriket"`);
+  all 25 active subcategories and their modules are now correctly localized.
+  Proper nouns that are identical across languages (e.g. "Islam", "Isaac
+  Newton") are left unchanged.
+
 ## [3.13.0] - 2026-06-18
 
 ### Changed

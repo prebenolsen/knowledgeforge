@@ -2,11 +2,11 @@ import type { SeedSubcategory } from '../types';
 
 export const theAtlanticSlaveTrade: SeedSubcategory = {
   slug: 'the-atlantic-slave-trade',
-  name: { en: 'The Atlantic slave trade', no: 'The Atlantic slave trade' },
+  name: { en: 'The Atlantic slave trade', no: 'Den atlantiske slavehandelen' },
   modules: [
     {
       slug: 'transatlantic-slave-trade',
-      name: { en: 'Transatlantic slave trade', no: 'Transatlantic slave trade' },
+      name: { en: 'Transatlantic slave trade', no: 'Den transatlantiske slavehandelen' },
       questions: [
         {
           difficulty: 'easy',
@@ -715,7 +715,7 @@ export const theAtlanticSlaveTrade: SeedSubcategory = {
     },
     {
       slug: 'slavery-in-the-americas',
-      name: { en: 'Slavery in the Americas', no: 'Slavery in the Americas' },
+      name: { en: 'Slavery in the Americas', no: 'Slaveri i Amerika' },
       questions: [
         {
           difficulty: 'easy',
@@ -1405,7 +1405,7 @@ export const theAtlanticSlaveTrade: SeedSubcategory = {
     },
     {
       slug: 'lives-of-enslaved-people',
-      name: { en: 'Lives of enslaved people', no: 'Lives of enslaved people' },
+      name: { en: 'Lives of enslaved people', no: 'De slavebundnes liv' },
       questions: [
         {
           difficulty: 'easy',
@@ -2076,7 +2076,7 @@ export const theAtlanticSlaveTrade: SeedSubcategory = {
     },
     {
       slug: 'abolition-movements',
-      name: { en: 'Abolition movements', no: 'Abolition movements' },
+      name: { en: 'Abolition movements', no: 'Bevegelser for avskaffelse av slaveri' },
       questions: [
         {
           difficulty: 'easy',
@@ -2747,7 +2747,7 @@ export const theAtlanticSlaveTrade: SeedSubcategory = {
     },
     {
       slug: 'long-term-effects',
-      name: { en: 'Long-term effects', no: 'Long-term effects' },
+      name: { en: 'Long-term effects', no: 'Langsiktige virkninger' },
       questions: [
         {
           difficulty: 'easy',

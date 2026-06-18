@@ -158,6 +158,44 @@ export interface PlacementResult {
   recommendedDifficulty: Difficulty;
 }
 
+// ---- Timeline (historical dates) game ---------------------
+//
+// A separate learning activity (like the Country Atlas) where the player
+// learns *when* events happened. Hand-authored, bilingual content.
+
+// Thematic / regional tags an event can belong to. Regional timelines filter
+// on these; period timelines filter purely on year. Designed to be extended.
+export type TimelineRegionTag =
+  | 'world'
+  | 'europe'
+  | 'americas'
+  | 'asia'
+  | 'africa'
+  | 'middle-east'
+  | 'science'
+  | 'military';
+
+export interface TimelineEvent {
+  id: string;
+  title: Localized;
+  // Canonical year used for grading. Negative = BCE (e.g. -776 = 776 BCE).
+  // For multi-year events this is the start / most iconic year.
+  year: number;
+  // Optional span for events that unfold over several years (WWI 1914–1918).
+  startYear?: number;
+  endYear?: number;
+  // Regional + thematic timelines this event belongs to.
+  regions: TimelineRegionTag[];
+  description: Localized;
+  significance: Localized;
+  // Alternative spellings/titles accepted when matching (future use).
+  aliases?: string[];
+}
+
+// The three timeline game difficulties reuse the shared Difficulty type.
+// Easy has two question variants:
+export type TimelineEasyVariant = 'century' | 'year';
+
 // ---- Knowledge map (dashboard) ----------------------------
 
 export interface CategoryMastery {

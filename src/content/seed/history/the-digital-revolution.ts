@@ -2,26 +2,26 @@ import type { SeedSubcategory } from '../types';
 
 export const theDigitalRevolution: SeedSubcategory = {
   slug: 'the-digital-revolution',
-  name: { en: 'The Digital Revolution', no: 'The Digital Revolution' },
+  name: { en: 'The Digital Revolution', no: 'Den digitale revolusjonen' },
   modules: [
     {
       slug: 'computers',
-      name: { en: 'Computers', no: 'Computers' },
+      name: { en: 'Computers', no: 'Datamaskiner' },
       questions: []
     },
     {
       slug: 'internet',
-      name: { en: 'Internet', no: 'Internet' },
+      name: { en: 'Internet', no: 'Internett' },
       questions: []
     },
     {
       slug: 'smartphones',
-      name: { en: 'Smartphones', no: 'Smartphones' },
+      name: { en: 'Smartphones', no: 'Smarttelefoner' },
       questions: []
     },
     {
       slug: 'artificial-intelligence',
-      name: { en: 'Artificial intelligence', no: 'Artificial intelligence' },
+      name: { en: 'Artificial intelligence', no: 'Kunstig intelligens' },
       questions: [
         {
           difficulty: 'easy',
@@ -806,7 +806,7 @@ export const theDigitalRevolution: SeedSubcategory = {
     },
     {
       slug: 'impact-on-society',
-      name: { en: 'Impact on society', no: 'Impact on society' },
+      name: { en: 'Impact on society', no: 'Påvirkning på samfunnet' },
       questions: []
     }
   ]

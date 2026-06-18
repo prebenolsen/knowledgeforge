@@ -2,11 +2,11 @@ import type { SeedSubcategory } from '../types';
 
 export const theFirstCivilizations: SeedSubcategory = {
   slug: 'the-first-civilizations',
-  name: { en: 'The first civilizations', no: 'The first civilizations' },
+  name: { en: 'The first civilizations', no: 'De første sivilisasjonene' },
   modules: [
     {
       slug: 'ancient-egypt',
-      name: { en: 'Ancient Egypt', no: 'Ancient Egypt' },
+      name: { en: 'Ancient Egypt', no: 'Det gamle Egypt' },
       questions: [
         {
           difficulty: 'easy',
@@ -715,7 +715,7 @@ export const theFirstCivilizations: SeedSubcategory = {
     },
     {
       slug: 'mesopotamian-civilization',
-      name: { en: 'Mesopotamian civilization', no: 'Mesopotamian civilization' },
+      name: { en: 'Mesopotamian civilization', no: 'Den mesopotamiske sivilisasjonen' },
       questions: [
         {
           difficulty: 'easy',
@@ -1405,7 +1405,7 @@ export const theFirstCivilizations: SeedSubcategory = {
     },
     {
       slug: 'foundations-of-civilization',
-      name: { en: 'Foundations of civilization', no: 'Foundations of civilization' },
+      name: { en: 'Foundations of civilization', no: 'Sivilisasjonens grunnlag' },
       questions: []
     }
   ]

@@ -174,3 +174,31 @@ The generator (`scripts/build-geo.ts`) reads three vendored source files in
 > **Note:** Natural Earth 110m has no geometry for very small states, so some
 > Caribbean, Central-American, and Pacific island nations are not quizable.
 > Switch the generator to the 50m dataset for fuller coverage (larger files).
+
+---
+
+## History Timeline (date-learning game)
+
+The **History Timeline** (`/timeline`, linked from the front page) is, like the
+Atlas, a standalone activity that does **not** use the `questions` table or the
+import pipeline. It plays entirely from a bundled, hand-authored event dataset
+(no setup needed); only progress is saved to Supabase.
+
+### Content
+
+Events live in `src/content/timeline/events.ts` as `TimelineEvent` records
+(`src/types/index.ts`): a bilingual title/description/significance, a canonical
+`year` (negative = BCE), optional `startYear`/`endYear` for multi-year events,
+and `regions` tags that decide which regional/thematic timelines an event
+appears in. To add events, append to that array — no migration or rebuild step
+is required. The selectable timelines themselves (periods + regions) are defined
+in `src/lib/timeline.ts`.
+
+### Progress tables
+
+Saving round scores and per-event progress uses two tables, `timeline_attempts`
+and `timeline_progress`, defined in `supabase/migrations/0001_init.sql`. If your
+database predates this feature, re-run that file in the Supabase SQL editor —
+it's idempotent, so it just adds the two missing tables and their
+row-level-security policies. Until they exist, the Timeline still plays, but
+progress writes fail silently and the dashboard panel stays hidden.
