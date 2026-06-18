@@ -72,12 +72,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvem krysset Rubicon-elven i 49 f.Kr. og startet en borgerkrig?'
           },
           answers: [
-            { en: 'Julius Caesar', no: 'Julius Cæsar' },
             { en: 'Augustus', no: 'Augustus' },
             { en: 'Pompey', no: 'Pompeius' },
-            { en: 'Cicero', no: 'Cicero' }
+            { en: 'Cicero', no: 'Cicero' },
+            { en: 'Julius Caesar', no: 'Julius Cæsar' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Caesar crossed the Rubicon with his army, directly challenging the Senate.',
             no: 'Cæsar krysset Rubicon med hæren sin og utfordret senatet direkte.'
@@ -91,12 +91,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvilken tittel brukte romerske keisere vanligvis?'
           },
           answers: [
-            { en: 'Consul', no: 'Konsul' },
-            { en: 'Pharaoh', no: 'Farao' },
             { en: 'Caesar', no: 'Cæsar' },
-            { en: 'Archon', no: 'Arkon' }
+            { en: 'Archon', no: 'Arkon' },
+            { en: 'Consul', no: 'Konsul' },
+            { en: 'Pharaoh', no: 'Farao' }
           ],
-          correct: 2,
+          correct: 0,
           explanation: {
             en: 'Caesar became a title associated with Roman emperors after Julius Caesar.',
             no: 'Cæsar ble en tittel knyttet til romerske keisere etter Julius Cæsar.'
@@ -110,12 +110,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvilken hendelse avsluttet den romerske republikken?'
           },
           answers: [
+            { en: 'The fall of Constantinople', no: 'Konstantinopels fall' },
             { en: 'The rise of Augustus as emperor', no: 'Augustus’ maktovertakelse som keiser' },
             { en: 'The Punic Wars', no: 'De puniske krigene' },
-            { en: 'The founding of Rome', no: 'Grunnleggelsen av Roma' },
-            { en: 'The fall of Constantinople', no: 'Konstantinopels fall' }
+            { en: 'The founding of Rome', no: 'Grunnleggelsen av Roma' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Augustus’ victory and new political system marked the transition to the Empire.',
             no: 'Augustus’ seier og nye politiske system markerte overgangen til keiserdømmet.'
@@ -129,12 +129,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvilken gruppe hadde mest politisk makt i det tidlige Roma?'
           },
           answers: [
-            { en: 'Patricians', no: 'Patrisierne' },
-            { en: 'Slaves', no: 'Slavene' },
             { en: 'Foreign merchants', no: 'Utenlandske kjøpmenn' },
-            { en: 'Gladiators', no: 'Gladiatorer' }
+            { en: 'Gladiators', no: 'Gladiatorer' },
+            { en: 'Patricians', no: 'Patrisierne' },
+            { en: 'Slaves', no: 'Slavene' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Patricians were the wealthy elite who dominated early Roman politics.',
             no: 'Patrisierne var den rike eliten som dominerte tidlig romersk politikk.'
@@ -148,12 +148,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hva var en konsul i den romerske republikken?'
           },
           answers: [
-            { en: 'A religious leader', no: 'En religiøs leder' },
-            { en: 'A chief elected magistrate', no: 'En øverste valgt embetsmann' },
             { en: 'A provincial governor only', no: 'Kun en provinsguvernør' },
-            { en: 'A Roman soldier', no: 'En romersk soldat' }
+            { en: 'A Roman soldier', no: 'En romersk soldat' },
+            { en: 'A religious leader', no: 'En religiøs leder' },
+            { en: 'A chief elected magistrate', no: 'En øverste valgt embetsmann' }
           ],
-          correct: 1,
+          correct: 3,
           explanation: {
             en: 'Consuls were the highest elected officials and commanded armies.',
             no: 'Konsuler var de høyeste valgte embetsmennene og ledet hærer.'
@@ -205,12 +205,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvilken romersk leder var med på å danne det første triumviratet?'
           },
           answers: [
-            { en: 'Julius Caesar', no: 'Julius Cæsar' },
-            { en: 'Diocletian', no: 'Diokletian' },
             { en: 'Constantine', no: 'Konstantin' },
-            { en: 'Nero', no: 'Nero' }
+            { en: 'Nero', no: 'Nero' },
+            { en: 'Julius Caesar', no: 'Julius Cæsar' },
+            { en: 'Diocletian', no: 'Diokletian' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Caesar joined Pompey and Crassus in a political alliance called the First Triumvirate.',
             no: 'Cæsar inngikk en politisk allianse med Pompeius og Crassus kalt det første triumviratet.'
@@ -224,12 +224,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hva var hovedformålet med romerske legioner?'
           },
           answers: [
-            { en: 'Trade', no: 'Handel' },
-            { en: 'Military conquest and defense', no: 'Militær erobring og forsvar' },
             { en: 'Religious ceremonies', no: 'Religiøse seremonier' },
-            { en: 'Tax collection only', no: 'Kun skatteinnkreving' }
+            { en: 'Tax collection only', no: 'Kun skatteinnkreving' },
+            { en: 'Trade', no: 'Handel' },
+            { en: 'Military conquest and defense', no: 'Militær erobring og forsvar' }
           ],
-          correct: 1,
+          correct: 3,
           explanation: {
             en: 'Legions were professional military units that expanded and protected Rome.',
             no: 'Legionene var profesjonelle militære enheter som utvidet og beskyttet Roma.'
@@ -282,12 +282,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvorfor støttet mange romere Augustus etter flere år med borgerkrig?'
           },
           answers: [
-            { en: 'He promised stability and peace', no: 'Han lovet stabilitet og fred' },
-            { en: 'He abolished the army', no: 'Han avskaffet hæren' },
             { en: 'He ended all taxes', no: 'Han fjernet alle skatter' },
-            { en: 'He restored the monarchy openly', no: 'Han gjeninnførte monarkiet åpent' }
+            { en: 'He restored the monarchy openly', no: 'Han gjeninnførte monarkiet åpent' },
+            { en: 'He promised stability and peace', no: 'Han lovet stabilitet og fred' },
+            { en: 'He abolished the army', no: 'Han avskaffet hæren' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'After decades of conflict, many Romans valued order more than traditional republican politics.',
             no: 'Etter tiår med konflikt ønsket mange romere orden mer enn tradisjonell republikansk politikk.'
@@ -301,12 +301,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hva førte til konflikten mellom Cæsar og senatet?'
           },
           answers: [
-            { en: 'Fear of Caesar gaining too much power', no: 'Frykt for at Cæsar fikk for mye makt' },
             { en: 'A dispute over Roman religion', no: 'En konflikt om romersk religion' },
             { en: 'A foreign invasion', no: 'En utenlandsk invasjon' },
-            { en: 'A shortage of soldiers', no: 'Mangel på soldater' }
+            { en: 'A shortage of soldiers', no: 'Mangel på soldater' },
+            { en: 'Fear of Caesar gaining too much power', no: 'Frykt for at Cæsar fikk for mye makt' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Senators feared Caesar would destroy the Republic by becoming too powerful.',
             no: 'Senatorene fryktet at Cæsar ville ødelegge republikken ved å få for mye makt.'
@@ -339,12 +339,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hva var rollen til pretoriangarden?'
           },
           answers: [
+            { en: 'Building temples', no: 'Å bygge templer' },
             { en: 'Protecting the emperor', no: 'Å beskytte keiseren' },
             { en: 'Writing Roman laws', no: 'Å skrive romerske lover' },
-            { en: 'Managing trade routes', no: 'Å styre handelsruter' },
-            { en: 'Building temples', no: 'Å bygge templer' }
+            { en: 'Managing trade routes', no: 'Å styre handelsruter' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Praetorian Guard protected emperors but also influenced imperial politics.',
             no: 'Pretoriangarden beskyttet keisere, men påvirket også keiserpolitikken.'
@@ -358,12 +358,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvorfor lyktes ikke drapet på Cæsar med å gjenopprette republikken?'
           },
           answers: [
-            { en: 'New power struggles led to another civil war', no: 'Nye maktkamper førte til en ny borgerkrig' },
-            { en: 'Rome immediately abandoned politics', no: 'Roma forlot umiddelbart politikken' },
             { en: 'The army disappeared', no: 'Hæren forsvant' },
-            { en: 'The Senate lost all authority overnight', no: 'Senatet mistet all myndighet over natten' }
+            { en: 'The Senate lost all authority overnight', no: 'Senatet mistet all myndighet over natten' },
+            { en: 'New power struggles led to another civil war', no: 'Nye maktkamper førte til en ny borgerkrig' },
+            { en: 'Rome immediately abandoned politics', no: 'Roma forlot umiddelbart politikken' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Caesar’s death created more conflict, eventually allowing Augustus to rise.',
             no: 'Cæsars død skapte mer konflikt og åpnet veien for Augustus.'
@@ -378,12 +378,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvilken faktor bidro mest til den romerske republikkens nedgang?'
           },
           answers: [
-            { en: 'Military leaders gaining personal armies and influence', no: 'Militære ledere fikk egne hærer og økt innflytelse' },
             { en: 'The end of Roman culture', no: 'Slutten på romersk kultur' },
             { en: 'A complete lack of resources', no: 'Fullstendig mangel på ressurser' },
-            { en: 'The disappearance of Roman cities', no: 'Forsvinningen av romerske byer' }
+            { en: 'The disappearance of Roman cities', no: 'Forsvinningen av romerske byer' },
+            { en: 'Military leaders gaining personal armies and influence', no: 'Militære ledere fikk egne hærer og økt innflytelse' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Powerful generals used loyal armies to challenge traditional republican institutions.',
             no: 'Mektige generaler brukte lojale hærer til å utfordre republikanske institusjoner.'
@@ -416,12 +416,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvorfor skapte Romas store rike utfordringer for republikansk styre?'
           },
           answers: [
+            { en: 'Trade completely ended', no: 'Handelen tok slutt' },
             { en: 'The old system struggled to manage distant territories', no: 'Det gamle systemet slet med å styre fjerne områder' },
             { en: 'Rome stopped having citizens', no: 'Roma sluttet å ha borgere' },
-            { en: 'The Senate became a military unit', no: 'Senatet ble en militær avdeling' },
-            { en: 'Trade completely ended', no: 'Handelen tok slutt' }
+            { en: 'The Senate became a military unit', no: 'Senatet ble en militær avdeling' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'A government designed for a city-state struggled to control a vast empire.',
             no: 'Et styresett laget for en bystat slet med å kontrollere et enormt rike.'
@@ -436,12 +436,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hva var en langsiktig konsekvens av Romas overgang til keiserdømme?'
           },
           answers: [
-            { en: 'Greater centralization of political authority', no: 'Mer sentralisering av politisk makt' },
-            { en: 'The end of Roman law', no: 'Slutten på romersk lov' },
             { en: 'The disappearance of cities', no: 'Forsvinningen av byer' },
-            { en: 'The loss of all provinces', no: 'Tapet av alle provinser' }
+            { en: 'The loss of all provinces', no: 'Tapet av alle provinser' },
+            { en: 'Greater centralization of political authority', no: 'Mer sentralisering av politisk makt' },
+            { en: 'The end of Roman law', no: 'Slutten på romersk lov' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The emperor became the central figure of Roman political life.',
             no: 'Keiseren ble sentrum for romersk politisk liv.'
@@ -456,12 +456,12 @@ export const ancientRome: SeedSubcategory = {
             no: 'Hvilken forklaring beskriver best hvorfor Romerriket overlevde etter politiske endringer?'
           },
           answers: [
-            { en: 'Strong institutions, administration, and military systems supported it', no: 'Sterke institusjoner, administrasjon og militærsystemer støttet det' },
             { en: 'Rome avoided all conflicts', no: 'Roma unngikk alle konflikter' },
             { en: 'Emperors had unlimited success', no: 'Keiserne hadde alltid suksess' },
-            { en: 'The Republic remained unchanged', no: 'Republikken forble uendret' }
+            { en: 'The Republic remained unchanged', no: 'Republikken forble uendret' },
+            { en: 'Strong institutions, administration, and military systems supported it', no: 'Sterke institusjoner, administrasjon og militærsystemer støttet det' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Rome’s survival depended on complex systems beyond individual rulers.',
             no: 'Romas overlevelse var avhengig av komplekse systemer utover enkeltkeisere.'
@@ -494,12 +494,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hvilket språk ble hovedsakelig snakket i antikkens Roma?'
   },
   answers: [
+    { en: 'Celtic', no: 'Keltisk' },
     { en: 'Latin', no: 'Latin' },
     { en: 'Greek', no: 'Gresk' },
-    { en: 'Egyptian', no: 'Egyptisk' },
-    { en: 'Celtic', no: 'Keltisk' }
+    { en: 'Egyptian', no: 'Egyptisk' }
   ],
-  correct: 0,
+  correct: 1,
   explanation: {
     en: 'Latin was the main language of Rome and influenced many modern languages.',
     no: 'Latin var hovedspråket i Roma og påvirket mange moderne språk.'
@@ -513,12 +513,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hvilken romersk bygning ble brukt til gladiatorkamper?'
   },
   answers: [
+    { en: 'Pantheon', no: 'Pantheon' },
     { en: 'Aqueduct', no: 'Akvadukt' },
     { en: 'Colosseum', no: 'Colosseum' },
-    { en: 'Forum', no: 'Forum' },
-    { en: 'Pantheon', no: 'Pantheon' }
+    { en: 'Forum', no: 'Forum' }
   ],
-  correct: 1,
+  correct: 2,
   explanation: {
     en: 'The Colosseum hosted public spectacles including gladiator fights.',
     no: 'Colosseum arrangerte offentlige forestillinger, inkludert gladiatorkamper.'
@@ -532,12 +532,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hva var en provins i Romerriket?'
   },
   answers: [
-    { en: 'A controlled territory outside Italy', no: 'Et kontrollert område utenfor Italia' },
     { en: 'A Roman emperor', no: 'En romersk keiser' },
     { en: 'A military weapon', no: 'Et militært våpen' },
-    { en: 'A religious group', no: 'En religiøs gruppe' }
+    { en: 'A religious group', no: 'En religiøs gruppe' },
+    { en: 'A controlled territory outside Italy', no: 'Et kontrollert område utenfor Italia' }
   ],
-  correct: 0,
+  correct: 3,
   explanation: {
     en: 'Provinces were territories governed by Rome outside the Italian peninsula.',
     no: 'Provinser var områder styrt av Roma utenfor den italienske halvøya.'
@@ -570,12 +570,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hva var Forum i antikkens Roma?'
   },
   answers: [
+    { en: 'A prison', no: 'Et fengsel' },
     { en: 'A central public area', no: 'Et sentralt offentlig område' },
     { en: 'A military camp', no: 'En militærleir' },
-    { en: 'A palace', no: 'Et palass' },
-    { en: 'A prison', no: 'Et fengsel' }
+    { en: 'A palace', no: 'Et palass' }
   ],
-  correct: 0,
+  correct: 1,
   explanation: {
     en: 'The Roman Forum was a center for politics, religion, and public life.',
     no: 'Forum var et sentrum for politikk, religion og offentlig liv.'
@@ -589,12 +589,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hva kalte romerne folkeforsamlingen sin?'
   },
   answers: [
-    { en: 'Comitia', no: 'Comitia' },
-    { en: 'Legio', no: 'Legio' },
     { en: 'Senatus', no: 'Senatus' },
-    { en: 'Curia', no: 'Curia' }
+    { en: 'Curia', no: 'Curia' },
+    { en: 'Comitia', no: 'Comitia' },
+    { en: 'Legio', no: 'Legio' }
   ],
-  correct: 0,
+  correct: 2,
   explanation: {
     en: 'Comitia were assemblies where Roman citizens voted on laws and officials.',
     no: 'Comitia var forsamlinger der romerske borgere stemte over lover og embetsmenn.'
@@ -608,12 +608,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hvorfor ble romerske generaler stadig mektigere under slutten av republikken?'
   },
   answers: [
-    { en: 'They gained loyalty from professional armies', no: 'De fikk lojalitet fra profesjonelle hærer' },
     { en: 'The Senate gave up all authority', no: 'Senatet ga fra seg all myndighet' },
     { en: 'Rome stopped expanding', no: 'Roma sluttet å ekspandere' },
-    { en: 'Citizens lost interest in politics', no: 'Borgerne mistet interessen for politikk' }
+    { en: 'Citizens lost interest in politics', no: 'Borgerne mistet interessen for politikk' },
+    { en: 'They gained loyalty from professional armies', no: 'De fikk lojalitet fra profesjonelle hærer' }
   ],
-  correct: 0,
+  correct: 3,
   explanation: {
     en: 'Soldiers often became loyal to their commanders because of rewards and victories.',
     no: 'Soldater ble ofte lojale mot kommandantene sine på grunn av belønninger og seire.'
@@ -646,12 +646,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hvordan endret romersk statsborgerskap seg da riket vokste?'
   },
   answers: [
+    { en: 'It was limited to Rome city forever', no: 'Det var alltid begrenset til Roma by' },
     { en: 'It was gradually extended to more people', no: 'Det ble gradvis utvidet til flere mennesker' },
     { en: 'It was removed completely', no: 'Det ble fjernet fullstendig' },
-    { en: 'Only soldiers could receive it', no: 'Bare soldater kunne få det' },
-    { en: 'It was limited to Rome city forever', no: 'Det var alltid begrenset til Roma by' }
+    { en: 'Only soldiers could receive it', no: 'Bare soldater kunne få det' }
   ],
-  correct: 0,
+  correct: 1,
   explanation: {
     en: 'Rome used citizenship as a tool to integrate conquered populations.',
     no: 'Roma brukte statsborgerskap som et middel for å integrere erobrede folkeslag.'
@@ -665,12 +665,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hvorfor var romerske veier viktige for riket?'
   },
   answers: [
-    { en: 'They improved military movement and trade', no: 'De forbedret militær transport og handel' },
-    { en: 'They replaced the Roman army', no: 'De erstattet den romerske hæren' },
     { en: 'They prevented all invasions', no: 'De hindret alle invasjoner' },
-    { en: 'They ended political conflicts', no: 'De avsluttet politiske konflikter' }
+    { en: 'They ended political conflicts', no: 'De avsluttet politiske konflikter' },
+    { en: 'They improved military movement and trade', no: 'De forbedret militær transport og handel' },
+    { en: 'They replaced the Roman army', no: 'De erstattet den romerske hæren' }
   ],
-  correct: 0,
+  correct: 2,
   explanation: {
     en: 'Roads connected provinces and allowed armies, goods, and messages to move quickly.',
     no: 'Veiene knyttet sammen provinser og gjorde at hærer, varer og meldinger kunne bevege seg raskt.'
@@ -684,12 +684,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hvorfor diskuterer historikere om Augustus faktisk avsluttet republikken?'
   },
   answers: [
-    { en: 'He preserved republican institutions while creating imperial control', no: 'Han bevarte republikanske institusjoner samtidig som han skapte keisermakt' },
     { en: 'He destroyed every Roman tradition', no: 'Han ødela alle romerske tradisjoner' },
     { en: 'He refused political power', no: 'Han avviste politisk makt' },
-    { en: 'He returned Rome to monarchy openly', no: 'Han gjorde Roma til et monarki åpent' }
+    { en: 'He returned Rome to monarchy openly', no: 'Han gjorde Roma til et monarki åpent' },
+    { en: 'He preserved republican institutions while creating imperial control', no: 'Han bevarte republikanske institusjoner samtidig som han skapte keisermakt' }
   ],
-  correct: 0,
+  correct: 3,
   explanation: {
     en: 'Augustus maintained republican appearances while concentrating real authority.',
     no: 'Augustus beholdt republikanske fasader mens han samlet den virkelige makten.'
@@ -722,12 +722,12 @@ export const ancientRome: SeedSubcategory = {
     no: 'Hva gjorde Romerriket politisk annerledes enn republikken?'
   },
   answers: [
+    { en: 'Rome stopped using armies', no: 'Roma sluttet å bruke hærer' },
     { en: 'A single emperor held dominant authority', no: 'Én keiser hadde dominerende myndighet' },
     { en: 'Citizens stopped having laws', no: 'Borgerne sluttet å ha lover' },
-    { en: 'The Senate disappeared immediately', no: 'Senatet forsvant umiddelbart' },
-    { en: 'Rome stopped using armies', no: 'Roma sluttet å bruke hærer' }
+    { en: 'The Senate disappeared immediately', no: 'Senatet forsvant umiddelbart' }
   ],
-  correct: 0,
+  correct: 1,
   explanation: {
     en: 'The emperor became the central political authority while older institutions remained.',
     no: 'Keiseren ble den sentrale politiske myndigheten mens eldre institusjoner besto.'

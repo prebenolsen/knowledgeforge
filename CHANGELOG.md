@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.15.1] - 2026-06-18
+
+### Fixed
+- **Correct-answer position bias in quiz seed files** — several history seed files
+  had the correct answer listed first in every question (`correct: 0` for the whole
+  file), making quizzes trivially guessable. Rebalanced
+  `the-atlantic-slave-trade`, `the-first-civilizations`, `decolonization`,
+  `spread-of-major-religions`, `modern-middle-east`, `civil-rights-movement`,
+  `the-digital-revolution`, and `rome-stuff` so the correct answer is distributed
+  roughly evenly across indices 0–3 (answer order was rotated per question, so the
+  correct option is preserved). Added guidance to `CLAUDE.md` to prevent this from
+  recurring during content generation.
+
+## [3.15.0] - 2026-06-18
+
+### Added
+- **`npm run sync:taxonomy`** (`scripts/sync-taxonomy.ts`) — refreshes the
+  bilingual names of categories, subcategories, and modules in Supabase from the
+  seed *without* inserting questions. Use this when names/translations changed
+  after the initial import (e.g. Norwegian subcategory names imported as
+  English-only). Fully idempotent — unlike `npm run import`, it cannot duplicate
+  questions.
+
+### Fixed
+- **Norwegian subcategory names now appear when the app is set to NO** — the
+  app reads names from the database; if content was imported before the
+  Norwegian names existed, the stored names were English-only. Refresh them with
+  `npm run sync:taxonomy`. Also corrected `SETUP.md`, which wrongly implied
+  re-running `npm run import` was safe (it duplicates every question).
+
 ## [3.14.1] - 2026-06-18
 
 ### Fixed

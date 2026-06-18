@@ -53,12 +53,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'I hvilken region oppstod kristendommen først?'
           },
           answers: [
+            { en: 'China', no: 'Kina' },
             { en: 'Scandinavia', no: 'Skandinavia' },
             { en: 'The Middle East (Roman Judea)', no: 'Midtøsten (romersk Judea)' },
-            { en: 'India', no: 'India' },
-            { en: 'China', no: 'Kina' }
+            { en: 'India', no: 'India' }
           ],
-          correct: 1,
+          correct: 2,
           explanation: {
             en: 'Christianity began in the 1st century in Roman-controlled Judea in the Middle East.',
             no: 'Kristendommen oppstod på 100-tallet i romersk-kontrollerte Judea i Midtøsten.'
@@ -72,12 +72,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kaller kristne de fire beretningene om Jesu liv i Det nye testamente?'
           },
           answers: [
-            { en: 'The Gospels', no: 'Evangeliene' },
             { en: 'The Psalms', no: 'Salmene' },
             { en: 'The Epistles', no: 'Brevene' },
-            { en: 'The Proverbs', no: 'Ordspråkene' }
+            { en: 'The Proverbs', no: 'Ordspråkene' },
+            { en: 'The Gospels', no: 'Evangeliene' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The four Gospels—Matthew, Mark, Luke, and John—describe Jesus’s life and teachings.',
             no: 'De fire evangeliene – Matteus, Markus, Lukas og Johannes – beskriver Jesu liv og lære.'
@@ -91,12 +91,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er kristendommens viktigste symbol?'
           },
           answers: [
-            { en: 'The crescent', no: 'Halvmånen' },
             { en: 'The cross', no: 'Korset' },
             { en: 'The lotus', no: 'Lotusen' },
-            { en: 'The star', no: 'Stjernen' }
+            { en: 'The star', no: 'Stjernen' },
+            { en: 'The crescent', no: 'Halvmånen' }
           ],
-          correct: 1,
+          correct: 0,
           explanation: {
             en: 'The cross symbolizes the crucifixion of Jesus and is the central Christian symbol.',
             no: 'Korset symboliserer korsfestelsen av Jesus og er det sentrale kristne symbolet.'
@@ -110,12 +110,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken kristen høytid feirer Jesu fødsel?'
           },
           answers: [
-            { en: 'Easter', no: 'Påske' },
             { en: 'Pentecost', no: 'Pinse' },
             { en: 'Christmas', no: 'Jul' },
-            { en: 'Lent', no: 'Faste' }
+            { en: 'Lent', no: 'Faste' },
+            { en: 'Easter', no: 'Påske' }
           ],
-          correct: 2,
+          correct: 1,
           explanation: {
             en: 'Christmas celebrates the birth of Jesus, traditionally on 25 December.',
             no: 'Julen feirer Jesu fødsel, tradisjonelt 25. desember.'
@@ -129,12 +129,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken kristen høytid feirer Jesu oppstandelse?'
           },
           answers: [
-            { en: 'Easter', no: 'Påske' },
-            { en: 'Christmas', no: 'Jul' },
             { en: 'Advent', no: 'Advent' },
-            { en: 'Epiphany', no: 'Helligtrekongersdag' }
+            { en: 'Epiphany', no: 'Helligtrekongersdag' },
+            { en: 'Easter', no: 'Påske' },
+            { en: 'Christmas', no: 'Jul' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Easter celebrates the resurrection of Jesus from the dead.',
             no: 'Påsken feirer Jesu oppstandelse fra de døde.'
@@ -148,12 +148,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilket imperium spredte kristendommen vidt etter å ha tatt den til seg?'
           },
           answers: [
-            { en: 'The Roman Empire', no: 'Romerriket' },
             { en: 'The Mongol Empire', no: 'Mongolriket' },
             { en: 'The Aztec Empire', no: 'Aztekerriket' },
-            { en: 'The Persian Empire', no: 'Perserriket' }
+            { en: 'The Persian Empire', no: 'Perserriket' },
+            { en: 'The Roman Empire', no: 'Romerriket' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Roman Empire helped spread Christianity across Europe and the Mediterranean.',
             no: 'Romerriket bidro til å spre kristendommen over Europa og Middelhavsområdet.'
@@ -186,12 +186,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kalles lederen for Den romersk-katolske kirke?'
           },
           answers: [
+            { en: 'The Rabbi', no: 'Rabbineren' },
             { en: 'The Pope', no: 'Paven' },
             { en: 'The Sultan', no: 'Sultanen' },
-            { en: 'The Dalai Lama', no: 'Dalai Lama' },
-            { en: 'The Rabbi', no: 'Rabbineren' }
+            { en: 'The Dalai Lama', no: 'Dalai Lama' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Pope is the head of the Roman Catholic Church, based in Vatican City.',
             no: 'Paven er overhodet for Den romersk-katolske kirke, med sete i Vatikanstaten.'
@@ -205,12 +205,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kaller kristne troen på én Gud i tre personer?'
           },
           answers: [
-            { en: 'The Trinity', no: 'Treenigheten' },
-            { en: 'The Covenant', no: 'Pakten' },
             { en: 'The Exodus', no: 'Utvandringen' },
-            { en: 'The Reformation', no: 'Reformasjonen' }
+            { en: 'The Reformation', no: 'Reformasjonen' },
+            { en: 'The Trinity', no: 'Treenigheten' },
+            { en: 'The Covenant', no: 'Pakten' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Trinity is the Christian belief in God as Father, Son, and Holy Spirit.',
             no: 'Treenigheten er den kristne troen på Gud som Faderen, Sønnen og Den hellige ånd.'
@@ -224,12 +224,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'I hvilken by ble Jesus korsfestet, ifølge evangeliene?'
           },
           answers: [
-            { en: 'Rome', no: 'Roma' },
-            { en: 'Jerusalem', no: 'Jerusalem' },
             { en: 'Athens', no: 'Aten' },
-            { en: 'Alexandria', no: 'Alexandria' }
+            { en: 'Alexandria', no: 'Alexandria' },
+            { en: 'Rome', no: 'Roma' },
+            { en: 'Jerusalem', no: 'Jerusalem' }
           ],
-          correct: 1,
+          correct: 3,
           explanation: {
             en: 'According to the Gospels, Jesus was crucified in Jerusalem.',
             no: 'Ifølge evangeliene ble Jesus korsfestet i Jerusalem.'
@@ -262,12 +262,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er de to hoveddelene av den kristne bibelen?'
           },
           answers: [
+            { en: 'The Talmud and the Mishnah', no: 'Talmud og Misjna' },
             { en: 'The Old Testament and the New Testament', no: 'Det gamle testamente og Det nye testamente' },
             { en: 'The Quran and the Hadith', no: 'Koranen og hadithene' },
-            { en: 'The Vedas and the Upanishads', no: 'Vedaene og upanishadene' },
-            { en: 'The Talmud and the Mishnah', no: 'Talmud og Misjna' }
+            { en: 'The Vedas and the Upanishads', no: 'Vedaene og upanishadene' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Bible is divided into the Old Testament and the New Testament.',
             no: 'Bibelen er delt inn i Det gamle testamente og Det nye testamente.'
@@ -281,12 +281,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Omtrent hvor mange tilhengere har kristendommen, noe som gjør den til verdens største religion?'
           },
           answers: [
-            { en: 'About 2 billion', no: 'Omtrent 2 milliarder' },
-            { en: 'About 50 million', no: 'Omtrent 50 millioner' },
             { en: 'About 200 million', no: 'Omtrent 200 millioner' },
-            { en: 'About 10 million', no: 'Omtrent 10 millioner' }
+            { en: 'About 10 million', no: 'Omtrent 10 millioner' },
+            { en: 'About 2 billion', no: 'Omtrent 2 milliarder' },
+            { en: 'About 50 million', no: 'Omtrent 50 millioner' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'With roughly 2 billion followers, Christianity is the world’s largest religion.',
             no: 'Med omtrent 2 milliarder tilhengere er kristendommen verdens største religion.'
@@ -300,12 +300,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket den romerske keiseren Konstantin kristendommen?'
           },
           answers: [
-            { en: 'He legalized it and supported its spread', no: 'Han gjorde den lovlig og støttet spredningen' },
             { en: 'He banned it permanently', no: 'Han forbød den for alltid' },
             { en: 'He founded Islam', no: 'Han grunnla islam' },
-            { en: 'He destroyed all churches', no: 'Han ødela alle kirker' }
+            { en: 'He destroyed all churches', no: 'Han ødela alle kirker' },
+            { en: 'He legalized it and supported its spread', no: 'Han gjorde den lovlig og støttet spredningen' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Constantine’s Edict of Milan (313) legalized Christianity, aiding its rapid spread.',
             no: 'Konstantins Milano-edikt (313) gjorde kristendommen lovlig og bidro til den raske spredningen.'
@@ -338,12 +338,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvem startet den protestantiske reformasjonen i 1517?'
           },
           answers: [
+            { en: 'Emperor Charles V', no: 'Keiser Karl V' },
             { en: 'Martin Luther', no: 'Martin Luther' },
             { en: 'Pope Leo X', no: 'Pave Leo X' },
-            { en: 'John Calvin alone', no: 'Bare Jean Calvin' },
-            { en: 'Emperor Charles V', no: 'Keiser Karl V' }
+            { en: 'John Calvin alone', no: 'Bare Jean Calvin' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Martin Luther’s 95 Theses in 1517 sparked the Protestant Reformation.',
             no: 'Martin Luthers 95 teser i 1517 utløste den protestantiske reformasjonen.'
@@ -357,12 +357,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket trykkpressen spredningen av kristendommen?'
           },
           answers: [
-            { en: 'It made Bibles cheaper and more widely available', no: 'Den gjorde bibler billigere og mer tilgjengelige' },
-            { en: 'It banned reading the Bible', no: 'Den forbød å lese Bibelen' },
             { en: 'It had no effect on religion', no: 'Den hadde ingen effekt på religion' },
-            { en: 'It destroyed all churches', no: 'Den ødela alle kirker' }
+            { en: 'It destroyed all churches', no: 'Den ødela alle kirker' },
+            { en: 'It made Bibles cheaper and more widely available', no: 'Den gjorde bibler billigere og mer tilgjengelige' },
+            { en: 'It banned reading the Bible', no: 'Den forbød å lese Bibelen' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The printing press allowed mass production of Bibles, spreading Christian ideas widely.',
             no: 'Trykkpressen muliggjorde masseproduksjon av bibler og spredte kristne ideer vidt.'
@@ -376,12 +376,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket europeisk kolonisering kristendommen globalt?'
           },
           answers: [
-            { en: 'It spread Christianity to the Americas, Africa, and Asia', no: 'Den spredte kristendommen til Amerika, Afrika og Asia' },
             { en: 'It confined Christianity to Europe', no: 'Den begrenset kristendommen til Europa' },
             { en: 'It ended missionary work', no: 'Den avsluttet misjonsarbeid' },
-            { en: 'It had no global impact', no: 'Den hadde ingen global virkning' }
+            { en: 'It had no global impact', no: 'Den hadde ingen global virkning' },
+            { en: 'It spread Christianity to the Americas, Africa, and Asia', no: 'Den spredte kristendommen til Amerika, Afrika og Asia' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'European colonizers and missionaries spread Christianity across the globe.',
             no: 'Europeiske kolonimakter og misjonærer spredte kristendommen over hele kloden.'
@@ -414,12 +414,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvem var Paulus (apostelen), og hvorfor var han viktig?'
           },
           answers: [
+            { en: 'The founder of Islam', no: 'Grunnleggeren av islam' },
             { en: 'A missionary whose letters spread Christianity widely', no: 'En misjonær hvis brev spredte kristendommen vidt' },
             { en: 'A Roman emperor', no: 'En romersk keiser' },
-            { en: 'A Jewish high priest who opposed Jesus', no: 'En jødisk yppersteprest som motarbeidet Jesus' },
-            { en: 'The founder of Islam', no: 'Grunnleggeren av islam' }
+            { en: 'A Jewish high priest who opposed Jesus', no: 'En jødisk yppersteprest som motarbeidet Jesus' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Paul traveled widely and wrote letters that shaped early Christian theology and spread the faith.',
             no: 'Paulus reiste mye og skrev brev som formet tidlig kristen teologi og spredte troen.'
@@ -433,12 +433,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan bidro klostre til å bevare og spre kristendommen i middelalderens Europa?'
           },
           answers: [
-            { en: 'They copied texts, educated people, and converted regions', no: 'De kopierte tekster, utdannet folk og konverterte regioner' },
-            { en: 'They banned all books', no: 'De forbød alle bøker' },
             { en: 'They had no religious role', no: 'De hadde ingen religiøs rolle' },
-            { en: 'They opposed Christianity', no: 'De motarbeidet kristendommen' }
+            { en: 'They opposed Christianity', no: 'De motarbeidet kristendommen' },
+            { en: 'They copied texts, educated people, and converted regions', no: 'De kopierte tekster, utdannet folk og konverterte regioner' },
+            { en: 'They banned all books', no: 'De forbød alle bøker' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Monasteries preserved learning, copied scriptures, and were centers of missionary activity.',
             no: 'Klostre bevarte lærdom, kopierte skrifter og var sentre for misjonsvirksomhet.'
@@ -452,12 +452,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva var korstogene?'
           },
           answers: [
-            { en: 'Religious wars largely aimed at controlling the Holy Land', no: 'Religiøse kriger som i stor grad hadde som mål å kontrollere Det hellige land' },
             { en: 'Peaceful trade missions to Asia', no: 'Fredelige handelsekspedisjoner til Asia' },
             { en: 'Scientific expeditions', no: 'Vitenskapelige ekspedisjoner' },
-            { en: 'Festivals held in Rome', no: 'Festivaler holdt i Roma' }
+            { en: 'Festivals held in Rome', no: 'Festivaler holdt i Roma' },
+            { en: 'Religious wars largely aimed at controlling the Holy Land', no: 'Religiøse kriger som i stor grad hadde som mål å kontrollere Det hellige land' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Crusades were medieval religious wars, mainly to control Jerusalem and the Holy Land.',
             no: 'Korstogene var religiøse kriger i middelalderen, hovedsakelig for å kontrollere Jerusalem og Det hellige land.'
@@ -490,12 +490,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilke tre grener utgjør mesteparten av kristendommen i dag?'
           },
           answers: [
+            { en: 'Orthodox, Reform, and Conservative', no: 'Ortodoks, reform og konservativ' },
             { en: 'Catholic, Orthodox, and Protestant', no: 'Katolsk, ortodoks og protestantisk' },
             { en: 'Sunni, Shia, and Sufi', no: 'Sunni, sjia og sufi' },
-            { en: 'Theravada, Mahayana, and Vajrayana', no: 'Theravada, mahayana og vajrayana' },
-            { en: 'Orthodox, Reform, and Conservative', no: 'Ortodoks, reform og konservativ' }
+            { en: 'Theravada, Mahayana, and Vajrayana', no: 'Theravada, mahayana og vajrayana' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Christianity’s three main branches are Catholic, Eastern Orthodox, and Protestant.',
             no: 'Kristendommens tre hovedgrener er katolsk, østlig-ortodoks og protestantisk.'
@@ -509,12 +509,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor er pinsen viktig i kristen tradisjon?'
           },
           answers: [
-            { en: 'It marks the Holy Spirit coming to the apostles, often called the church’s birth', no: 'Den markerer at Den hellige ånd kom til apostlene, ofte kalt kirkens fødsel' },
-            { en: 'It marks Jesus’s birth', no: 'Den markerer Jesu fødsel' },
             { en: 'It celebrates the printing of the Bible', no: 'Den feirer trykkingen av Bibelen' },
-            { en: 'It marks the start of Lent', no: 'Den markerer begynnelsen på fasten' }
+            { en: 'It marks the start of Lent', no: 'Den markerer begynnelsen på fasten' },
+            { en: 'It marks the Holy Spirit coming to the apostles, often called the church’s birth', no: 'Den markerer at Den hellige ånd kom til apostlene, ofte kalt kirkens fødsel' },
+            { en: 'It marks Jesus’s birth', no: 'Den markerer Jesu fødsel' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Pentecost commemorates the Holy Spirit descending on the apostles, seen as the birth of the church.',
             no: 'Pinsen minnes at Den hellige ånd kom over apostlene, sett på som kirkens fødsel.'
@@ -528,12 +528,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan bidro herskeres omvendelse til å spre kristendommen i Europa?'
           },
           answers: [
-            { en: 'When kings converted, their subjects often followed', no: 'Når konger konverterte, fulgte ofte undersåttene etter' },
             { en: 'It made Christianity illegal', no: 'Det gjorde kristendommen ulovlig' },
             { en: 'Rulers banned the faith', no: 'Herskere forbød troen' },
-            { en: 'It had no effect on ordinary people', no: 'Det hadde ingen effekt på vanlige folk' }
+            { en: 'It had no effect on ordinary people', no: 'Det hadde ingen effekt på vanlige folk' },
+            { en: 'When kings converted, their subjects often followed', no: 'Når konger konverterte, fulgte ofte undersåttene etter' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The conversion of kings and nobles often led entire kingdoms to adopt Christianity.',
             no: 'Omvendelsen av konger og adelsmenn førte ofte til at hele kongeriker tok til seg kristendommen.'
@@ -566,12 +566,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor diskuterer historikere Romerrikets rolle i kristendommens framgang?'
           },
           answers: [
+            { en: 'The empire banned all travel', no: 'Imperiet forbød all reising' },
             { en: 'Its roads, trade, and stability both aided spread and earlier persecution shaped the faith', no: 'Veiene, handelen og stabiliteten hjalp spredningen, mens tidligere forfølgelse formet troen' },
             { en: 'The empire never interacted with Christianity', no: 'Imperiet hadde aldri kontakt med kristendommen' },
-            { en: 'Rome only existed after Christianity', no: 'Roma fantes bare etter kristendommen' },
-            { en: 'The empire banned all travel', no: 'Imperiet forbød all reising' }
+            { en: 'Rome only existed after Christianity', no: 'Roma fantes bare etter kristendommen' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Scholars debate how Roman infrastructure, persecution, and later patronage each shaped Christianity’s rise.',
             no: 'Forskere diskuterer hvordan romersk infrastruktur, forfølgelse og senere støtte hver formet kristendommens framvekst.'
@@ -585,12 +585,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan formet konsilet i Nikea (325) kristen lære?'
           },
           answers: [
-            { en: 'It defined core beliefs about the nature of Christ', no: 'Det definerte sentrale trosspørsmål om Kristi natur' },
-            { en: 'It abolished the Bible', no: 'Det avskaffet Bibelen' },
             { en: 'It founded Protestantism', no: 'Det grunnla protestantismen' },
-            { en: 'It ended all church councils', no: 'Det avsluttet alle kirkemøter' }
+            { en: 'It ended all church councils', no: 'Det avsluttet alle kirkemøter' },
+            { en: 'It defined core beliefs about the nature of Christ', no: 'Det definerte sentrale trosspørsmål om Kristi natur' },
+            { en: 'It abolished the Bible', no: 'Det avskaffet Bibelen' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Council of Nicaea addressed disputes over Christ’s divinity and produced the Nicene Creed.',
             no: 'Konsilet i Nikea behandlet stridigheter om Kristi guddommelighet og utarbeidet den nikenske trosbekjennelse.'
@@ -604,12 +604,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilke langsiktige virkninger fikk reformasjonen utover religion?'
           },
           answers: [
-            { en: 'It influenced literacy, nationalism, and politics in Europe', no: 'Den påvirket lesekyndighet, nasjonalisme og politikk i Europa' },
             { en: 'It had no effect outside churches', no: 'Den hadde ingen virkning utenfor kirkene' },
             { en: 'It ended all European trade', no: 'Den avsluttet all europeisk handel' },
-            { en: 'It united Europe under one church', no: 'Den forente Europa under én kirke' }
+            { en: 'It united Europe under one church', no: 'Den forente Europa under én kirke' },
+            { en: 'It influenced literacy, nationalism, and politics in Europe', no: 'Den påvirket lesekyndighet, nasjonalisme og politikk i Europa' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Reformation boosted vernacular literacy and reshaped politics, contributing to nation-states and conflict.',
             no: 'Reformasjonen styrket lesekyndighet på morsmålet og endret politikken, og bidro til nasjonalstater og konflikt.'
@@ -642,12 +642,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket oversettelsen av Bibelen til lokale språk kristendommen?'
           },
           answers: [
+            { en: 'It unified all churches permanently', no: 'Den forente alle kirker for alltid' },
             { en: 'It broadened access but also enabled new interpretations and divisions', no: 'Den utvidet tilgangen, men muliggjorde også nye tolkninger og splittelser' },
             { en: 'It made the Bible unreadable', no: 'Den gjorde Bibelen uleselig' },
-            { en: 'It had no doctrinal impact', no: 'Den hadde ingen læremessig virkning' },
-            { en: 'It unified all churches permanently', no: 'Den forente alle kirker for alltid' }
+            { en: 'It had no doctrinal impact', no: 'Den hadde ingen læremessig virkning' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Vernacular Bibles let more people read scripture directly, fueling reform movements and new denominations.',
             no: 'Bibler på morsmålet lot flere lese skriften direkte, noe som næret reformbevegelser og nye trossamfunn.'
@@ -661,12 +661,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor vokste kristendommen raskt i det globale sør på 1900-tallet?'
           },
           answers: [
-            { en: 'Local leadership, missions, and cultural adaptation drove growth', no: 'Lokalt lederskap, misjon og kulturell tilpasning drev veksten' },
-            { en: 'European governments forced everyone to convert', no: 'Europeiske myndigheter tvang alle til å konvertere' },
             { en: 'It was banned in Europe', no: 'Den ble forbudt i Europa' },
-            { en: 'No missionaries were involved', no: 'Ingen misjonærer var involvert' }
+            { en: 'No missionaries were involved', no: 'Ingen misjonærer var involvert' },
+            { en: 'Local leadership, missions, and cultural adaptation drove growth', no: 'Lokalt lederskap, misjon og kulturell tilpasning drev veksten' },
+            { en: 'European governments forced everyone to convert', no: 'Europeiske myndigheter tvang alle til å konvertere' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Indigenous leadership and adaptation to local cultures helped Christianity flourish in Africa, Asia, and Latin America.',
             no: 'Lokalt lederskap og tilpasning til lokale kulturer bidro til at kristendommen blomstret i Afrika, Asia og Latin-Amerika.'
@@ -680,12 +680,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan tolker historikere forfølgelsen av de første kristne under Roma?'
           },
           answers: [
-            { en: 'It was sporadic and local more often than constant and empire-wide', no: 'Den var oftere sporadisk og lokal enn konstant og riksomfattende' },
             { en: 'It never actually happened', no: 'Den skjedde aldri egentlig' },
             { en: 'It was ordered every year by every emperor', no: 'Den ble beordret hvert år av hver keiser' },
-            { en: 'It only targeted Roman officials', no: 'Den rammet bare romerske embetsmenn' }
+            { en: 'It only targeted Roman officials', no: 'Den rammet bare romerske embetsmenn' },
+            { en: 'It was sporadic and local more often than constant and empire-wide', no: 'Den var oftere sporadisk og lokal enn konstant og riksomfattende' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Modern scholarship suggests persecution was often intermittent and regional rather than systematic across the empire.',
             no: 'Moderne forskning antyder at forfølgelsen ofte var periodisk og regional snarere enn systematisk i hele riket.'
@@ -718,12 +718,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor beskrives «kristningen» av det førkristne Europa som en gradvis sammensmelting?'
           },
           answers: [
+            { en: 'Christianity rejected every existing custom', no: 'Kristendommen avviste enhver eksisterende skikk' },
             { en: 'Local customs and festivals were often absorbed into Christian practice', no: 'Lokale skikker og fester ble ofte tatt opp i kristen praksis' },
             { en: 'All old traditions vanished instantly', no: 'Alle gamle tradisjoner forsvant øyeblikkelig' },
-            { en: 'No local beliefs existed beforehand', no: 'Ingen lokale trosforestillinger fantes på forhånd' },
-            { en: 'Christianity rejected every existing custom', no: 'Kristendommen avviste enhver eksisterende skikk' }
+            { en: 'No local beliefs existed beforehand', no: 'Ingen lokale trosforestillinger fantes på forhånd' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Christianization often involved syncretism, with older practices reinterpreted within a Christian framework.',
             no: 'Kristningen innebar ofte synkretisme, der eldre skikker ble omtolket innenfor en kristen ramme.'
@@ -737,12 +737,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket sekulariseringen i det moderne Europa kristendommens rolle?'
           },
           answers: [
-            { en: 'Church attendance and influence declined in many countries', no: 'Kirkebesøk og innflytelse avtok i mange land' },
-            { en: 'It made Christianity the state religion everywhere', no: 'Den gjorde kristendommen til statsreligion overalt' },
             { en: 'It increased church power dramatically', no: 'Den økte kirkemakten dramatisk' },
-            { en: 'It had no measurable effect', no: 'Den hadde ingen målbar effekt' }
+            { en: 'It had no measurable effect', no: 'Den hadde ingen målbar effekt' },
+            { en: 'Church attendance and influence declined in many countries', no: 'Kirkebesøk og innflytelse avtok i mange land' },
+            { en: 'It made Christianity the state religion everywhere', no: 'Den gjorde kristendommen til statsreligion overalt' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'In much of modern Europe, secularization reduced regular church attendance and institutional influence.',
             no: 'I store deler av det moderne Europa reduserte sekulariseringen jevnlig kirkegang og institusjonell innflytelse.'
@@ -762,12 +762,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvem er islams grunnleggende profet?'
           },
           answers: [
-            { en: 'Muhammad', no: 'Muhammad' },
             { en: 'Jesus', no: 'Jesus' },
             { en: 'Abraham', no: 'Abraham' },
-            { en: 'Buddha', no: 'Buddha' }
+            { en: 'Buddha', no: 'Buddha' },
+            { en: 'Muhammad', no: 'Muhammad' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Muslims regard Muhammad as the final prophet who received the Quran.',
             no: 'Muslimer regner Muhammad som den siste profeten som mottok Koranen.'
@@ -781,12 +781,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er islams hellige bok?'
           },
           answers: [
-            { en: 'The Bible', no: 'Bibelen' },
             { en: 'The Quran', no: 'Koranen' },
             { en: 'The Torah', no: 'Toraen' },
-            { en: 'The Tripitaka', no: 'Tripitaka' }
+            { en: 'The Tripitaka', no: 'Tripitaka' },
+            { en: 'The Bible', no: 'Bibelen' }
           ],
-          correct: 1,
+          correct: 0,
           explanation: {
             en: 'The Quran is the holy book of Islam, believed to be the word of God revealed to Muhammad.',
             no: 'Koranen er islams hellige bok, som anses å være Guds ord åpenbart for Muhammad.'
@@ -800,12 +800,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'I hvilken by ble Muhammad født?'
           },
           answers: [
+            { en: 'Cairo', no: 'Kairo' },
             { en: 'Mecca', no: 'Mekka' },
             { en: 'Jerusalem', no: 'Jerusalem' },
-            { en: 'Baghdad', no: 'Bagdad' },
-            { en: 'Cairo', no: 'Kairo' }
+            { en: 'Baghdad', no: 'Bagdad' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Muhammad was born in Mecca, in present-day Saudi Arabia, around 570 CE.',
             no: 'Muhammad ble født i Mekka, i dagens Saudi-Arabia, rundt år 570.'
@@ -819,12 +819,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kaller tilhengere av islam seg selv?'
           },
           answers: [
-            { en: 'Muslims', no: 'Muslimer' },
-            { en: 'Hindus', no: 'Hinduer' },
             { en: 'Christians', no: 'Kristne' },
-            { en: 'Buddhists', no: 'Buddhister' }
+            { en: 'Buddhists', no: 'Buddhister' },
+            { en: 'Muslims', no: 'Muslimer' },
+            { en: 'Hindus', no: 'Hinduer' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Followers of Islam are called Muslims, meaning those who submit to God.',
             no: 'Tilhengere av islam kalles muslimer, som betyr de som underkaster seg Gud.'
@@ -838,12 +838,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er navnet på den ene Gud i islam?'
           },
           answers: [
-            { en: 'Allah', no: 'Allah' },
             { en: 'Brahma', no: 'Brahma' },
             { en: 'Zeus', no: 'Zevs' },
-            { en: 'Vishnu', no: 'Vishnu' }
+            { en: 'Vishnu', no: 'Vishnu' },
+            { en: 'Allah', no: 'Allah' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Allah is the Arabic word for the one God worshipped in Islam.',
             no: 'Allah er det arabiske ordet for den ene Gud som tilbes i islam.'
@@ -876,12 +876,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kalles muslimenes bønnested?'
           },
           answers: [
+            { en: 'A cathedral', no: 'En katedral' },
             { en: 'A mosque', no: 'En moské' },
             { en: 'A synagogue', no: 'En synagoge' },
-            { en: 'A temple', no: 'Et tempel' },
-            { en: 'A cathedral', no: 'En katedral' }
+            { en: 'A temple', no: 'Et tempel' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Muslims worship in a mosque, called a "masjid" in Arabic.',
             no: 'Muslimer tilber i en moské, kalt «masjid» på arabisk.'
@@ -895,12 +895,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Mot hvilken by ber muslimer?'
           },
           answers: [
-            { en: 'Mecca', no: 'Mekka' },
-            { en: 'Medina', no: 'Medina' },
             { en: 'Istanbul', no: 'Istanbul' },
-            { en: 'Damascus', no: 'Damaskus' }
+            { en: 'Damascus', no: 'Damaskus' },
+            { en: 'Mecca', no: 'Mekka' },
+            { en: 'Medina', no: 'Medina' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Muslims face the Kaaba in Mecca during their daily prayers.',
             no: 'Muslimer vender seg mot Kaba i Mekka under de daglige bønnene.'
@@ -914,12 +914,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kalles muslimenes hellige fastemåned?'
           },
           answers: [
-            { en: 'Ramadan', no: 'Ramadan' },
             { en: 'Hajj', no: 'Hajj' },
             { en: 'Eid', no: 'Eid' },
-            { en: 'Diwali', no: 'Diwali' }
+            { en: 'Diwali', no: 'Diwali' },
+            { en: 'Ramadan', no: 'Ramadan' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'During Ramadan, Muslims fast from dawn to sunset.',
             no: 'Under ramadan faster muslimer fra daggry til solnedgang.'
@@ -952,12 +952,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'På hvilket kontinent oppstod islam først?'
           },
           answers: [
+            { en: 'Australia', no: 'Australia' },
             { en: 'Asia (the Arabian Peninsula)', no: 'Asia (Den arabiske halvøy)' },
             { en: 'Europe', no: 'Europa' },
-            { en: 'South America', no: 'Sør-Amerika' },
-            { en: 'Australia', no: 'Australia' }
+            { en: 'South America', no: 'Sør-Amerika' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Islam emerged in the 7th century on the Arabian Peninsula in western Asia.',
             no: 'Islam oppstod på 600-tallet på Den arabiske halvøy i vestlige Asia.'
@@ -971,12 +971,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er de to største grenene av islam?'
           },
           answers: [
-            { en: 'Sunni and Shia', no: 'Sunni og sjia' },
-            { en: 'Catholic and Protestant', no: 'Katolsk og protestantisk' },
             { en: 'Theravada and Mahayana', no: 'Theravada og mahayana' },
-            { en: 'Orthodox and Reform', no: 'Ortodoks og reform' }
+            { en: 'Orthodox and Reform', no: 'Ortodoks og reform' },
+            { en: 'Sunni and Shia', no: 'Sunni og sjia' },
+            { en: 'Catholic and Protestant', no: 'Katolsk og protestantisk' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The two main branches of Islam are Sunni and Shia.',
             no: 'De to hovedgrenene av islam er sunni og sjia.'
@@ -990,12 +990,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Til hvilken by utvandret Muhammad i år 622?'
           },
           answers: [
-            { en: 'Medina', no: 'Medina' },
             { en: 'Mecca', no: 'Mekka' },
             { en: 'Baghdad', no: 'Bagdad' },
-            { en: 'Jerusalem', no: 'Jerusalem' }
+            { en: 'Jerusalem', no: 'Jerusalem' },
+            { en: 'Medina', no: 'Medina' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Muhammad’s migration (Hijra) to Medina in 622 CE marks the start of the Islamic calendar.',
             no: 'Muhammads utvandring (hijra) til Medina i år 622 markerer begynnelsen på den islamske kalenderen.'
@@ -1028,12 +1028,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken hellig bygning i Mekka går muslimer rundt under pilegrimsreisen?'
           },
           answers: [
+            { en: 'The Colosseum', no: 'Colosseum' },
             { en: 'The Kaaba', no: 'Kaba' },
             { en: 'The Western Wall', no: 'Vestmuren' },
-            { en: 'The Parthenon', no: 'Parthenon' },
-            { en: 'The Colosseum', no: 'Colosseum' }
+            { en: 'The Parthenon', no: 'Parthenon' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Kaaba is the cube-shaped shrine in Mecca that pilgrims circle during the Hajj.',
             no: 'Kaba er det kubeformede helligdommen i Mekka som pilegrimer går rundt under hajj.'
@@ -1047,12 +1047,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan spredte islam seg så raskt i sitt første århundre?'
           },
           answers: [
-            { en: 'Through rapid Arab conquests and expanding trade', no: 'Gjennom raske arabiske erobringer og økende handel' },
-            { en: 'Only by sea voyages to the Americas', no: 'Bare gjennom sjøreiser til Amerika' },
             { en: 'By banning all travel', no: 'Ved å forby all reising' },
-            { en: 'Through European missionaries', no: 'Gjennom europeiske misjonærer' }
+            { en: 'Through European missionaries', no: 'Gjennom europeiske misjonærer' },
+            { en: 'Through rapid Arab conquests and expanding trade', no: 'Gjennom raske arabiske erobringer og økende handel' },
+            { en: 'Only by sea voyages to the Americas', no: 'Bare gjennom sjøreiser til Amerika' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Early Islamic expansion combined military conquest with growing trade networks across regions.',
             no: 'Den tidlige islamske ekspansjonen kombinerte militær erobring med voksende handelsnettverk på tvers av regioner.'
@@ -1066,12 +1066,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva forårsaket splittelsen mellom sunni- og sjiamuslimer?'
           },
           answers: [
-            { en: 'A dispute over who should lead the community after Muhammad', no: 'En strid om hvem som skulle lede samfunnet etter Muhammad' },
             { en: 'A disagreement over the alphabet', no: 'En uenighet om alfabetet' },
             { en: 'A debate about trade routes', no: 'En debatt om handelsruter' },
-            { en: 'A conflict over the Quran’s existence', no: 'En konflikt om Koranens eksistens' }
+            { en: 'A conflict over the Quran’s existence', no: 'En konflikt om Koranens eksistens' },
+            { en: 'A dispute over who should lead the community after Muhammad', no: 'En strid om hvem som skulle lede samfunnet etter Muhammad' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Sunni-Shia split arose over who should succeed Muhammad as leader of the Muslim community.',
             no: 'Splittelsen mellom sunni og sjia oppstod om hvem som skulle etterfølge Muhammad som leder for det muslimske samfunnet.'
@@ -1104,12 +1104,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan bidro handelsruter til å spre islam?'
           },
           answers: [
+            { en: 'Trade had no role in religion', no: 'Handel hadde ingen rolle i religion' },
             { en: 'Merchants carried the faith along land and sea routes', no: 'Kjøpmenn brakte troen med seg langs land- og sjøruter' },
             { en: 'Trade routes were closed to Muslims', no: 'Handelsruter var stengt for muslimer' },
-            { en: 'Islam forbade all commerce', no: 'Islam forbød all handel' },
-            { en: 'Trade had no role in religion', no: 'Handel hadde ingen rolle i religion' }
+            { en: 'Islam forbade all commerce', no: 'Islam forbød all handel' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Muslim merchants spread Islam to West Africa, South Asia, and Southeast Asia through trade.',
             no: 'Muslimske kjøpmenn spredte islam til Vest-Afrika, Sør-Asia og Sørøst-Asia gjennom handel.'
@@ -1123,12 +1123,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva var betydningen av islams gullalder?'
           },
           answers: [
-            { en: 'A flourishing of science, medicine, and learning', no: 'En blomstring av vitenskap, medisin og lærdom' },
-            { en: 'A complete ban on education', no: 'Et fullstendig forbud mot utdanning' },
             { en: 'The end of all trade', no: 'Slutten på all handel' },
-            { en: 'The fall of Islam', no: 'Islams fall' }
+            { en: 'The fall of Islam', no: 'Islams fall' },
+            { en: 'A flourishing of science, medicine, and learning', no: 'En blomstring av vitenskap, medisin og lærdom' },
+            { en: 'A complete ban on education', no: 'Et fullstendig forbud mot utdanning' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'During the Islamic Golden Age, scholars advanced mathematics, astronomy, medicine, and philosophy.',
             no: 'Under islams gullalder utviklet lærde matematikk, astronomi, medisin og filosofi.'
@@ -1142,12 +1142,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvor langt hadde islam spredt seg innen år 750?'
           },
           answers: [
-            { en: 'From Spain across North Africa to Central Asia', no: 'Fra Spania over Nord-Afrika til Sentral-Asia' },
             { en: 'Only within one city', no: 'Bare innenfor én by' },
             { en: 'Across the Americas', no: 'Over hele Amerika' },
-            { en: 'Throughout Scandinavia', no: 'Over hele Skandinavia' }
+            { en: 'Throughout Scandinavia', no: 'Over hele Skandinavia' },
+            { en: 'From Spain across North Africa to Central Asia', no: 'Fra Spania over Nord-Afrika til Sentral-Asia' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'By 750 CE, Islamic rule stretched from the Iberian Peninsula to Central Asia.',
             no: 'Innen år 750 strakte islamsk styre seg fra Den iberiske halvøy til Sentral-Asia.'
@@ -1180,12 +1180,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket islam regioner som Spania (Al-Andalus)?'
           },
           answers: [
+            { en: 'It banned universities', no: 'Den forbød universiteter' },
             { en: 'It brought advances in architecture, science, and learning', no: 'Den brakte fremskritt innen arkitektur, vitenskap og lærdom' },
             { en: 'It ended all building', no: 'Den avsluttet all bygging' },
-            { en: 'It had no cultural impact', no: 'Den hadde ingen kulturell innvirkning' },
-            { en: 'It banned universities', no: 'Den forbød universiteter' }
+            { en: 'It had no cultural impact', no: 'Den hadde ingen kulturell innvirkning' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'In Al-Andalus, Islamic rule fostered notable achievements in science, art, and architecture.',
             no: 'I Al-Andalus fremmet islamsk styre bemerkelsesverdige prestasjoner innen vitenskap, kunst og arkitektur.'
@@ -1199,12 +1199,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er forholdet mellom islam, kristendom og jødedom?'
           },
           answers: [
-            { en: 'All three are monotheistic and trace roots to Abraham', no: 'Alle tre er monoteistiske og fører røttene tilbake til Abraham' },
-            { en: 'They share no beliefs at all', no: 'De deler ingen trosforestillinger i det hele tatt' },
             { en: 'They are all polytheistic', no: 'De er alle polyteistiske' },
-            { en: 'They reject all prophets', no: 'De avviser alle profeter' }
+            { en: 'They reject all prophets', no: 'De avviser alle profeter' },
+            { en: 'All three are monotheistic and trace roots to Abraham', no: 'Alle tre er monoteistiske og fører røttene tilbake til Abraham' },
+            { en: 'They share no beliefs at all', no: 'De deler ingen trosforestillinger i det hele tatt' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Islam, Christianity, and Judaism are Abrahamic, monotheistic faiths sharing common roots.',
             no: 'Islam, kristendom og jødedom er abrahamittiske, monoteistiske religioner med felles røtter.'
@@ -1218,12 +1218,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan bidro Det osmanske riket til å spre islam?'
           },
           answers: [
-            { en: 'It carried Islam into southeastern Europe and beyond', no: 'Det brakte islam til Sørøst-Europa og videre' },
             { en: 'It banned Islam', no: 'Det forbød islam' },
             { en: 'It confined Islam to Arabia', no: 'Det begrenset islam til Arabia' },
-            { en: 'It had no religious role', no: 'Det hadde ingen religiøs rolle' }
+            { en: 'It had no religious role', no: 'Det hadde ingen religiøs rolle' },
+            { en: 'It carried Islam into southeastern Europe and beyond', no: 'Det brakte islam til Sørøst-Europa og videre' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Ottoman Empire extended Islamic rule and culture into the Balkans and other regions.',
             no: 'Det osmanske riket utvidet islamsk styre og kultur til Balkan og andre regioner.'
@@ -1256,12 +1256,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan nådde islam Sørøst-Asia, som Indonesia?'
           },
           answers: [
+            { en: 'It never reached the region', no: 'Den nådde aldri regionen' },
             { en: 'Mainly through Muslim traders, not conquest', no: 'Hovedsakelig gjennom muslimske handelsmenn, ikke erobring' },
             { en: 'Through European armies', no: 'Gjennom europeiske hærer' },
-            { en: 'By a single missionary in one year', no: 'Av en enkelt misjonær på ett år' },
-            { en: 'It never reached the region', no: 'Den nådde aldri regionen' }
+            { en: 'By a single missionary in one year', no: 'Av en enkelt misjonær på ett år' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Islam spread to Southeast Asia largely through trade, making Indonesia the world’s most populous Muslim country.',
             no: 'Islam spredte seg til Sørøst-Asia hovedsakelig gjennom handel, og gjorde Indonesia til verdens mest folkerike muslimske land.'
@@ -1275,12 +1275,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken islamsk høytid markerer slutten på ramadan?'
           },
           answers: [
-            { en: 'Eid al-Fitr', no: 'Eid al-Fitr' },
-            { en: 'Yom Kippur', no: 'Yom kippur' },
             { en: 'Diwali', no: 'Diwali' },
-            { en: 'Easter', no: 'Påske' }
+            { en: 'Easter', no: 'Påske' },
+            { en: 'Eid al-Fitr', no: 'Eid al-Fitr' },
+            { en: 'Yom Kippur', no: 'Yom kippur' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Eid al-Fitr is the festival that celebrates the end of the Ramadan fast.',
             no: 'Eid al-Fitr er høytiden som feirer slutten på ramadanfasten.'
@@ -1294,12 +1294,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor sier historikere at islams spredning ikke utelukkende skyldtes militær erobring?'
           },
           answers: [
-            { en: 'Trade, missionary Sufis, and gradual conversion played major roles', no: 'Handel, misjonerende sufier og gradvis konvertering spilte store roller' },
             { en: 'No conversions ever happened', no: 'Ingen konverteringer skjedde noensinne' },
             { en: 'Conquest was the only factor', no: 'Erobring var den eneste faktoren' },
-            { en: 'Islam never spread beyond Arabia', no: 'Islam spredte seg aldri utenfor Arabia' }
+            { en: 'Islam never spread beyond Arabia', no: 'Islam spredte seg aldri utenfor Arabia' },
+            { en: 'Trade, missionary Sufis, and gradual conversion played major roles', no: 'Handel, misjonerende sufier og gradvis konvertering spilte store roller' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Conversion often occurred gradually through trade, Sufi missionaries, and cultural exchange, not just conquest.',
             no: 'Konvertering skjedde ofte gradvis gjennom handel, sufimisjonærer og kulturell utveksling, ikke bare erobring.'
@@ -1332,12 +1332,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken rolle spilte sufismen i spredningen av islam?'
           },
           answers: [
+            { en: 'It rejected Islam entirely', no: 'Den avviste islam fullstendig' },
             { en: 'Its mystical, adaptable approach won converts in many cultures', no: 'Dens mystiske, tilpasningsdyktige tilnærming vant konvertitter i mange kulturer' },
             { en: 'It opposed all conversion', no: 'Den motsatte seg all konvertering' },
-            { en: 'It existed only in Europe', no: 'Den fantes bare i Europa' },
-            { en: 'It rejected Islam entirely', no: 'Den avviste islam fullstendig' }
+            { en: 'It existed only in Europe', no: 'Den fantes bare i Europa' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Sufi mystics often adapted to local cultures, making Islam accessible and aiding its spread.',
             no: 'Sufimystikere tilpasset seg ofte lokale kulturer, noe som gjorde islam tilgjengelig og fremmet spredningen.'
@@ -1351,12 +1351,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket statusen som «bokens folk» ikke-muslimer under islamsk styre?'
           },
           answers: [
-            { en: 'Jews and Christians could often practice their faith with certain conditions', no: 'Jøder og kristne kunne ofte praktisere troen sin under visse betingelser' },
-            { en: 'They were always forced to convert immediately', no: 'De ble alltid tvunget til å konvertere umiddelbart' },
             { en: 'They were forbidden from any worship', no: 'De ble forbudt all tilbedelse' },
-            { en: 'They were given full equality everywhere', no: 'De ble gitt full likestilling overalt' }
+            { en: 'They were given full equality everywhere', no: 'De ble gitt full likestilling overalt' },
+            { en: 'Jews and Christians could often practice their faith with certain conditions', no: 'Jøder og kristne kunne ofte praktisere troen sin under visse betingelser' },
+            { en: 'They were always forced to convert immediately', no: 'De ble alltid tvunget til å konvertere umiddelbart' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'As "People of the Book," Jews and Christians were often allowed to practice their religion under set conditions, such as paying a tax.',
             no: 'Som «bokens folk» fikk jøder og kristne ofte praktisere religionen sin under fastsatte betingelser, som å betale en skatt.'
@@ -1370,12 +1370,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor er overføringen av kunnskap fra den islamske verden viktig for europeisk historie?'
           },
           answers: [
-            { en: 'It helped spark the European Renaissance and scientific revival', no: 'Den bidro til å utløse den europeiske renessansen og vitenskapelig gjenoppblomstring' },
             { en: 'It had no influence on Europe', no: 'Den hadde ingen innflytelse på Europa' },
             { en: 'It ended European learning', no: 'Den avsluttet europeisk lærdom' },
-            { en: 'It only affected Arabia', no: 'Den påvirket bare Arabia' }
+            { en: 'It only affected Arabia', no: 'Den påvirket bare Arabia' },
+            { en: 'It helped spark the European Renaissance and scientific revival', no: 'Den bidro til å utløse den europeiske renessansen og vitenskapelig gjenoppblomstring' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Translations of Arabic works on science, medicine, and philosophy fed into the European Renaissance.',
             no: 'Oversettelser av arabiske verk om vitenskap, medisin og filosofi bidro til den europeiske renessansen.'
@@ -1408,12 +1408,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor beskriver forskere den tidlige islamske ekspansjonen som både religiøs og politisk?'
           },
           answers: [
+            { en: 'There was no religious element', no: 'Det fantes ingen religiøs dimensjon' },
             { en: 'Conquest built empires while faith provided unity and legitimacy', no: 'Erobring bygde imperier mens troen ga enhet og legitimitet' },
             { en: 'Religion and politics were entirely separate', no: 'Religion og politikk var helt atskilt' },
-            { en: 'There was no political element', no: 'Det fantes ingen politisk dimensjon' },
-            { en: 'There was no religious element', no: 'Det fantes ingen religiøs dimensjon' }
+            { en: 'There was no political element', no: 'Det fantes ingen politisk dimensjon' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Early caliphates expanded territory and authority while Islam offered a shared identity and legitimacy.',
             no: 'Tidlige kalifater utvidet territorium og autoritet, mens islam ga en felles identitet og legitimitet.'
@@ -1427,12 +1427,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan formet lokale kulturer praktiseringen av islam etter hvert som den spredte seg?'
           },
           answers: [
-            { en: 'Islam blended with local customs, producing diverse regional traditions', no: 'Islam blandet seg med lokale skikker og skapte mangfoldige regionale tradisjoner' },
-            { en: 'It remained identical everywhere', no: 'Den forble identisk overalt' },
             { en: 'Local cultures vanished completely', no: 'Lokale kulturer forsvant helt' },
-            { en: 'It rejected all local influence', no: 'Den avviste all lokal påvirkning' }
+            { en: 'It rejected all local influence', no: 'Den avviste all lokal påvirkning' },
+            { en: 'Islam blended with local customs, producing diverse regional traditions', no: 'Islam blandet seg med lokale skikker og skapte mangfoldige regionale tradisjoner' },
+            { en: 'It remained identical everywhere', no: 'Den forble identisk overalt' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'As Islam spread, it absorbed local customs, creating varied traditions across Africa, Asia, and beyond.',
             no: 'Etter hvert som islam spredte seg, tok den opp lokale skikker og skapte ulike tradisjoner i Afrika, Asia og andre steder.'
@@ -1446,12 +1446,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor blir begrepet «jihad» ofte misforstått i moderne diskusjoner?'
           },
           answers: [
-            { en: 'It means "struggle" and includes personal, spiritual effort, not only warfare', no: 'Det betyr «kamp» og omfatter personlig, åndelig innsats, ikke bare krigføring' },
             { en: 'It refers only to a holiday', no: 'Det viser bare til en høytid' },
             { en: 'It means pilgrimage', no: 'Det betyr pilegrimsreise' },
-            { en: 'It is unrelated to Islam', no: 'Det er uten tilknytning til islam' }
+            { en: 'It is unrelated to Islam', no: 'Det er uten tilknytning til islam' },
+            { en: 'It means "struggle" and includes personal, spiritual effort, not only warfare', no: 'Det betyr «kamp» og omfatter personlig, åndelig innsats, ikke bare krigføring' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Jihad broadly means "struggle," including the inner spiritual struggle, and is often narrowed inaccurately to violence.',
             no: 'Jihad betyr i vid forstand «kamp», inkludert den indre åndelige kampen, og innsnevres ofte unøyaktig til vold.'
@@ -1490,12 +1490,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvem grunnla buddhismen?'
           },
           answers: [
+            { en: 'Moses', no: 'Moses' },
             { en: 'Siddhartha Gautama (the Buddha)', no: 'Siddhartha Gautama (Buddha)' },
             { en: 'Confucius', no: 'Konfutse' },
-            { en: 'Muhammad', no: 'Muhammad' },
-            { en: 'Moses', no: 'Moses' }
+            { en: 'Muhammad', no: 'Muhammad' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Buddhism was founded by Siddhartha Gautama, known as the Buddha, meaning "the Awakened One."',
             no: 'Buddhismen ble grunnlagt av Siddhartha Gautama, kjent som Buddha, som betyr «den oppvåknede».'
@@ -1509,12 +1509,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva betyr tittelen «Buddha»?'
           },
           answers: [
-            { en: 'The Awakened or Enlightened One', no: 'Den oppvåknede eller opplyste' },
-            { en: 'The Great King', no: 'Den store kongen' },
             { en: 'The High Priest', no: 'Den øverste presten' },
-            { en: 'The Messenger', no: 'Sendebudet' }
+            { en: 'The Messenger', no: 'Sendebudet' },
+            { en: 'The Awakened or Enlightened One', no: 'Den oppvåknede eller opplyste' },
+            { en: 'The Great King', no: 'Den store kongen' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: '"Buddha" means "the Awakened One" or "the Enlightened One."',
             no: '«Buddha» betyr «den oppvåknede» eller «den opplyste».'
@@ -1528,12 +1528,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'I hvilket land oppstod buddhismen?'
           },
           answers: [
-            { en: 'India', no: 'India' },
             { en: 'China', no: 'Kina' },
             { en: 'Japan', no: 'Japan' },
-            { en: 'Egypt', no: 'Egypt' }
+            { en: 'Egypt', no: 'Egypt' },
+            { en: 'India', no: 'India' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Buddhism originated in ancient India around the 5th century BCE.',
             no: 'Buddhismen oppstod i det gamle India rundt 400-tallet f.Kr.'
@@ -1566,12 +1566,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kalles den buddhistiske veien til å avslutte lidelse?'
           },
           answers: [
+            { en: 'The Golden Rule', no: 'Den gylne regel' },
             { en: 'The Eightfold Path', no: 'Den åttedelte veien' },
             { en: 'The Five Pillars', no: 'De fem søylene' },
-            { en: 'The Ten Commandments', no: 'De ti bud' },
-            { en: 'The Golden Rule', no: 'Den gylne regel' }
+            { en: 'The Ten Commandments', no: 'De ti bud' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Noble Eightfold Path describes the way to end suffering and reach enlightenment.',
             no: 'Den edle åttedelte veien beskriver veien til å avslutte lidelse og oppnå opplysning.'
@@ -1585,12 +1585,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er buddhismens endelige mål?'
           },
           answers: [
-            { en: 'Nirvana', no: 'Nirvana' },
-            { en: 'Heaven', no: 'Himmelen' },
             { en: 'Wealth', no: 'Rikdom' },
-            { en: 'Conquest', no: 'Erobring' }
+            { en: 'Conquest', no: 'Erobring' },
+            { en: 'Nirvana', no: 'Nirvana' },
+            { en: 'Heaven', no: 'Himmelen' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Nirvana is the state of liberation from suffering and the cycle of rebirth.',
             no: 'Nirvana er tilstanden av befrielse fra lidelse og gjenfødelsens kretsløp.'
@@ -1604,12 +1604,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken praksis med fokusert oppmerksomhet er sentral i buddhismen?'
           },
           answers: [
-            { en: 'Meditation', no: 'Meditasjon' },
             { en: 'Sacrifice', no: 'Ofring' },
             { en: 'Fasting only', no: 'Bare faste' },
-            { en: 'Pilgrim taxes', no: 'Pilegrimsavgifter' }
+            { en: 'Pilgrim taxes', no: 'Pilegrimsavgifter' },
+            { en: 'Meditation', no: 'Meditasjon' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Meditation is a central Buddhist practice for developing insight and calm.',
             no: 'Meditasjon er en sentral buddhistisk praksis for å utvikle innsikt og ro.'
@@ -1642,12 +1642,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kalles kretsløpet av fødsel, død og gjenfødelse?'
           },
           answers: [
+            { en: 'Sabbath', no: 'Sabbat' },
             { en: 'Samsara', no: 'Samsara' },
             { en: 'Nirvana', no: 'Nirvana' },
-            { en: 'Hajj', no: 'Hajj' },
-            { en: 'Sabbath', no: 'Sabbat' }
+            { en: 'Hajj', no: 'Hajj' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Samsara is the continuous cycle of birth, death, and rebirth that Buddhists seek to escape.',
             no: 'Samsara er det vedvarende kretsløpet av fødsel, død og gjenfødelse som buddhister søker å unnslippe.'
@@ -1661,12 +1661,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er buddhistiske munkers fellesskap eller klostre en del av?'
           },
           answers: [
-            { en: 'The Sangha', no: 'Sangha' },
-            { en: 'The Caliphate', no: 'Kalifatet' },
             { en: 'The Vatican', no: 'Vatikanet' },
-            { en: 'The Knesset', no: 'Knesset' }
+            { en: 'The Knesset', no: 'Knesset' },
+            { en: 'The Sangha', no: 'Sangha' },
+            { en: 'The Caliphate', no: 'Kalifatet' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Sangha is the Buddhist community, especially of monks and nuns.',
             no: 'Sangha er det buddhistiske fellesskapet, særlig av munker og nonner.'
@@ -1680,12 +1680,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Under hva slags tre sies Buddha å ha oppnådd opplysning?'
           },
           answers: [
-            { en: 'The Bodhi tree', no: 'Bodhitreet' },
             { en: 'An olive tree', no: 'Et oliventre' },
             { en: 'A palm tree', no: 'Et palmetre' },
-            { en: 'An oak tree', no: 'En eik' }
+            { en: 'An oak tree', no: 'En eik' },
+            { en: 'The Bodhi tree', no: 'Bodhitreet' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Buddha is said to have attained enlightenment while meditating under the Bodhi tree.',
             no: 'Buddha sies å ha oppnådd opplysning mens han mediterte under bodhitreet.'
@@ -1718,12 +1718,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Før opplysningen, hva var Siddhartha Gautama av fødsel?'
           },
           answers: [
+            { en: 'A fisherman', no: 'En fisker' },
             { en: 'A prince', no: 'En prins' },
             { en: 'A merchant', no: 'En kjøpmann' },
-            { en: 'A soldier', no: 'En soldat' },
-            { en: 'A fisherman', no: 'En fisker' }
+            { en: 'A soldier', no: 'En soldat' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Siddhartha was born a prince before giving up his privileged life to seek enlightenment.',
             no: 'Siddhartha ble født som prins før han ga opp sitt privilegerte liv for å søke opplysning.'
@@ -1737,12 +1737,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'I hvilke land er buddhismen en stor religion i dag?'
           },
           answers: [
-            { en: 'Thailand, Sri Lanka, and Japan', no: 'Thailand, Sri Lanka og Japan' },
-            { en: 'Norway, Sweden, and Finland', no: 'Norge, Sverige og Finland' },
             { en: 'Brazil, Argentina, and Chile', no: 'Brasil, Argentina og Chile' },
-            { en: 'Egypt, Libya, and Morocco', no: 'Egypt, Libya og Marokko' }
+            { en: 'Egypt, Libya, and Morocco', no: 'Egypt, Libya og Marokko' },
+            { en: 'Thailand, Sri Lanka, and Japan', no: 'Thailand, Sri Lanka og Japan' },
+            { en: 'Norway, Sweden, and Finland', no: 'Norge, Sverige og Finland' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Buddhism is widely practiced in countries such as Thailand, Sri Lanka, Japan, and others in Asia.',
             no: 'Buddhismen praktiseres mye i land som Thailand, Sri Lanka, Japan og andre i Asia.'
@@ -1756,12 +1756,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken lære oppmuntrer til å unngå ytterpunktene av nytelse og selvfornektelse?'
           },
           answers: [
-            { en: 'The Middle Way', no: 'Den gylne middelvei' },
             { en: 'The Crusade', no: 'Korstoget' },
             { en: 'The Covenant', no: 'Pakten' },
-            { en: 'The Reformation', no: 'Reformasjonen' }
+            { en: 'The Reformation', no: 'Reformasjonen' },
+            { en: 'The Middle Way', no: 'Den gylne middelvei' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Middle Way avoids both indulgence and extreme asceticism.',
             no: 'Den gylne middelvei unngår både overdådig nytelse og ekstrem askese.'
@@ -1794,12 +1794,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket Silkeveien buddhismen?'
           },
           answers: [
+            { en: 'It had no effect on religion', no: 'Den hadde ingen effekt på religion' },
             { en: 'It carried Buddhism into Central Asia and China', no: 'Den brakte buddhismen til Sentral-Asia og Kina' },
             { en: 'It blocked all religious travel', no: 'Den blokkerte all religiøs reise' },
-            { en: 'It confined Buddhism to India', no: 'Den begrenset buddhismen til India' },
-            { en: 'It had no effect on religion', no: 'Den hadde ingen effekt på religion' }
+            { en: 'It confined Buddhism to India', no: 'Den begrenset buddhismen til India' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Traders and monks spread Buddhism along the Silk Road into Central Asia, China, and beyond.',
             no: 'Handelsmenn og munker spredte buddhismen langs Silkeveien til Sentral-Asia, Kina og videre.'
@@ -1813,12 +1813,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilke opplevelser sies å ha inspirert Siddharthas åndelige søken?'
           },
           answers: [
-            { en: 'Encounters with sickness, old age, and death', no: 'Møter med sykdom, alderdom og død' },
-            { en: 'Winning a great battle', no: 'Å vinne et stort slag' },
             { en: 'Discovering gold', no: 'Å finne gull' },
-            { en: 'Becoming a merchant', no: 'Å bli kjøpmann' }
+            { en: 'Becoming a merchant', no: 'Å bli kjøpmann' },
+            { en: 'Encounters with sickness, old age, and death', no: 'Møter med sykdom, alderdom og død' },
+            { en: 'Winning a great battle', no: 'Å vinne et stort slag' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Seeing sickness, old age, death, and a holy man led Siddhartha to seek the cause of suffering.',
             no: 'Synet av sykdom, alderdom, død og en hellig mann fikk Siddhartha til å søke årsaken til lidelse.'
@@ -1832,12 +1832,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan skiller mahayana-buddhismen seg fra theravada?'
           },
           answers: [
-            { en: 'It emphasizes compassion and helping all beings reach enlightenment', no: 'Den vektlegger medfølelse og å hjelpe alle vesener til opplysning' },
             { en: 'It rejects the Buddha entirely', no: 'Den avviser Buddha fullstendig' },
             { en: 'It forbids meditation', no: 'Den forbyr meditasjon' },
-            { en: 'It worships many warrior gods', no: 'Den tilber mange krigsguder' }
+            { en: 'It worships many warrior gods', no: 'Den tilber mange krigsguder' },
+            { en: 'It emphasizes compassion and helping all beings reach enlightenment', no: 'Den vektlegger medfølelse og å hjelpe alle vesener til opplysning' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Mahayana emphasizes the bodhisattva ideal of compassion and helping others toward enlightenment.',
             no: 'Mahayana vektlegger bodhisattva-idealet om medfølelse og å hjelpe andre mot opplysning.'
@@ -1870,12 +1870,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan endret buddhismen seg da den kom til Kina?'
           },
           answers: [
+            { en: 'It was immediately banned forever', no: 'Den ble umiddelbart forbudt for alltid' },
             { en: 'It blended with local traditions like Daoism, forming new schools', no: 'Den blandet seg med lokale tradisjoner som daoismen og dannet nye skoler' },
             { en: 'It stayed completely unchanged', no: 'Den forble helt uendret' },
-            { en: 'It replaced all Chinese culture', no: 'Den erstattet all kinesisk kultur' },
-            { en: 'It was immediately banned forever', no: 'Den ble umiddelbart forbudt for alltid' }
+            { en: 'It replaced all Chinese culture', no: 'Den erstattet all kinesisk kultur' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'In China, Buddhism mixed with local beliefs, giving rise to schools such as Chan (Zen).',
             no: 'I Kina blandet buddhismen seg med lokale trosforestillinger og ga opphav til skoler som Chan (zen).'
@@ -1889,12 +1889,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er zen-buddhismen særlig kjent for?'
           },
           answers: [
-            { en: 'Emphasis on meditation and direct experience', no: 'Vektlegging av meditasjon og direkte erfaring' },
-            { en: 'Animal sacrifice', no: 'Dyreofring' },
             { en: 'Building large armies', no: 'Å bygge store hærer' },
-            { en: 'Rejecting all practice', no: 'Å avvise all praksis' }
+            { en: 'Rejecting all practice', no: 'Å avvise all praksis' },
+            { en: 'Emphasis on meditation and direct experience', no: 'Vektlegging av meditasjon og direkte erfaring' },
+            { en: 'Animal sacrifice', no: 'Dyreofring' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Zen (Chan) Buddhism stresses meditation and direct insight over scripture alone.',
             no: 'Zen (chan)-buddhismen legger vekt på meditasjon og direkte innsikt framfor skrift alene.'
@@ -1908,12 +1908,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor gikk buddhismen tilbake i India i middelalderen?'
           },
           answers: [
-            { en: 'Hinduism’s revival and later invasions reduced its influence', no: 'Hinduismens gjenoppblomstring og senere invasjoner svekket innflytelsen' },
             { en: 'It was never present in India', no: 'Den fantes aldri i India' },
             { en: 'It spread only because of India', no: 'Den spredte seg bare på grunn av India' },
-            { en: 'Indians never practiced any religion', no: 'Indere praktiserte aldri noen religion' }
+            { en: 'Indians never practiced any religion', no: 'Indere praktiserte aldri noen religion' },
+            { en: 'Hinduism’s revival and later invasions reduced its influence', no: 'Hinduismens gjenoppblomstring og senere invasjoner svekket innflytelsen' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Buddhism faded in India due to the resurgence of Hinduism and disruptions from later invasions.',
             no: 'Buddhismen avtok i India på grunn av hinduismens gjenoppblomstring og forstyrrelser fra senere invasjoner.'
@@ -1946,12 +1946,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er «dharma» i buddhismen?'
           },
           answers: [
+            { en: 'A trading route', no: 'En handelsrute' },
             { en: 'The teachings of the Buddha', no: 'Buddhas lære' },
             { en: 'A type of weapon', no: 'En type våpen' },
-            { en: 'A royal title', no: 'En kongelig tittel' },
-            { en: 'A trading route', no: 'En handelsrute' }
+            { en: 'A royal title', no: 'En kongelig tittel' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'In Buddhism, the dharma refers to the Buddha’s teachings and the truth they describe.',
             no: 'I buddhismen viser dharma til Buddhas lære og den sannheten den beskriver.'
@@ -1965,12 +1965,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan nådde buddhismen Japan?'
           },
           answers: [
-            { en: 'Through cultural exchange from Korea and China', no: 'Gjennom kulturell utveksling fra Korea og Kina' },
-            { en: 'Through European colonizers', no: 'Gjennom europeiske kolonimakter' },
             { en: 'By way of the Americas', no: 'Via Amerika' },
-            { en: 'It originated in Japan', no: 'Den oppstod i Japan' }
+            { en: 'It originated in Japan', no: 'Den oppstod i Japan' },
+            { en: 'Through cultural exchange from Korea and China', no: 'Gjennom kulturell utveksling fra Korea og Kina' },
+            { en: 'Through European colonizers', no: 'Gjennom europeiske kolonimakter' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Buddhism arrived in Japan via Korea and China, blending with native Shinto traditions.',
             no: 'Buddhismen kom til Japan via Korea og Kina og blandet seg med de innfødte shinto-tradisjonene.'
@@ -1984,12 +1984,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor skiller buddhistiske misjonærer seg fra dem i enkelte andre religioner?'
           },
           answers: [
-            { en: 'Spread often relied on voluntary adoption and royal patronage rather than conquest', no: 'Spredningen bygde ofte på frivillig overtakelse og kongelig støtte snarere enn erobring' },
             { en: 'They always used military force', no: 'De brukte alltid militær makt' },
             { en: 'They never traveled', no: 'De reiste aldri' },
-            { en: 'They forbade teaching others', no: 'De forbød å lære bort til andre' }
+            { en: 'They forbade teaching others', no: 'De forbød å lære bort til andre' },
+            { en: 'Spread often relied on voluntary adoption and royal patronage rather than conquest', no: 'Spredningen bygde ofte på frivillig overtakelse og kongelig støtte snarere enn erobring' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Buddhism often spread peacefully through teaching, trade, and the support of rulers like Ashoka.',
             no: 'Buddhismen spredte seg ofte fredelig gjennom undervisning, handel og støtte fra herskere som Ashoka.'
@@ -2022,12 +2022,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor er begrepet «ikke-selv» (anatta) filosofisk utfordrende?'
           },
           answers: [
+            { en: 'It denies that suffering exists', no: 'Det benekter at lidelse finnes' },
             { en: 'It denies a permanent, unchanging soul, unlike many other religions', no: 'Det benekter en permanent, uforanderlig sjel, i motsetning til mange andre religioner' },
             { en: 'It claims the self is eternal', no: 'Det hevder at selvet er evig' },
-            { en: 'It is identical to the idea of a soul', no: 'Det er identisk med ideen om en sjel' },
-            { en: 'It denies that suffering exists', no: 'Det benekter at lidelse finnes' }
+            { en: 'It is identical to the idea of a soul', no: 'Det er identisk med ideen om en sjel' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Anatta holds there is no permanent self, contrasting with belief in an eternal soul elsewhere.',
             no: 'Anatta hevder at det ikke finnes noe permanent selv, i kontrast til troen på en evig sjel andre steder.'
@@ -2041,12 +2041,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan formet kongelig støtte buddhismens spredning i Asia?'
           },
           answers: [
-            { en: 'Rulers funded monasteries and missions, boosting the religion’s reach', no: 'Herskere finansierte klostre og misjon og økte religionens rekkevidde' },
-            { en: 'Rulers always opposed Buddhism', no: 'Herskere motarbeidet alltid buddhismen' },
             { en: 'Patronage was forbidden', no: 'Støtte var forbudt' },
-            { en: 'It had no effect on its spread', no: 'Det hadde ingen effekt på spredningen' }
+            { en: 'It had no effect on its spread', no: 'Det hadde ingen effekt på spredningen' },
+            { en: 'Rulers funded monasteries and missions, boosting the religion’s reach', no: 'Herskere finansierte klostre og misjon og økte religionens rekkevidde' },
+            { en: 'Rulers always opposed Buddhism', no: 'Herskere motarbeidet alltid buddhismen' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Support from rulers like Ashoka and later Asian kings funded monasteries and helped Buddhism expand.',
             no: 'Støtte fra herskere som Ashoka og senere asiatiske konger finansierte klostre og bidro til at buddhismen vokste.'
@@ -2060,12 +2060,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor sammenligner og kontrasterer forskere buddhismen med hinduismens ideer om gjenfødelse?'
           },
           answers: [
-            { en: 'Both use karma and rebirth but differ on the existence of a permanent self', no: 'Begge bruker karma og gjenfødelse, men er uenige om det finnes et permanent selv' },
             { en: 'Neither believes in rebirth', no: 'Ingen av dem tror på gjenfødelse' },
             { en: 'They are completely identical', no: 'De er fullstendig identiske' },
-            { en: 'Buddhism rejects karma entirely', no: 'Buddhismen avviser karma fullstendig' }
+            { en: 'Buddhism rejects karma entirely', no: 'Buddhismen avviser karma fullstendig' },
+            { en: 'Both use karma and rebirth but differ on the existence of a permanent self', no: 'Begge bruker karma og gjenfødelse, men er uenige om det finnes et permanent selv' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Buddhism and Hinduism share karma and rebirth, but Buddhism rejects the permanent self (atman).',
             no: 'Buddhismen og hinduismen deler karma og gjenfødelse, men buddhismen avviser det permanente selvet (atman).'
@@ -2098,12 +2098,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor diskuteres det noen ganger om buddhismen er en religion eller en filosofi?'
           },
           answers: [
+            { en: 'It has no teachings at all', no: 'Den har ingen lære i det hele tatt' },
             { en: 'It can lack a creator god while still involving devotion and ritual', no: 'Den kan mangle en skapergud, men likevel innebære hengivenhet og ritualer' },
             { en: 'It always worships many gods', no: 'Den tilber alltid mange guder' },
-            { en: 'It rejects all practice and thought', no: 'Den avviser all praksis og tanke' },
-            { en: 'It has no teachings at all', no: 'Den har ingen lære i det hele tatt' }
+            { en: 'It rejects all practice and thought', no: 'Den avviser all praksis og tanke' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Buddhism often lacks a creator deity but includes ethics, devotion, and ritual, blurring the religion–philosophy line.',
             no: 'Buddhismen mangler ofte en skapergud, men omfatter etikk, hengivenhet og ritualer, noe som visker ut skillet mellom religion og filosofi.'
@@ -2117,12 +2117,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan samspilte spredningen av buddhismen med eksisterende trossystemer i Øst-Asia?'
           },
           answers: [
-            { en: 'It often coexisted and blended with Confucianism, Daoism, and Shinto', no: 'Den eksisterte ofte side om side og blandet seg med konfutsianisme, daoisme og shinto' },
-            { en: 'It destroyed all other beliefs', no: 'Den ødela alle andre trosforestillinger' },
             { en: 'It refused any coexistence', no: 'Den nektet enhver sameksistens' },
-            { en: 'It was rejected everywhere', no: 'Den ble avvist overalt' }
+            { en: 'It was rejected everywhere', no: 'Den ble avvist overalt' },
+            { en: 'It often coexisted and blended with Confucianism, Daoism, and Shinto', no: 'Den eksisterte ofte side om side og blandet seg med konfutsianisme, daoisme og shinto' },
+            { en: 'It destroyed all other beliefs', no: 'Den ødela alle andre trosforestillinger' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'In East Asia, Buddhism frequently coexisted and merged with Confucian, Daoist, and Shinto practices.',
             no: 'I Øst-Asia eksisterte buddhismen ofte side om side og smeltet sammen med konfutsianske, daoistiske og shinto-praksiser.'
@@ -2136,12 +2136,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor er «engasjert buddhisme» en bemerkelsesverdig moderne utvikling?'
           },
           answers: [
-            { en: 'It applies Buddhist principles to social and political issues', no: 'Den anvender buddhistiske prinsipper på sosiale og politiske spørsmål' },
             { en: 'It rejects all Buddhist teachings', no: 'Den avviser all buddhistisk lære' },
             { en: 'It bans meditation', no: 'Den forbyr meditasjon' },
-            { en: 'It is only about ancient texts', no: 'Den handler bare om gamle tekster' }
+            { en: 'It is only about ancient texts', no: 'Den handler bare om gamle tekster' },
+            { en: 'It applies Buddhist principles to social and political issues', no: 'Den anvender buddhistiske prinsipper på sosiale og politiske spørsmål' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Engaged Buddhism applies Buddhist ethics to activism on issues like peace, justice, and the environment.',
             no: 'Engasjert buddhisme anvender buddhistisk etikk på aktivisme rundt spørsmål som fred, rettferdighet og miljø.'
@@ -2174,12 +2174,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor ser historikere Ashokas støtte som et vendepunkt for buddhismen?'
           },
           answers: [
+            { en: 'It confined Buddhism to one village', no: 'Den begrenset buddhismen til én landsby' },
             { en: 'It transformed a regional teaching into a widely spreading religion', no: 'Den forvandlet en regional lære til en religion i bred spredning' },
             { en: 'It ended Buddhism completely', no: 'Den avsluttet buddhismen fullstendig' },
-            { en: 'It had no lasting impact', no: 'Den hadde ingen varig virkning' },
-            { en: 'It confined Buddhism to one village', no: 'Den begrenset buddhismen til én landsby' }
+            { en: 'It had no lasting impact', no: 'Den hadde ingen varig virkning' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Ashoka’s missions and patronage helped Buddhism grow from a local movement into a major religion.',
             no: 'Ashokas misjon og støtte bidro til at buddhismen vokste fra en lokal bevegelse til en stor religion.'
@@ -2199,12 +2199,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er jødedommens sentrale hellige tekst?'
           },
           answers: [
-            { en: 'The Torah', no: 'Toraen' },
-            { en: 'The Quran', no: 'Koranen' },
             { en: 'The New Testament', no: 'Det nye testamente' },
-            { en: 'The Tripitaka', no: 'Tripitaka' }
+            { en: 'The Tripitaka', no: 'Tripitaka' },
+            { en: 'The Torah', no: 'Toraen' },
+            { en: 'The Quran', no: 'Koranen' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Torah, the first five books of the Hebrew Bible, is central to Judaism.',
             no: 'Toraen, de fem første bøkene i den hebraiske bibelen, er sentral i jødedommen.'
@@ -2218,12 +2218,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Jødedommen beskrives best som hva slags religion?'
           },
           answers: [
-            { en: 'Monotheistic (belief in one God)', no: 'Monoteistisk (tro på én Gud)' },
             { en: 'Polytheistic (many gods)', no: 'Polyteistisk (mange guder)' },
             { en: 'Atheistic (no god)', no: 'Ateistisk (ingen gud)' },
-            { en: 'Animistic (spirits in nature)', no: 'Animistisk (ånder i naturen)' }
+            { en: 'Animistic (spirits in nature)', no: 'Animistisk (ånder i naturen)' },
+            { en: 'Monotheistic (belief in one God)', no: 'Monoteistisk (tro på én Gud)' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Judaism is a monotheistic religion, one of the first to teach belief in a single God.',
             no: 'Jødedommen er en monoteistisk religion, en av de første til å lære troen på én Gud.'
@@ -2256,12 +2256,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kalles jødenes bønnested?'
           },
           answers: [
+            { en: 'A cathedral', no: 'En katedral' },
             { en: 'A synagogue', no: 'En synagoge' },
             { en: 'A mosque', no: 'En moské' },
-            { en: 'A temple of Buddha', no: 'Et buddhisttempel' },
-            { en: 'A cathedral', no: 'En katedral' }
+            { en: 'A temple of Buddha', no: 'Et buddhisttempel' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Jews worship and gather in a synagogue.',
             no: 'Jøder tilber og samles i en synagoge.'
@@ -2275,12 +2275,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kalles jødenes hviledag?'
           },
           answers: [
-            { en: 'The Sabbath (Shabbat)', no: 'Sabbaten (Shabbat)' },
-            { en: 'Ramadan', no: 'Ramadan' },
             { en: 'Lent', no: 'Faste' },
-            { en: 'Diwali', no: 'Diwali' }
+            { en: 'Diwali', no: 'Diwali' },
+            { en: 'The Sabbath (Shabbat)', no: 'Sabbaten (Shabbat)' },
+            { en: 'Ramadan', no: 'Ramadan' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Sabbath (Shabbat), from Friday evening to Saturday evening, is the Jewish day of rest.',
             no: 'Sabbaten (Shabbat), fra fredag kveld til lørdag kveld, er jødenes hviledag.'
@@ -2294,12 +2294,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kalles en jødisk religiøs lærer og leder?'
           },
           answers: [
-            { en: 'A rabbi', no: 'En rabbiner' },
             { en: 'An imam', no: 'En imam' },
             { en: 'A priest', no: 'En prest' },
-            { en: 'A monk', no: 'En munk' }
+            { en: 'A monk', no: 'En munk' },
+            { en: 'A rabbi', no: 'En rabbiner' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'A rabbi is a teacher and spiritual leader in Judaism.',
             no: 'En rabbiner er en lærer og åndelig leder i jødedommen.'
@@ -2332,12 +2332,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'I hvilken region oppstod jødedommen?'
           },
           answers: [
+            { en: 'South America', no: 'Sør-Amerika' },
             { en: 'The ancient Middle East (Canaan/Israel)', no: 'Det gamle Midtøsten (Kanaan/Israel)' },
             { en: 'Northern Europe', no: 'Nord-Europa' },
-            { en: 'East Asia', no: 'Øst-Asia' },
-            { en: 'South America', no: 'Sør-Amerika' }
+            { en: 'East Asia', no: 'Øst-Asia' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Judaism originated in the ancient Middle East, in the land of Canaan/Israel.',
             no: 'Jødedommen oppstod i det gamle Midtøsten, i landet Kanaan/Israel.'
@@ -2351,12 +2351,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken profet sies å ha mottatt De ti bud?'
           },
           answers: [
-            { en: 'Moses', no: 'Moses' },
-            { en: 'David', no: 'David' },
             { en: 'Solomon', no: 'Salomo' },
-            { en: 'Noah', no: 'Noah' }
+            { en: 'Noah', no: 'Noah' },
+            { en: 'Moses', no: 'Moses' },
+            { en: 'David', no: 'David' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'According to tradition, Moses received the Ten Commandments at Mount Sinai.',
             no: 'Ifølge tradisjonen mottok Moses De ti bud på Sinaifjellet.'
@@ -2370,12 +2370,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken jødisk høytid feirer utvandringen fra Egypt?'
           },
           answers: [
-            { en: 'Passover (Pesach)', no: 'Påske (Pesach)' },
             { en: 'Christmas', no: 'Jul' },
             { en: 'Ramadan', no: 'Ramadan' },
-            { en: 'Easter', no: 'Påske (kristen)' }
+            { en: 'Easter', no: 'Påske (kristen)' },
+            { en: 'Passover (Pesach)', no: 'Påske (Pesach)' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Passover commemorates the Israelites’ liberation from slavery in Egypt.',
             no: 'Pesach (jødisk påske) minnes israelittenes frigjøring fra slaveriet i Egypt.'
@@ -2408,12 +2408,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er den helligste byen i jødedommen?'
           },
           answers: [
+            { en: 'Varanasi', no: 'Varanasi' },
             { en: 'Jerusalem', no: 'Jerusalem' },
             { en: 'Mecca', no: 'Mekka' },
-            { en: 'Rome', no: 'Roma' },
-            { en: 'Varanasi', no: 'Varanasi' }
+            { en: 'Rome', no: 'Roma' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Jerusalem is the holiest city in Judaism, home to the ancient Temple.',
             no: 'Jerusalem er den helligste byen i jødedommen, stedet for det gamle tempelet.'
@@ -2427,12 +2427,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva kalles den jødiske overgangsseremonien for gutter?'
           },
           answers: [
-            { en: 'Bar Mitzvah', no: 'Bar mitzvah' },
-            { en: 'Baptism', no: 'Dåp' },
             { en: 'Confirmation', no: 'Konfirmasjon' },
-            { en: 'Hajj', no: 'Hajj' }
+            { en: 'Hajj', no: 'Hajj' },
+            { en: 'Bar Mitzvah', no: 'Bar mitzvah' },
+            { en: 'Baptism', no: 'Dåp' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'A Bar Mitzvah marks a Jewish boy reaching religious adulthood (Bat Mitzvah for girls).',
             no: 'En bar mitzvah markerer at en jødisk gutt når religiøs voksen alder (bat mitzvah for jenter).'
@@ -2446,12 +2446,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er betegnelsen på spredningen av jøder utenfor hjemlandet?'
           },
           answers: [
-            { en: 'The Diaspora', no: 'Diasporaen' },
             { en: 'The Crusade', no: 'Korstoget' },
             { en: 'The Reformation', no: 'Reformasjonen' },
-            { en: 'The Renaissance', no: 'Renessansen' }
+            { en: 'The Renaissance', no: 'Renessansen' },
+            { en: 'The Diaspora', no: 'Diasporaen' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Diaspora refers to Jewish communities living outside the land of Israel.',
             no: 'Diasporaen viser til jødiske samfunn som lever utenfor landet Israel.'
@@ -2484,12 +2484,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er «pakten» i jødedommen?'
           },
           answers: [
+            { en: 'A type of synagogue', no: 'En type synagoge' },
             { en: 'A special agreement between God and the Jewish people', no: 'En spesiell avtale mellom Gud og det jødiske folk' },
             { en: 'A trade treaty with Rome', no: 'En handelsavtale med Roma' },
-            { en: 'A military alliance', no: 'En militærallianse' },
-            { en: 'A type of synagogue', no: 'En type synagoge' }
+            { en: 'A military alliance', no: 'En militærallianse' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The covenant is the sacred bond between God and the Jewish people, central to Jewish identity.',
             no: 'Pakten er det hellige båndet mellom Gud og det jødiske folk, sentralt for jødisk identitet.'
@@ -2503,12 +2503,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva førte til at den jødiske diasporaen utvidet seg dramatisk i år 70?'
           },
           answers: [
-            { en: 'The Roman destruction of the Second Temple in Jerusalem', no: 'Romernes ødeleggelse av det andre tempelet i Jerusalem' },
-            { en: 'The founding of Christianity', no: 'Grunnleggelsen av kristendommen' },
             { en: 'The rise of Islam', no: 'Islams framvekst' },
-            { en: 'The European Renaissance', no: 'Den europeiske renessansen' }
+            { en: 'The European Renaissance', no: 'Den europeiske renessansen' },
+            { en: 'The Roman destruction of the Second Temple in Jerusalem', no: 'Romernes ødeleggelse av det andre tempelet i Jerusalem' },
+            { en: 'The founding of Christianity', no: 'Grunnleggelsen av kristendommen' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'After Rome destroyed the Second Temple in 70 CE, many Jews were dispersed across the empire.',
             no: 'Etter at Roma ødela det andre tempelet i år 70, ble mange jøder spredt over hele riket.'
@@ -2522,12 +2522,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket jødedommen kristendommen og islam?'
           },
           answers: [
-            { en: 'It provided monotheism and shared scriptures and prophets', no: 'Den ga monoteisme og felles skrifter og profeter' },
             { en: 'It had no connection to them', no: 'Den hadde ingen tilknytning til dem' },
             { en: 'It rejected belief in God', no: 'Den avviste troen på Gud' },
-            { en: 'It worshipped the same gods as Rome', no: 'Den tilba de samme gudene som Roma' }
+            { en: 'It worshipped the same gods as Rome', no: 'Den tilba de samme gudene som Roma' },
+            { en: 'It provided monotheism and shared scriptures and prophets', no: 'Den ga monoteisme og felles skrifter og profeter' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'As the oldest Abrahamic faith, Judaism shaped the monotheism and scriptures of Christianity and Islam.',
             no: 'Som den eldste abrahamittiske religionen formet jødedommen monoteismen og skriftene i kristendommen og islam.'
@@ -2560,12 +2560,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan opprettholdt jødiske samfunn sin identitet i diasporaen?'
           },
           answers: [
+            { en: 'By giving up their texts', no: 'Ved å gi opp tekstene sine' },
             { en: 'Through religious law, synagogues, and shared traditions', no: 'Gjennom religiøs lov, synagoger og felles tradisjoner' },
             { en: 'By abandoning all customs', no: 'Ved å forlate alle skikker' },
-            { en: 'By forming a single empire', no: 'Ved å danne ett imperium' },
-            { en: 'By giving up their texts', no: 'Ved å gi opp tekstene sine' }
+            { en: 'By forming a single empire', no: 'Ved å danne ett imperium' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Jewish law, synagogues, and shared customs helped preserve identity across scattered communities.',
             no: 'Jødisk lov, synagoger og felles skikker bidro til å bevare identiteten i spredte samfunn.'
@@ -2579,12 +2579,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er de tre hovedretningene i moderne jødedom?'
           },
           answers: [
-            { en: 'Orthodox, Conservative, and Reform', no: 'Ortodoks, konservativ og reform' },
-            { en: 'Sunni, Shia, and Sufi', no: 'Sunni, sjia og sufi' },
             { en: 'Catholic, Orthodox, and Protestant', no: 'Katolsk, ortodoks og protestantisk' },
-            { en: 'Theravada, Mahayana, and Vajrayana', no: 'Theravada, mahayana og vajrayana' }
+            { en: 'Theravada, Mahayana, and Vajrayana', no: 'Theravada, mahayana og vajrayana' },
+            { en: 'Orthodox, Conservative, and Reform', no: 'Ortodoks, konservativ og reform' },
+            { en: 'Sunni, Shia, and Sufi', no: 'Sunni, sjia og sufi' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Modern Judaism includes Orthodox, Conservative, and Reform movements with differing practices.',
             no: 'Moderne jødedom omfatter ortodoks, konservativ og reformretning med ulike praksiser.'
@@ -2598,12 +2598,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva minnes høytiden hanukka?'
           },
           answers: [
-            { en: 'The rededication of the Temple after a revolt', no: 'Gjeninnvielsen av tempelet etter et opprør' },
             { en: 'The Exodus from Egypt', no: 'Utvandringen fra Egypt' },
             { en: 'The birth of Abraham', no: 'Abrahams fødsel' },
-            { en: 'The fall of Rome', no: 'Romas fall' }
+            { en: 'The fall of Rome', no: 'Romas fall' },
+            { en: 'The rededication of the Temple after a revolt', no: 'Gjeninnvielsen av tempelet etter et opprør' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Hanukkah celebrates the rededication of the Temple after the Maccabean revolt.',
             no: 'Hanukka feirer gjeninnvielsen av tempelet etter Makkabeer-opprøret.'
@@ -2636,12 +2636,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvilken betydning hadde det babylonske eksil for jødedommen?'
           },
           answers: [
+            { en: 'It created Christianity', no: 'Det skapte kristendommen' },
             { en: 'It shaped Jewish identity and texts while away from the homeland', no: 'Det formet jødisk identitet og tekster mens folket var borte fra hjemlandet' },
             { en: 'It ended Judaism', no: 'Det avsluttet jødedommen' },
-            { en: 'It had no lasting effect', no: 'Det hadde ingen varig virkning' },
-            { en: 'It created Christianity', no: 'Det skapte kristendommen' }
+            { en: 'It had no lasting effect', no: 'Det hadde ingen varig virkning' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Babylonian Exile (6th century BCE) deeply influenced Jewish worship, identity, and scripture.',
             no: 'Det babylonske eksil (500-tallet f.Kr.) påvirket jødisk gudstjeneste, identitet og skrift dypt.'
@@ -2655,12 +2655,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hva er yom kippur?'
           },
           answers: [
-            { en: 'The Day of Atonement, the holiest day in Judaism', no: 'Forsoningsdagen, den helligste dagen i jødedommen' },
-            { en: 'A harvest festival only', no: 'Bare en høstfest' },
             { en: 'The Jewish New Year', no: 'Det jødiske nyttår' },
-            { en: 'A celebration of the Exodus', no: 'En feiring av utvandringen' }
+            { en: 'A celebration of the Exodus', no: 'En feiring av utvandringen' },
+            { en: 'The Day of Atonement, the holiest day in Judaism', no: 'Forsoningsdagen, den helligste dagen i jødedommen' },
+            { en: 'A harvest festival only', no: 'Bare en høstfest' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Yom Kippur, the Day of Atonement, is the holiest day in the Jewish calendar, marked by fasting and prayer.',
             no: 'Yom kippur, forsoningsdagen, er den helligste dagen i den jødiske kalenderen, preget av faste og bønn.'
@@ -2674,12 +2674,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan bidro jøder til intellektuelt liv i middelalderen?'
           },
           answers: [
-            { en: 'As scholars, physicians, and translators across cultures', no: 'Som lærde, leger og oversettere på tvers av kulturer' },
             { en: 'By banning all learning', no: 'Ved å forby all lærdom' },
             { en: 'By avoiding all books', no: 'Ved å unngå alle bøker' },
-            { en: 'They played no role', no: 'De spilte ingen rolle' }
+            { en: 'They played no role', no: 'De spilte ingen rolle' },
+            { en: 'As scholars, physicians, and translators across cultures', no: 'Som lærde, leger og oversettere på tvers av kulturer' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Jewish scholars, doctors, and translators contributed to learning in both the Islamic world and Christian Europe.',
             no: 'Jødiske lærde, leger og oversettere bidro til lærdom både i den islamske verden og i det kristne Europa.'
@@ -2712,12 +2712,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor kalles jødedommen ofte den første store monoteistiske religionen?'
           },
           answers: [
+            { en: 'It rejected the idea of God', no: 'Den avviste ideen om Gud' },
             { en: 'It established enduring worship of a single God that influenced later faiths', no: 'Den etablerte varig tilbedelse av én Gud som påvirket senere religioner' },
             { en: 'It was the only religion ever to exist', no: 'Den var den eneste religionen som noensinne har eksistert' },
-            { en: 'It worshipped many gods first', no: 'Den tilba mange guder først' },
-            { en: 'It rejected the idea of God', no: 'Den avviste ideen om Gud' }
+            { en: 'It worshipped many gods first', no: 'Den tilba mange guder først' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Judaism’s lasting monotheism shaped the development of Christianity and Islam.',
             no: 'Jødedommens varige monoteisme formet utviklingen av kristendommen og islam.'
@@ -2731,12 +2731,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan forvandlet rabbinsk jødedom religionen etter tempelets ødeleggelse?'
           },
           answers: [
-            { en: 'Worship shifted from Temple sacrifice to study, prayer, and synagogue life', no: 'Gudstjenesten skiftet fra tempelofring til studier, bønn og synagogeliv' },
-            { en: 'Judaism ended completely', no: 'Jødedommen tok helt slutt' },
             { en: 'Sacrifice continued unchanged', no: 'Ofringen fortsatte uendret' },
-            { en: 'All texts were abandoned', no: 'Alle tekster ble forlatt' }
+            { en: 'All texts were abandoned', no: 'Alle tekster ble forlatt' },
+            { en: 'Worship shifted from Temple sacrifice to study, prayer, and synagogue life', no: 'Gudstjenesten skiftet fra tempelofring til studier, bønn og synagogeliv' },
+            { en: 'Judaism ended completely', no: 'Jødedommen tok helt slutt' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Without the Temple, Judaism centered on Torah study, prayer, and the synagogue, led by rabbis.',
             no: 'Uten tempelet ble jødedommen sentrert om torastudier, bønn og synagogen, ledet av rabbinere.'
@@ -2750,12 +2750,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan formet det å leve som minoriteter jødisk historie i Europa?'
           },
           answers: [
-            { en: 'Communities faced periods of tolerance as well as persecution and expulsion', no: 'Samfunn opplevde perioder med toleranse så vel som forfølgelse og utvisning' },
             { en: 'They were always treated equally', no: 'De ble alltid behandlet likt' },
             { en: 'They never faced any hostility', no: 'De møtte aldri noen fiendtlighet' },
-            { en: 'They ruled most of Europe', no: 'De styrte mesteparten av Europa' }
+            { en: 'They ruled most of Europe', no: 'De styrte mesteparten av Europa' },
+            { en: 'Communities faced periods of tolerance as well as persecution and expulsion', no: 'Samfunn opplevde perioder med toleranse så vel som forfølgelse og utvisning' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Jewish communities experienced both tolerance and recurring persecution, including expulsions and pogroms.',
             no: 'Jødiske samfunn opplevde både toleranse og tilbakevendende forfølgelse, inkludert utvisninger og pogromer.'
@@ -2788,12 +2788,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor er forskjellene mellom ortodoks, konservativ og reformjødedom viktige?'
           },
           answers: [
+            { en: 'They reject the Torah', no: 'De avviser Toraen' },
             { en: 'They reflect differing views on tradition, law, and modern life', no: 'De gjenspeiler ulike syn på tradisjon, lov og moderne liv' },
             { en: 'They have no real differences', no: 'De har ingen reelle forskjeller' },
-            { en: 'They worship different gods', no: 'De tilber ulike guder' },
-            { en: 'They reject the Torah', no: 'De avviser Toraen' }
+            { en: 'They worship different gods', no: 'De tilber ulike guder' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'These movements differ over how strictly to follow tradition and Jewish law in the modern world.',
             no: 'Disse retningene er uenige om hvor strengt man skal følge tradisjon og jødisk lov i den moderne verden.'
@@ -2807,12 +2807,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan påvirket jødisk tenkning vestlig etikk og rett?'
           },
           answers: [
-            { en: 'Ideas like the Ten Commandments shaped moral and legal traditions', no: 'Ideer som De ti bud formet moralske og rettslige tradisjoner' },
-            { en: 'It had no influence at all', no: 'Den hadde ingen innflytelse i det hele tatt' },
             { en: 'It opposed all written law', no: 'Den motsatte seg all skreven lov' },
-            { en: 'It only affected Asia', no: 'Den påvirket bare Asia' }
+            { en: 'It only affected Asia', no: 'Den påvirket bare Asia' },
+            { en: 'Ideas like the Ten Commandments shaped moral and legal traditions', no: 'Ideer som De ti bud formet moralske og rettslige tradisjoner' },
+            { en: 'It had no influence at all', no: 'Den hadde ingen innflytelse i det hele tatt' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Jewish moral teachings, including the Ten Commandments, deeply influenced Western ethics and law.',
             no: 'Jødisk morallære, inkludert De ti bud, påvirket vestlig etikk og rett dypt.'
@@ -2826,12 +2826,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor er forholdet mellom jødisk religion og jødisk folketilhørighet komplekst?'
           },
           answers: [
-            { en: 'Jewish identity combines religion, ethnicity, culture, and shared history', no: 'Jødisk identitet kombinerer religion, etnisitet, kultur og felles historie' },
             { en: 'It is based only on citizenship', no: 'Den er bare basert på statsborgerskap' },
             { en: 'It has nothing to do with religion', no: 'Den har ingenting med religion å gjøre' },
-            { en: 'It is purely a modern invention', no: 'Den er rent en moderne oppfinnelse' }
+            { en: 'It is purely a modern invention', no: 'Den er rent en moderne oppfinnelse' },
+            { en: 'Jewish identity combines religion, ethnicity, culture, and shared history', no: 'Jødisk identitet kombinerer religion, etnisitet, kultur og felles historie' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Being Jewish can involve religion, ethnicity, culture, and peoplehood, which makes identity multifaceted.',
             no: 'Å være jøde kan omfatte religion, etnisitet, kultur og folketilhørighet, noe som gjør identiteten mangefasettert.'
@@ -2864,12 +2864,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvordan former jødedommens vekt på tekst og tolkning religionen?'
           },
           answers: [
+            { en: 'There are no sacred texts', no: 'Det finnes ingen hellige tekster' },
             { en: 'Ongoing study and debate of scripture keep the tradition dynamic', no: 'Vedvarende studier og debatt om skriften holder tradisjonen dynamisk' },
             { en: 'Texts are never discussed', no: 'Tekster blir aldri diskutert' },
-            { en: 'Interpretation is forbidden', no: 'Tolkning er forbudt' },
-            { en: 'There are no sacred texts', no: 'Det finnes ingen hellige tekster' }
+            { en: 'Interpretation is forbidden', no: 'Tolkning er forbudt' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Judaism’s long tradition of studying and debating scripture, especially in the Talmud, keeps interpretation central.',
             no: 'Jødedommens lange tradisjon med å studere og debattere skriften, særlig i Talmud, holder tolkning sentral.'
@@ -2883,12 +2883,12 @@ export const spreadOfMajorReligions: SeedSubcategory = {
             no: 'Hvorfor er Jerusalem sentral i jødisk historie og lengsel gjennom diasporaen?'
           },
           answers: [
-            { en: 'It was the site of the Temple and a focus of prayer and hope for return', no: 'Den var stedet for tempelet og et midtpunkt for bønn og håp om tilbakevending' },
-            { en: 'It had no religious meaning', no: 'Den hadde ingen religiøs betydning' },
             { en: 'It was outside the ancient Jewish world', no: 'Den lå utenfor den gamle jødiske verden' },
-            { en: 'It was forgotten in the Diaspora', no: 'Den ble glemt i diasporaen' }
+            { en: 'It was forgotten in the Diaspora', no: 'Den ble glemt i diasporaen' },
+            { en: 'It was the site of the Temple and a focus of prayer and hope for return', no: 'Den var stedet for tempelet og et midtpunkt for bønn og håp om tilbakevending' },
+            { en: 'It had no religious meaning', no: 'Den hadde ingen religiøs betydning' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'As the location of the Temple, Jerusalem remained central to Jewish worship and the hope of return.',
             no: 'Som stedet for tempelet forble Jerusalem sentral i jødisk gudstjeneste og håpet om tilbakevending.'

@@ -30,12 +30,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva står forkortelsen «AI» for?'
           },
           answers: [
-            { en: 'Automated Internet', no: 'Automatisert internett' },
             { en: 'Artificial Intelligence', no: 'Kunstig intelligens' },
             { en: 'Advanced Information', no: 'Avansert informasjon' },
-            { en: 'Applied Innovation', no: 'Anvendt innovasjon' }
+            { en: 'Applied Innovation', no: 'Anvendt innovasjon' },
+            { en: 'Automated Internet', no: 'Automatisert internett' }
           ],
-          correct: 1,
+          correct: 0,
           explanation: {
             en: 'AI stands for Artificial Intelligence, the simulation of human intelligence by machines.',
             no: 'AI står for kunstig intelligens (Artificial Intelligence), maskiners etterligning av menneskelig intelligens.'
@@ -49,12 +49,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvem blir ofte kalt faren til kunstig intelligens og informatikk?'
           },
           answers: [
+            { en: 'Nikola Tesla', no: 'Nikola Tesla' },
             { en: 'Alan Turing', no: 'Alan Turing' },
             { en: 'Thomas Edison', no: 'Thomas Edison' },
-            { en: 'Isaac Newton', no: 'Isaac Newton' },
-            { en: 'Nikola Tesla', no: 'Nikola Tesla' }
+            { en: 'Isaac Newton', no: 'Isaac Newton' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Alan Turing laid theoretical foundations for computing and machine intelligence.',
             no: 'Alan Turing la det teoretiske grunnlaget for databehandling og maskinintelligens.'
@@ -68,12 +68,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva heter testen som ble foreslått for å avgjøre om en maskin kan etterligne menneskelig samtale?'
           },
           answers: [
+            { en: 'The Babbage test', no: 'Babbage-testen' },
             { en: 'The Moore test', no: 'Moore-testen' },
             { en: 'The Turing test', no: 'Turing-testen' },
-            { en: 'The Pascal test', no: 'Pascal-testen' },
-            { en: 'The Babbage test', no: 'Babbage-testen' }
+            { en: 'The Pascal test', no: 'Pascal-testen' }
           ],
-          correct: 1,
+          correct: 2,
           explanation: {
             en: 'The Turing test, proposed by Alan Turing in 1950, checks if a machine can pass as human in conversation.',
             no: 'Turing-testen, foreslått av Alan Turing i 1950, sjekker om en maskin kan oppfattes som et menneske i en samtale.'
@@ -87,12 +87,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'I hvilket tiår ble begrepet «kunstig intelligens» først tatt i bruk?'
           },
           answers: [
-            { en: 'The 1950s', no: '1950-tallet' },
             { en: 'The 1980s', no: '1980-tallet' },
             { en: 'The 1920s', no: '1920-tallet' },
-            { en: 'The 2000s', no: '2000-tallet' }
+            { en: 'The 2000s', no: '2000-tallet' },
+            { en: 'The 1950s', no: '1950-tallet' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The term "artificial intelligence" was coined at the 1956 Dartmouth conference.',
             no: 'Begrepet «kunstig intelligens» ble laget på Dartmouth-konferansen i 1956.'
@@ -144,12 +144,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva er en «chatbot»?'
           },
           answers: [
-            { en: 'A program that converses with users in natural language', no: 'Et program som samtaler med brukere på naturlig språk' },
-            { en: 'A type of computer virus', no: 'En type datavirus' },
             { en: 'A physical cleaning robot', no: 'En fysisk rengjøringsrobot' },
-            { en: 'A printer driver', no: 'En skriverdriver' }
+            { en: 'A printer driver', no: 'En skriverdriver' },
+            { en: 'A program that converses with users in natural language', no: 'Et program som samtaler med brukere på naturlig språk' },
+            { en: 'A type of computer virus', no: 'En type datavirus' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'A chatbot is software designed to hold conversations with people through text or voice.',
             no: 'En chatbot er programvare laget for å føre samtaler med mennesker gjennom tekst eller tale.'
@@ -163,12 +163,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvilken av disse er en vanlig stemmeassistent drevet av AI?'
           },
           answers: [
-            { en: 'Siri', no: 'Siri' },
             { en: 'Excel', no: 'Excel' },
             { en: 'Photoshop', no: 'Photoshop' },
-            { en: 'Bluetooth', no: 'Bluetooth' }
+            { en: 'Bluetooth', no: 'Bluetooth' },
+            { en: 'Siri', no: 'Siri' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Siri, like Alexa and Google Assistant, is an AI-powered voice assistant.',
             no: 'Siri, i likhet med Alexa og Google Assistent, er en AI-drevet stemmeassistent.'
@@ -201,12 +201,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva etterligner et «nevralt nettverk» i AI løst sett?'
           },
           answers: [
+            { en: 'A river system', no: 'Et elvesystem' },
             { en: 'The human brain', no: 'Den menneskelige hjernen' },
             { en: 'A car engine', no: 'En bilmotor' },
-            { en: 'A telephone line', no: 'En telefonlinje' },
-            { en: 'A river system', no: 'Et elvesystem' }
+            { en: 'A telephone line', no: 'En telefonlinje' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Artificial neural networks are loosely inspired by the network of neurons in the brain.',
             no: 'Kunstige nevrale nettverk er løst inspirert av nettverket av nevroner i hjernen.'
@@ -220,12 +220,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva brukes «generativ AI» hovedsakelig til?'
           },
           answers: [
-            { en: 'Creating new text, images, or audio', no: 'Å lage ny tekst, nye bilder eller lyd' },
-            { en: 'Cooling computer servers', no: 'Å kjøle ned dataservere' },
             { en: 'Measuring electricity', no: 'Å måle elektrisitet' },
-            { en: 'Storing physical files', no: 'Å lagre fysiske dokumenter' }
+            { en: 'Storing physical files', no: 'Å lagre fysiske dokumenter' },
+            { en: 'Creating new text, images, or audio', no: 'Å lage ny tekst, nye bilder eller lyd' },
+            { en: 'Cooling computer servers', no: 'Å kjøle ned dataservere' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Generative AI produces new content such as text, images, music, or code.',
             no: 'Generativ AI produserer nytt innhold som tekst, bilder, musikk eller kode.'
@@ -239,12 +239,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Et program som spiller rollen som motstander i et videospill, bruker ofte hva?'
           },
           answers: [
-            { en: 'Artificial intelligence', no: 'Kunstig intelligens' },
             { en: 'A printer', no: 'En skriver' },
             { en: 'A microphone', no: 'En mikrofon' },
-            { en: 'A barcode scanner', no: 'En strekkodeleser' }
+            { en: 'A barcode scanner', no: 'En strekkodeleser' },
+            { en: 'Artificial intelligence', no: 'Kunstig intelligens' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Video games commonly use AI to control non-player characters and opponents.',
             no: 'Videospill bruker ofte AI til å styre datastyrte figurer og motstandere.'
@@ -277,12 +277,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvilken teknologi lar AI gjenkjenne objekter eller ansikter i fotografier?'
           },
           answers: [
+            { en: 'Disk defragmentation', no: 'Diskdefragmentering' },
             { en: 'Computer vision', no: 'Datasyn (computer vision)' },
             { en: 'Spreadsheet macros', no: 'Regnearkmakroer' },
-            { en: 'Fiber optics', no: 'Fiberoptikk' },
-            { en: 'Disk defragmentation', no: 'Diskdefragmentering' }
+            { en: 'Fiber optics', no: 'Fiberoptikk' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Computer vision enables AI systems to interpret and recognize images.',
             no: 'Datasyn gjør at AI-systemer kan tolke og gjenkjenne bilder.'
@@ -296,12 +296,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'En populær AI-chatbot lansert av OpenAI mot slutten av 2022 het hva?'
           },
           answers: [
-            { en: 'ChatGPT', no: 'ChatGPT' },
-            { en: 'Windows', no: 'Windows' },
             { en: 'Android', no: 'Android' },
-            { en: 'Firefox', no: 'Firefox' }
+            { en: 'Firefox', no: 'Firefox' },
+            { en: 'ChatGPT', no: 'ChatGPT' },
+            { en: 'Windows', no: 'Windows' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'OpenAI released ChatGPT in late 2022, bringing generative AI to a wide audience.',
             no: 'OpenAI lanserte ChatGPT mot slutten av 2022 og brakte generativ AI til et bredt publikum.'
@@ -315,12 +315,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvordan skiller maskinlæring seg fra tradisjonell programmering?'
           },
           answers: [
-            { en: 'It learns rules from data rather than following hand-written rules', no: 'Den lærer regler fra data i stedet for å følge håndskrevne regler' },
             { en: 'It never uses computers', no: 'Den bruker aldri datamaskiner' },
             { en: 'It requires no data at all', no: 'Den krever ingen data i det hele tatt' },
-            { en: 'It only works on paper', no: 'Den fungerer bare på papir' }
+            { en: 'It only works on paper', no: 'Den fungerer bare på papir' },
+            { en: 'It learns rules from data rather than following hand-written rules', no: 'Den lærer regler fra data i stedet for å følge håndskrevne regler' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'In machine learning, models infer patterns from data instead of relying solely on explicit instructions.',
             no: 'I maskinlæring utleder modeller mønstre fra data i stedet for å være avhengig av eksplisitte instruksjoner alene.'
@@ -353,12 +353,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvilken utvikling akselererte AI-fremgangen kraftig på 2010-tallet?'
           },
           answers: [
+            { en: 'A ban on data collection', no: 'Et forbud mot datainnsamling' },
             { en: 'Deep learning with large datasets and powerful GPUs', no: 'Dyp læring med store datasett og kraftige GPU-er' },
             { en: 'The invention of the telegraph', no: 'Oppfinnelsen av telegrafen' },
-            { en: 'The decline of the internet', no: 'Internettets tilbakegang' },
-            { en: 'A ban on data collection', no: 'Et forbud mot datainnsamling' }
+            { en: 'The decline of the internet', no: 'Internettets tilbakegang' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Deep learning, fueled by big data and GPU computing power, drove the 2010s AI boom.',
             no: 'Dyp læring, drevet av store datamengder og GPU-regnekraft, drev AI-boomen på 2010-tallet.'
@@ -372,12 +372,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva er en vanlig bekymring knyttet til skjevhet i AI-systemer?'
           },
           answers: [
-            { en: 'They can reproduce unfair patterns present in their training data', no: 'De kan gjenskape urettferdige mønstre som finnes i treningsdataene' },
-            { en: 'They always make perfectly neutral decisions', no: 'De tar alltid helt nøytrale beslutninger' },
             { en: 'They cannot process any data', no: 'De kan ikke behandle noen data' },
-            { en: 'They refuse to run on computers', no: 'De nekter å kjøre på datamaskiner' }
+            { en: 'They refuse to run on computers', no: 'De nekter å kjøre på datamaskiner' },
+            { en: 'They can reproduce unfair patterns present in their training data', no: 'De kan gjenskape urettferdige mønstre som finnes i treningsdataene' },
+            { en: 'They always make perfectly neutral decisions', no: 'De tar alltid helt nøytrale beslutninger' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'AI can inherit and amplify biases found in the data it is trained on.',
             no: 'AI kan arve og forsterke skjevheter som finnes i dataene den trenes på.'
@@ -391,12 +391,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvordan skiller «smal AI» seg fra «generell AI»?'
           },
           answers: [
-            { en: 'Narrow AI does specific tasks; general AI would handle any task like a human', no: 'Smal AI gjør spesifikke oppgaver; generell AI ville håndtere enhver oppgave som et menneske' },
             { en: 'Narrow AI is larger than general AI', no: 'Smal AI er større enn generell AI' },
             { en: 'They are exactly the same thing', no: 'De er nøyaktig det samme' },
-            { en: 'General AI only plays chess', no: 'Generell AI spiller bare sjakk' }
+            { en: 'General AI only plays chess', no: 'Generell AI spiller bare sjakk' },
+            { en: 'Narrow AI does specific tasks; general AI would handle any task like a human', no: 'Smal AI gjør spesifikke oppgaver; generell AI ville håndtere enhver oppgave som et menneske' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Today’s AI is "narrow," excelling at specific tasks, while human-level general AI does not yet exist.',
             no: 'Dagens AI er «smal» og dyktig på spesifikke oppgaver, mens generell AI på menneskelig nivå ennå ikke finnes.'
@@ -429,12 +429,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva er en viktig måte AI endrer arbeidsmarkedet på?'
           },
           answers: [
+            { en: 'Stopping all economic growth', no: 'Den stopper all økonomisk vekst' },
             { en: 'Automating some tasks while creating demand for new skills', no: 'Den automatiserer noen oppgaver mens den skaper behov for nye ferdigheter' },
             { en: 'Eliminating the need for any workers everywhere', no: 'Den fjerner behovet for alle arbeidere overalt' },
-            { en: 'Making computers obsolete', no: 'Den gjør datamaskiner overflødige' },
-            { en: 'Stopping all economic growth', no: 'Den stopper all økonomisk vekst' }
+            { en: 'Making computers obsolete', no: 'Den gjør datamaskiner overflødige' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'AI automates certain tasks but also shifts demand toward new roles and skills.',
             no: 'AI automatiserer visse oppgaver, men forskyver også etterspørselen mot nye roller og ferdigheter.'
@@ -448,12 +448,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva er en «algoritme» i sammenheng med AI?'
           },
           answers: [
-            { en: 'A step-by-step procedure for solving a problem', no: 'En trinnvis fremgangsmåte for å løse et problem' },
-            { en: 'A type of computer monitor', no: 'En type dataskjerm' },
             { en: 'A brand of laptop', no: 'Et merke bærbar PC' },
-            { en: 'A unit of electricity', no: 'En enhet for elektrisitet' }
+            { en: 'A unit of electricity', no: 'En enhet for elektrisitet' },
+            { en: 'A step-by-step procedure for solving a problem', no: 'En trinnvis fremgangsmåte for å løse et problem' },
+            { en: 'A type of computer monitor', no: 'En type dataskjerm' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'An algorithm is a defined sequence of steps a computer follows to solve a problem.',
             no: 'En algoritme er en definert rekke trinn en datamaskin følger for å løse et problem.'
@@ -467,12 +467,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvordan hjelper AI til i medisin i dag?'
           },
           answers: [
-            { en: 'Assisting in analyzing scans and detecting diseases', no: 'Den hjelper til med å analysere skanninger og oppdage sykdommer' },
             { en: 'Replacing all hospitals', no: 'Den erstatter alle sykehus' },
             { en: 'Removing the need for any medicine', no: 'Den fjerner behovet for all medisin' },
-            { en: 'Banning medical research', no: 'Den forbyr medisinsk forskning' }
+            { en: 'Banning medical research', no: 'Den forbyr medisinsk forskning' },
+            { en: 'Assisting in analyzing scans and detecting diseases', no: 'Den hjelper til med å analysere skanninger og oppdage sykdommer' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'AI assists doctors by analyzing medical images and spotting patterns linked to disease.',
             no: 'AI hjelper leger ved å analysere medisinske bilder og oppdage mønstre knyttet til sykdom.'
@@ -505,12 +505,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvorfor er «store språkmodeller» betydningsfulle?'
           },
           answers: [
+            { en: 'They store no information', no: 'De lagrer ingen informasjon' },
             { en: 'They can generate and understand human-like text at scale', no: 'De kan generere og forstå menneskelignende tekst i stor skala' },
             { en: 'They can only translate Latin', no: 'De kan bare oversette latin' },
-            { en: 'They work without any computers', no: 'De fungerer uten datamaskiner' },
-            { en: 'They store no information', no: 'De lagrer ingen informasjon' }
+            { en: 'They work without any computers', no: 'De fungerer uten datamaskiner' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Large language models, trained on vast text, can write, summarize, and answer in natural language.',
             no: 'Store språkmodeller, trent på enorme tekstmengder, kan skrive, oppsummere og svare på naturlig språk.'
@@ -524,12 +524,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvilken sammenheng finnes mellom AI-fremgang og datamaskinvare?'
           },
           answers: [
-            { en: 'Faster chips made it possible to train far larger models', no: 'Raskere brikker gjorde det mulig å trene langt større modeller' },
-            { en: 'Hardware has no effect on AI', no: 'Maskinvare har ingen effekt på AI' },
             { en: 'AI only runs on paper', no: 'AI kjører bare på papir' },
-            { en: 'Slower chips improved AI most', no: 'Tregere brikker forbedret AI mest' }
+            { en: 'Slower chips improved AI most', no: 'Tregere brikker forbedret AI mest' },
+            { en: 'Faster chips made it possible to train far larger models', no: 'Raskere brikker gjorde det mulig å trene langt større modeller' },
+            { en: 'Hardware has no effect on AI', no: 'Maskinvare har ingen effekt på AI' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Advances in processors, especially GPUs, enabled training of much larger AI models.',
             no: 'Fremskritt innen prosessorer, særlig GPU-er, muliggjorde trening av langt større AI-modeller.'
@@ -543,12 +543,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva er en «deepfake»?'
           },
           answers: [
-            { en: 'AI-generated fake media that looks or sounds real', no: 'AI-generert falskt medieinnhold som ser ekte ut eller høres ekte ut' },
             { en: 'A very deep database', no: 'En svært dyp database' },
             { en: 'A broken hard drive', no: 'En ødelagt harddisk' },
-            { en: 'A secure password', no: 'Et sikkert passord' }
+            { en: 'A secure password', no: 'Et sikkert passord' },
+            { en: 'AI-generated fake media that looks or sounds real', no: 'AI-generert falskt medieinnhold som ser ekte ut eller høres ekte ut' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Deepfakes use AI to create convincing but fabricated images, audio, or video.',
             no: 'Deepfakes bruker AI til å lage overbevisende, men oppdiktede bilder, lyd eller video.'
@@ -581,12 +581,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvorfor diskuterer eksperter om det å bestå Turing-testen beviser ekte intelligens?'
           },
           answers: [
+            { en: 'It measures physical strength', no: 'Den måler fysisk styrke' },
             { en: 'Imitating conversation may not require genuine understanding', no: 'Å etterligne en samtale krever kanskje ikke ekte forståelse' },
             { en: 'The test cannot be run on computers', no: 'Testen kan ikke kjøres på datamaskiner' },
-            { en: 'No machine has ever attempted it', no: 'Ingen maskin har noensinne forsøkt den' },
-            { en: 'It measures physical strength', no: 'Den måler fysisk styrke' }
+            { en: 'No machine has ever attempted it', no: 'Ingen maskin har noensinne forsøkt den' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Critics like Searle’s "Chinese Room" argue a system can imitate language without understanding it.',
             no: 'Kritikere som Searles «kinesiske rom» hevder at et system kan etterligne språk uten å forstå det.'
@@ -600,12 +600,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva er «justeringsproblemet» (alignment) innen AI-sikkerhet?'
           },
           answers: [
-            { en: 'Ensuring AI systems pursue goals that match human values', no: 'Å sikre at AI-systemer forfølger mål som samsvarer med menneskelige verdier' },
-            { en: 'Lining up servers in a data center', no: 'Å stille opp servere i et datasenter' },
             { en: 'Adjusting a monitor’s position', no: 'Å justere posisjonen til en skjerm' },
-            { en: 'Calibrating a printer', no: 'Å kalibrere en skriver' }
+            { en: 'Calibrating a printer', no: 'Å kalibrere en skriver' },
+            { en: 'Ensuring AI systems pursue goals that match human values', no: 'Å sikre at AI-systemer forfølger mål som samsvarer med menneskelige verdier' },
+            { en: 'Lining up servers in a data center', no: 'Å stille opp servere i et datasenter' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The alignment problem concerns making powerful AI act in accordance with human intentions and values.',
             no: 'Justeringsproblemet handler om å få kraftig AI til å handle i tråd med menneskelige intensjoner og verdier.'
@@ -619,12 +619,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvorfor er forklarbarhet en utfordring for dype nevrale nettverk?'
           },
           answers: [
-            { en: 'Their internal decision process is often a hard-to-interpret "black box"', no: 'Deres interne beslutningsprosess er ofte en vanskelig tolkbar «svart boks»' },
             { en: 'They keep detailed written logs of every thought', no: 'De fører detaljerte skriftlige logger over hver tanke' },
             { en: 'They are too simple to study', no: 'De er for enkle til å studere' },
-            { en: 'They never make predictions', no: 'De gjør aldri prediksjoner' }
+            { en: 'They never make predictions', no: 'De gjør aldri prediksjoner' },
+            { en: 'Their internal decision process is often a hard-to-interpret "black box"', no: 'Deres interne beslutningsprosess er ofte en vanskelig tolkbar «svart boks»' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Deep networks involve millions of parameters, making their reasoning hard to interpret.',
             no: 'Dype nettverk involverer millioner av parametere, noe som gjør resonnementet deres vanskelig å tolke.'
@@ -657,12 +657,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva menes med «den teknologiske singulariteten»?'
           },
           answers: [
+            { en: 'A type of programming language', no: 'En type programmeringsspråk' },
             { en: 'A hypothetical point where AI surpasses human intelligence and rapidly self-improves', no: 'Et hypotetisk punkt der AI overgår menneskelig intelligens og raskt forbedrer seg selv' },
             { en: 'A single working computer', no: 'En enkelt fungerende datamaskin' },
-            { en: 'The first internet connection', no: 'Den første internettforbindelsen' },
-            { en: 'A type of programming language', no: 'En type programmeringsspråk' }
+            { en: 'The first internet connection', no: 'Den første internettforbindelsen' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The singularity is a speculative scenario in which self-improving AI triggers runaway technological growth.',
             no: 'Singulariteten er et spekulativt scenario der selvforbedrende AI utløser ukontrollert teknologisk vekst.'
@@ -676,12 +676,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvorfor er datavern et sentralt etisk spørsmål i moderne AI?'
           },
           answers: [
-            { en: 'Training and using AI often relies on vast amounts of personal data', no: 'Trening og bruk av AI bygger ofte på enorme mengder personopplysninger' },
-            { en: 'AI never touches any data', no: 'AI berører aldri data' },
             { en: 'Privacy laws apply only to printers', no: 'Personvernlover gjelder bare skrivere' },
-            { en: 'Data cannot be stored digitally', no: 'Data kan ikke lagres digitalt' }
+            { en: 'Data cannot be stored digitally', no: 'Data kan ikke lagres digitalt' },
+            { en: 'Training and using AI often relies on vast amounts of personal data', no: 'Trening og bruk av AI bygger ofte på enorme mengder personopplysninger' },
+            { en: 'AI never touches any data', no: 'AI berører aldri data' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'AI systems often process personal data, raising concerns about consent, surveillance, and misuse.',
             no: 'AI-systemer behandler ofte personopplysninger, noe som reiser bekymringer om samtykke, overvåking og misbruk.'
@@ -695,12 +695,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvordan utfordrer «det kinesiske rom»-argumentet påstander om maskinforståelse?'
           },
           answers: [
-            { en: 'It argues following rules to produce output is not the same as understanding meaning', no: 'Det hevder at å følge regler for å produsere svar ikke er det samme som å forstå mening' },
             { en: 'It proves machines are conscious', no: 'Det beviser at maskiner er bevisste' },
             { en: 'It shows computers cannot store data', no: 'Det viser at datamaskiner ikke kan lagre data' },
-            { en: 'It is about translating road signs', no: 'Det handler om å oversette veiskilt' }
+            { en: 'It is about translating road signs', no: 'Det handler om å oversette veiskilt' },
+            { en: 'It argues following rules to produce output is not the same as understanding meaning', no: 'Det hevder at å følge regler for å produsere svar ikke er det samme som å forstå mening' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'John Searle’s thought experiment suggests symbol manipulation alone does not constitute genuine understanding.',
             no: 'John Searles tankeeksperiment antyder at symbolmanipulasjon alene ikke utgjør ekte forståelse.'
@@ -733,12 +733,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hva er en sentral vanskelighet ved å regulere AI internasjonalt?'
           },
           answers: [
+            { en: 'AI cannot cross borders', no: 'AI kan ikke krysse landegrenser' },
             { en: 'Countries differ on rules, and the technology evolves faster than laws', no: 'Land er uenige om regler, og teknologien utvikler seg raskere enn lovene' },
             { en: 'AI is identical in every country by law', no: 'AI er identisk i alle land ifølge loven' },
-            { en: 'There are no governments interested in it', no: 'Ingen myndigheter er interessert i det' },
-            { en: 'AI cannot cross borders', no: 'AI kan ikke krysse landegrenser' }
+            { en: 'There are no governments interested in it', no: 'Ingen myndigheter er interessert i det' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Differing national interests and fast-moving technology make global AI governance difficult.',
             no: 'Ulike nasjonale interesser og en teknologi i rask endring gjør global AI-styring vanskelig.'
@@ -752,12 +752,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvorfor regnes spørsmålet om AI-bevissthet som vitenskapelig vanskelig?'
           },
           answers: [
-            { en: 'There is no agreed definition or reliable test for consciousness', no: 'Det finnes ingen omforent definisjon eller pålitelig test for bevissthet' },
-            { en: 'Consciousness can be measured with a ruler', no: 'Bevissthet kan måles med en linjal' },
             { en: 'All scientists already agree machines are conscious', no: 'Alle forskere er allerede enige om at maskiner er bevisste' },
-            { en: 'Consciousness only applies to software', no: 'Bevissthet gjelder bare programvare' }
+            { en: 'Consciousness only applies to software', no: 'Bevissthet gjelder bare programvare' },
+            { en: 'There is no agreed definition or reliable test for consciousness', no: 'Det finnes ingen omforent definisjon eller pålitelig test for bevissthet' },
+            { en: 'Consciousness can be measured with a ruler', no: 'Bevissthet kan måles med en linjal' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Without a clear definition or test for consciousness, claims about machine awareness remain unresolved.',
             no: 'Uten en klar definisjon eller test for bevissthet forblir påstander om maskinbevissthet uavklarte.'
@@ -771,12 +771,12 @@ export const theDigitalRevolution: SeedSubcategory = {
             no: 'Hvordan kan AI både hjelpe og skade arbeidet mot feilinformasjon?'
           },
           answers: [
-            { en: 'It can detect false content but also generate convincing fakes', no: 'Den kan oppdage falskt innhold, men også generere overbevisende forfalskninger' },
             { en: 'It can only ever tell the truth', no: 'Den kan bare fortelle sannheten' },
             { en: 'It has no role in information at all', no: 'Den har ingen rolle i informasjon i det hele tatt' },
-            { en: 'It deletes the entire internet', no: 'Den sletter hele internett' }
+            { en: 'It deletes the entire internet', no: 'Den sletter hele internett' },
+            { en: 'It can detect false content but also generate convincing fakes', no: 'Den kan oppdage falskt innhold, men også generere overbevisende forfalskninger' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'AI can flag and filter misinformation, yet the same tools can mass-produce realistic fake content.',
             no: 'AI kan flagge og filtrere feilinformasjon, men de samme verktøyene kan masseprodusere realistisk falskt innhold.'

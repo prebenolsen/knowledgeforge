@@ -127,8 +127,25 @@ To add a big batch — say 100 Economics questions — you have two options:
 - **Make a standalone JSON file** in the same shape (an array of categories) and run
   `npm run import -- path/to/your-batch.json`.
 
-Re-running is safe: categories, subcategories, and modules upsert by slug, so
-they're never duplicated. New questions are simply added.
+Categories, subcategories, and modules upsert by slug, so they're never
+duplicated. **Questions, however, are inserted (not upserted)** — so re-running
+`npm run import` against a database that already has the content will **add a
+second copy of every question**. Only run a full import against a fresh/empty
+content set, or for brand-new categories.
+
+### Refreshing names/translations only
+
+If you only changed **names or translations** of existing categories,
+subcategories, or modules (for example, you added Norwegian subcategory names
+after the first import), run:
+
+```bash
+npm run sync:taxonomy
+```
+
+This upserts just the taxonomy names from the seed and never touches questions,
+so it's fully idempotent and cannot create duplicates. Switching the app to
+**NO** will then show the Norwegian names.
 
 See `CONTENT_FORMAT.md` for the exact JSON shape.
 

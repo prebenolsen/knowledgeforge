@@ -34,12 +34,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hva ble de gamle egyptiske kongene kalt?'
           },
           answers: [
+            { en: 'Tsars', no: 'Tsarer' },
             { en: 'Pharaohs', no: 'Faraoer' },
             { en: 'Emperors', no: 'Keisere' },
-            { en: 'Caliphs', no: 'Kalifer' },
-            { en: 'Tsars', no: 'Tsarer' }
+            { en: 'Caliphs', no: 'Kalifer' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The rulers of ancient Egypt were called pharaohs.',
             no: 'Herskerne i det gamle Egypt ble kalt faraoer.'
@@ -53,12 +53,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilke store steinbygninger ble bygd som gravkamre for egyptiske faraoer?'
           },
           answers: [
-            { en: 'Pyramids', no: 'Pyramider' },
-            { en: 'Cathedrals', no: 'Katedraler' },
             { en: 'Ziggurats', no: 'Ziqqurater' },
-            { en: 'Castles', no: 'Slott' }
+            { en: 'Castles', no: 'Slott' },
+            { en: 'Pyramids', no: 'Pyramider' },
+            { en: 'Cathedrals', no: 'Katedraler' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The pyramids were monumental tombs built for pharaohs.',
             no: 'Pyramidene var monumentale gravkamre bygd for faraoer.'
@@ -72,12 +72,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hva kalles det berømte egyptiske skriftsystemet med bilder og symboler?'
           },
           answers: [
-            { en: 'Hieroglyphs', no: 'Hieroglyfer' },
             { en: 'Cuneiform', no: 'Kileskrift' },
             { en: 'The alphabet', no: 'Alfabetet' },
-            { en: 'Runes', no: 'Runer' }
+            { en: 'Runes', no: 'Runer' },
+            { en: 'Hieroglyphs', no: 'Hieroglyfer' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Ancient Egyptians wrote using hieroglyphs, a system of pictures and symbols.',
             no: 'De gamle egypterne skrev med hieroglyfer, et system av bilder og symboler.'
@@ -110,12 +110,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hva gjorde egypterne for å bevare kropper til livet etter døden?'
           },
           answers: [
+            { en: 'Burial at sea', no: 'Sjøbegravelse' },
             { en: 'Mummification', no: 'Mumifisering' },
             { en: 'Cremation', no: 'Kremering' },
-            { en: 'Freezing', no: 'Frysing' },
-            { en: 'Burial at sea', no: 'Sjøbegravelse' }
+            { en: 'Freezing', no: 'Frysing' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Egyptians used mummification to preserve bodies for the afterlife.',
             no: 'Egypterne brukte mumifisering for å bevare kropper til livet etter døden.'
@@ -129,12 +129,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilken ung faraos nesten uberørte grav ble oppdaget i 1922?'
           },
           answers: [
-            { en: 'Tutankhamun', no: 'Tutankhamon' },
-            { en: 'Julius Caesar', no: 'Julius Cæsar' },
             { en: 'Hammurabi', no: 'Hammurabi' },
-            { en: 'Alexander the Great', no: 'Aleksander den store' }
+            { en: 'Alexander the Great', no: 'Aleksander den store' },
+            { en: 'Tutankhamun', no: 'Tutankhamon' },
+            { en: 'Julius Caesar', no: 'Julius Cæsar' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Tutankhamun’s tomb, found in 1922, was famous for its treasures.',
             no: 'Tutankhamons grav, funnet i 1922, var berømt for sine skatter.'
@@ -148,12 +148,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilken berømt kvinnelig hersker var den siste aktive faraoen i Egypt?'
           },
           answers: [
-            { en: 'Cleopatra', no: 'Kleopatra' },
             { en: 'Nefertari', no: 'Nefertari' },
             { en: 'Joan of Arc', no: 'Jeanne d’Arc' },
-            { en: 'Boudica', no: 'Boudica' }
+            { en: 'Boudica', no: 'Boudica' },
+            { en: 'Cleopatra', no: 'Kleopatra' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Cleopatra VII was the last active ruler of the Ptolemaic Kingdom of Egypt.',
             no: 'Kleopatra VII var den siste aktive herskeren i det ptolemeiske kongedømmet Egypt.'
@@ -186,12 +186,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'De gamle egypterne tilba hvor mange guder?'
           },
           answers: [
+            { en: 'Exactly two gods', no: 'Nøyaktig to guder' },
             { en: 'Many gods', no: 'Mange guder' },
             { en: 'Only one god', no: 'Bare én gud' },
-            { en: 'No gods', no: 'Ingen guder' },
-            { en: 'Exactly two gods', no: 'Nøyaktig to guder' }
+            { en: 'No gods', no: 'Ingen guder' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Ancient Egyptian religion was polytheistic, with many gods such as Ra, Osiris, and Isis.',
             no: 'Den gamle egyptiske religionen var polyteistisk, med mange guder som Ra, Osiris og Isis.'
@@ -205,12 +205,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilken egyptisk solgud var en av de viktigste gudene?'
           },
           answers: [
-            { en: 'Ra', no: 'Ra' },
-            { en: 'Zeus', no: 'Zevs' },
             { en: 'Thor', no: 'Tor' },
-            { en: 'Vishnu', no: 'Vishnu' }
+            { en: 'Vishnu', no: 'Vishnu' },
+            { en: 'Ra', no: 'Ra' },
+            { en: 'Zeus', no: 'Zevs' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Ra was the Egyptian sun god and one of the most important deities.',
             no: 'Ra var den egyptiske solguden og en av de viktigste gudene.'
@@ -224,12 +224,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'De største pyramidene ble bygd ved hvilket sted?'
           },
           answers: [
-            { en: 'Giza', no: 'Giza' },
             { en: 'Babylon', no: 'Babylon' },
             { en: 'Athens', no: 'Aten' },
-            { en: 'Rome', no: 'Roma' }
+            { en: 'Rome', no: 'Roma' },
+            { en: 'Giza', no: 'Giza' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The famous Great Pyramids were built at Giza, near modern Cairo.',
             no: 'De berømte store pyramidene ble bygd ved Giza, nær dagens Kairo.'
@@ -262,12 +262,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hva var prestenes viktigste rolle i det gamle Egypt?'
           },
           answers: [
+            { en: 'Building roads only', no: 'Bare å bygge veier' },
             { en: 'Serving the gods and temples', no: 'Å tjene gudene og templene' },
             { en: 'Commanding the navy', no: 'Å lede marinen' },
-            { en: 'Printing books', no: 'Å trykke bøker' },
-            { en: 'Building roads only', no: 'Bare å bygge veier' }
+            { en: 'Printing books', no: 'Å trykke bøker' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Priests served the gods, performed rituals, and maintained the temples.',
             no: 'Prestene tjente gudene, utførte ritualer og holdt templene ved like.'
@@ -281,12 +281,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Den årlige flommen i Nilen var viktig fordi den gjorde hva?'
           },
           answers: [
-            { en: 'Made the land fertile for farming', no: 'Gjorde jorda fruktbar for jordbruk' },
-            { en: 'Destroyed all the crops', no: 'Ødela alle avlingene' },
             { en: 'Froze the river', no: 'Frøs elven' },
-            { en: 'Created mountains', no: 'Skapte fjell' }
+            { en: 'Created mountains', no: 'Skapte fjell' },
+            { en: 'Made the land fertile for farming', no: 'Gjorde jorda fruktbar for jordbruk' },
+            { en: 'Destroyed all the crops', no: 'Ødela alle avlingene' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Nile’s annual flood deposited rich silt, making farming possible in the desert.',
             no: 'Nilens årlige flom avsatte næringsrik slam og gjorde jordbruk mulig i ørkenen.'
@@ -300,12 +300,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor var Nilen avgjørende for den egyptiske sivilisasjonen?'
           },
           answers: [
-            { en: 'It provided water, fertile soil, and transport', no: 'Den ga vann, fruktbar jord og transport' },
             { en: 'It blocked all trade', no: 'Den blokkerte all handel' },
             { en: 'It was only used for sport', no: 'Den ble bare brukt til sport' },
-            { en: 'It had no practical use', no: 'Den hadde ingen praktisk nytte' }
+            { en: 'It had no practical use', no: 'Den hadde ingen praktisk nytte' },
+            { en: 'It provided water, fertile soil, and transport', no: 'Den ga vann, fruktbar jord og transport' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Nile supplied drinking water, irrigated crops, and served as a highway for trade and travel.',
             no: 'Nilen ga drikkevann, vannet avlinger og fungerte som en ferdselsåre for handel og reise.'
@@ -338,12 +338,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor bygde egypterne forseggjorte gravkamre og pyramider?'
           },
           answers: [
+            { en: 'They had no religious reason', no: 'De hadde ingen religiøs grunn' },
             { en: 'They believed in an afterlife requiring preparation', no: 'De trodde på et liv etter døden som krevde forberedelse' },
             { en: 'They needed grain storage', no: 'De trengte kornlager' },
-            { en: 'They wanted military forts', no: 'De ønsket militære festninger' },
-            { en: 'They had no religious reason', no: 'De hadde ingen religiøs grunn' }
+            { en: 'They wanted military forts', no: 'De ønsket militære festninger' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Belief in an afterlife led Egyptians to build tombs and preserve bodies for the journey beyond death.',
             no: 'Troen på et liv etter døden fikk egypterne til å bygge gravkamre og bevare kropper til reisen etter døden.'
@@ -357,12 +357,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilken rolle spilte skrivere i det egyptiske samfunnet?'
           },
           answers: [
-            { en: 'They recorded taxes, laws, and records using writing', no: 'De nedtegnet skatter, lover og opptegnelser med skrift' },
-            { en: 'They led armies into battle', no: 'De ledet hærer i kamp' },
             { en: 'They built the pyramids alone', no: 'De bygde pyramidene alene' },
-            { en: 'They had no important role', no: 'De hadde ingen viktig rolle' }
+            { en: 'They had no important role', no: 'De hadde ingen viktig rolle' },
+            { en: 'They recorded taxes, laws, and records using writing', no: 'De nedtegnet skatter, lover og opptegnelser med skrift' },
+            { en: 'They led armies into battle', no: 'De ledet hærer i kamp' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Scribes were literate officials who kept records of taxes, trade, laws, and religious texts.',
             no: 'Skrivere var lesekyndige embetsmenn som førte opptegnelser over skatter, handel, lover og religiøse tekster.'
@@ -376,12 +376,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan så egypterne på faraoens rolle?'
           },
           answers: [
-            { en: 'As a god-king linking the people to the gods', no: 'Som en gudekonge som forbandt folket med gudene' },
             { en: 'As an elected mayor', no: 'Som en valgt ordfører' },
             { en: 'As a foreign ambassador', no: 'Som en utenlandsk ambassadør' },
-            { en: 'As an ordinary farmer', no: 'Som en vanlig bonde' }
+            { en: 'As an ordinary farmer', no: 'Som en vanlig bonde' },
+            { en: 'As a god-king linking the people to the gods', no: 'Som en gudekonge som forbandt folket med gudene' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The pharaoh was seen as a divine ruler, a link between the gods and the people.',
             no: 'Faraoen ble sett på som en guddommelig hersker, et bindeledd mellom gudene og folket.'
@@ -414,12 +414,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hva avslører mumifiseringsprosessen om egyptiske trosforestillinger?'
           },
           answers: [
+            { en: 'That they had no burial customs', no: 'At de ikke hadde gravskikker' },
             { en: 'That they believed the body was needed in the afterlife', no: 'At de trodde kroppen var nødvendig i livet etter døden' },
             { en: 'That they feared all the dead', no: 'At de fryktet alle døde' },
-            { en: 'That they rejected religion', no: 'At de avviste religion' },
-            { en: 'That they had no burial customs', no: 'At de ikke hadde gravskikker' }
+            { en: 'That they rejected religion', no: 'At de avviste religion' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Mummification reflects the belief that the preserved body was needed for life after death.',
             no: 'Mumifisering gjenspeiler troen på at den bevarte kroppen var nødvendig for livet etter døden.'
@@ -433,12 +433,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan tjente det gamle Egypt på handel?'
           },
           answers: [
-            { en: 'It brought goods like gold, wood, and incense', no: 'Den brakte varer som gull, tre og røkelse' },
-            { en: 'It isolated Egypt completely', no: 'Den isolerte Egypt fullstendig' },
             { en: 'It had no economic value', no: 'Den hadde ingen økonomisk verdi' },
-            { en: 'It only exported sand', no: 'Den eksporterte bare sand' }
+            { en: 'It only exported sand', no: 'Den eksporterte bare sand' },
+            { en: 'It brought goods like gold, wood, and incense', no: 'Den brakte varer som gull, tre og røkelse' },
+            { en: 'It isolated Egypt completely', no: 'Den isolerte Egypt fullstendig' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Egypt traded grain and goods for timber, gold, incense, and luxury items from other lands.',
             no: 'Egypt byttet korn og varer mot tømmer, gull, røkelse og luksusvarer fra andre land.'
@@ -452,12 +452,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor var de årlige nilflommene forutsigbare og nyttige?'
           },
           answers: [
-            { en: 'They came at regular times, letting farmers plan planting', no: 'De kom til faste tider og lot bøndene planlegge såingen' },
             { en: 'They came randomly without warning', no: 'De kom tilfeldig uten forvarsel' },
             { en: 'They destroyed all farmland', no: 'De ødela all dyrkbar mark' },
-            { en: 'They never actually occurred', no: 'De fant aldri egentlig sted' }
+            { en: 'They never actually occurred', no: 'De fant aldri egentlig sted' },
+            { en: 'They came at regular times, letting farmers plan planting', no: 'De kom til faste tider og lot bøndene planlegge såingen' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Nile flooded predictably each year, allowing Egyptians to organize farming around it.',
             no: 'Nilen flommet forutsigbart hvert år, slik at egypterne kunne organisere jordbruket rundt den.'
@@ -490,12 +490,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan var det gamle Egypts langvarige stabilitet sammenlignet med mange naboer?'
           },
           answers: [
+            { en: 'It changed completely every decade', no: 'Det endret seg fullstendig hvert tiår' },
             { en: 'It lasted for thousands of years with lasting traditions', no: 'Det varte i tusenvis av år med varige tradisjoner' },
             { en: 'It collapsed after a single year', no: 'Det brøt sammen etter ett år' },
-            { en: 'It never had any government', no: 'Det hadde aldri noen styreform' },
-            { en: 'It changed completely every decade', no: 'Det endret seg fullstendig hvert tiår' }
+            { en: 'It never had any government', no: 'Det hadde aldri noen styreform' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Egyptian civilization endured for around 3,000 years with remarkable cultural continuity.',
             no: 'Den egyptiske sivilisasjonen varte i omkring 3 000 år med bemerkelsesverdig kulturell kontinuitet.'
@@ -509,12 +509,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilke fremskritt gjorde de gamle egypterne innen matematikk og ingeniørkunst?'
           },
           answers: [
-            { en: 'Geometry and techniques to build huge monuments', no: 'Geometri og teknikker for å bygge enorme monumenter' },
-            { en: 'They used no mathematics', no: 'De brukte ingen matematikk' },
             { en: 'They invented the steam engine', no: 'De oppfant dampmaskinen' },
-            { en: 'They had no engineering skill', no: 'De hadde ingen ingeniørferdigheter' }
+            { en: 'They had no engineering skill', no: 'De hadde ingen ingeniørferdigheter' },
+            { en: 'Geometry and techniques to build huge monuments', no: 'Geometri og teknikker for å bygge enorme monumenter' },
+            { en: 'They used no mathematics', no: 'De brukte ingen matematikk' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Egyptians used practical geometry and engineering to build pyramids, temples, and irrigation systems.',
             no: 'Egypterne brukte praktisk geometri og ingeniørkunst for å bygge pyramider, templer og vanningssystemer.'
@@ -528,12 +528,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan formet foreningen av Øvre og Nedre Egypt den tidlige historien dens?'
           },
           answers: [
-            { en: 'It created a unified kingdom under a single ruler', no: 'Den skapte et samlet kongerike under én hersker' },
             { en: 'It split Egypt into many states', no: 'Den delte Egypt i mange stater' },
             { en: 'It ended Egyptian civilization', no: 'Den avsluttet den egyptiske sivilisasjonen' },
-            { en: 'It had no political effect', no: 'Den hadde ingen politisk effekt' }
+            { en: 'It had no political effect', no: 'Den hadde ingen politisk effekt' },
+            { en: 'It created a unified kingdom under a single ruler', no: 'Den skapte et samlet kongerike under én hersker' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The unification of Upper and Lower Egypt around 3100 BCE formed one of the world’s first nation-states.',
             no: 'Foreningen av Øvre og Nedre Egypt omkring 3100 f.Kr. dannet en av verdens første nasjonalstater.'
@@ -566,12 +566,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan forsøkte faraoen Akhenaten å endre egyptisk religion?'
           },
           answers: [
+            { en: 'He abolished religion entirely', no: 'Han avskaffet religion fullstendig' },
             { en: 'He promoted worship of a single sun disk, the Aten', no: 'Han fremmet tilbedelse av en enkelt solskive, Aten' },
             { en: 'He banned all gods forever', no: 'Han forbød alle guder for alltid' },
-            { en: 'He introduced Christianity', no: 'Han innførte kristendommen' },
-            { en: 'He abolished religion entirely', no: 'Han avskaffet religion fullstendig' }
+            { en: 'He introduced Christianity', no: 'Han innførte kristendommen' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Akhenaten promoted worship of the Aten, a near-monotheistic shift later reversed after his death.',
             no: 'Akhenaten fremmet tilbedelse av Aten, et nesten monoteistisk skifte som senere ble reversert etter hans død.'
@@ -585,12 +585,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor regnes Rosettasteinen som så viktig for egyptologien?'
           },
           answers: [
-            { en: 'Its parallel texts let scholars finally decipher hieroglyphs', no: 'Dens parallelle tekster lot forskere endelig tyde hieroglyfene' },
-            { en: 'It was the first pyramid', no: 'Den var den første pyramiden' },
             { en: 'It was a pharaoh’s throne', no: 'Den var en faraos trone' },
-            { en: 'It listed all Egyptian kings', no: 'Den listet opp alle egyptiske konger' }
+            { en: 'It listed all Egyptian kings', no: 'Den listet opp alle egyptiske konger' },
+            { en: 'Its parallel texts let scholars finally decipher hieroglyphs', no: 'Dens parallelle tekster lot forskere endelig tyde hieroglyfene' },
+            { en: 'It was the first pyramid', no: 'Den var den første pyramiden' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Because it repeated one decree in Greek and two Egyptian scripts, the Rosetta Stone unlocked hieroglyphs.',
             no: 'Fordi den gjentok ett dekret på gresk og to egyptiske skriftsystemer, låste Rosettasteinen opp hieroglyfene.'
@@ -604,12 +604,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan styrket egyptisk religion faraoens politiske makt?'
           },
           answers: [
-            { en: 'Divine kingship made obedience a religious duty', no: 'Det guddommelige kongedømmet gjorde lydighet til en religiøs plikt' },
             { en: 'Religion opposed the pharaoh', no: 'Religionen motarbeidet faraoen' },
             { en: 'It made the pharaoh powerless', no: 'Den gjorde faraoen maktesløs' },
-            { en: 'It had no political role', no: 'Den hadde ingen politisk rolle' }
+            { en: 'It had no political role', no: 'Den hadde ingen politisk rolle' },
+            { en: 'Divine kingship made obedience a religious duty', no: 'Det guddommelige kongedømmet gjorde lydighet til en religiøs plikt' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'By portraying the pharaoh as divine, religion made loyalty to him a sacred obligation.',
             no: 'Ved å fremstille faraoen som guddommelig gjorde religionen lojalitet mot ham til en hellig plikt.'
@@ -642,12 +642,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan har moderne funn endret synet på hvem som bygde pyramidene?'
           },
           answers: [
+            { en: 'They confirm the pyramids are natural', no: 'De bekrefter at pyramidene er naturlige' },
             { en: 'Evidence suggests skilled paid laborers, not only slaves, built them', no: 'Funn tyder på at dyktige, betalte arbeidere, ikke bare slaver, bygde dem' },
             { en: 'They prove no one built them', no: 'De beviser at ingen bygde dem' },
-            { en: 'They show foreigners built them alone', no: 'De viser at utlendinger bygde dem alene' },
-            { en: 'They confirm the pyramids are natural', no: 'De bekrefter at pyramidene er naturlige' }
+            { en: 'They show foreigners built them alone', no: 'De viser at utlendinger bygde dem alene' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Archaeology of workers’ villages indicates organized, skilled laborers, not just enslaved people, built the pyramids.',
             no: 'Arkeologi av arbeiderlandsbyer tyder på at organiserte, dyktige arbeidere, ikke bare slaver, bygde pyramidene.'
@@ -661,12 +661,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan formet Egypts forhold til Nubia historien dets?'
           },
           answers: [
-            { en: 'Trade, conflict, and even Nubian rule influenced both regions', no: 'Handel, konflikt og til og med nubisk styre påvirket begge regionene' },
-            { en: 'They never had any contact', no: 'De hadde aldri noen kontakt' },
             { en: 'Nubia destroyed Egypt instantly', no: 'Nubia ødela Egypt øyeblikkelig' },
-            { en: 'It had no historical impact', no: 'Det hadde ingen historisk innvirkning' }
+            { en: 'It had no historical impact', no: 'Det hadde ingen historisk innvirkning' },
+            { en: 'Trade, conflict, and even Nubian rule influenced both regions', no: 'Handel, konflikt og til og med nubisk styre påvirket begge regionene' },
+            { en: 'They never had any contact', no: 'De hadde aldri noen kontakt' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Egypt and Nubia exchanged goods and warred, and Nubian kings even ruled Egypt as the 25th Dynasty.',
             no: 'Egypt og Nubia utvekslet varer og førte krig, og nubiske konger styrte til og med Egypt som det 25. dynastiet.'
@@ -680,12 +680,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor gikk den gamle egyptiske sivilisasjonen til slutt tilbake?'
           },
           answers: [
-            { en: 'Foreign conquests, internal weakness, and economic strain combined', no: 'Utenlandske erobringer, indre svakhet og økonomisk press virket sammen' },
             { en: 'A single flood ended it overnight', no: 'En enkelt flom avsluttet den over natten' },
             { en: 'It never actually declined', no: 'Den gikk aldri egentlig tilbake' },
-            { en: 'It was abandoned voluntarily', no: 'Den ble forlatt frivillig' }
+            { en: 'It was abandoned voluntarily', no: 'Den ble forlatt frivillig' },
+            { en: 'Foreign conquests, internal weakness, and economic strain combined', no: 'Utenlandske erobringer, indre svakhet og økonomisk press virket sammen' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Egypt declined through repeated foreign conquest (Assyrians, Persians, Greeks, Romans) and internal troubles.',
             no: 'Egypt gikk tilbake gjennom gjentatte utenlandske erobringer (assyrere, persere, grekere, romere) og indre problemer.'
@@ -724,12 +724,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Mellom hvilke to elver utviklet den mesopotamiske sivilisasjonen seg?'
           },
           answers: [
+            { en: 'The Ganges and the Indus', no: 'Ganges og Indus' },
             { en: 'The Tigris and the Euphrates', no: 'Tigris og Eufrat' },
             { en: 'The Nile and the Congo', no: 'Nilen og Kongo' },
-            { en: 'The Amazon and the Plata', no: 'Amazonas og La Plata' },
-            { en: 'The Ganges and the Indus', no: 'Ganges og Indus' }
+            { en: 'The Amazon and the Plata', no: 'Amazonas og La Plata' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Mesopotamia developed between the Tigris and Euphrates rivers.',
             no: 'Mesopotamia utviklet seg mellom elvene Tigris og Eufrat.'
@@ -743,12 +743,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hva betyr navnet «Mesopotamia»?'
           },
           answers: [
-            { en: 'Land between the rivers', no: 'Landet mellom elvene' },
-            { en: 'Land of the pyramids', no: 'Pyramidenes land' },
             { en: 'Land of gold', no: 'Gullets land' },
-            { en: 'Land of the sea', no: 'Havets land' }
+            { en: 'Land of the sea', no: 'Havets land' },
+            { en: 'Land between the rivers', no: 'Landet mellom elvene' },
+            { en: 'Land of the pyramids', no: 'Pyramidenes land' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: '"Mesopotamia" is Greek for "land between the rivers."',
             no: '«Mesopotamia» er gresk for «landet mellom elvene».'
@@ -762,12 +762,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'I hvilket moderne land ligger mesteparten av det gamle Mesopotamia?'
           },
           answers: [
-            { en: 'Iraq', no: 'Irak' },
             { en: 'Egypt', no: 'Egypt' },
             { en: 'Greece', no: 'Hellas' },
-            { en: 'India', no: 'India' }
+            { en: 'India', no: 'India' },
+            { en: 'Iraq', no: 'Irak' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Most of ancient Mesopotamia lies in modern-day Iraq.',
             no: 'Mesteparten av det gamle Mesopotamia ligger i dagens Irak.'
@@ -800,12 +800,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilket folk får ofte æren for å ha skapt de første mesopotamiske byene?'
           },
           answers: [
+            { en: 'The Vikings', no: 'Vikingene' },
             { en: 'The Sumerians', no: 'Sumererne' },
             { en: 'The Romans', no: 'Romerne' },
-            { en: 'The Aztecs', no: 'Aztekerne' },
-            { en: 'The Vikings', no: 'Vikingene' }
+            { en: 'The Aztecs', no: 'Aztekerne' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Sumerians built some of the world’s first cities in southern Mesopotamia.',
             no: 'Sumererne bygde noen av verdens første byer i det sørlige Mesopotamia.'
@@ -819,12 +819,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilke store trappeformede tempeltårn bygde mesopotamerne?'
           },
           answers: [
-            { en: 'Ziggurats', no: 'Ziqqurater' },
-            { en: 'Pyramids', no: 'Pyramider' },
             { en: 'Cathedrals', no: 'Katedraler' },
-            { en: 'Pagodas', no: 'Pagoder' }
+            { en: 'Pagodas', no: 'Pagoder' },
+            { en: 'Ziggurats', no: 'Ziqqurater' },
+            { en: 'Pyramids', no: 'Pyramider' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Ziggurats were massive stepped temple towers dedicated to the gods.',
             no: 'Ziqqurater var massive trappeformede tempeltårn viet til gudene.'
@@ -838,12 +838,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilken babylonsk konge er berømt for en tidlig skreven lovsamling?'
           },
           answers: [
-            { en: 'Hammurabi', no: 'Hammurabi' },
             { en: 'Tutankhamun', no: 'Tutankhamon' },
             { en: 'Julius Caesar', no: 'Julius Cæsar' },
-            { en: 'Cyrus', no: 'Kyros' }
+            { en: 'Cyrus', no: 'Kyros' },
+            { en: 'Hammurabi', no: 'Hammurabi' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'King Hammurabi of Babylon issued one of the earliest known written law codes.',
             no: 'Kong Hammurabi av Babylon utstedte en av de tidligste kjente skrevne lovsamlingene.'
@@ -876,12 +876,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'På hvilket materiale skrev mesopotamerne vanligvis?'
           },
           answers: [
+            { en: 'Silk cloth', no: 'Silkestoff' },
             { en: 'Clay tablets', no: 'Leirtavler' },
             { en: 'Papyrus scrolls', no: 'Papyrusruller' },
-            { en: 'Paper books', no: 'Papirbøker' },
-            { en: 'Silk cloth', no: 'Silkestoff' }
+            { en: 'Paper books', no: 'Papirbøker' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Scribes pressed cuneiform signs into wet clay tablets, which then hardened.',
             no: 'Skrivere presset kileskrifttegn inn i våte leirtavler, som deretter herdet.'
@@ -895,12 +895,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Var mesopotamisk religion polyteistisk eller monoteistisk?'
           },
           answers: [
-            { en: 'Polytheistic (many gods)', no: 'Polyteistisk (mange guder)' },
-            { en: 'Monotheistic (one god)', no: 'Monoteistisk (én gud)' },
             { en: 'Atheistic (no gods)', no: 'Ateistisk (ingen guder)' },
-            { en: 'It had no religion', no: 'Den hadde ingen religion' }
+            { en: 'It had no religion', no: 'Den hadde ingen religion' },
+            { en: 'Polytheistic (many gods)', no: 'Polyteistisk (mange guder)' },
+            { en: 'Monotheistic (one god)', no: 'Monoteistisk (én gud)' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Mesopotamians worshipped many gods, each often linked to a city or natural force.',
             no: 'Mesopotamerne tilba mange guder, ofte knyttet til en by eller en naturkraft.'
@@ -914,12 +914,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'En tidlig mektig bystat i Sumer var hvilken av disse?'
           },
           answers: [
-            { en: 'Ur', no: 'Ur' },
             { en: 'Paris', no: 'Paris' },
             { en: 'Tokyo', no: 'Tokyo' },
-            { en: 'Cairo', no: 'Kairo' }
+            { en: 'Cairo', no: 'Kairo' },
+            { en: 'Ur', no: 'Ur' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Ur was a major Sumerian city-state in southern Mesopotamia.',
             no: 'Ur var en betydelig sumerisk bystat i det sørlige Mesopotamia.'
@@ -952,12 +952,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Mesopotamia er en del av hvilket fruktbart, halvmåneformet område?'
           },
           answers: [
+            { en: 'The Rift Valley', no: 'Riftdalen' },
             { en: 'The Fertile Crescent', no: 'Den fruktbare halvmåne' },
             { en: 'The Sahara', no: 'Sahara' },
-            { en: 'The Great Plains', no: 'Prærien' },
-            { en: 'The Rift Valley', no: 'Riftdalen' }
+            { en: 'The Great Plains', no: 'Prærien' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Mesopotamia lies in the Fertile Crescent, a region of early agriculture.',
             no: 'Mesopotamia ligger i Den fruktbare halvmåne, et område med tidlig jordbruk.'
@@ -971,12 +971,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hva bygde mesopotamiske bønder for å føre elvevann til markene sine?'
           },
           answers: [
-            { en: 'Irrigation canals', no: 'Vanningskanaler' },
-            { en: 'Highways', no: 'Motorveier' },
             { en: 'Railroads', no: 'Jernbaner' },
-            { en: 'Lighthouses', no: 'Fyrtårn' }
+            { en: 'Lighthouses', no: 'Fyrtårn' },
+            { en: 'Irrigation canals', no: 'Vanningskanaler' },
+            { en: 'Highways', no: 'Motorveier' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Mesopotamians dug irrigation canals to water crops from the rivers.',
             no: 'Mesopotamerne gravde vanningskanaler for å vanne avlinger fra elvene.'
@@ -990,12 +990,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvilket imperium, med hovedstad i Babylon, ble mektig i Mesopotamia?'
           },
           answers: [
-            { en: 'The Babylonian Empire', no: 'Det babylonske rike' },
             { en: 'The Roman Empire', no: 'Romerriket' },
             { en: 'The Inca Empire', no: 'Inkariket' },
-            { en: 'The Mongol Empire', no: 'Mongolriket' }
+            { en: 'The Mongol Empire', no: 'Mongolriket' },
+            { en: 'The Babylonian Empire', no: 'Det babylonske rike' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Babylonian Empire, centered on Babylon, was a major Mesopotamian power.',
             no: 'Det babylonske rike, med sentrum i Babylon, var en betydelig makt i Mesopotamia.'
@@ -1028,12 +1028,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan utviklet skriften seg først i Mesopotamia?'
           },
           answers: [
+            { en: 'It came from Egypt unchanged', no: 'Den kom fra Egypt uendret' },
             { en: 'From record-keeping for trade and taxes', no: 'Fra dokumentasjon for handel og skatter' },
             { en: 'From writing poetry only', no: 'Bare fra å skrive poesi' },
-            { en: 'It appeared fully formed overnight', no: 'Den dukket opp ferdig utviklet over natten' },
-            { en: 'It came from Egypt unchanged', no: 'Den kom fra Egypt uendret' }
+            { en: 'It appeared fully formed overnight', no: 'Den dukket opp ferdig utviklet over natten' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Cuneiform grew out of simple marks used to record goods, trade, and taxes.',
             no: 'Kileskriften vokste ut av enkle tegn brukt til å registrere varer, handel og skatter.'
@@ -1047,12 +1047,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hva var betydningsfullt med Hammurabis lov?'
           },
           answers: [
-            { en: 'It was a written set of laws with set punishments', no: 'Det var en skreven samling lover med fastsatte straffer' },
-            { en: 'It abolished all laws', no: 'Den avskaffet alle lover' },
             { en: 'It was never written down', no: 'Den ble aldri skrevet ned' },
-            { en: 'It applied only to gods', no: 'Den gjaldt bare guder' }
+            { en: 'It applied only to gods', no: 'Den gjaldt bare guder' },
+            { en: 'It was a written set of laws with set punishments', no: 'Det var en skreven samling lover med fastsatte straffer' },
+            { en: 'It abolished all laws', no: 'Den avskaffet alle lover' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Code of Hammurabi publicly set out laws and punishments, shaping later legal ideas.',
             no: 'Hammurabis lov fastsatte offentlig lover og straffer og påvirket senere juridiske ideer.'
@@ -1066,12 +1066,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor ble ziqqurater bygd i sentrum av mesopotamiske byer?'
           },
           answers: [
-            { en: 'They were temples connecting the city to its god', no: 'De var templer som forbandt byen med dens gud' },
             { en: 'They were used as prisons', no: 'De ble brukt som fengsler' },
             { en: 'They were marketplaces', no: 'De var markedsplasser' },
-            { en: 'They were simple houses', no: 'De var enkle hus' }
+            { en: 'They were simple houses', no: 'De var enkle hus' },
+            { en: 'They were temples connecting the city to its god', no: 'De var templer som forbandt byen med dens gud' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Ziggurats were religious centers, homes for the city’s patron god and focus of worship.',
             no: 'Ziqqurater var religiøse sentre, hjem for byens skytsgud og midtpunkt for tilbedelse.'
@@ -1104,12 +1104,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan tjente mesopotamiske byer på handel?'
           },
           answers: [
+            { en: 'It had no benefit', no: 'Den hadde ingen nytte' },
             { en: 'It brought materials like timber, stone, and metals they lacked', no: 'Den brakte materialer som tre, stein og metaller de manglet' },
             { en: 'It gave them sand they needed', no: 'Den ga dem sanden de trengte' },
-            { en: 'It isolated them from neighbors', no: 'Den isolerte dem fra naboer' },
-            { en: 'It had no benefit', no: 'Den hadde ingen nytte' }
+            { en: 'It isolated them from neighbors', no: 'Den isolerte dem fra naboer' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Lacking timber, stone, and metal, Mesopotamians traded grain and crafts for these resources.',
             no: 'Siden de manglet tre, stein og metall, byttet mesopotamerne korn og håndverk mot disse ressursene.'
@@ -1123,12 +1123,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor kalles Mesopotamia ofte «sivilisasjonens vugge»?'
           },
           answers: [
-            { en: 'Many early features of civilization first appeared there', no: 'Mange tidlige trekk ved sivilisasjonen oppstod først der' },
-            { en: 'It was the only place people ever lived', no: 'Det var det eneste stedet folk noensinne bodde' },
             { en: 'It had no cities', no: 'Det hadde ingen byer' },
-            { en: 'It rejected all new ideas', no: 'Det avviste alle nye ideer' }
+            { en: 'It rejected all new ideas', no: 'Det avviste alle nye ideer' },
+            { en: 'Many early features of civilization first appeared there', no: 'Mange tidlige trekk ved sivilisasjonen oppstod først der' },
+            { en: 'It was the only place people ever lived', no: 'Det var det eneste stedet folk noensinne bodde' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Cities, writing, law codes, and organized states all emerged early in Mesopotamia.',
             no: 'Byer, skrift, lovsamlinger og organiserte stater oppstod tidlig i Mesopotamia.'
@@ -1142,12 +1142,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan påvirket mesopotamisk matematikk hvordan vi måler tid?'
           },
           answers: [
-            { en: 'Their base-60 system shaped our 60-minute hours', no: 'Deres 60-tallssystem formet våre timer på 60 minutter' },
             { en: 'They invented the decimal week', no: 'De oppfant tiukers-uken' },
             { en: 'They had no number system', no: 'De hadde ikke noe tallsystem' },
-            { en: 'They measured nothing', no: 'De målte ingenting' }
+            { en: 'They measured nothing', no: 'De målte ingenting' },
+            { en: 'Their base-60 system shaped our 60-minute hours', no: 'Deres 60-tallssystem formet våre timer på 60 minutter' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Mesopotamian base-60 (sexagesimal) system underlies our 60 minutes and 360-degree circle.',
             no: 'Det mesopotamiske 60-tallssystemet (seksagesimalt) ligger bak våre 60 minutter og 360 graders sirkel.'
@@ -1180,12 +1180,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan var prestenes rolle knyttet til det økonomiske livet i Mesopotamia?'
           },
           answers: [
+            { en: 'Priests only farmed alone', no: 'Prester drev bare jordbruk alene' },
             { en: 'Temples managed land, stores, and redistribution of goods', no: 'Templene forvaltet land, lagre og omfordeling av varer' },
             { en: 'Priests had no economic role', no: 'Prester hadde ingen økonomisk rolle' },
-            { en: 'Temples banned all trade', no: 'Templene forbød all handel' },
-            { en: 'Priests only farmed alone', no: 'Prester drev bare jordbruk alene' }
+            { en: 'Temples banned all trade', no: 'Templene forbød all handel' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Temples were major economic institutions, holding land and managing surplus goods.',
             no: 'Templene var viktige økonomiske institusjoner som eide land og forvaltet overskuddsvarer.'
@@ -1199,12 +1199,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan endret Akkaderriket Mesopotamia?'
           },
           answers: [
-            { en: 'It united many city-states under one ruler', no: 'Det forente mange bystater under én hersker' },
-            { en: 'It abolished all cities', no: 'Det avskaffet alle byer' },
             { en: 'It had no political effect', no: 'Det hadde ingen politisk effekt' },
-            { en: 'It ended all writing', no: 'Det avsluttet all skrift' }
+            { en: 'It ended all writing', no: 'Det avsluttet all skrift' },
+            { en: 'It united many city-states under one ruler', no: 'Det forente mange bystater under én hersker' },
+            { en: 'It abolished all cities', no: 'Det avskaffet alle byer' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Under Sargon, the Akkadian Empire united Mesopotamian city-states into one of the first empires.',
             no: 'Under Sargon forente Akkaderriket de mesopotamiske bystatene til et av de første imperiene.'
@@ -1218,12 +1218,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor regnes oppfinnelsen av skriften i Mesopotamia som et vendepunkt i historien?'
           },
           answers: [
-            { en: 'It allowed knowledge, laws, and records to be stored and passed on', no: 'Den lot kunnskap, lover og opptegnelser lagres og føres videre' },
             { en: 'It ended all communication', no: 'Den avsluttet all kommunikasjon' },
             { en: 'It had no lasting impact', no: 'Den hadde ingen varig virkning' },
-            { en: 'It was used only once', no: 'Den ble bare brukt én gang' }
+            { en: 'It was used only once', no: 'Den ble bare brukt én gang' },
+            { en: 'It allowed knowledge, laws, and records to be stored and passed on', no: 'Den lot kunnskap, lover og opptegnelser lagres og føres videre' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Writing enabled administration, literature, and the transmission of knowledge across generations.',
             no: 'Skrift muliggjorde administrasjon, litteratur og overføring av kunnskap gjennom generasjoner.'
@@ -1256,12 +1256,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor lå mesopotamiske bystater ofte i konflikt med hverandre?'
           },
           answers: [
+            { en: 'They had no resources to fight over', no: 'De hadde ingen ressurser å kjempe om' },
             { en: 'They competed over land, water, and trade', no: 'De konkurrerte om land, vann og handel' },
             { en: 'They never interacted', no: 'De hadde aldri kontakt' },
-            { en: 'They shared a single ruler', no: 'De delte én hersker' },
-            { en: 'They had no resources to fight over', no: 'De hadde ingen ressurser å kjempe om' }
+            { en: 'They shared a single ruler', no: 'De delte én hersker' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Competition over fertile land, water rights, and trade routes led to frequent warfare between city-states.',
             no: 'Konkurranse om fruktbar jord, vannrettigheter og handelsruter førte til hyppig krig mellom bystatene.'
@@ -1275,12 +1275,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan både styrket og truet vanning det mesopotamiske jordbruket over tid?'
           },
           answers: [
-            { en: 'It boosted crops but caused salt buildup that harmed the soil', no: 'Den økte avlingene, men forårsaket saltopphopning som skadet jorda' },
-            { en: 'It had no effect on the soil', no: 'Den hadde ingen effekt på jorda' },
             { en: 'It made farming impossible from the start', no: 'Den gjorde jordbruk umulig fra starten' },
-            { en: 'It only ever helped', no: 'Den var alltid bare til hjelp' }
+            { en: 'It only ever helped', no: 'Den var alltid bare til hjelp' },
+            { en: 'It boosted crops but caused salt buildup that harmed the soil', no: 'Den økte avlingene, men forårsaket saltopphopning som skadet jorda' },
+            { en: 'It had no effect on the soil', no: 'Den hadde ingen effekt på jorda' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Irrigation raised yields but gradually salinized the soil, reducing fertility over centuries.',
             no: 'Vanning økte avlingene, men gjorde jorda gradvis saltere og reduserte fruktbarheten over århundrer.'
@@ -1294,12 +1294,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan gjenspeilte mesopotamisk religion bekymringer for naturen?'
           },
           answers: [
-            { en: 'Gods of storms and floods mirrored an unpredictable environment', no: 'Guder for storm og flom speilet et uforutsigbart miljø' },
             { en: 'Religion ignored nature entirely', no: 'Religionen ignorerte naturen fullstendig' },
             { en: 'There were no nature gods', no: 'Det fantes ingen naturguder' },
-            { en: 'Gods controlled nothing', no: 'Gudene kontrollerte ingenting' }
+            { en: 'Gods controlled nothing', no: 'Gudene kontrollerte ingenting' },
+            { en: 'Gods of storms and floods mirrored an unpredictable environment', no: 'Guder for storm og flom speilet et uforutsigbart miljø' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Worship of gods linked to storms and floods reflected fear of the harsh, unpredictable rivers.',
             no: 'Tilbedelsen av guder knyttet til storm og flom gjenspeilte frykten for de harde, uforutsigbare elvene.'
@@ -1332,12 +1332,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan påvirket åpenheten i Mesopotamias geografi den politiske historien?'
           },
           answers: [
+            { en: 'Geography had no effect', no: 'Geografien hadde ingen effekt' },
             { en: 'Lacking natural barriers, it saw repeated invasions and changing empires', no: 'Uten naturlige barrierer opplevde det gjentatte invasjoner og skiftende imperier' },
             { en: 'It was never invaded', no: 'Det ble aldri invadert' },
-            { en: 'It stayed under one dynasty forever', no: 'Det forble under ett dynasti for alltid' },
-            { en: 'Geography had no effect', no: 'Geografien hadde ingen effekt' }
+            { en: 'It stayed under one dynasty forever', no: 'Det forble under ett dynasti for alltid' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Without protective deserts or mountains, Mesopotamia was repeatedly invaded and ruled by successive powers.',
             no: 'Uten beskyttende ørkener eller fjell ble Mesopotamia gjentatte ganger invadert og styrt av skiftende makter.'
@@ -1351,12 +1351,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvordan var Mesopotamia sammenlignet med Egypt som tidlig sivilisasjon?'
           },
           answers: [
-            { en: 'Both relied on rivers, but Mesopotamia was more fragmented and invasion-prone', no: 'Begge bygde på elver, men Mesopotamia var mer oppdelt og utsatt for invasjon' },
-            { en: 'They had nothing in common', no: 'De hadde ingenting til felles' },
             { en: 'Mesopotamia had no rivers', no: 'Mesopotamia hadde ingen elver' },
-            { en: 'Egypt had no government', no: 'Egypt hadde ingen styreform' }
+            { en: 'Egypt had no government', no: 'Egypt hadde ingen styreform' },
+            { en: 'Both relied on rivers, but Mesopotamia was more fragmented and invasion-prone', no: 'Begge bygde på elver, men Mesopotamia var mer oppdelt og utsatt for invasjon' },
+            { en: 'They had nothing in common', no: 'De hadde ingenting til felles' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Both were river civilizations, but Egypt’s isolation brought stability while Mesopotamia faced more turmoil.',
             no: 'Begge var elvesivilisasjoner, men Egypts isolasjon ga stabilitet, mens Mesopotamia opplevde mer uro.'
@@ -1370,12 +1370,12 @@ export const theFirstCivilizations: SeedSubcategory = {
             no: 'Hvorfor støtter historikere seg sterkt på leirtavler for å studere Mesopotamia?'
           },
           answers: [
-            { en: 'Baked clay survived for millennia, preserving records and literature', no: 'Brent leire overlevde i årtusener og bevarte opptegnelser og litteratur' },
             { en: 'No other evidence exists at all', no: 'Det finnes ikke noe annet bevis i det hele tatt' },
             { en: 'The tablets are modern forgeries', no: 'Tavlene er moderne forfalskninger' },
-            { en: 'They contain no information', no: 'De inneholder ingen informasjon' }
+            { en: 'They contain no information', no: 'De inneholder ingen informasjon' },
+            { en: 'Baked clay survived for millennia, preserving records and literature', no: 'Brent leire overlevde i årtusener og bevarte opptegnelser og litteratur' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Durable clay tablets preserved vast records, letting historians reconstruct Mesopotamian life and thought.',
             no: 'Holdbare leirtavler bevarte enorme mengder opptegnelser og lar historikere rekonstruere mesopotamisk liv og tenkning.'

@@ -47,3 +47,15 @@ These updates are not optional — treat them as required steps for any change b
       C: Next, generate 15 HARD questions (refer to AIQuestions-HARD.txt) and store them in the same file for that same module
    3. Continue step 1 with the NEXT module if the user mentioned more.
 
+### IMPORTANT: distribute the `correct` index — never default to 0
+When generating questions, the `correct` field is the **zero-based index** of the right answer
+within the `answers` array. Do **not** place the correct answer at index `0` every time — this is a
+real bug that has previously crept into seed files (the correct option was always listed first, so
+`correct: 0` for entire files). This makes quizzes trivially guessable.
+
+- Spread the correct answer roughly evenly across indices `0`, `1`, `2`, and `3` within each file.
+- The position of the correct answer should vary from question to question.
+- A quick sanity check after editing a file: the counts of `correct: 0` / `1` / `2` / `3` should be
+  reasonably balanced (not all clustered on `0`). For a file with N questions, each index should
+  appear roughly `N/4` times.
+

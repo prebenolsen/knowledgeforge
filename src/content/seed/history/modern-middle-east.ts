@@ -72,12 +72,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'På hvilken side kjempet Det osmanske riket i første verdenskrig?'
           },
           answers: [
-            { en: 'The Central Powers', no: 'Sentralmaktene' },
             { en: 'The Allies', no: 'De allierte' },
             { en: 'It stayed neutral', no: 'Det forholdt seg nøytralt' },
-            { en: 'The Soviet bloc', no: 'Den sovjetiske blokken' }
+            { en: 'The Soviet bloc', no: 'Den sovjetiske blokken' },
+            { en: 'The Central Powers', no: 'Sentralmaktene' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Ottomans allied with Germany and the Central Powers in World War I.',
             no: 'Osmanene allierte seg med Tyskland og sentralmaktene i første verdenskrig.'
@@ -91,12 +91,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilket kallenavn beskrev det svekkede osmanske riket på 1800-tallet?'
           },
           answers: [
-            { en: '"The workshop of the world"', no: '«Verdens verksted»' },
             { en: '"The sick man of Europe"', no: '«Europas syke mann»' },
             { en: '"The breadbasket of Asia"', no: '«Asias kornkammer»' },
-            { en: '"The eternal empire"', no: '«Det evige riket»' }
+            { en: '"The eternal empire"', no: '«Det evige riket»' },
+            { en: '"The workshop of the world"', no: '«Verdens verksted»' }
           ],
-          correct: 1,
+          correct: 0,
           explanation: {
             en: 'European powers called the weakening Ottoman state "the sick man of Europe."',
             no: 'Europeiske stormakter kalte den svekkede osmanske staten «Europas syke mann».'
@@ -110,12 +110,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvem grunnla den moderne republikken Tyrkia?'
           },
           answers: [
+            { en: 'Faisal I', no: 'Faisal I' },
             { en: 'Mustafa Kemal Atatürk', no: 'Mustafa Kemal Atatürk' },
             { en: 'Enver Pasha', no: 'Enver Pasha' },
-            { en: 'Mehmed VI', no: 'Mehmed VI' },
-            { en: 'Faisal I', no: 'Faisal I' }
+            { en: 'Mehmed VI', no: 'Mehmed VI' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Mustafa Kemal, later called Atatürk, founded the Republic of Turkey in 1923.',
             no: 'Mustafa Kemal, senere kalt Atatürk, grunnla republikken Tyrkia i 1923.'
@@ -148,12 +148,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilken traktat fra 1920 forsøkte å dele Det osmanske riket mellom seierherrene?'
           },
           answers: [
-            { en: 'The Treaty of Versailles', no: 'Versaillestraktaten' },
-            { en: 'The Treaty of Sèvres', no: 'Sèvres-traktaten' },
             { en: 'The Treaty of Lausanne', no: 'Lausanne-traktaten' },
-            { en: 'The Treaty of Trianon', no: 'Trianon-traktaten' }
+            { en: 'The Treaty of Trianon', no: 'Trianon-traktaten' },
+            { en: 'The Treaty of Versailles', no: 'Versaillestraktaten' },
+            { en: 'The Treaty of Sèvres', no: 'Sèvres-traktaten' }
           ],
-          correct: 1,
+          correct: 3,
           explanation: {
             en: 'The Treaty of Sèvres (1920) aimed to divide Ottoman territory among the Allies.',
             no: 'Sèvres-traktaten (1920) tok sikte på å dele osmansk territorium mellom de allierte.'
@@ -205,12 +205,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'I hvilket år ble kalifatet avskaffet av den tyrkiske republikken?'
           },
           answers: [
+            { en: '1950', no: '1950' },
             { en: '1914', no: '1914' },
             { en: '1924', no: '1924' },
-            { en: '1934', no: '1934' },
-            { en: '1950', no: '1950' }
+            { en: '1934', no: '1934' }
           ],
-          correct: 1,
+          correct: 2,
           explanation: {
             en: 'The caliphate was abolished in 1924 as part of Atatürk’s reforms.',
             no: 'Kalifatet ble avskaffet i 1924 som en del av Atatürks reformer.'
@@ -224,12 +224,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Det berømte felttoget ved Gallipoli i første verdenskrig ble utkjempet på osmansk territorium nær hvilket stred?'
           },
           answers: [
-            { en: 'The Strait of Gibraltar', no: 'Gibraltarstredet' },
-            { en: 'The Dardanelles', no: 'Dardanellene' },
             { en: 'The Strait of Hormuz', no: 'Hormuzstredet' },
-            { en: 'The Bosphorus alone', no: 'Bare Bosporos' }
+            { en: 'The Bosphorus alone', no: 'Bare Bosporos' },
+            { en: 'The Strait of Gibraltar', no: 'Gibraltarstredet' },
+            { en: 'The Dardanelles', no: 'Dardanellene' }
           ],
-          correct: 1,
+          correct: 3,
           explanation: {
             en: 'The Gallipoli campaign (1915–16) was fought to control the Dardanelles strait.',
             no: 'Gallipoli-felttoget (1915–16) ble utkjempet for å kontrollere Dardanellene.'
@@ -262,12 +262,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilken reformvennlig bevegelse tok makten i Det osmanske riket i 1908?'
           },
           answers: [
+            { en: 'The Mamluks', no: 'Mamelukkene' },
             { en: 'The Young Turks', no: 'Ungtyrkerne' },
             { en: 'The Bolsheviks', no: 'Bolsjevikene' },
-            { en: 'The Janissaries', no: 'Janitsjarene' },
-            { en: 'The Mamluks', no: 'Mamelukkene' }
+            { en: 'The Janissaries', no: 'Janitsjarene' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Young Turks pushed constitutional reform and modernization after 1908.',
             no: 'Ungtyrkerne presset på for konstitusjonell reform og modernisering etter 1908.'
@@ -281,12 +281,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hva skjedde med det osmanske sultanatet i 1922?'
           },
           answers: [
+            { en: 'It merged with Persia', no: 'Det ble slått sammen med Persia' },
             { en: 'It was expanded', no: 'Det ble utvidet' },
             { en: 'It was abolished', no: 'Det ble avskaffet' },
-            { en: 'It moved to Baghdad', no: 'Det ble flyttet til Bagdad' },
-            { en: 'It merged with Persia', no: 'Det ble slått sammen med Persia' }
+            { en: 'It moved to Baghdad', no: 'Det ble flyttet til Bagdad' }
           ],
-          correct: 1,
+          correct: 2,
           explanation: {
             en: 'The sultanate was abolished in 1922, ending centuries of Ottoman monarchy.',
             no: 'Sultanatet ble avskaffet i 1922 og avsluttet århundrer med osmansk monarki.'
@@ -300,12 +300,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvorfor ble osmanene kalt «Europas syke mann»?'
           },
           answers: [
-            { en: 'The empire was weakening and losing territory', no: 'Riket ble svekket og mistet territorium' },
             { en: 'It had the largest army in the world', no: 'Det hadde verdens største hær' },
             { en: 'It led Europe’s industrial growth', no: 'Det ledet Europas industrielle vekst' },
-            { en: 'It refused all foreign trade', no: 'Det avviste all utenrikshandel' }
+            { en: 'It refused all foreign trade', no: 'Det avviste all utenrikshandel' },
+            { en: 'The empire was weakening and losing territory', no: 'Riket ble svekket og mistet territorium' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The phrase reflected the empire’s long decline, military defeats, and territorial losses.',
             no: 'Uttrykket gjenspeilte rikets langvarige nedgang, militære nederlag og territorielle tap.'
@@ -338,12 +338,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Under første verdenskrig var Det arabiske opprøret i 1916 rettet mot hvem?'
           },
           answers: [
+            { en: 'Russia', no: 'Russland' },
             { en: 'The Ottoman Empire', no: 'Det osmanske riket' },
             { en: 'The British Empire', no: 'Det britiske imperiet' },
-            { en: 'France', no: 'Frankrike' },
-            { en: 'Russia', no: 'Russland' }
+            { en: 'France', no: 'Frankrike' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Arab forces, encouraged by Britain, revolted against Ottoman rule during the war.',
             no: 'Arabiske styrker, oppmuntret av Storbritannia, gjorde opprør mot osmansk styre under krigen.'
@@ -357,12 +357,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Sykes-Picot-avtalen var en hemmelig plan fra Storbritannia og Frankrike for å gjøre hva?'
           },
           answers: [
-            { en: 'Divide Ottoman Arab lands into spheres of influence', no: 'Dele osmanske arabiske land inn i interessesfærer' },
-            { en: 'Grant immediate independence to all Arabs', no: 'Gi alle arabere umiddelbar uavhengighet' },
             { en: 'Return Constantinople to Greece', no: 'Gi Konstantinopel tilbake til Hellas' },
-            { en: 'Create a single Arab state', no: 'Opprette én samlet arabisk stat' }
+            { en: 'Create a single Arab state', no: 'Opprette én samlet arabisk stat' },
+            { en: 'Divide Ottoman Arab lands into spheres of influence', no: 'Dele osmanske arabiske land inn i interessesfærer' },
+            { en: 'Grant immediate independence to all Arabs', no: 'Gi alle arabere umiddelbar uavhengighet' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'In 1916 Britain and France secretly agreed to divide Ottoman Arab territories between them.',
             no: 'I 1916 ble Storbritannia og Frankrike i hemmelighet enige om å dele osmanske arabiske områder mellom seg.'
@@ -376,12 +376,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Etter første verdenskrig, hvem styrte tidligere osmanske arabiske land under mandatsystemet?'
           },
           answers: [
-            { en: 'Britain and France', no: 'Storbritannia og Frankrike' },
             { en: 'The United States and Russia', no: 'USA og Russland' },
             { en: 'Germany and Italy', no: 'Tyskland og Italia' },
-            { en: 'Greece and Bulgaria', no: 'Hellas og Bulgaria' }
+            { en: 'Greece and Bulgaria', no: 'Hellas og Bulgaria' },
+            { en: 'Britain and France', no: 'Storbritannia og Frankrike' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The League of Nations granted Britain and France mandates over former Ottoman territories.',
             no: 'Folkeforbundet ga Storbritannia og Frankrike mandater over tidligere osmanske territorier.'
@@ -414,12 +414,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hva var et hovedmål med Atatürks reformer i det nye Tyrkia?'
           },
           answers: [
+            { en: 'Banning all education', no: 'Å forby all utdanning' },
             { en: 'Secularizing and modernizing the state', no: 'Å sekularisere og modernisere staten' },
             { en: 'Restoring the sultanate', no: 'Å gjeninnføre sultanatet' },
-            { en: 'Expanding the caliphate', no: 'Å utvide kalifatet' },
-            { en: 'Banning all education', no: 'Å forby all utdanning' }
+            { en: 'Expanding the caliphate', no: 'Å utvide kalifatet' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Atatürk pursued secular, Western-style reforms to modernize Turkey.',
             no: 'Atatürk gjennomførte sekulære reformer etter vestlig modell for å modernisere Tyrkia.'
@@ -433,12 +433,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvordan påvirket Balkankrigene i 1912–13 Det osmanske riket?'
           },
           answers: [
-            { en: 'They stripped away most of its remaining European territory', no: 'De fratok det meste av rikets gjenværende europeiske territorium' },
-            { en: 'They doubled its size', no: 'De doblet størrelsen' },
             { en: 'They had no territorial impact', no: 'De hadde ingen territoriell innvirkning' },
-            { en: 'They gave it control of Greece', no: 'De ga det kontroll over Hellas' }
+            { en: 'They gave it control of Greece', no: 'De ga det kontroll over Hellas' },
+            { en: 'They stripped away most of its remaining European territory', no: 'De fratok det meste av rikets gjenværende europeiske territorium' },
+            { en: 'They doubled its size', no: 'De doblet størrelsen' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Balkan Wars cost the Ottomans nearly all their European lands before World War I.',
             no: 'Balkankrigene kostet osmanene nesten alle deres europeiske landområder før første verdenskrig.'
@@ -452,12 +452,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Befolkningsutvekslingen i 1923 etter den gresk-tyrkiske krigen omfattet hvem?'
           },
           answers: [
-            { en: 'Greeks and Turks', no: 'Grekere og tyrkere' },
             { en: 'Arabs and Persians', no: 'Arabere og persere' },
             { en: 'Russians and Armenians', no: 'Russere og armenere' },
-            { en: 'Italians and Albanians', no: 'Italienere og albanere' }
+            { en: 'Italians and Albanians', no: 'Italienere og albanere' },
+            { en: 'Greeks and Turks', no: 'Grekere og tyrkere' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'A compulsory exchange moved Orthodox Christians to Greece and Muslims to Turkey.',
             no: 'En tvungen utveksling flyttet ortodokse kristne til Hellas og muslimer til Tyrkia.'
@@ -490,12 +490,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'En viktig langsiktig konsekvens av rikets sammenbrudd var hva?'
           },
           answers: [
+            { en: 'The Ottomans regained their lands', no: 'Osmanene fikk tilbake landområdene sine' },
             { en: 'European powers drew the borders of the modern Middle East', no: 'Europeiske stormakter trakk opp grensene i det moderne Midtøsten' },
             { en: 'The region became a single unified state', no: 'Regionen ble én samlet stat' },
-            { en: 'All borders disappeared', no: 'Alle grenser forsvant' },
-            { en: 'The Ottomans regained their lands', no: 'Osmanene fikk tilbake landområdene sine' }
+            { en: 'All borders disappeared', no: 'Alle grenser forsvant' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Britain and France redrew the map, creating many of today’s Middle Eastern states.',
             no: 'Storbritannia og Frankrike tegnet kartet på nytt og skapte mange av dagens midtøstenstater.'
@@ -509,12 +509,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Massedrapene og deportasjonene av armenere i 1915 omtales i stor grad som hva?'
           },
           answers: [
-            { en: 'The Armenian Genocide', no: 'Det armenske folkemordet' },
-            { en: 'The Great Migration', no: 'Den store migrasjonen' },
             { en: 'The Balkan Exchange', no: 'Balkanutvekslingen' },
-            { en: 'The Tanzimat', no: 'Tanzimat' }
+            { en: 'The Tanzimat', no: 'Tanzimat' },
+            { en: 'The Armenian Genocide', no: 'Det armenske folkemordet' },
+            { en: 'The Great Migration', no: 'Den store migrasjonen' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The 1915 mass killings of Armenians are widely recognized as the Armenian Genocide.',
             no: 'Massedrapene på armenere i 1915 anerkjennes i stor grad som det armenske folkemordet.'
@@ -528,12 +528,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hva var en konsekvens av å avskaffe kalifatet i 1924?'
           },
           answers: [
-            { en: 'It ended a centuries-old symbol of Islamic political authority', no: 'Det avsluttet et århundregammelt symbol på islamsk politisk autoritet' },
             { en: 'It created a new empire', no: 'Det skapte et nytt imperium' },
             { en: 'It restored the sultanate', no: 'Det gjeninnførte sultanatet' },
-            { en: 'It united all Muslim states', no: 'Det forente alle muslimske stater' }
+            { en: 'It united all Muslim states', no: 'Det forente alle muslimske stater' },
+            { en: 'It ended a centuries-old symbol of Islamic political authority', no: 'Det avsluttet et århundregammelt symbol på islamsk politisk autoritet' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Abolishing the caliphate removed a unifying symbol of Islamic leadership claimed since medieval times.',
             no: 'Avskaffelsen av kalifatet fjernet et samlende symbol på islamsk lederskap som hadde vært hevdet siden middelalderen.'
@@ -566,12 +566,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Historikere som diskuterer osmansk nedgang, er ofte uenige om hva?'
           },
           answers: [
+            { en: 'Whether it fought in World War I', no: 'Om det deltok i første verdenskrig' },
             { en: 'Whether internal weakness or external pressure mattered more', no: 'Om indre svakhet eller ytre press betydde mest' },
             { en: 'Whether the empire ever existed', no: 'Om riket noen gang eksisterte' },
-            { en: 'The location of its capital', no: 'Hvor hovedstaden lå' },
-            { en: 'Whether it fought in World War I', no: 'Om det deltok i første verdenskrig' }
+            { en: 'The location of its capital', no: 'Hvor hovedstaden lå' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Scholars debate the relative weight of internal decay versus European intervention and economic pressure.',
             no: 'Forskere diskuterer den relative vekten av indre forfall kontra europeisk intervensjon og økonomisk press.'
@@ -585,12 +585,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvorfor får Sykes-Picot-avtalen ofte skylden for senere ustabilitet i Midtøsten?'
           },
           answers: [
-            { en: 'It drew borders ignoring local ethnic and religious realities', no: 'Den trakk grenser som ignorerte lokale etniske og religiøse forhold' },
-            { en: 'It granted full independence too quickly', no: 'Den ga full uavhengighet for raskt' },
             { en: 'It united all Arabs into one state', no: 'Den forente alle arabere i én stat' },
-            { en: 'It restored Ottoman rule', no: 'Den gjeninnførte osmansk styre' }
+            { en: 'It restored Ottoman rule', no: 'Den gjeninnførte osmansk styre' },
+            { en: 'It drew borders ignoring local ethnic and religious realities', no: 'Den trakk grenser som ignorerte lokale etniske og religiøse forhold' },
+            { en: 'It granted full independence too quickly', no: 'Den ga full uavhengighet for raskt' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Critics argue the artificial borders cut across communities and sowed long-term conflict.',
             no: 'Kritikere hevder at de kunstige grensene gikk på tvers av folkegrupper og sådde langvarig konflikt.'
@@ -604,12 +604,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'McMahon-Hussein-korrespondansen er viktig fordi den så ut til å gjøre hva?'
           },
           answers: [
-            { en: 'Promise Arab independence in exchange for revolt against the Ottomans', no: 'Love arabisk uavhengighet i bytte mot opprør mot osmanene' },
             { en: 'Guarantee Ottoman survival', no: 'Garantere osmansk overlevelse' },
             { en: 'Establish the United Nations', no: 'Opprette De forente nasjoner' },
-            { en: 'Divide Europe into blocs', no: 'Dele Europa i blokker' }
+            { en: 'Divide Europe into blocs', no: 'Dele Europa i blokker' },
+            { en: 'Promise Arab independence in exchange for revolt against the Ottomans', no: 'Love arabisk uavhengighet i bytte mot opprør mot osmanene' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'British promises of Arab independence in this correspondence later clashed with Sykes-Picot and the Balfour Declaration.',
             no: 'Britiske løfter om arabisk uavhengighet i denne korrespondansen kolliderte senere med Sykes-Picot og Balfour-erklæringen.'
@@ -642,12 +642,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilken økonomisk faktor trekkes frem som undergravende for osmansk suverenitet før sammenbruddet?'
           },
           answers: [
+            { en: 'A ban on all foreign loans', no: 'Et forbud mot alle utenlandske lån' },
             { en: 'Foreign debt and the Capitulations granting privileges to Europeans', no: 'Utenlandsgjeld og kapitulasjonene som ga europeere privilegier' },
             { en: 'A surplus of gold reserves', no: 'Et overskudd av gullreserver' },
-            { en: 'Rapid industrial dominance', no: 'Rask industriell dominans' },
-            { en: 'A ban on all foreign loans', no: 'Et forbud mot alle utenlandske lån' }
+            { en: 'Rapid industrial dominance', no: 'Rask industriell dominans' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Massive debt and the Capitulations let European powers control Ottoman finances and trade.',
             no: 'Enorm gjeld og kapitulasjonene lot europeiske stormakter kontrollere osmanske finanser og handel.'
@@ -661,12 +661,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvordan kritiseres «Europas syke mann»-tesen av enkelte historikere?'
           },
           answers: [
-            { en: 'It downplays Ottoman reform efforts like the Tanzimat', no: 'Den undervurderer osmanske reformforsøk som Tanzimat' },
-            { en: 'It overstates Ottoman military weakness', no: 'Den overdriver osmansk militær svakhet' },
             { en: 'It ignores the empire’s small size', no: 'Den overser rikets lille størrelse' },
-            { en: 'It denies the empire existed', no: 'Den benekter at riket eksisterte' }
+            { en: 'It denies the empire existed', no: 'Den benekter at riket eksisterte' },
+            { en: 'It downplays Ottoman reform efforts like the Tanzimat', no: 'Den undervurderer osmanske reformforsøk som Tanzimat' },
+            { en: 'It overstates Ottoman military weakness', no: 'Den overdriver osmansk militær svakhet' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Critics note the empire actively reformed (Tanzimat), so "terminal decline" oversimplifies its history.',
             no: 'Kritikere påpeker at riket aktivt reformerte (Tanzimat), så «uunngåelig forfall» forenkler historien for mye.'
@@ -680,12 +680,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'En langsiktig effekt knyttet til avskaffelsen av kalifatet er hva?'
           },
           answers: [
-            { en: 'Debates over Islamic leadership that influence modern movements', no: 'Debatter om islamsk lederskap som påvirker moderne bevegelser' },
             { en: 'The immediate unification of all Muslims', no: 'Umiddelbar forening av alle muslimer' },
             { en: 'The end of Islam as a religion', no: 'Slutten på islam som religion' },
-            { en: 'A return to Ottoman rule', no: 'En gjeninnføring av osmansk styre' }
+            { en: 'A return to Ottoman rule', no: 'En gjeninnføring av osmansk styre' },
+            { en: 'Debates over Islamic leadership that influence modern movements', no: 'Debatter om islamsk lederskap som påvirker moderne bevegelser' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The caliphate’s end left a vacuum that later Islamist movements have invoked in calls for its restoration.',
             no: 'Kalifatets slutt etterlot et tomrom som senere islamistiske bevegelser har påberopt seg i krav om gjenopprettelse.'
@@ -718,12 +718,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Balfour-erklæringen fra 1917 kompliserte etterkrigsoppgjøret fordi den gjorde hva?'
           },
           answers: [
+            { en: 'Created an independent Kurdistan', no: 'Opprettet et uavhengig Kurdistan' },
             { en: 'Expressed British support for a Jewish national home in Palestine', no: 'Uttrykte britisk støtte til et jødisk nasjonalhjem i Palestina' },
             { en: 'Promised Palestine to France', no: 'Lovte Palestina til Frankrike' },
-            { en: 'Restored Ottoman control of Jerusalem', no: 'Gjeninnførte osmansk kontroll over Jerusalem' },
-            { en: 'Created an independent Kurdistan', no: 'Opprettet et uavhengig Kurdistan' }
+            { en: 'Restored Ottoman control of Jerusalem', no: 'Gjeninnførte osmansk kontroll over Jerusalem' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'British support for a Jewish homeland conflicted with promises made to Arabs, fueling future disputes.',
             no: 'Britisk støtte til et jødisk hjemland kolliderte med løfter gitt til arabere, og næret framtidige konflikter.'
@@ -737,12 +737,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvordan vurderer historikere de relative rollene til nasjonalisme og stormaktsintervensjon i sammenbruddet?'
           },
           answers: [
-            { en: 'Both interacted, with internal nationalism and outside powers reinforcing each other', no: 'Begge virket sammen, der indre nasjonalisme og ytre makter forsterket hverandre' },
-            { en: 'Only foreign powers mattered', no: 'Bare utenlandske makter betydde noe' },
             { en: 'Only nationalism mattered', no: 'Bare nasjonalisme betydde noe' },
-            { en: 'Neither played any role', no: 'Ingen av delene spilte noen rolle' }
+            { en: 'Neither played any role', no: 'Ingen av delene spilte noen rolle' },
+            { en: 'Both interacted, with internal nationalism and outside powers reinforcing each other', no: 'Begge virket sammen, der indre nasjonalisme og ytre makter forsterket hverandre' },
+            { en: 'Only foreign powers mattered', no: 'Bare utenlandske makter betydde noe' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Most analyses stress an interplay between internal nationalist movements and external pressures.',
             no: 'De fleste analyser vektlegger et samspill mellom indre nasjonalistbevegelser og ytre press.'
@@ -756,12 +756,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'En langsiktig effekt av den gresk-tyrkiske befolkningsutvekslingen i 1923 var hva?'
           },
           answers: [
-            { en: 'It set a controversial precedent for state-organized forced migration', no: 'Den satte en omstridt presedens for statsorganisert tvangsmigrasjon' },
             { en: 'It ended all conflict in the region', no: 'Den avsluttet all konflikt i regionen' },
             { en: 'It had no demographic effect', no: 'Den hadde ingen demografisk effekt' },
-            { en: 'It restored the Ottoman Empire', no: 'Den gjeninnførte Det osmanske riket' }
+            { en: 'It restored the Ottoman Empire', no: 'Den gjeninnførte Det osmanske riket' },
+            { en: 'It set a controversial precedent for state-organized forced migration', no: 'Den satte en omstridt presedens for statsorganisert tvangsmigrasjon' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The exchange uprooted nearly two million people and became a model later cited in other forced migrations.',
             no: 'Utvekslingen rykket opp nesten to millioner mennesker og ble en modell som senere ble vist til i andre tvangsmigrasjoner.'
@@ -794,12 +794,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvordan diskuteres Atatürks ettermæle i dag?'
           },
           answers: [
+            { en: 'As an Ottoman sultan', no: 'Som en osmansk sultan' },
             { en: 'As both a modernizing hero and an authoritarian who suppressed dissent', no: 'Som både en moderniserende helt og en autoritær leder som undertrykte opposisjon' },
             { en: 'As a defender of the caliphate', no: 'Som en forsvarer av kalifatet' },
-            { en: 'As a leader who avoided all reform', no: 'Som en leder som unngikk all reform' },
-            { en: 'As an Ottoman sultan', no: 'Som en osmansk sultan' }
+            { en: 'As a leader who avoided all reform', no: 'Som en leder som unngikk all reform' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Atatürk is praised for modernization but criticized for authoritarian methods and forced cultural change.',
             no: 'Atatürk hylles for modernisering, men kritiseres for autoritære metoder og påtvunget kulturell endring.'
@@ -813,12 +813,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvorfor sier historikere at grensene som ble skapt etter 1918, fortsatt former politikken i Midtøsten?'
           },
           answers: [
-            { en: 'They grouped rival communities and divided others into fragile states', no: 'De samlet rivaliserende folkegrupper og delte andre inn i skjøre stater' },
-            { en: 'They followed natural ethnic lines perfectly', no: 'De fulgte naturlige etniske linjer perfekt' },
             { en: 'They were redrawn every decade', no: 'De ble tegnet på nytt hvert tiår' },
-            { en: 'They were never actually implemented', no: 'De ble aldri faktisk innført' }
+            { en: 'They were never actually implemented', no: 'De ble aldri faktisk innført' },
+            { en: 'They grouped rival communities and divided others into fragile states', no: 'De samlet rivaliserende folkegrupper og delte andre inn i skjøre stater' },
+            { en: 'They followed natural ethnic lines perfectly', no: 'De fulgte naturlige etniske linjer perfekt' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Externally imposed borders left many states with internal divisions that fuel conflict to this day.',
             no: 'Eksternt påtvungne grenser etterlot mange stater med indre splittelser som nærer konflikt den dag i dag.'
@@ -843,12 +843,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'I hvilket år ble staten Israel opprettet?'
           },
           answers: [
-            { en: '1948', no: '1948' },
             { en: '1917', no: '1917' },
             { en: '1967', no: '1967' },
-            { en: '1922', no: '1922' }
+            { en: '1922', no: '1922' },
+            { en: '1948', no: '1948' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The State of Israel was established in 1948.',
             no: 'Staten Israel ble opprettet i 1948.'
@@ -862,12 +862,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilket organ foreslo en plan om å dele Palestina i 1947?'
           },
           answers: [
-            { en: 'NATO', no: 'NATO' },
             { en: 'The United Nations', no: 'De forente nasjoner' },
             { en: 'The Arab League', no: 'Den arabiske liga' },
-            { en: 'The League of Nations', no: 'Folkeforbundet' }
+            { en: 'The League of Nations', no: 'Folkeforbundet' },
+            { en: 'NATO', no: 'NATO' }
           ],
-          correct: 1,
+          correct: 0,
           explanation: {
             en: 'In 1947 the United Nations proposed partitioning Palestine into Jewish and Arab states.',
             no: 'I 1947 foreslo De forente nasjoner å dele Palestina i en jødisk og en arabisk stat.'
@@ -881,12 +881,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hva heter bevegelsen for et jødisk hjemland?'
           },
           answers: [
+            { en: 'Federalism', no: 'Føderalisme' },
             { en: 'Zionism', no: 'Sionisme' },
             { en: 'Pan-Arabism', no: 'Panarabisme' },
-            { en: 'Socialism', no: 'Sosialisme' },
-            { en: 'Federalism', no: 'Føderalisme' }
+            { en: 'Socialism', no: 'Sosialisme' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Zionism was the movement supporting the establishment of a Jewish homeland.',
             no: 'Sionisme var bevegelsen som støttet opprettelsen av et jødisk hjemland.'
@@ -900,12 +900,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilken by regnes som hellig av jøder, kristne og muslimer og er sentral i konflikten?'
           },
           answers: [
+            { en: 'Amman', no: 'Amman' },
             { en: 'Cairo', no: 'Kairo' },
             { en: 'Jerusalem', no: 'Jerusalem' },
-            { en: 'Damascus', no: 'Damaskus' },
-            { en: 'Amman', no: 'Amman' }
+            { en: 'Damascus', no: 'Damaskus' }
           ],
-          correct: 1,
+          correct: 2,
           explanation: {
             en: 'Jerusalem holds deep religious significance for Judaism, Christianity, and Islam.',
             no: 'Jerusalem har dyp religiøs betydning for jødedommen, kristendommen og islam.'
@@ -919,12 +919,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hva kaller palestinerne fordrivelsen i 1948?'
           },
           answers: [
-            { en: 'The Nakba', no: 'Nakba' },
             { en: 'The Aliyah', no: 'Aliyah' },
             { en: 'The Intifada', no: 'Intifada' },
-            { en: 'The Hijra', no: 'Hijra' }
+            { en: 'The Hijra', no: 'Hijra' },
+            { en: 'The Nakba', no: 'Nakba' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Palestinians call the 1948 displacement the Nakba, meaning "catastrophe."',
             no: 'Palestinerne kaller fordrivelsen i 1948 for Nakba, som betyr «katastrofe».'
@@ -938,12 +938,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilken krig i 1967 varte i bare seks dager?'
           },
           answers: [
-            { en: 'The Yom Kippur War', no: 'Yom Kippur-krigen' },
             { en: 'The Six-Day War', no: 'Seksdagerskrigen' },
             { en: 'The Suez Crisis', no: 'Suezkrisen' },
-            { en: 'The First Intifada', no: 'Den første intifadaen' }
+            { en: 'The First Intifada', no: 'Den første intifadaen' },
+            { en: 'The Yom Kippur War', no: 'Yom Kippur-krigen' }
           ],
-          correct: 1,
+          correct: 0,
           explanation: {
             en: 'The Six-Day War of 1967 saw Israel defeat neighboring Arab states in less than a week.',
             no: 'Seksdagerskrigen i 1967 endte med at Israel beseiret nabolandene på under en uke.'
@@ -957,12 +957,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hva står PLO for?'
           },
           answers: [
+            { en: 'Palestinian Labour Order', no: 'Den palestinske arbeiderorden' },
             { en: 'Palestine Liberation Organization', no: 'Den palestinske frigjøringsorganisasjonen' },
             { en: 'Pan-Levantine Oil Organization', no: 'Den pan-levantinske oljeorganisasjonen' },
-            { en: 'Peace and Land Office', no: 'Freds- og landkontoret' },
-            { en: 'Palestinian Labour Order', no: 'Den palestinske arbeiderorden' }
+            { en: 'Peace and Land Office', no: 'Freds- og landkontoret' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The PLO is the Palestine Liberation Organization, founded in 1964.',
             no: 'PLO er Den palestinske frigjøringsorganisasjonen, grunnlagt i 1964.'
@@ -976,12 +976,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvem var den mangeårige lederen og formannen i PLO?'
           },
           answers: [
-            { en: 'Yasser Arafat', no: 'Yasser Arafat' },
-            { en: 'Gamal Abdel Nasser', no: 'Gamal Abdel Nasser' },
             { en: 'Anwar Sadat', no: 'Anwar Sadat' },
-            { en: 'King Hussein', no: 'Kong Hussein' }
+            { en: 'King Hussein', no: 'Kong Hussein' },
+            { en: 'Yasser Arafat', no: 'Yasser Arafat' },
+            { en: 'Gamal Abdel Nasser', no: 'Gamal Abdel Nasser' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Yasser Arafat led the PLO for decades and became a symbol of the Palestinian cause.',
             no: 'Yasser Arafat ledet PLO i flere tiår og ble et symbol på den palestinske saken.'
@@ -995,12 +995,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilke to områder er hovedområdene som forbindes med palestinerne i dag?'
           },
           answers: [
-            { en: 'The West Bank and the Gaza Strip', no: 'Vestbredden og Gazastripen' },
             { en: 'Sinai and the Golan Heights', no: 'Sinai og Golanhøydene' },
             { en: 'Lebanon and Syria', no: 'Libanon og Syria' },
-            { en: 'Jordan and Egypt', no: 'Jordan og Egypt' }
+            { en: 'Jordan and Egypt', no: 'Jordan og Egypt' },
+            { en: 'The West Bank and the Gaza Strip', no: 'Vestbredden og Gazastripen' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The West Bank and the Gaza Strip are the main Palestinian territories today.',
             no: 'Vestbredden og Gazastripen er de viktigste palestinske områdene i dag.'
@@ -1014,12 +1014,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Gazastripen ligger langs hvilket havområde?'
           },
           answers: [
-            { en: 'The Red Sea', no: 'Rødehavet' },
             { en: 'The Mediterranean Sea', no: 'Middelhavet' },
             { en: 'The Black Sea', no: 'Svartehavet' },
-            { en: 'The Persian Gulf', no: 'Persiabukta' }
+            { en: 'The Persian Gulf', no: 'Persiabukta' },
+            { en: 'The Red Sea', no: 'Rødehavet' }
           ],
-          correct: 1,
+          correct: 0,
           explanation: {
             en: 'The Gaza Strip borders the Mediterranean Sea.',
             no: 'Gazastripen grenser til Middelhavet.'
@@ -1033,12 +1033,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Oslo-avtalene på 1990-tallet var avtaler som tok sikte på hva?'
           },
           answers: [
+            { en: 'Creating the United Nations', no: 'Å opprette FN' },
             { en: 'Peace between Israel and the Palestinians', no: 'Fred mellom Israel og palestinerne' },
             { en: 'Forming the Arab League', no: 'Å danne Den arabiske liga' },
-            { en: 'Ending the Cold War', no: 'Å avslutte den kalde krigen' },
-            { en: 'Creating the United Nations', no: 'Å opprette FN' }
+            { en: 'Ending the Cold War', no: 'Å avslutte den kalde krigen' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Oslo Accords were peace agreements between Israel and the PLO in the 1990s.',
             no: 'Oslo-avtalene var fredsavtaler mellom Israel og PLO på 1990-tallet.'
@@ -1052,12 +1052,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Før 1948 ble regionen styrt under hvilken britisk ordning?'
           },
           answers: [
-            { en: 'The British Mandate for Palestine', no: 'Det britiske mandatet for Palestina' },
-            { en: 'The British Raj', no: 'Det britiske Raj' },
             { en: 'The Commonwealth', no: 'Samveldet' },
-            { en: 'The East India Company', no: 'Det ostindiske kompani' }
+            { en: 'The East India Company', no: 'Det ostindiske kompani' },
+            { en: 'The British Mandate for Palestine', no: 'Det britiske mandatet for Palestina' },
+            { en: 'The British Raj', no: 'Det britiske Raj' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Britain governed the area under the Mandate for Palestine from 1920 until 1948.',
             no: 'Storbritannia styrte området under mandatet for Palestina fra 1920 til 1948.'
@@ -1071,12 +1071,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilken gruppe har styrt Gazastripen siden 2007?'
           },
           answers: [
-            { en: 'Hamas', no: 'Hamas' },
             { en: 'Hezbollah', no: 'Hizbollah' },
             { en: 'The Muslim Brotherhood of Egypt', no: 'Det muslimske brorskap i Egypt' },
-            { en: 'The Arab League', no: 'Den arabiske liga' }
+            { en: 'The Arab League', no: 'Den arabiske liga' },
+            { en: 'Hamas', no: 'Hamas' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Hamas took control of the Gaza Strip in 2007.',
             no: 'Hamas tok kontroll over Gazastripen i 2007.'
@@ -1109,12 +1109,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvilket land undertegnet en banebrytende fredsavtale med Israel i 1979?'
           },
           answers: [
+            { en: 'Saudi Arabia', no: 'Saudi-Arabia' },
             { en: 'Egypt', no: 'Egypt' },
             { en: 'Iraq', no: 'Irak' },
-            { en: 'Syria', no: 'Syria' },
-            { en: 'Saudi Arabia', no: 'Saudi-Arabia' }
+            { en: 'Syria', no: 'Syria' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Egypt and Israel signed a peace treaty in 1979 after the Camp David Accords.',
             no: 'Egypt og Israel undertegnet en fredsavtale i 1979 etter Camp David-avtalene.'
@@ -1128,12 +1128,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Balfour-erklæringen fra 1917 uttrykte britisk støtte til hva?'
           },
           answers: [
-            { en: 'A national home for the Jewish people in Palestine', no: 'Et nasjonalhjem for det jødiske folk i Palestina' },
-            { en: 'An independent Arab kingdom', no: 'Et uavhengig arabisk kongerike' },
             { en: 'Ottoman rule over Palestine', no: 'Osmansk styre over Palestina' },
-            { en: 'A French protectorate', no: 'Et fransk protektorat' }
+            { en: 'A French protectorate', no: 'Et fransk protektorat' },
+            { en: 'A national home for the Jewish people in Palestine', no: 'Et nasjonalhjem for det jødiske folk i Palestina' },
+            { en: 'An independent Arab kingdom', no: 'Et uavhengig arabisk kongerike' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Balfour Declaration backed a Jewish national home while pledging to respect existing communities.',
             no: 'Balfour-erklæringen støttet et jødisk nasjonalhjem samtidig som den lovet å respektere eksisterende samfunn.'
@@ -1147,12 +1147,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hva skjedde umiddelbart etter at Israel erklærte uavhengighet i 1948?'
           },
           answers: [
-            { en: 'Neighboring Arab states went to war with Israel', no: 'Arabiske naboland gikk til krig mot Israel' },
             { en: 'A lasting peace was signed', no: 'En varig fred ble undertegnet' },
             { en: 'The United Nations dissolved', no: 'FN ble oppløst' },
-            { en: 'Britain reoccupied the region', no: 'Storbritannia gjenokkuperte regionen' }
+            { en: 'Britain reoccupied the region', no: 'Storbritannia gjenokkuperte regionen' },
+            { en: 'Neighboring Arab states went to war with Israel', no: 'Arabiske naboland gikk til krig mot Israel' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The 1948 Arab-Israeli War broke out when neighboring Arab states attacked the new state.',
             no: 'Den arabisk-israelske krigen i 1948 brøt ut da arabiske naboland angrep den nye staten.'
@@ -1185,12 +1185,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hva oppnådde Camp David-avtalene i 1978 først og fremst?'
           },
           answers: [
+            { en: 'The end of the Cold War', no: 'Slutten på den kalde krigen' },
             { en: 'A framework for peace between Egypt and Israel', no: 'Et rammeverk for fred mellom Egypt og Israel' },
             { en: 'A Palestinian state', no: 'En palestinsk stat' },
-            { en: 'Israeli membership in the Arab League', no: 'Israelsk medlemskap i Den arabiske liga' },
-            { en: 'The end of the Cold War', no: 'Slutten på den kalde krigen' }
+            { en: 'Israeli membership in the Arab League', no: 'Israelsk medlemskap i Den arabiske liga' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'The Camp David Accords led to the 1979 Egypt-Israel peace treaty.',
             no: 'Camp David-avtalene førte til fredsavtalen mellom Egypt og Israel i 1979.'
@@ -1204,12 +1204,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hva var den første og den andre intifadaen?'
           },
           answers: [
-            { en: 'Palestinian uprisings against Israeli occupation', no: 'Palestinske opprør mot israelsk okkupasjon' },
-            { en: 'Israeli military parades', no: 'Israelske militærparader' },
             { en: 'UN peacekeeping missions', no: 'FN-fredsbevarende operasjoner' },
-            { en: 'Egyptian elections', no: 'Egyptiske valg' }
+            { en: 'Egyptian elections', no: 'Egyptiske valg' },
+            { en: 'Palestinian uprisings against Israeli occupation', no: 'Palestinske opprør mot israelsk okkupasjon' },
+            { en: 'Israeli military parades', no: 'Israelske militærparader' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The Intifadas were major Palestinian uprisings, the first from 1987 and the second from 2000.',
             no: 'Intifadaene var store palestinske opprør, den første fra 1987 og den andre fra 2000.'
@@ -1223,12 +1223,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Et viktig resultat av Oslo-avtalene var opprettelsen av hva?'
           },
           answers: [
-            { en: 'The Palestinian Authority', no: 'Den palestinske selvstyremyndigheten' },
             { en: 'The State of Israel', no: 'Staten Israel' },
             { en: 'The Arab League', no: 'Den arabiske liga' },
-            { en: 'The United Nations', no: 'De forente nasjoner' }
+            { en: 'The United Nations', no: 'De forente nasjoner' },
+            { en: 'The Palestinian Authority', no: 'Den palestinske selvstyremyndigheten' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Oslo Accords established the Palestinian Authority to govern parts of the territories.',
             no: 'Oslo-avtalene opprettet Den palestinske selvstyremyndigheten til å styre deler av områdene.'
@@ -1261,12 +1261,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Yom Kippur-krigen i 1973 startet da hvilke stater angrep Israel?'
           },
           answers: [
+            { en: 'Turkey and Greece', no: 'Tyrkia og Hellas' },
             { en: 'Egypt and Syria', no: 'Egypt og Syria' },
             { en: 'Iran and Iraq', no: 'Iran og Irak' },
-            { en: 'Jordan and Lebanon', no: 'Jordan og Libanon' },
-            { en: 'Turkey and Greece', no: 'Tyrkia og Hellas' }
+            { en: 'Jordan and Lebanon', no: 'Jordan og Libanon' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Egypt and Syria launched a surprise attack on Israel during Yom Kippur in 1973.',
             no: 'Egypt og Syria innledet et overraskelsesangrep på Israel under Yom Kippur i 1973.'
@@ -1280,12 +1280,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvorfor er israelske bosetninger på Vestbredden en kilde til spenning?'
           },
           answers: [
-            { en: 'They are built on land Palestinians claim for a future state', no: 'De bygges på land palestinerne gjør krav på til en framtidig stat' },
-            { en: 'They are located inside Egypt', no: 'De ligger inne i Egypt' },
             { en: 'They are run by the United Nations', no: 'De drives av FN' },
-            { en: 'They are uninhabited', no: 'De er ubebodde' }
+            { en: 'They are uninhabited', no: 'De er ubebodde' },
+            { en: 'They are built on land Palestinians claim for a future state', no: 'De bygges på land palestinerne gjør krav på til en framtidig stat' },
+            { en: 'They are located inside Egypt', no: 'De ligger inne i Egypt' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Settlements on occupied land are widely seen as obstacles to a viable Palestinian state.',
             no: 'Bosetninger på okkupert land oppfattes i stor grad som hindringer for en levedyktig palestinsk stat.'
@@ -1299,12 +1299,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Den «grønne linjen» viser vanligvis til hva?'
           },
           answers: [
-            { en: 'The armistice borders from before the 1967 war', no: 'Våpenhvilegrensene fra før krigen i 1967' },
             { en: 'A railway through Jerusalem', no: 'En jernbane gjennom Jerusalem' },
             { en: 'The Suez Canal', no: 'Suezkanalen' },
-            { en: 'The Jordan River’s source', no: 'Jordanelvas kilde' }
+            { en: 'The Jordan River’s source', no: 'Jordanelvas kilde' },
+            { en: 'The armistice borders from before the 1967 war', no: 'Våpenhvilegrensene fra før krigen i 1967' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'The Green Line marks the 1949 armistice lines that existed before the 1967 war.',
             no: 'Den grønne linjen markerer våpenhvilelinjene fra 1949 som eksisterte før krigen i 1967.'
@@ -1337,12 +1337,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Avtalen mellom Egypt og Israel i 1979 fikk hvilken bemerkelsesverdig konsekvens for Egypt?'
           },
           answers: [
+            { en: 'It declared war on Israel again', no: 'Det erklærte krig mot Israel igjen' },
             { en: 'It was temporarily suspended from the Arab League', no: 'Det ble midlertidig suspendert fra Den arabiske liga' },
             { en: 'It joined NATO', no: 'Det ble med i NATO' },
-            { en: 'It gained the West Bank', no: 'Det fikk Vestbredden' },
-            { en: 'It declared war on Israel again', no: 'Det erklærte krig mot Israel igjen' }
+            { en: 'It gained the West Bank', no: 'Det fikk Vestbredden' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Egypt was suspended from the Arab League for making a separate peace with Israel.',
             no: 'Egypt ble suspendert fra Den arabiske liga for å inngå en separat fred med Israel.'
@@ -1356,12 +1356,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Suezkrisen i 1956 involverte Israel sammen med hvilke to europeiske stormakter?'
           },
           answers: [
-            { en: 'Britain and France', no: 'Storbritannia og Frankrike' },
-            { en: 'Germany and Italy', no: 'Tyskland og Italia' },
             { en: 'Spain and Portugal', no: 'Spania og Portugal' },
-            { en: 'Russia and Greece', no: 'Russland og Hellas' }
+            { en: 'Russia and Greece', no: 'Russland og Hellas' },
+            { en: 'Britain and France', no: 'Storbritannia og Frankrike' },
+            { en: 'Germany and Italy', no: 'Tyskland og Italia' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Israel, Britain, and France attacked Egypt in 1956 after Nasser nationalized the Suez Canal.',
             no: 'Israel, Storbritannia og Frankrike angrep Egypt i 1956 etter at Nasser nasjonaliserte Suezkanalen.'
@@ -1375,12 +1375,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvorfor er de israelske og palestinske fortellingene om 1948 så ulike?'
           },
           answers: [
-            { en: 'One frames it as independence, the other as the Nakba catastrophe', no: 'Den ene fremstiller det som uavhengighet, den andre som Nakba-katastrofen' },
             { en: 'They disagree on the year it happened', no: 'De er uenige om hvilket år det skjedde' },
             { en: 'Neither side acknowledges the war', no: 'Ingen av partene anerkjenner krigen' },
-            { en: 'They agree on every detail', no: 'De er enige om hver detalj' }
+            { en: 'They agree on every detail', no: 'De er enige om hver detalj' },
+            { en: 'One frames it as independence, the other as the Nakba catastrophe', no: 'Den ene fremstiller det som uavhengighet, den andre som Nakba-katastrofen' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'For Israelis 1948 marks national independence; for Palestinians it marks dispossession and exile.',
             no: 'For israelere markerer 1948 nasjonal uavhengighet; for palestinere markerer det fordrivelse og eksil.'
@@ -1413,12 +1413,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Historikere diskuterer den palestinske flukten i 1948 i stor grad ut fra hvilket spørsmål?'
           },
           answers: [
+            { en: 'The exact size of Jerusalem', no: 'Den nøyaktige størrelsen på Jerusalem' },
             { en: 'How much was due to expulsion versus flight from war', no: 'Hvor mye som skyldtes utdrivelse kontra flukt fra krig' },
             { en: 'Whether any Palestinians lived there', no: 'Om noen palestinere bodde der' },
-            { en: 'Whether the war occurred', no: 'Om krigen fant sted' },
-            { en: 'The exact size of Jerusalem', no: 'Den nøyaktige størrelsen på Jerusalem' }
+            { en: 'Whether the war occurred', no: 'Om krigen fant sted' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Scholars debate the balance between forced expulsions and voluntary flight amid the fighting.',
             no: 'Forskere diskuterer balansen mellom tvangsutdrivelser og frivillig flukt under kampene.'
@@ -1432,12 +1432,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvorfor hevder mange analytikere at bosetningsutvidelse truer tostatsløsningen?'
           },
           answers: [
-            { en: 'It fragments the land meant for a Palestinian state', no: 'Den fragmenterer landet ment for en palestinsk stat' },
-            { en: 'It increases Palestinian territory', no: 'Den øker palestinsk territorium' },
             { en: 'It has no effect on borders', no: 'Den har ingen innvirkning på grensene' },
-            { en: 'It is located only in Israel proper', no: 'Den ligger bare innenfor selve Israel' }
+            { en: 'It is located only in Israel proper', no: 'Den ligger bare innenfor selve Israel' },
+            { en: 'It fragments the land meant for a Palestinian state', no: 'Den fragmenterer landet ment for en palestinsk stat' },
+            { en: 'It increases Palestinian territory', no: 'Den øker palestinsk territorium' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Continued settlements break up the West Bank, making a contiguous Palestinian state harder to form.',
             no: 'Fortsatte bosetninger splitter opp Vestbredden og gjør en sammenhengende palestinsk stat vanskeligere å danne.'
@@ -1451,12 +1451,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Motstridende britiske løfter om regionen fra første verdenskrig omfattet hvilke tre?'
           },
           answers: [
-            { en: 'McMahon-Hussein, Sykes-Picot, and the Balfour Declaration', no: 'McMahon-Hussein, Sykes-Picot og Balfour-erklæringen' },
             { en: 'The Oslo, Camp David, and Madrid agreements', no: 'Oslo-, Camp David- og Madrid-avtalene' },
             { en: 'The Versailles, Lausanne, and Sèvres treaties', no: 'Versailles-, Lausanne- og Sèvres-traktatene' },
-            { en: 'The Atlantic, Yalta, and Potsdam declarations', no: 'Atlanterhavs-, Jalta- og Potsdam-erklæringene' }
+            { en: 'The Atlantic, Yalta, and Potsdam declarations', no: 'Atlanterhavs-, Jalta- og Potsdam-erklæringene' },
+            { en: 'McMahon-Hussein, Sykes-Picot, and the Balfour Declaration', no: 'McMahon-Hussein, Sykes-Picot og Balfour-erklæringen' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Britain made overlapping, contradictory commitments to Arabs, France, and the Zionist movement.',
             no: 'Storbritannia ga overlappende, motstridende løfter til arabere, Frankrike og den sionistiske bevegelsen.'
@@ -1489,12 +1489,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'FNs sikkerhetsråds resolusjon 242 (1967) tolkes ulikt rundt hvilken formulering?'
           },
           answers: [
+            { en: 'The number of member states', no: 'Antallet medlemsstater' },
             { en: 'Withdrawal "from territories" versus "from the territories"', no: 'Tilbaketrekking «fra områder» kontra «fra områdene»' },
             { en: 'The date of the ceasefire', no: 'Datoen for våpenhvilen' },
-            { en: 'The name of the conflict', no: 'Navnet på konflikten' },
-            { en: 'The number of member states', no: 'Antallet medlemsstater' }
+            { en: 'The name of the conflict', no: 'Navnet på konflikten' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Ambiguous wording fuels debate over whether Israel must leave all or only some 1967 territory.',
             no: 'Tvetydig ordlyd nærer debatten om hvorvidt Israel må forlate alt eller bare deler av territoriet fra 1967.'
@@ -1508,12 +1508,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvorfor sier historikere at Oslo-fredsprosessen til slutt stoppet opp?'
           },
           answers: [
-            { en: 'Core issues like borders, refugees, and Jerusalem were left unresolved', no: 'Kjernespørsmål som grenser, flyktninger og Jerusalem ble stående uløst' },
-            { en: 'Both sides reached a final agreement', no: 'Begge parter nådde en endelig avtale' },
             { en: 'The United Nations cancelled it', no: 'FN annullerte den' },
-            { en: 'No leaders supported it', no: 'Ingen ledere støttet den' }
+            { en: 'No leaders supported it', no: 'Ingen ledere støttet den' },
+            { en: 'Core issues like borders, refugees, and Jerusalem were left unresolved', no: 'Kjernespørsmål som grenser, flyktninger og Jerusalem ble stående uløst' },
+            { en: 'Both sides reached a final agreement', no: 'Begge parter nådde en endelig avtale' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'Oslo deferred the hardest "final status" issues, and violence and distrust eroded the process.',
             no: 'Oslo utsatte de vanskeligste «sluttstatus»-spørsmålene, og vold og mistillit undergravde prosessen.'
@@ -1527,12 +1527,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvordan formet rivaliseringen under den kalde krigen den arabisk-israelske konflikten?'
           },
           answers: [
-            { en: 'The US and USSR backed opposing sides, fueling an arms race', no: 'USA og Sovjetunionen støttet motstående parter og næret et våpenkappløp' },
             { en: 'Both superpowers stayed neutral', no: 'Begge supermaktene forholdt seg nøytrale' },
             { en: 'Only China was involved', no: 'Bare Kina var involvert' },
-            { en: 'It ended the conflict immediately', no: 'Den avsluttet konflikten umiddelbart' }
+            { en: 'It ended the conflict immediately', no: 'Den avsluttet konflikten umiddelbart' },
+            { en: 'The US and USSR backed opposing sides, fueling an arms race', no: 'USA og Sovjetunionen støttet motstående parter og næret et våpenkappløp' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Superpower support for Israel and Arab states turned the region into a Cold War arena.',
             no: 'Supermaktenes støtte til Israel og arabiske stater gjorde regionen til en arena for den kalde krigen.'
@@ -1565,12 +1565,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvorfor mislyktes Camp David-toppmøtet i 2000, ifølge mange fremstillinger?'
           },
           answers: [
+            { en: 'The talks were never held', no: 'Samtalene ble aldri holdt' },
             { en: 'Sides disagreed over Jerusalem, refugees, and final borders', no: 'Partene var uenige om Jerusalem, flyktninger og endelige grenser' },
             { en: 'No leaders attended', no: 'Ingen ledere møtte opp' },
-            { en: 'A peace deal was fully signed', no: 'En fredsavtale ble fullt undertegnet' },
-            { en: 'The talks were never held', no: 'Samtalene ble aldri holdt' }
+            { en: 'A peace deal was fully signed', no: 'En fredsavtale ble fullt undertegnet' }
           ],
-          correct: 0,
+          correct: 1,
           explanation: {
             en: 'Negotiators could not bridge gaps on Jerusalem, refugees, and borders, and each side blamed the other.',
             no: 'Forhandlerne klarte ikke å bygge bro over uenighetene om Jerusalem, flyktninger og grenser, og hver side ga den andre skylden.'
@@ -1584,12 +1584,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvordan illustrerer blokaden av Gaza den økonomiske dimensjonen ved konflikten?'
           },
           answers: [
-            { en: 'Restrictions on movement and trade have deepened economic hardship', no: 'Restriksjoner på bevegelse og handel har forsterket økonomisk nød' },
-            { en: 'It opened Gaza to free global trade', no: 'Den åpnet Gaza for fri global handel' },
             { en: 'It boosted Gaza’s exports', no: 'Den økte Gazas eksport' },
-            { en: 'It had no economic effect', no: 'Den hadde ingen økonomisk effekt' }
+            { en: 'It had no economic effect', no: 'Den hadde ingen økonomisk effekt' },
+            { en: 'Restrictions on movement and trade have deepened economic hardship', no: 'Restriksjoner på bevegelse og handel har forsterket økonomisk nød' },
+            { en: 'It opened Gaza to free global trade', no: 'Den åpnet Gaza for fri global handel' }
           ],
-          correct: 0,
+          correct: 2,
           explanation: {
             en: 'The blockade has severely limited Gaza’s economy, a key grievance and humanitarian concern.',
             no: 'Blokaden har sterkt begrenset Gazas økonomi, et sentralt klagepunkt og en humanitær bekymring.'
@@ -1603,12 +1603,12 @@ export const modernMiddleEast: SeedSubcategory = {
             no: 'Hvorfor beskriver forskere konflikten som særlig «fastlåst»?'
           },
           answers: [
-            { en: 'It combines territorial, religious, national, and historical disputes', no: 'Den kombinerer territorielle, religiøse, nasjonale og historiske stridsspørsmål' },
             { en: 'It involves only a border dispute', no: 'Den dreier seg bare om en grensetvist' },
             { en: 'It has a single, simple cause', no: 'Den har én enkel årsak' },
-            { en: 'It is purely economic', no: 'Den er rent økonomisk' }
+            { en: 'It is purely economic', no: 'Den er rent økonomisk' },
+            { en: 'It combines territorial, religious, national, and historical disputes', no: 'Den kombinerer territorielle, religiøse, nasjonale og historiske stridsspørsmål' }
           ],
-          correct: 0,
+          correct: 3,
           explanation: {
             en: 'Overlapping claims to land, identity, religion, and competing histories make resolution exceptionally hard.',
             no: 'Overlappende krav på land, identitet, religion og konkurrerende historier gjør en løsning eksepsjonelt vanskelig.'
