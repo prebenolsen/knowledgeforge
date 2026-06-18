@@ -463,3 +463,28 @@ Modules are only stored in code and do not have their own folders or files.
 | Economics | Contemporary economic issues | Cryptocurrencies | |
 | Economics | Contemporary economic issues | Platform economies | |
 | Economics | Contemporary economic issues | Economic resilience | |
+
+
+Geography,World geography,Continents and oceans,Location
+Geography,World geography,Major geographic regions
+Geography,Countries,Country identification
+Geography,Countries,Country names
+Geography,Countries,Country borders
+Geography,Countries,Country locations
+Geography,Capitals,Capital identification
+Geography,Capitals,Capital names
+Geography,Capitals,Capital locations
+Geography,Physical geography,Mountains
+Geography,Physical geography,Rivers
+Geography,Physical geography,Lakes and seas
+Geography,Physical geography,Deserts
+Geography,Physical geography,Climate zones
+Geography,Population geography,Population distribution
+Geography,Population geography,Megacities
+Geography,Population geography,Population density
+Geography,Political geography,Borders and territories
+Geography,Political geography,Countries by region
+Geography,Political geography,Flags and symbols
+Geography,Human geography,Culture and languages
+Geography,Human geography,Resources
+Geography,Human geography,Economic geography
