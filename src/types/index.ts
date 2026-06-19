@@ -196,6 +196,78 @@ export interface TimelineEvent {
 // Easy has two question variants:
 export type TimelineEasyVariant = 'century' | 'year';
 
+// ---- Mental Models & Paradoxes ----------------------------
+//
+// A standalone "discover ideas" activity (like the Timeline and Atlas). Instead
+// of testing whether you know a fact, it helps you *understand* a powerful idea —
+// a paradox, reasoning tool, or mental model. The player identifies a concept
+// from a description (easy), a scenario (medium), or an implication (hard), then
+// opens an "Explain" view to actually learn the idea. Hand-authored, bilingual.
+
+// The eight thematic modules concepts are grouped into. Module pickers filter on
+// these. Designed to be extended.
+export type ConceptModule =
+  | 'probability-statistics'
+  | 'logic-reasoning'
+  | 'decision-game-theory'
+  | 'economics-systems'
+  | 'psychology-biases'
+  | 'philosophy'
+  | 'mathematics'
+  | 'science-systems';
+
+export const CONCEPT_MODULES: ConceptModule[] = [
+  'probability-statistics',
+  'logic-reasoning',
+  'decision-game-theory',
+  'economics-systems',
+  'psychology-biases',
+  'philosophy',
+  'mathematics',
+  'science-systems'
+];
+
+// An optional interactive simulation a concept can offer. Wired in a later phase
+// (e.g. play many Monty Hall rounds and watch the statistics converge). Today
+// the Explain view simply notes that a simulation is available.
+export type ConceptSimulation =
+  | 'monty-hall'
+  | 'prisoners-dilemma'
+  | 'birthday-problem'
+  | 'tragedy-commons'
+  | 'gamblers-fallacy';
+
+// The rich educational explanation shown behind every concept's "Explain" button.
+// These seven fields are the heart of the activity — the point is understanding,
+// not memorizing.
+export interface ConceptExplanation {
+  summary: Localized; // one-line essence
+  whyInteresting: Localized; // what makes the idea powerful / surprising
+  whyIntuitionFails: Localized; // where human intuition trips up
+  example: Localized; // a simple, concrete example
+  realWorld: Localized; // why it matters beyond the puzzle
+}
+
+export interface Concept {
+  id: string;
+  module: ConceptModule;
+  name: Localized;
+  // Per-difficulty identification prompts. The gameplay is always "name the
+  // concept", but the angle differs:
+  //   easy   — concept → description ("Which concept describes…?")
+  //   medium — concept → scenario   (a situation; which concept is at play?)
+  //   hard   — concept → implication (the surprising "why"; which concept?)
+  prompts: Record<Difficulty, Localized>;
+  explanation: ConceptExplanation;
+  // Ids of related concepts — shown in the Explain view and preferred as quiz
+  // distractors. An id that doesn't resolve is simply skipped (forward refs ok).
+  related: string[];
+  // Optional future interactive simulation key.
+  simulation?: ConceptSimulation;
+  // Alternative accepted names (future free-text matching).
+  aliases?: string[];
+}
+
 // ---- Knowledge map (dashboard) ----------------------------
 
 export interface CategoryMastery {

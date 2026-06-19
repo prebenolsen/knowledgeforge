@@ -176,6 +176,41 @@ export default {
     playAgain: 'Spill igjen',
     backToStart: 'Tilbake til start'
   },
+  concepts: {
+    title: 'Mentale modeller og paradokser',
+    tagline: 'Oppdag kraftfulle ideer — paradokser, tankeverktøy og mentale modeller.',
+    chooseModule: 'Velg en modul',
+    conceptCount: '{{count}} konsepter',
+    comingSoon: 'Kommer snart',
+    chooseDifficulty: 'Velg en modus',
+    diffHint: {
+      easy: 'Koble et konsept til beskrivelsen.',
+      medium: 'Finn konseptet bak et scenario.',
+      hard: 'Gjenkjenn konseptet ut fra implikasjonen.'
+    },
+    chooseLength: 'Hvor mange konsepter?',
+    questions: 'konsepter',
+    all: 'Alle',
+    progress: 'Konsept {{current}} av {{total}}',
+    explainAction: 'Forklar dette konseptet',
+    next: 'Neste',
+    finish: 'Fullfør',
+    summaryTitle: 'Runde fullført',
+    summaryCorrect: 'Riktige',
+    accuracy: 'Treffsikkerhet',
+    playAgain: 'Spill igjen',
+    backToStart: 'Tilbake til start',
+    explain: {
+      title: 'Forklaring',
+      whyInteresting: 'Hvorfor det er interessant',
+      whyIntuitionFails: 'Hvorfor intuisjonen svikter',
+      example: 'Enkelt eksempel',
+      realWorld: 'Relevans i virkeligheten',
+      related: 'Beslektede konsepter',
+      simulationAvailable: 'En interaktiv simulering for dette konseptet kommer snart.',
+      close: 'Skjønner'
+    }
+  },
   common: {
     loading: 'Laster…',
     error: 'Noe gikk galt. Prøv igjen.',

@@ -219,3 +219,40 @@ database predates this feature, re-run that file in the Supabase SQL editor —
 it's idempotent, so it just adds the two missing tables and their
 row-level-security policies. Until they exist, the Timeline still plays, but
 progress writes fail silently and the dashboard panel stays hidden.
+
+## Mental Models & Paradoxes (concept-discovery activity)
+
+The **Mental Models & Paradoxes** activity (`/concepts`, linked from the front
+page) is, like the Atlas and Timeline, a standalone activity that does **not** use
+the `questions` table or the import pipeline. It plays from a bundled,
+hand-authored concept dataset (no setup needed); only progress is saved to
+Supabase. Unlike a quiz, its purpose is *understanding* — every question carries
+an **Explain** action that opens a full educational view.
+
+### Content
+
+Concepts live in `src/content/concepts/concepts.ts` as `Concept` records
+(`src/types/index.ts`): a bilingual `name`, per-difficulty identification
+`prompts` (description / scenario / implication), a seven-part `explanation`
+(summary, why-interesting, why-intuition-fails, example, real-world relevance),
+`related` concept ids, and an optional `simulation` key for a future interactive
+demo. Concepts are grouped into eight `module`s (e.g. `probability-statistics`,
+`philosophy`), whose display names/emojis are defined in `src/lib/concepts.ts`.
+To add concepts, append to the array — no migration or rebuild step is required.
+A module becomes playable once it has at least four concepts (one correct answer
+plus three distractors); below that it shows as "coming soon".
+
+> **Content status:** four modules are fully authored (15 concepts each, 60 total)
+> and playable — **Probability & Statistics**, **Economics & Systems Thinking**,
+> **Psychology & Cognitive Biases**, and **Philosophy**. The remaining four modules
+> are pending content passes and show as "coming soon" until they reach four
+> concepts. Progress is tracked in `Questions.md`.
+
+### Progress tables
+
+Saving round scores and per-concept progress uses two tables, `concept_attempts`
+and `concept_progress`, defined in `supabase/migrations/0001_init.sql`. If your
+database predates this feature, re-run that file in the Supabase SQL editor —
+it's idempotent, so it just adds the two missing tables and their
+row-level-security policies. Until they exist, the activity still plays, but
+progress writes fail silently.

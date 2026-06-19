@@ -7,6 +7,76 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.18.0] - 2026-06-19
+
+### Added
+- **Three more Mental Models & Paradoxes modules authored and playable** — 45 new
+  bilingual (en/no) concepts, 15 per module, each with the three identification
+  prompts (description / scenario / implication) and a generously written
+  seven-part Explain view, plus related-concept cross-links (including links across
+  modules):
+  - **Economics & Systems Thinking:** Opportunity Cost, Comparative Advantage,
+    Incentives, Goodhart's Law, Market Failure, Externalities, Supply and Demand,
+    Invisible Hand, Moral Hazard, Principal-Agent Problem, Public Goods, Creative
+    Destruction, Network Effects, Diminishing Returns, Feedback Loops.
+  - **Psychology & Cognitive Biases:** Dunning-Kruger Effect, Confirmation Bias,
+    Availability Heuristic, Anchoring Bias, Survivorship Bias, Loss Aversion, Sunk
+    Cost Fallacy, Framing Effect, Hindsight Bias, Fundamental Attribution Error,
+    Halo Effect, Planning Fallacy, Endowment Effect, Negativity Bias, Just-World
+    Hypothesis.
+  - **Philosophy:** Trolley Problem, Chinese Room, Experience Machine, Ship of
+    Theseus, Veil of Ignorance, Brain in a Vat, Categorical Imperative, Is-Ought
+    Problem, Philosophical Zombie, Allegory of the Cave, Problem of Evil, Free Will
+    vs. Determinism, Utilitarianism, Mary's Room, Absurdism.
+
+  The dataset now holds 60 concepts across 4 of the 8 modules; the remaining four
+  modules (Logic & Reasoning, Decision Making & Game Theory, Mathematics, Science &
+  Systems) are still pending. All four authored modules now exceed the four-concept
+  threshold and are playable.
+
+## [3.17.0] - 2026-06-19
+
+### Added
+- **Probability & Statistics content for Mental Models & Paradoxes** — the first
+  module is now fully authored and playable, with 15 bilingual (en/no) concepts:
+  Monty Hall Problem, Birthday Problem, Gambler's Fallacy, Law of Large Numbers,
+  Bayesian Reasoning, Conditional Probability, Base Rate Fallacy, Regression to the
+  Mean, Simpson's Paradox, Central Limit Theorem, Expected Value, Correlation vs.
+  Causation, Prosecutor's Fallacy, Sampling Bias, and Benford's Law. Each carries
+  the three identification prompts (description / scenario / implication) and a
+  generously written seven-part Explain view (summary, why it's interesting, why
+  intuition fails, a worked example, and real-world relevance), plus cross-links to
+  related concepts. Authored in `src/content/concepts/concepts.ts`; the
+  Probability & Statistics module now exceeds the four-concept threshold and is no
+  longer "coming soon".
+
+## [3.16.0] - 2026-06-19
+
+### Added
+- **Mental Models & Paradoxes activity (architecture / phase 1).** A new standalone
+  learning activity alongside the Atlas and Timeline, focused on *understanding*
+  powerful ideas — paradoxes, reasoning tools, and mental models — rather than
+  testing recall. Unlike a quiz, every question carries an **Explain** action that
+  opens a seven-part educational view (summary, why it's interesting, why intuition
+  fails, a simple example, real-world relevance, related concepts, and an optional
+  interactive-simulation note). Gameplay is concept identification at three angles:
+  description (easy), scenario (medium), and implication (hard).
+  - Eight modules: Probability & Statistics, Logic & Reasoning, Decision Making &
+    Game Theory, Economics & Systems Thinking, Psychology & Cognitive Biases,
+    Philosophy, Mathematics, and Science & Systems.
+  - New types (`Concept`, `ConceptModule`, `ConceptExplanation`, `ConceptSimulation`)
+    in `src/types/index.ts`; bilingual dataset in `src/content/concepts/concepts.ts`;
+    pure logic in `src/lib/concepts.ts`; persistence in `src/lib/conceptsProgress.ts`;
+    page `src/pages/Concepts.tsx`; Explain view in
+    `src/components/concepts/ExplanationView.tsx`.
+  - New route `/concepts` (lazy-loaded, full-screen), a Home card, and `concepts.*`
+    i18n strings (en/no).
+  - New `concept_attempts` and `concept_progress` tables (with indexes and
+    own-rows RLS) in `supabase/migrations/0001_init.sql`.
+  - **Content is not filled in yet.** The dataset ships a single worked reference
+    concept (Monty Hall) so the screens render and the shape is documented; modules
+    with fewer than four concepts show as "coming soon" until the content pass.
+
 ## [3.15.1] - 2026-06-18
 
 ### Fixed

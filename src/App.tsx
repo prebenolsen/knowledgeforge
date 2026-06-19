@@ -14,9 +14,11 @@ import { Progress } from '@/pages/Progress';
 const Atlas = lazy(() => import('@/pages/Atlas'));
 // The Timeline bundles its own event dataset — load it on demand too.
 const TimelinePage = lazy(() => import('@/pages/Timeline'));
+// Mental Models & Paradoxes bundles its own concept dataset — load on demand.
+const ConceptsPage = lazy(() => import('@/pages/Concepts'));
 
 // Routes where the bottom nav should be hidden (focused/full-screen flows).
-const FULLSCREEN = ['/quiz', '/review', '/placement', '/atlas', '/timeline'];
+const FULLSCREEN = ['/quiz', '/review', '/placement', '/atlas', '/timeline', '/concepts'];
 
 function Shell() {
   const { session, loading } = useAuth();
@@ -48,6 +50,7 @@ function Shell() {
             <Route path="/progress" element={<Progress />} />
             <Route path="/atlas" element={<Atlas />} />
             <Route path="/timeline" element={<TimelinePage />} />
+            <Route path="/concepts" element={<ConceptsPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>

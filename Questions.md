@@ -488,3 +488,23 @@ Geography,Political geography,Flags and symbols
 Geography,Human geography,Culture and languages
 Geography,Human geography,Resources
 Geography,Human geography,Economic geography
+
+
+## Mental Models & Paradoxes (standalone activity)
+
+Content for this activity is hand-authored in `src/content/concepts/concepts.ts`
+(NOT in `src/content/seed/...` — it's a standalone activity like the Timeline and
+Atlas, not a quiz category). Each concept needs the per-difficulty prompts
+(description / scenario / implication) plus the seven-part `explanation`. Aim for
+~15 concepts per module. Mark a module Done when its concepts are authored.
+
+| Category | Module | Example concepts | Status |
+|----------|--------|------------------|--------|
+| Mental Models & Paradoxes | Probability & Statistics | Monty Hall, Birthday Problem, Gambler's Fallacy, Law of Large Numbers, Bayesian Reasoning, Conditional Probability, Base Rate Fallacy, Regression to the Mean, Simpson's Paradox, Central Limit Theorem, Expected Value, Correlation vs Causation, Prosecutor's Fallacy, Sampling Bias, Benford's Law | Done |
+| Mental Models & Paradoxes | Logic & Reasoning | Ship of Theseus, Sorites Paradox, Russell's Paradox, Barber Paradox | |
+| Mental Models & Paradoxes | Decision Making & Game Theory | Prisoner's Dilemma, Tragedy of the Commons, Newcomb's Problem, Nash Equilibrium | |
+| Mental Models & Paradoxes | Economics & Systems Thinking | Opportunity Cost, Comparative Advantage, Incentives, Goodhart's Law, Market Failure, Externalities, Supply and Demand, Invisible Hand, Moral Hazard, Principal-Agent Problem, Public Goods, Creative Destruction, Network Effects, Diminishing Returns, Feedback Loops | Done |
+| Mental Models & Paradoxes | Psychology & Cognitive Biases | Dunning-Kruger, Confirmation Bias, Availability Heuristic, Anchoring, Survivorship Bias, Loss Aversion, Sunk Cost Fallacy, Framing Effect, Hindsight Bias, Fundamental Attribution Error, Halo Effect, Planning Fallacy, Endowment Effect, Negativity Bias, Just-World Hypothesis | Done |
+| Mental Models & Paradoxes | Philosophy | Trolley Problem, Chinese Room, Experience Machine, Ship of Theseus, Veil of Ignorance, Brain in a Vat, Categorical Imperative, Is-Ought Problem, Philosophical Zombie, Allegory of the Cave, Problem of Evil, Free Will vs Determinism, Utilitarianism, Mary's Room, Absurdism | Done |
+| Mental Models & Paradoxes | Mathematics | Hilbert's Hotel, Banach-Tarski, Zeno's Paradoxes, Infinity concepts | |
+| Mental Models & Paradoxes | Science & Systems | Fermi Paradox, Butterfly Effect, Entropy, Emergence | |

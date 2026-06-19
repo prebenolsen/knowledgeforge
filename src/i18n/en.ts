@@ -176,6 +176,41 @@ export default {
     playAgain: 'Play again',
     backToStart: 'Back to start'
   },
+  concepts: {
+    title: 'Mental Models & Paradoxes',
+    tagline: 'Discover powerful ideas — paradoxes, reasoning tools, mental models.',
+    chooseModule: 'Choose a module',
+    conceptCount: '{{count}} concepts',
+    comingSoon: 'Coming soon',
+    chooseDifficulty: 'Choose a mode',
+    diffHint: {
+      easy: 'Match a concept to its description.',
+      medium: 'Spot the concept behind a scenario.',
+      hard: 'Identify the concept from its implication.'
+    },
+    chooseLength: 'How many concepts?',
+    questions: 'concepts',
+    all: 'All',
+    progress: 'Concept {{current}} of {{total}}',
+    explainAction: 'Explain this concept',
+    next: 'Next',
+    finish: 'Finish',
+    summaryTitle: 'Round complete',
+    summaryCorrect: 'Correct',
+    accuracy: 'Accuracy',
+    playAgain: 'Play again',
+    backToStart: 'Back to start',
+    explain: {
+      title: 'Explanation',
+      whyInteresting: "Why it's interesting",
+      whyIntuitionFails: 'Why intuition fails',
+      example: 'Simple example',
+      realWorld: 'Real-world relevance',
+      related: 'Related concepts',
+      simulationAvailable: 'An interactive simulation for this concept is coming soon.',
+      close: 'Got it'
+    }
+  },
   common: {
     loading: 'Loading…',
     error: 'Something went wrong. Try again.',

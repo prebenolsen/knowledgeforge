@@ -176,6 +176,38 @@ create table if not exists timeline_progress (
 create index if not exists idx_timeline_attempts_user on timeline_attempts(user_id);
 create index if not exists idx_timeline_progress_user on timeline_progress(user_id);
 
+-- ---- Mental Models & Paradoxes activity --------------------
+-- A standalone "discover ideas" activity like the Atlas and Timeline. The player
+-- identifies concepts (paradoxes, reasoning tools, mental models) and opens an
+-- Explain view to understand them. Keyed by user + module (a thematic group,
+-- e.g. 'probability-statistics' or 'philosophy').
+
+create table if not exists concept_attempts (
+  id           uuid primary key default gen_random_uuid(),
+  user_id      uuid not null references auth.users(id) on delete cascade,
+  module       text not null,           -- the module played
+  concept_id   text not null,           -- the concept answered
+  difficulty   text not null check (difficulty in ('easy','medium','hard')),
+  is_correct   boolean not null,        -- correct concept identified
+  explained    boolean not null default false, -- opened the Explain view
+  answered_at  timestamptz not null default now()
+);
+
+create table if not exists concept_progress (
+  id                 uuid primary key default gen_random_uuid(),
+  user_id            uuid not null references auth.users(id) on delete cascade,
+  module             text not null,
+  best_score         int  not null default 0,
+  -- per-concept tallies as jsonb:
+  -- { "<concept_id>": { "seen": n, "correct": n, "explained": n } }
+  per_concept_stats  jsonb not null default '{}',
+  updated_at         timestamptz not null default now(),
+  unique (user_id, module)
+);
+
+create index if not exists idx_concept_attempts_user on concept_attempts(user_id);
+create index if not exists idx_concept_progress_user on concept_progress(user_id);
+
 -- ============================================================
 -- PROFILE AUTO-CREATION
 -- When a new auth user signs up, create their profile row.
@@ -284,6 +316,22 @@ create policy "own timeline attempts" on timeline_attempts
 
 drop policy if exists "own timeline progress" on timeline_progress;
 create policy "own timeline progress" on timeline_progress
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+-- Mental Models & Paradoxes activity: a user may only touch their OWN rows.
+alter table concept_attempts enable row level security;
+alter table concept_progress enable row level security;
+
+drop policy if exists "own concept attempts" on concept_attempts;
+create policy "own concept attempts" on concept_attempts
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "own concept progress" on concept_progress;
+create policy "own concept progress" on concept_progress
   for all to authenticated
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);
