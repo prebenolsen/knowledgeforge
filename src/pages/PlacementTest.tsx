@@ -74,7 +74,7 @@ export function PlacementTest() {
   }
 
   async function finish() {
-    await supabase.from('profiles').update({ placement_complete: true }).eq('id', session!.user.id);
+    await supabase.from('knowledgeforge_profiles').update({ placement_complete: true }).eq('id', session!.user.id);
     await refreshProfile();
     setPhase('result');
   }

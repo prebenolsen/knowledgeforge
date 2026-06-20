@@ -32,7 +32,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   async function loadProfile(userId: string): Promise<void> {
-    const { data } = await supabase.from('profiles').select('*').eq('id', userId).maybeSingle();
+    const { data } = await supabase.from('knowledgeforge_profiles').select('*').eq('id', userId).maybeSingle();
     if (data) setProfile(data as Profile);
   }
 

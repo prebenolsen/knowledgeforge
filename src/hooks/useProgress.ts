@@ -57,7 +57,7 @@ export function useProgress(userId: string | undefined) {
 
       const [categories, progressRes] = await Promise.all([
         fetchCategories(),
-        supabase.from('user_progress').select('*').eq('user_id', userId)
+        supabase.from('knowledgeforge_user_progress').select('*').eq('user_id', userId)
       ]);
 
       const progress = (progressRes.data ?? []) as ProgressRow[];

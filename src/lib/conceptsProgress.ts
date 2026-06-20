@@ -35,7 +35,7 @@ export async function recordConceptAttempt(params: {
 }): Promise<void> {
   const { userId, module, conceptId, difficulty, isCorrect, explained } = params;
 
-  await supabase.from('concept_attempts').insert({
+  await supabase.from('knowledgeforge_concept_attempts').insert({
     user_id: userId,
     module,
     concept_id: conceptId,
@@ -45,7 +45,7 @@ export async function recordConceptAttempt(params: {
   });
 
   const { data: existing } = await supabase
-    .from('concept_progress')
+    .from('knowledgeforge_concept_progress')
     .select('per_concept_stats')
     .eq('user_id', userId)
     .eq('module', module)
@@ -63,7 +63,7 @@ export async function recordConceptAttempt(params: {
 
   // Only write per_concept_stats — best_score is omitted so a concurrent
   // session-score write can't be clobbered (preserved on upsert-update).
-  await supabase.from('concept_progress').upsert(
+  await supabase.from('knowledgeforge_concept_progress').upsert(
     {
       user_id: userId,
       module,
@@ -83,13 +83,13 @@ export async function recordConceptSessionScore(params: {
   const { userId, module, score } = params;
 
   const { data: existing } = await supabase
-    .from('concept_progress')
+    .from('knowledgeforge_concept_progress')
     .select('best_score')
     .eq('user_id', userId)
     .eq('module', module)
     .maybeSingle();
 
-  await supabase.from('concept_progress').upsert(
+  await supabase.from('knowledgeforge_concept_progress').upsert(
     {
       user_id: userId,
       module,
@@ -102,7 +102,7 @@ export async function recordConceptSessionScore(params: {
 
 export async function fetchConceptProgress(userId: string): Promise<ConceptProgress[]> {
   const { data, error } = await supabase
-    .from('concept_progress')
+    .from('knowledgeforge_concept_progress')
     .select('module, best_score, per_concept_stats')
     .eq('user_id', userId);
   if (error) throw error;

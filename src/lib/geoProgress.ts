@@ -31,7 +31,7 @@ export async function recordGeoAttempt(params: {
 }): Promise<void> {
   const { userId, continent, iso3, mode, isCorrect, hintsUsed } = params;
 
-  await supabase.from('geo_attempts').insert({
+  await supabase.from('knowledgeforge_geo_attempts').insert({
     user_id: userId,
     continent,
     iso3,
@@ -41,7 +41,7 @@ export async function recordGeoAttempt(params: {
   });
 
   const { data: existing } = await supabase
-    .from('geo_progress')
+    .from('knowledgeforge_geo_progress')
     .select('best_score, per_country_stats')
     .eq('user_id', userId)
     .eq('continent', continent)
@@ -56,7 +56,7 @@ export async function recordGeoAttempt(params: {
   // Only write per_country_stats — best_score is omitted so a concurrent
   // session-score write can't be clobbered (it's preserved on upsert-update,
   // and falls back to its column default on a first insert).
-  await supabase.from('geo_progress').upsert(
+  await supabase.from('knowledgeforge_geo_progress').upsert(
     {
       user_id: userId,
       continent,
@@ -76,7 +76,7 @@ export async function recordGeoSessionScore(params: {
   const { userId, continent, score } = params;
 
   const { data: existing } = await supabase
-    .from('geo_progress')
+    .from('knowledgeforge_geo_progress')
     .select('best_score')
     .eq('user_id', userId)
     .eq('continent', continent)
@@ -84,7 +84,7 @@ export async function recordGeoSessionScore(params: {
 
   // Only write best_score — per_country_stats is omitted so a concurrent
   // attempt write can't be clobbered.
-  await supabase.from('geo_progress').upsert(
+  await supabase.from('knowledgeforge_geo_progress').upsert(
     {
       user_id: userId,
       continent,
@@ -97,7 +97,7 @@ export async function recordGeoSessionScore(params: {
 
 export async function fetchGeoProgress(userId: string): Promise<GeoProgress[]> {
   const { data, error } = await supabase
-    .from('geo_progress')
+    .from('knowledgeforge_geo_progress')
     .select('continent, best_score, per_country_stats')
     .eq('user_id', userId);
   if (error) throw error;

@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.19.0] - 2026-06-20
+
+### Changed
+- **All Supabase tables namespaced with a `knowledgeforge_` prefix** to coexist
+  with other projects in a shared database. Every table in
+  `supabase/migrations/0001_init.sql` (content, user, geo, timeline, and concept
+  tables) was renamed accordingly, along with their foreign-key references, RLS
+  policies, and the `handle_new_user` trigger (now inserts into
+  `public.knowledgeforge_profiles`). All `supabase.from(...)` calls across the app
+  and the `scripts/import.ts` / `scripts/sync-taxonomy.ts` importers were updated
+  to the new names. Existing databases must re-run the init migration (and
+  re-import content) under the new names.
+- The init migration now documents that Supabase enables Row Level Security on
+  every table by default; the explicit `enable row level security` statements are
+  idempotent, and the access policies remain required for the app to read content
+  and for users to read/write their own rows.
+
 ## [3.18.0] - 2026-06-19
 
 ### Added

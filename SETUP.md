@@ -154,14 +154,14 @@ See `CONTENT_FORMAT.md` for the exact JSON shape.
 ## Country Atlas (interactive map game)
 
 The Geography **Country Atlas** (`/atlas`) is a separate activity from the quiz
-engine — it does not use the `questions` table or the import pipeline. The map
+engine — it does not use the `knowledgeforge_questions` table or the import pipeline. The map
 itself plays entirely from bundled, generated data (no setup needed), but
 progress is saved to Supabase.
 
 ### Progress tables
 
-Saving scores and per-country progress uses two tables, `geo_attempts` and
-`geo_progress`, defined in `supabase/migrations/0001_init.sql` alongside the rest
+Saving scores and per-country progress uses two tables, `knowledgeforge_geo_attempts`
+and `knowledgeforge_geo_progress`, defined in `supabase/migrations/0001_init.sql` alongside the rest
 of the schema. If your database predates this feature, re-run that file in the
 Supabase SQL editor — it's idempotent, so it just adds the two missing tables and
 their row-level-security policies. Until they exist, the Atlas still plays, but
@@ -197,7 +197,7 @@ The generator (`scripts/build-geo.ts`) reads three vendored source files in
 ## History Timeline (date-learning game)
 
 The **History Timeline** (`/timeline`, linked from the front page) is, like the
-Atlas, a standalone activity that does **not** use the `questions` table or the
+Atlas, a standalone activity that does **not** use the `knowledgeforge_questions` table or the
 import pipeline. It plays entirely from a bundled, hand-authored event dataset
 (no setup needed); only progress is saved to Supabase.
 
@@ -213,8 +213,8 @@ in `src/lib/timeline.ts`.
 
 ### Progress tables
 
-Saving round scores and per-event progress uses two tables, `timeline_attempts`
-and `timeline_progress`, defined in `supabase/migrations/0001_init.sql`. If your
+Saving round scores and per-event progress uses two tables, `knowledgeforge_timeline_attempts`
+and `knowledgeforge_timeline_progress`, defined in `supabase/migrations/0001_init.sql`. If your
 database predates this feature, re-run that file in the Supabase SQL editor —
 it's idempotent, so it just adds the two missing tables and their
 row-level-security policies. Until they exist, the Timeline still plays, but
@@ -224,7 +224,7 @@ progress writes fail silently and the dashboard panel stays hidden.
 
 The **Mental Models & Paradoxes** activity (`/concepts`, linked from the front
 page) is, like the Atlas and Timeline, a standalone activity that does **not** use
-the `questions` table or the import pipeline. It plays from a bundled,
+the `knowledgeforge_questions` table or the import pipeline. It plays from a bundled,
 hand-authored concept dataset (no setup needed); only progress is saved to
 Supabase. Unlike a quiz, its purpose is *understanding* — every question carries
 an **Explain** action that opens a full educational view.
@@ -250,8 +250,8 @@ plus three distractors); below that it shows as "coming soon".
 
 ### Progress tables
 
-Saving round scores and per-concept progress uses two tables, `concept_attempts`
-and `concept_progress`, defined in `supabase/migrations/0001_init.sql`. If your
+Saving round scores and per-concept progress uses two tables, `knowledgeforge_concept_attempts`
+and `knowledgeforge_concept_progress`, defined in `supabase/migrations/0001_init.sql`. If your
 database predates this feature, re-run that file in the Supabase SQL editor —
 it's idempotent, so it just adds the two missing tables and their
 row-level-security policies. Until they exist, the activity still plays, but

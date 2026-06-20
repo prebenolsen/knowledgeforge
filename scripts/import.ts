@@ -32,7 +32,7 @@ const db = createClient(url, serviceKey, { auth: { persistSession: false } });
 async function importCategory(cat: SeedCategory, order: number): Promise<void> {
   // Upsert category
   const { data: category, error: catErr } = await db
-    .from('categories')
+    .from('knowledgeforge_categories')
     .upsert({ slug: cat.slug, name: cat.name, icon: cat.icon, sort_order: order }, { onConflict: 'slug' })
     .select()
     .single();
@@ -40,7 +40,7 @@ async function importCategory(cat: SeedCategory, order: number): Promise<void> {
 
   for (const sub of cat.subcategories) {
     const { data: subcat, error: subErr } = await db
-      .from('subcategories')
+      .from('knowledgeforge_subcategories')
       .upsert(
         { category_id: category.id, slug: sub.slug, name: sub.name },
         { onConflict: 'category_id,slug' }
@@ -52,7 +52,7 @@ async function importCategory(cat: SeedCategory, order: number): Promise<void> {
     let modOrder = 0;
     for (const mod of sub.modules) {
       const { data: module, error: modErr } = await db
-        .from('modules')
+        .from('knowledgeforge_modules')
         .upsert(
           { subcategory_id: subcat.id, slug: mod.slug, name: mod.name, sort_order: modOrder++ },
           { onConflict: 'subcategory_id,slug' }
@@ -62,7 +62,7 @@ async function importCategory(cat: SeedCategory, order: number): Promise<void> {
       if (modErr) throw modErr;
 
       for (const q of mod.questions) {
-        const { error: qErr } = await db.from('questions').insert({
+        const { error: qErr } = await db.from('knowledgeforge_questions').insert({
           subcategory_id: subcat.id,
           module_id: module.id,
           question: q.question,

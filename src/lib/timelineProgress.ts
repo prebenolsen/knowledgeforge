@@ -33,7 +33,7 @@ export async function recordTimelineAttempt(params: {
 }): Promise<void> {
   const { userId, scope, eventId, difficulty, score, isCorrect, hintsUsed } = params;
 
-  await supabase.from('timeline_attempts').insert({
+  await supabase.from('knowledgeforge_timeline_attempts').insert({
     user_id: userId,
     scope,
     event_id: eventId,
@@ -44,7 +44,7 @@ export async function recordTimelineAttempt(params: {
   });
 
   const { data: existing } = await supabase
-    .from('timeline_progress')
+    .from('knowledgeforge_timeline_progress')
     .select('per_event_stats')
     .eq('user_id', userId)
     .eq('scope', scope)
@@ -58,7 +58,7 @@ export async function recordTimelineAttempt(params: {
 
   // Only write per_event_stats — best_score is omitted so a concurrent
   // session-score write can't be clobbered (preserved on upsert-update).
-  await supabase.from('timeline_progress').upsert(
+  await supabase.from('knowledgeforge_timeline_progress').upsert(
     {
       user_id: userId,
       scope,
@@ -78,13 +78,13 @@ export async function recordTimelineSessionScore(params: {
   const { userId, scope, score } = params;
 
   const { data: existing } = await supabase
-    .from('timeline_progress')
+    .from('knowledgeforge_timeline_progress')
     .select('best_score')
     .eq('user_id', userId)
     .eq('scope', scope)
     .maybeSingle();
 
-  await supabase.from('timeline_progress').upsert(
+  await supabase.from('knowledgeforge_timeline_progress').upsert(
     {
       user_id: userId,
       scope,
@@ -97,7 +97,7 @@ export async function recordTimelineSessionScore(params: {
 
 export async function fetchTimelineProgress(userId: string): Promise<TimelineProgress[]> {
   const { data, error } = await supabase
-    .from('timeline_progress')
+    .from('knowledgeforge_timeline_progress')
     .select('scope, best_score, per_event_stats')
     .eq('user_id', userId);
   if (error) throw error;

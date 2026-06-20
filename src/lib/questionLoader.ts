@@ -24,7 +24,7 @@ import { DIFFICULTIES } from '@/types';
 
 export async function fetchCategories(): Promise<Category[]> {
   const { data, error } = await supabase
-    .from('categories')
+    .from('knowledgeforge_categories')
     .select('*')
     .order('sort_order', { ascending: true });
   if (error) throw error;
@@ -33,7 +33,7 @@ export async function fetchCategories(): Promise<Category[]> {
 
 export async function fetchSubcategories(categoryId: string): Promise<Subcategory[]> {
   const { data, error } = await supabase
-    .from('subcategories')
+    .from('knowledgeforge_subcategories')
     .select('*')
     .eq('category_id', categoryId);
   if (error) throw error;
@@ -46,7 +46,7 @@ export const MIN_VISIBLE_QUESTIONS = 20;
 
 export async function countQuestions(subcategoryId: string): Promise<number> {
   const { count, error } = await supabase
-    .from('questions')
+    .from('knowledgeforge_questions')
     .select('id', { count: 'exact', head: true })
     .eq('subcategory_id', subcategoryId)
     .eq('active', true);
@@ -79,7 +79,7 @@ export async function fetchVisibleCategories(): Promise<Category[]> {
   const categories = await fetchCategories();
 
   const { data, error } = await supabase
-    .from('subcategories')
+    .from('knowledgeforge_subcategories')
     .select('id, category_id');
   if (error) throw error;
   const subs = (data ?? []) as Pick<Subcategory, 'id' | 'category_id'>[];
@@ -105,7 +105,7 @@ interface QuestionQuery {
 }
 
 export async function fetchQuestions(q: QuestionQuery): Promise<Question[]> {
-  let query = supabase.from('questions').select('*').eq('active', true);
+  let query = supabase.from('knowledgeforge_questions').select('*').eq('active', true);
   if (q.subcategoryId) query = query.eq('subcategory_id', q.subcategoryId);
   if (q.difficulties && q.difficulties.length)
     query = query.in('difficulty', q.difficulties);
@@ -127,7 +127,7 @@ export async function fetchPlacementQuestions(): Promise<Question[]> {
   const batches = await Promise.all(
     plan.map(async ([difficulty, n]) => {
       const { data, error } = await supabase
-        .from('questions')
+        .from('knowledgeforge_questions')
         .select('*')
         .eq('active', true)
         .eq('difficulty', difficulty)
@@ -144,7 +144,7 @@ export async function fetchPlacementQuestions(): Promise<Question[]> {
 export async function fetchDueReviews(userId: string, limit = 20): Promise<Question[]> {
   const nowIso = new Date().toISOString();
   const { data: due, error } = await supabase
-    .from('review_schedule')
+    .from('knowledgeforge_review_schedule')
     .select('question_id')
     .eq('user_id', userId)
     .lte('next_review', nowIso)
@@ -154,7 +154,7 @@ export async function fetchDueReviews(userId: string, limit = 20): Promise<Quest
   const ids = (due ?? []).map((r) => r.question_id);
   if (!ids.length) return [];
   const { data: questions, error: qErr } = await supabase
-    .from('questions')
+    .from('knowledgeforge_questions')
     .select('*')
     .in('id', ids);
   if (qErr) throw qErr;
@@ -164,7 +164,7 @@ export async function fetchDueReviews(userId: string, limit = 20): Promise<Quest
 export async function countDueReviews(userId: string): Promise<number> {
   const nowIso = new Date().toISOString();
   const { count, error } = await supabase
-    .from('review_schedule')
+    .from('knowledgeforge_review_schedule')
     .select('id', { count: 'exact', head: true })
     .eq('user_id', userId)
     .lte('next_review', nowIso);
@@ -191,7 +191,7 @@ export async function recordAnswer(params: {
   const difficulty = question.difficulty;
 
   // 1. Log the attempt.
-  await supabase.from('question_attempts').insert({
+  await supabase.from('knowledgeforge_question_attempts').insert({
     user_id: userId,
     question_id: question.id,
     is_correct: isCorrect,
@@ -203,7 +203,7 @@ export async function recordAnswer(params: {
   // 2. SM-2 schedule update.
   const quality = gradeAnswer({ isCorrect, difficulty, timeMs });
   const { data: existing } = await supabase
-    .from('review_schedule')
+    .from('knowledgeforge_review_schedule')
     .select('*')
     .eq('user_id', userId)
     .eq('question_id', question.id)
@@ -219,7 +219,7 @@ export async function recordAnswer(params: {
 
   const next = sm2(prevState, quality);
 
-  await supabase.from('review_schedule').upsert(
+  await supabase.from('knowledgeforge_review_schedule').upsert(
     {
       user_id: userId,
       question_id: question.id,
@@ -250,7 +250,7 @@ async function updateProgress(params: {
   const { userId, subcategoryId, difficulty, isCorrect } = params;
 
   const { data: existing } = await supabase
-    .from('user_progress')
+    .from('knowledgeforge_user_progress')
     .select('*')
     .eq('user_id', userId)
     .eq('subcategory_id', subcategoryId)
@@ -267,7 +267,7 @@ async function updateProgress(params: {
   const correctCount = (existing?.correct_count ?? 0) + (isCorrect ? 1 : 0);
   const mastery = masteryScore(stats);
 
-  await supabase.from('user_progress').upsert(
+  await supabase.from('knowledgeforge_user_progress').upsert(
     {
       user_id: userId,
       subcategory_id: subcategoryId,
