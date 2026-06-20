@@ -7,6 +7,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.20.0] - 2026-06-20
+
+### Added
+- **Language Learning module** — a new standalone, offline-capable activity
+  (`/language`, linked from the front page) for context-first language learning,
+  initial language **Spanish**. Architecture-first: the framework is complete and
+  ships with a tiny sample of content to prove it end-to-end.
+  - **Type system** (`src/types/language.ts`, re-exported from `src/types`): the
+    full content hierarchy (Language → Categories → Modules → Lessons), a
+    multi-tagged vocabulary model with personalization `relevance`, reusable
+    sentence components/sentences, a discriminated `ScenarioStep` union
+    (line/choice/build), a flexible `Exercise` union (flashcard, matching,
+    multiple-choice, typing, sentence-build, scenario-choice), per-language
+    `LanguageProfile`, and per-word `VocabMastery`.
+  - **Bundled Spanish content** (`src/content/languages/es/*`): ~20 tagged words,
+    reusable sentence components, and one complete **Restaurant** scenario, plus a
+    registry (`src/content/languages/index.ts`) so new languages drop in as a
+    folder. Survival/Vocabulary/Grammar/Conversation categories are present;
+    unbuilt modules show as "coming soon".
+  - **Engines** (`src/lib/lang/*`, pure logic): registry/content lookups,
+    personalization weighting (`personalize.ts` — boosts relevance, never hides),
+    spaced-repetition + mistake-weighted word selection (`vocabulary.ts`, reusing
+    the existing SM-2 engine), exercise generation (`exercises.ts`), forgiving
+    fuzzy typing match with accent/typo tolerance (`scoring.ts`), scenario helpers
+    (`scenario.ts`), and Supabase persistence that degrades gracefully offline
+    (`progress.ts`).
+  - **UI**: a lazy-loaded `Language` page with a first-run personalization setup,
+    category/module browser, lesson runner, and an interactive scenario runner;
+    exercise components in `src/components/lang/*`. Bilingual (en/no) strings
+    added under the `language` namespace.
+
+### Changed
+- `supabase/migrations/0001_init.sql` adds four per-user, per-language tables for
+  the Language Learning activity (`knowledgeforge_language_profiles`,
+  `knowledgeforge_language_vocab_mastery`, `knowledgeforge_language_progress`,
+  `knowledgeforge_language_attempts`) with row-level-security policies. Existing
+  databases can re-run the migration (idempotent) to add them; until then the
+  activity still plays from bundled content and progress writes fail silently.
+
 ## [3.19.0] - 2026-06-20
 
 ### Changed

@@ -211,6 +211,69 @@ export default {
       close: 'Got it'
     }
   },
+  language: {
+    title: 'Language Learning',
+    tagline: 'Learn by doing — vocabulary, sentences, and real-world scenarios.',
+    chooseCategory: 'Choose a category',
+    moduleCount: '{{count}} modules',
+    editProfile: 'Edit my profile',
+    notStarted: 'Not started',
+    comingSoon: 'Coming soon',
+    scenarios: 'Scenarios',
+    lessons: 'Lessons',
+    wordCount: '{{count}} words',
+    exProgress: 'Exercise {{current}} of {{total}}',
+    lessonEmpty: 'No exercises here yet — content is on the way.',
+    setup: {
+      title: 'Personalize your learning',
+      subtitle: 'We use this to prioritize relevant words. Nothing is ever hidden — you can always practise everything.',
+      gender: 'I am…',
+      gender_male: 'Male',
+      gender_female: 'Female',
+      gender_unspecified: 'Prefer not to say',
+      genderNote: 'Only used to weight relevance (e.g. clothing). Everything stays available.',
+      interests: 'My interests',
+      goals: 'Why I travel',
+      save: 'Start learning'
+    },
+    interest: {
+      food: 'Food & drink',
+      business: 'Business',
+      culture: 'Culture',
+      sports: 'Sports',
+      shopping: 'Shopping',
+      nightlife: 'Nightlife'
+    },
+    goal: {
+      backpacking: 'Backpacking',
+      business: 'Business',
+      sightseeing: 'Sightseeing',
+      family: 'Family',
+      study: 'Study'
+    },
+    scenario: {
+      step: 'Step {{current}} of {{total}}',
+      newWords: 'New words',
+      continue: 'Continue'
+    },
+    ex: {
+      flashcardHint: 'Do you know this word?',
+      tapReveal: 'Tap to reveal',
+      missed: 'Missed it',
+      gotIt: 'Got it',
+      choosePrompt: 'What does this mean?',
+      next: 'Next',
+      typePrompt: 'Type this in the target language',
+      typePlaceholder: 'Your answer',
+      correct: 'Correct!',
+      incorrect: 'Not quite',
+      answerWas: 'Answer: {{answer}}',
+      check: 'Check',
+      matchPrompt: 'Match each word to its translation',
+      buildPrompt: 'Build the sentence',
+      buildHint: 'Tap words to add them here'
+    }
+  },
   common: {
     loading: 'Loading…',
     error: 'Something went wrong. Try again.',

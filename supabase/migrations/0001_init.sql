@@ -216,6 +216,75 @@ create table if not exists knowledgeforge_concept_progress (
 create index if not exists idx_concept_attempts_user on knowledgeforge_concept_attempts(user_id);
 create index if not exists idx_concept_progress_user on knowledgeforge_concept_progress(user_id);
 
+-- ---- Language Learning activity ----------------------------
+-- A standalone, offline-capable activity. Language *content* (words, sentences,
+-- scenarios) is bundled in the app; only per-user progress is stored here.
+-- Everything is keyed by user + language so a learner can study several
+-- languages independently.
+
+-- Per-language personalization profile (drives relevance weighting; never hides
+-- content). interests / travel_goals are free-form string arrays kept as jsonb.
+create table if not exists knowledgeforge_language_profiles (
+  user_id          uuid not null references auth.users(id) on delete cascade,
+  language         text not null,
+  native_language  text not null default 'en' check (native_language in ('en','no')),
+  gender           text not null default 'unspecified' check (gender in ('male','female','unspecified')),
+  interests        jsonb not null default '[]',
+  travel_goals     jsonb not null default '[]',
+  level            text not null default 'A1' check (level in ('A1','A2','B1','B2','C1','C2')),
+  created_at       timestamptz not null default now(),
+  updated_at       timestamptz not null default now(),
+  primary key (user_id, language)
+);
+
+-- Per-word mastery: seen/correct/mistakes + SM-2 scheduling. Words with mistakes
+-- resurface more often (selection weighting lives in the app).
+create table if not exists knowledgeforge_language_vocab_mastery (
+  id            uuid primary key default gen_random_uuid(),
+  user_id       uuid not null references auth.users(id) on delete cascade,
+  language      text not null,
+  vocab_id      text not null,
+  seen_count    int  not null default 0,
+  correct_count int  not null default 0,
+  mistakes      int  not null default 0,
+  confidence    real not null default 0,
+  repetition    int  not null default 0,
+  easiness      real not null default 2.5,
+  interval_days int  not null default 0,
+  next_review   timestamptz not null default now(),
+  updated_at    timestamptz not null default now(),
+  unique (user_id, language, vocab_id)
+);
+
+-- Per-module progress summary (a module groups lessons/scenarios in a category).
+create table if not exists knowledgeforge_language_progress (
+  id            uuid primary key default gen_random_uuid(),
+  user_id       uuid not null references auth.users(id) on delete cascade,
+  language      text not null,
+  module_id     text not null,
+  mastery       real not null default 0,
+  lessons_done  int  not null default 0,
+  updated_at    timestamptz not null default now(),
+  unique (user_id, language, module_id)
+);
+
+-- Append-only log of every exercise answered.
+create table if not exists knowledgeforge_language_attempts (
+  id            uuid primary key default gen_random_uuid(),
+  user_id       uuid not null references auth.users(id) on delete cascade,
+  language      text not null,
+  exercise_type text not null,
+  vocab_id      text,
+  is_correct    boolean not null,
+  time_ms       int not null default 0,
+  answered_at   timestamptz not null default now()
+);
+
+create index if not exists idx_lang_mastery_user on knowledgeforge_language_vocab_mastery(user_id, language);
+create index if not exists idx_lang_mastery_due on knowledgeforge_language_vocab_mastery(user_id, language, next_review);
+create index if not exists idx_lang_progress_user on knowledgeforge_language_progress(user_id, language);
+create index if not exists idx_lang_attempts_user on knowledgeforge_language_attempts(user_id);
+
 -- ============================================================
 -- PROFILE AUTO-CREATION
 -- When a new auth user signs up, create their profile row.
@@ -344,6 +413,36 @@ create policy "own concept attempts" on knowledgeforge_concept_attempts
 
 drop policy if exists "own concept progress" on knowledgeforge_concept_progress;
 create policy "own concept progress" on knowledgeforge_concept_progress
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+-- Language Learning activity: a user may only touch their OWN rows.
+alter table knowledgeforge_language_profiles      enable row level security;
+alter table knowledgeforge_language_vocab_mastery enable row level security;
+alter table knowledgeforge_language_progress      enable row level security;
+alter table knowledgeforge_language_attempts      enable row level security;
+
+drop policy if exists "own language profile" on knowledgeforge_language_profiles;
+create policy "own language profile" on knowledgeforge_language_profiles
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "own language mastery" on knowledgeforge_language_vocab_mastery;
+create policy "own language mastery" on knowledgeforge_language_vocab_mastery
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "own language progress" on knowledgeforge_language_progress;
+create policy "own language progress" on knowledgeforge_language_progress
+  for all to authenticated
+  using (auth.uid() = user_id)
+  with check (auth.uid() = user_id);
+
+drop policy if exists "own language attempts" on knowledgeforge_language_attempts;
+create policy "own language attempts" on knowledgeforge_language_attempts
   for all to authenticated
   using (auth.uid() = user_id)
   with check (auth.uid() = user_id);

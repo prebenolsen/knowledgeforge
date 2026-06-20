@@ -16,9 +16,11 @@ const Atlas = lazy(() => import('@/pages/Atlas'));
 const TimelinePage = lazy(() => import('@/pages/Timeline'));
 // Mental Models & Paradoxes bundles its own concept dataset — load on demand.
 const ConceptsPage = lazy(() => import('@/pages/Concepts'));
+// Language Learning bundles its own language content — load on demand too.
+const LanguagePage = lazy(() => import('@/pages/Language'));
 
 // Routes where the bottom nav should be hidden (focused/full-screen flows).
-const FULLSCREEN = ['/quiz', '/review', '/placement', '/atlas', '/timeline', '/concepts'];
+const FULLSCREEN = ['/quiz', '/review', '/placement', '/atlas', '/timeline', '/concepts', '/language'];
 
 function Shell() {
   const { session, loading } = useAuth();
@@ -51,6 +53,7 @@ function Shell() {
             <Route path="/atlas" element={<Atlas />} />
             <Route path="/timeline" element={<TimelinePage />} />
             <Route path="/concepts" element={<ConceptsPage />} />
+            <Route path="/language" element={<LanguagePage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>

@@ -508,3 +508,30 @@ Atlas, not a quiz category). Each concept needs the per-difficulty prompts
 | Mental Models & Paradoxes | Philosophy | Trolley Problem, Chinese Room, Experience Machine, Ship of Theseus, Veil of Ignorance, Brain in a Vat, Categorical Imperative, Is-Ought Problem, Philosophical Zombie, Allegory of the Cave, Problem of Evil, Free Will vs Determinism, Utilitarianism, Mary's Room, Absurdism | Done |
 | Mental Models & Paradoxes | Mathematics | Hilbert's Hotel, Banach-Tarski, Zeno's Paradoxes, Infinity concepts | |
 | Mental Models & Paradoxes | Science & Systems | Fermi Paradox, Butterfly Effect, Entropy, Emergence | |
+
+
+## Language Learning (standalone activity)
+
+Content for this activity is hand-authored under `src/content/languages/<code>/`
+(NOT in `src/content/seed/...` — it's a standalone, offline activity like the
+Timeline / Atlas / Concepts). The hierarchy is **Language → Categories → Modules →
+Lessons**, with cross-cutting tagged **vocabulary**, reusable **sentence
+components/sentences**, and interactive **scenarios**. Exercises are *generated*
+from the vocabulary/sentences, so authoring means adding words, sentences, and
+scenarios — not individual exercises. Mark a module **Done** when its lessons and
+any scenarios are authored. **Architecture-first: only a Spanish sample is built
+so far to prove the framework.**
+
+| Language | Category | Module | Status |
+|----------|----------|--------|--------|
+| Spanish | Survival Spanish | Restaurant (incl. scenario) | Done (sample) |
+| Spanish | Survival Spanish | Hotel | |
+| Spanish | Survival Spanish | Grocery Store | |
+| Spanish | Survival Spanish | Directions | |
+| Spanish | Vocabulary | Food | Done (sample) |
+| Spanish | Vocabulary | People | Done (sample) |
+| Spanish | Vocabulary | Travel | |
+| Spanish | Grammar | Gender | |
+| Spanish | Grammar | Ser vs Estar | |
+| Spanish | Grammar | Verb conjugation | |
+| Spanish | Conversation | Greetings | |

@@ -256,3 +256,54 @@ database predates this feature, re-run that file in the Supabase SQL editor —
 it's idempotent, so it just adds the two missing tables and their
 row-level-security policies. Until they exist, the activity still plays, but
 progress writes fail silently.
+
+## Language Learning (interactive language module)
+
+The **Language Learning** activity (`/language`, linked from the front page) is,
+like the Atlas / Timeline / Concepts, a standalone activity that does **not** use
+the `knowledgeforge_questions` table or the import pipeline. It is designed for
+**offline** use (e.g. on a plane): all language content is bundled in the app and
+lazy-loaded, with **no audio**. Only per-user progress is saved to Supabase.
+
+The initial language is **Spanish**, but the architecture is multi-language: the
+content hierarchy is **Language → Categories → Modules → Lessons**, with
+cross-cutting **tagged vocabulary**, reusable **sentence components**, and
+interactive **scenarios** (the main feature — real-world simulations like ordering
+in a restaurant). A first-run **profile** (native language, gender, interests,
+travel goals) personalizes content by *weighting* relevance — nothing is ever
+hidden.
+
+> **Content status:** architecture-first. The framework is complete and ships with
+> a small sample (Spanish: ~20 words, sample sentences, one Restaurant scenario,
+> and a few lessons) purely to prove it end-to-end. Most modules show as "coming
+> soon" until authored. Progress is tracked in `Questions.md`.
+
+### Content & adding a new language
+
+Each language is one folder under `src/content/languages/<code>/`:
+
+- `vocabulary.ts` — `VocabWord[]`: target term, bilingual translation, CEFR
+  difficulty, **multiple `tags`** (a word is selected by tag, never by a single
+  folder), examples, and optional `relevance` hints for personalization.
+- `sentences.ts` — reusable `SentenceComponent`s and the `Sentence`s they build
+  (teach casual forms first; mark formal variants `formality: 'formal'`).
+- `scenarios.ts` — `Scenario`s: ordered `line` / `choice` / `build` steps.
+- `index.ts` — the `LanguageDefinition` (the category → module → lesson tree,
+  referencing vocab/sentences/scenarios by id).
+
+To add a language: create the folder above, then register it in
+`src/content/languages/index.ts` and add its code to the `LanguageCode` union in
+`src/types/language.ts`. No engine or UI changes are needed — everything reads
+from the registry. Exercises are **generated** from the content
+(`src/lib/lang/exercises.ts`), so authors don't hand-write each exercise.
+
+### Progress tables
+
+Progress uses four tables — `knowledgeforge_language_profiles`,
+`knowledgeforge_language_vocab_mastery`, `knowledgeforge_language_progress`, and
+`knowledgeforge_language_attempts` — defined in
+`supabase/migrations/0001_init.sql`. If your database predates this feature,
+re-run that file in the Supabase SQL editor — it's idempotent, so it just adds the
+missing tables and their row-level-security policies. Until they exist, the
+activity still plays from bundled content, but profile and progress writes fail
+silently.

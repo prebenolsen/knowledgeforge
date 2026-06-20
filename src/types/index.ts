@@ -2,6 +2,10 @@
 // KnowledgeForge — Core type definitions
 // ============================================================
 
+// Language Learning module types live in their own file to keep this one
+// manageable; re-exported here so consumers keep importing from '@/types'.
+export * from './language';
+
 export type Locale = 'en' | 'no';
 
 export type Difficulty = 'easy' | 'medium' | 'hard';

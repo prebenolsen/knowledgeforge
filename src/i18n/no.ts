@@ -211,6 +211,69 @@ export default {
       close: 'Skjønner'
     }
   },
+  language: {
+    title: 'Språklæring',
+    tagline: 'Lær ved å gjøre — ordforråd, setninger og situasjoner fra virkeligheten.',
+    chooseCategory: 'Velg en kategori',
+    moduleCount: '{{count}} moduler',
+    editProfile: 'Rediger profilen min',
+    notStarted: 'Ikke startet',
+    comingSoon: 'Kommer snart',
+    scenarios: 'Situasjoner',
+    lessons: 'Leksjoner',
+    wordCount: '{{count}} ord',
+    exProgress: 'Øvelse {{current}} av {{total}}',
+    lessonEmpty: 'Ingen øvelser her ennå — innhold er på vei.',
+    setup: {
+      title: 'Tilpass læringen din',
+      subtitle: 'Vi bruker dette til å prioritere relevante ord. Ingenting blir skjult — du kan alltid øve på alt.',
+      gender: 'Jeg er…',
+      gender_male: 'Mann',
+      gender_female: 'Kvinne',
+      gender_unspecified: 'Vil ikke oppgi',
+      genderNote: 'Brukes kun til å vekte relevans (f.eks. klær). Alt forblir tilgjengelig.',
+      interests: 'Mine interesser',
+      goals: 'Hvorfor jeg reiser',
+      save: 'Begynn å lære'
+    },
+    interest: {
+      food: 'Mat og drikke',
+      business: 'Forretning',
+      culture: 'Kultur',
+      sports: 'Sport',
+      shopping: 'Shopping',
+      nightlife: 'Uteliv'
+    },
+    goal: {
+      backpacking: 'Backpacking',
+      business: 'Forretning',
+      sightseeing: 'Sightseeing',
+      family: 'Familie',
+      study: 'Studier'
+    },
+    scenario: {
+      step: 'Steg {{current}} av {{total}}',
+      newWords: 'Nye ord',
+      continue: 'Fortsett'
+    },
+    ex: {
+      flashcardHint: 'Kan du dette ordet?',
+      tapReveal: 'Trykk for å avsløre',
+      missed: 'Bommet',
+      gotIt: 'Kunne det',
+      choosePrompt: 'Hva betyr dette?',
+      next: 'Neste',
+      typePrompt: 'Skriv dette på målspråket',
+      typePlaceholder: 'Ditt svar',
+      correct: 'Riktig!',
+      incorrect: 'Ikke helt',
+      answerWas: 'Svar: {{answer}}',
+      check: 'Sjekk',
+      matchPrompt: 'Koble hvert ord til oversettelsen',
+      buildPrompt: 'Bygg setningen',
+      buildHint: 'Trykk på ord for å legge dem til her'
+    }
+  },
   common: {
     loading: 'Laster…',
     error: 'Noe gikk galt. Prøv igjen.',
