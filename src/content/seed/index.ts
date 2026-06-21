@@ -20,6 +20,7 @@ import { economics } from './economics';
 import { society } from './society';
 import { geography } from './geography';
 import { technology } from './technology';
+import { marvelUniverse } from './marvel-universe';
 
 export type { SeedQuestion, SeedModule, SeedSubcategory, SeedCategory } from './types';
 
@@ -31,5 +32,6 @@ export const SEED: SeedCategory[] = [
   economics,
   society,
   geography,
-  technology
+  technology,
+  marvelUniverse
 ];

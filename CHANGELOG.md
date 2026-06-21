@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.22.0] - 2026-06-21
+
+### Added
+- **Avengers (all heroes) module** now fully populated (`src/content/seed/marvel-universe/avengers.ts`)
+  with 30 bilingual (en/no) MCU-wide questions spanning every hero and film: 10 easy, 10 medium,
+  and 10 hard. The hard tier targets diehard fans (e.g. Goose the Flerken, the 1970 Camp Lehigh
+  time-heist year, who forged Stormbreaker, the Milano's namesake, Thanos's performance-capture
+  actor, Red Skull's real name, and the Sokovian capital Novi Grad).
+
+## [3.21.0] - 2026-06-21
+
+### Added
+- **Marvel Universe category** (`src/content/seed/marvel-universe/`) — a new top-level
+  quiz category (icon 🦸) with an **Avengers** subcategory. Modules let the player pick a
+  specific hero — Iron Man, Captain America, Thor, Hulk, Black Widow, Hawkeye — or the
+  combined **Avengers (all heroes)** module.
+  - **Iron Man** module is fully populated with 30 bilingual (en/no) questions: 10 easy,
+    10 medium, and 10 hard. Hard questions assume an MCU expert (e.g. armor Mark numbers,
+    the House Party Protocol, the E.D.I.T.H. acronym, the Endgame Möbius-strip model).
+  - The remaining hero modules are scaffolded with empty question sets, ready for content.
+
 ## [3.20.0] - 2026-06-20
 
 ### Added

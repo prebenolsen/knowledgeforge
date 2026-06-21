@@ -490,6 +490,23 @@ Geography,Human geography,Resources
 Geography,Human geography,Economic geography
 
 
+## Marvel Universe
+
+Modules are the main heroes from the Avengers movies, so the player can pick a single
+hero or the combined "Avengers (all heroes)" module. Hard questions assume the player is
+an expert in the Marvel Cinematic Universe movies.
+
+| Category | Subcategory | Module | Status |
+|----------|------------|--------|--------|
+| Marvel Universe | Avengers | Avengers (all heroes) | Done |
+| Marvel Universe | Avengers | Iron Man | Done |
+| Marvel Universe | Avengers | Captain America | |
+| Marvel Universe | Avengers | Thor | |
+| Marvel Universe | Avengers | Hulk | |
+| Marvel Universe | Avengers | Black Widow | |
+| Marvel Universe | Avengers | Hawkeye | |
+
+
 ## Mental Models & Paradoxes (standalone activity)
 
 Content for this activity is hand-authored in `src/content/concepts/concepts.ts`
