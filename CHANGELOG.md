@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.23.0] - 2026-06-22
+
+### Added
+- **Geography map is now zoomable and pannable** (`src/components/geo/CountryMap.tsx`).
+  Players can pinch to zoom in and out and drag with one finger to move around the map
+  (mouse-wheel / trackpad zoom is also supported for desktop). The zoom/pan view is held in
+  the map component's own state, so it **never resets** when the player taps a country, submits
+  an answer, uses a hint, or moves to the next question — the view only resets when switching
+  continents. A short tap-vs-drag threshold keeps a normal tap registering as a country pick,
+  and panning is clamped so the map always fills its frame.
+
 ## [3.22.0] - 2026-06-21
 
 ### Added
